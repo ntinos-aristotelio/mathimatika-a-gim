@@ -1029,6 +1029,29 @@ const teacherQuiz3233 = [
   { tag: 'Άσκηση 26', question: 'Περίμετρος ισοσκελούς τριγώνου 56,28 cm και βάση 12,04 cm. Πόσο είναι κάθε ίση πλευρά;', options: ['22,12 cm', '44,24 cm', '34,24 cm', '28,14 cm'], answer: '22,12 cm', explanation: '56,28-12,04=44,24 και 44,24:2=22,12.' },
 ]
 
+
+const quiz34 = [
+  { question: 'Ποια είναι η τυποποιημένη μορφή του 5.000.000;', options: ['50·10⁵', '5·10⁶', '0,5·10⁷', '5·10⁵'], answer: '5·10⁶', tip: 'Το 5.000.000 είναι 5 εκατομμύρια, άρα 5·10⁶.' },
+  { question: 'Ποιος αριθμός είναι ίσος με 3,2·10⁴;', options: ['3.200', '32.000', '320.000', '0,00032'], answer: '32.000', tip: 'Με 10⁴ μετακινούμε την υποδιαστολή 4 θέσεις δεξιά.' },
+  { question: 'Στην τυποποιημένη μορφή α·10ⁿ, το α πρέπει να είναι:', options: ['α > 10 πάντα', '1 ≤ α < 10', 'α < 1 πάντα', 'μόνο ακέραιος'], answer: '1 ≤ α < 10', tip: 'Ο πρώτος παράγοντας είναι από 1 μέχρι μικρότερος του 10.' },
+  { question: 'Ποια είναι η τυποποιημένη μορφή του 720.000.000;', options: ['72·10⁷', '7,2·10⁸', '0,72·10⁹', '7,2·10⁷'], answer: '7,2·10⁸', tip: '720.000.000 = 7,2·100.000.000 = 7,2·10⁸.' },
+]
+
+const teacherQuiz34 = [
+  { tag: 'Άσκηση 27α', question: 'Γράψε σε τυποποιημένη μορφή: 3.000', options: ['30·10²', '3·10³', '0,3·10⁴', '3·10²'], answer: '3·10³', explanation: '3.000 = 3·1000 = 3·10³.' },
+  { tag: 'Άσκηση 27β', question: 'Γράψε σε τυποποιημένη μορφή: 45.000', options: ['45·10³', '4,5·10⁴', '0,45·10⁵', '4,5·10³'], answer: '4,5·10⁴', explanation: '45.000 = 4,5·10.000 = 4,5·10⁴.' },
+  { tag: 'Άσκηση 27γ', question: 'Γράψε σε τυποποιημένη μορφή: 8.200.000', options: ['82·10⁵', '8,2·10⁶', '0,82·10⁷', '8,2·10⁵'], answer: '8,2·10⁶', explanation: '8.200.000 = 8,2·1.000.000 = 8,2·10⁶.' },
+  { tag: 'Άσκηση 27δ', question: 'Γράψε σε τυποποιημένη μορφή: 72.000.000', options: ['72·10⁶', '7,2·10⁷', '0,72·10⁸', '7,2·10⁶'], answer: '7,2·10⁷', explanation: '72.000.000 = 7,2·10.000.000 = 7,2·10⁷.' },
+  { tag: 'Άσκηση 27ε', question: 'Γράψε σε τυποποιημένη μορφή: 340.000.000', options: ['34·10⁷', '3,4·10⁸', '0,34·10⁹', '3,4·10⁷'], answer: '3,4·10⁸', explanation: '340.000.000 = 3,4·100.000.000 = 3,4·10⁸.' },
+  { tag: 'Άσκηση 27στ', question: 'Γράψε σε τυποποιημένη μορφή: 6.700.000.000', options: ['67·10⁸', '6,7·10⁹', '0,67·10¹⁰', '6,7·10⁸'], answer: '6,7·10⁹', explanation: '6.700.000.000 = 6,7·1.000.000.000 = 6,7·10⁹.' },
+  { tag: 'Άσκηση 28α', question: 'Γράψε ως κανονικό αριθμό: 4·10³', options: ['400', '4.000', '40.000', '0,004'], answer: '4.000', explanation: '10³=1000, άρα 4·1000=4.000.' },
+  { tag: 'Άσκηση 28β', question: 'Γράψε ως κανονικό αριθμό: 7,5·10⁴', options: ['7.500', '75.000', '750.000', '0,00075'], answer: '75.000', explanation: '7,5·10.000=75.000.' },
+  { tag: 'Άσκηση 28γ', question: 'Γράψε ως κανονικό αριθμό: 2,36·10⁶', options: ['236.000', '2.360.000', '23.600.000', '0,000236'], answer: '2.360.000', explanation: '2,36·1.000.000=2.360.000.' },
+  { tag: 'Άσκηση 28δ', question: 'Γράψε ως κανονικό αριθμό: 9,81·10⁷', options: ['9.810.000', '98.100.000', '981.000.000', '0,000000981'], answer: '98.100.000', explanation: '9,81·10.000.000=98.100.000.' },
+  { tag: 'Challenge', question: 'Ποια γραφή είναι σωστή τυποποιημένη μορφή;', options: ['64·10⁴', '6,4·10⁵', '0,64·10⁶', '640·10³'], answer: '6,4·10⁵', explanation: 'Ο πρώτος παράγοντας είναι από 1 μέχρι μικρότερος του 10.' },
+  { tag: 'Challenge', question: 'Ποια γραφή ΔΕΝ είναι τυποποιημένη μορφή;', options: ['1,25·10⁵', '12,5·10⁴', '9,3·10⁷', '3·10²'], answer: '12,5·10⁴', explanation: 'Το 12,5 είναι μεγαλύτερο από 10.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -2585,6 +2608,92 @@ function Lesson3233({ mode = '3.2' }) {
 }
 
 
+
+function Lesson34() {
+  const [xp, setXp] = useState(2550)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 5.000.000 γράφεται 5·10⁶;', ok: true },
+    { q: 'Το 72·10⁷ είναι τυποποιημένη μορφή;', ok: false },
+    { q: 'Το 3,2·10⁴ είναι 32.000;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 3.4</div>
+          <h1>Τυποποιημένη Μορφή Μεγάλων Αριθμών</h1>
+          <p>Μαθαίνουμε να γράφουμε πολύ μεγάλους αριθμούς σύντομα με δυνάμεις του 10.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η 3.4 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Δυνάμεις του 10</b><p>10³=1.000, 10⁶=1.000.000, 10⁹=1.000.000.000.</p></article>
+          <article><b>2. Τυποποιημένη μορφή</b><p>Ένας μεγάλος αριθμός γράφεται ως α·10ⁿ, όπου 1 ≤ α &lt; 10.</p></article>
+          <article><b>3. Μετατροπή</b><p>Μετακινούμε την υποδιαστολή ώστε να μείνει ένας αριθμός από 1 έως μικρότερος του 10.</p></article>
+          <article><b>4. Έλεγχος</b><p>Το 72·10⁷ δεν είναι τυποποιημένο, ενώ το 7,2·10⁸ είναι.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Scientific Notation Lab</h2></div>
+          <div className="example"><b>45.000 = 4,5·10⁴</b><p>Η υποδιαστολή μετακινείται 4 θέσεις.</p></div>
+          <div className="example"><b>8.200.000 = 8,2·10⁶</b><p>Μένει αριθμός ανάμεσα στο 1 και στο 10.</p></div>
+          <div className="example"><b>7,5·10⁴ = 75.000</b><p>Μετακινούμε την υποδιαστολή 4 θέσεις δεξιά.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Power of 10 Machine 🚀</h3>
+          <p>Γρήγορες μετατροπές:</p>
+          <div className="numberChips"><span>3.000 = 3·10³</span><span>340.000.000 = 3,4·10⁸</span><span>2,36·10⁶ = 2.360.000</span></div>
+          <div className="answerLine">Κανόνας: πρώτος παράγοντας από 1 μέχρι μικρότερος από 10.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.4" subtitle="Τυποποιημένη μορφή και δυνάμεις του 10." items={quiz34} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.4" items={teacherQuiz34} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Master of Mega Numbers 🚀</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 3.4.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🚀</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Master of Mega Numbers</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -2596,7 +2705,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('3.2')
+  const [activeLesson, setActiveLesson] = useState('3.4')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -2604,7 +2713,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
