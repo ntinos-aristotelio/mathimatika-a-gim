@@ -206,6 +206,43 @@ const teacherQuiz13 = [
   { tag: 'Άσκηση 22', question: 'Υπολόγισε: Δ = [(2²·3² - 5²)² - 10²] + (151 - 6·5²)²⁰¹⁷', options: ['22', '21', '20', '1'], answer: '22', explanation: '2²·3²=36, 36-25=11, 11²-100=21 και (151-150)²⁰¹⁷=1, άρα 22.' },
 ]
 
+
+const quiz14 = [
+  { question: 'Ποια είναι η μορφή της Ευκλείδειας διαίρεσης;', options: ['Δ = δ·π + υ, υ<δ', 'Δ = δ+π+υ', 'δ = Δ·π + υ', 'υ = Δ·δ+π'], answer: 'Δ = δ·π + υ, υ<δ', tip: 'Διαιρετέος = διαιρέτης · πηλίκο + υπόλοιπο και το υπόλοιπο είναι μικρότερο από τον διαιρέτη.' },
+  { question: 'Στη διαίρεση 43 : 7, ποιο είναι το υπόλοιπο;', options: ['1', '6', '7', '0'], answer: '1', tip: '43 = 7·6 + 1.' },
+  { question: 'Πότε μια διαίρεση λέγεται τέλεια;', options: ['Όταν το υπόλοιπο είναι 0', 'Όταν το πηλίκο είναι 0', 'Όταν ο διαιρέτης είναι 0', 'Όταν το υπόλοιπο είναι μεγαλύτερο'], answer: 'Όταν το υπόλοιπο είναι 0', tip: 'Τέλεια διαίρεση σημαίνει ότι δεν περισσεύει τίποτα.' },
+  { question: 'Αν ένας αριθμός διαιρεθεί με 9 και δώσει πηλίκο 73 και υπόλοιπο 4, ποιος είναι;', options: ['661', '657', '733', '77'], answer: '661', tip: 'Αριθμός = 9·73 + 4 = 661.' },
+]
+
+const teacherQuiz14 = [
+  { tag: 'Άσκηση 23', question: 'Κάνε τη διαίρεση 4002 : 69. Ποιο είναι το πηλίκο;', options: ['58', '59', '57', '68'], answer: '58', explanation: '69·58=4002, άρα η διαίρεση είναι τέλεια.' },
+  { tag: 'Άσκηση 23', question: 'Κάνε τη διαίρεση 1445 : 17. Ποιο είναι το πηλίκο;', options: ['85', '75', '95', '88'], answer: '85', explanation: '17·85=1445.' },
+  { tag: 'Άσκηση 23', question: 'Κάνε τη διαίρεση 925 : 37. Ποιο είναι το πηλίκο;', options: ['25', '24', '26', '35'], answer: '25', explanation: '37·25=925.' },
+  { tag: 'Άσκηση 23', question: 'Κάνε τη διαίρεση 3621 : 213. Ποιο είναι το πηλίκο;', options: ['17', '16', '18', '13'], answer: '17', explanation: '213·17=3621.' },
+  { tag: 'Άσκηση 23', question: 'Κάνε τη διαίρεση 35280 : 2940. Ποιο είναι το πηλίκο;', options: ['12', '10', '14', '120'], answer: '12', explanation: '2940·12=35280.' },
+  { tag: 'Άσκηση 23', question: 'Κάνε τη διαίρεση 5082 : 77. Ποιο είναι το πηλίκο;', options: ['66', '65', '67', '76'], answer: '66', explanation: '77·66=5082.' },
+
+  { tag: 'Άσκηση 24', question: 'Τα 5 μέτρα υφάσματος κοστίζουν 65€. Πόσο κοστίζει το 1 μέτρο;', options: ['13€', '12€', '15€', '10€'], answer: '13€', explanation: '65 : 5 = 13.' },
+  { tag: 'Άσκηση 24', question: 'Τα 3 κιλά κρέας κοστίζουν 30€. Πόσο κοστίζει το 1 κιλό;', options: ['10€', '9€', '12€', '15€'], answer: '10€', explanation: '30 : 3 = 10.' },
+  { tag: 'Άσκηση 24', question: 'Πόσα δοχεία των 52 λίτρων χρειάζονται για 46.592 λίτρα κρασί;', options: ['896', '895', '900', '886'], answer: '896', explanation: '46.592 : 52 = 896.' },
+
+  { tag: 'Άσκηση 25', question: 'Η ισότητα 125 = 35·3 + 20 παριστάνει Ευκλείδεια διαίρεση με διαιρέτη 35;', options: ['Ναι', 'Όχι'], answer: 'Ναι', explanation: 'Το υπόλοιπο 20 είναι μικρότερο από το 35.' },
+  { tag: 'Άσκηση 25', question: 'Η ισότητα 125 = 35·3 + 20 παριστάνει Ευκλείδεια διαίρεση με διαιρέτη 3;', options: ['Ναι', 'Όχι'], answer: 'Όχι', explanation: 'Το υπόλοιπο 20 πρέπει να είναι μικρότερο από τον διαιρέτη 3, αλλά δεν είναι.' },
+  { tag: 'Άσκηση 25', question: 'Η ισότητα 762 = 38·19 + 40 παριστάνει Ευκλείδεια διαίρεση με διαιρέτη 38;', options: ['Ναι', 'Όχι'], answer: 'Όχι', explanation: 'Το υπόλοιπο 40 είναι μεγαλύτερο από το 38.' },
+  { tag: 'Άσκηση 25', question: 'Η ισότητα 1500 = 42·35 + 30 παριστάνει Ευκλείδεια διαίρεση με διαιρέτη 42;', options: ['Ναι', 'Όχι'], answer: 'Ναι', explanation: 'Το υπόλοιπο 30 είναι μικρότερο από το 42.' },
+  { tag: 'Άσκηση 25', question: 'Η ισότητα 300 = 18·16 + 12 παριστάνει Ευκλείδεια διαίρεση με διαιρέτη 18;', options: ['Ναι', 'Όχι'], answer: 'Ναι', explanation: 'Το υπόλοιπο 12 είναι μικρότερο από το 18.' },
+
+  { tag: 'Άσκηση 26', question: 'Αν ο ν είναι φυσικός αριθμός, ποια μπορεί να είναι τα υπόλοιπα της διαίρεσης ν : 8;', options: ['0,1,2,3,4,5,6,7', '1,2,3,4,5,6,7,8', '0 και 8', 'μόνο 0'], answer: '0,1,2,3,4,5,6,7', explanation: 'Το υπόλοιπο είναι πάντα μικρότερο από τον διαιρέτη 8.' },
+
+  { tag: 'Άσκηση 27', question: 'Ένας αριθμός διαιρείται με το 9 και δίνει πηλίκο 73 και υπόλοιπο 4. Ποιος είναι ο αριθμός;', options: ['661', '657', '733', '77'], answer: '661', explanation: 'Δ = δ·π + υ = 9·73 + 4 = 657 + 4 = 661.' },
+
+  { tag: 'Άσκηση 28', question: 'Αν σήμερα είναι Τρίτη, τι μέρα θα είναι μετά από 247 ημέρες;', options: ['Πέμπτη', 'Τετάρτη', 'Τρίτη', 'Παρασκευή'], answer: 'Πέμπτη', explanation: '247 = 7·35 + 2, άρα προχωράμε 2 ημέρες: Τρίτη → Τετάρτη → Πέμπτη.' },
+
+  { tag: 'Άσκηση 29', question: 'Ποια είναι η δοκιμή της διαίρεσης 43 : 7 = 6 υπόλοιπο 1;', options: ['7·6+1=43', '43·7+1=302', '6·1+7=13', '43=7+6+1'], answer: '7·6+1=43', explanation: 'Δοκιμή: διαιρέτης·πηλίκο + υπόλοιπο = διαιρετέος.' },
+
+  { tag: 'Άσκηση 30', question: 'Ποια σχέση δείχνει τέλεια διαίρεση;', options: ['72 = 8·9', '73 = 8·9 + 1', '74 = 8·9 + 2', '75 = 8·9 + 3'], answer: '72 = 8·9', explanation: 'Τέλεια διαίρεση σημαίνει υπόλοιπο 0.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -704,6 +741,92 @@ function Lesson13() {
 }
 
 
+
+function Lesson14() {
+  const [xp, setXp] = useState(510)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: '43 = 7·6 + 1 είναι σωστή Ευκλείδεια διαίρεση;', ok: true },
+    { q: 'Σε Ευκλείδεια διαίρεση με διαιρέτη 8, το υπόλοιπο μπορεί να είναι 8;', ok: false },
+    { q: 'Αν το υπόλοιπο είναι 0, η διαίρεση είναι τέλεια;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 1.4</div>
+          <h1>Ευκλείδεια διαίρεση — Διαιρετότητα</h1>
+          <p>Μαθαίνουμε τη σχέση Δ = δ·π + υ, τον ρόλο του υπολοίπου και πότε μια διαίρεση είναι τέλεια.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.4 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ευκλείδεια διαίρεση</b><p>Για φυσικούς αριθμούς ισχύει Δ = δ·π + υ, με υ &lt; δ.</p></article>
+          <article><b>2. Ονόματα</b><p>Δ: διαιρετέος, δ: διαιρέτης, π: πηλίκο, υ: υπόλοιπο.</p></article>
+          <article><b>3. Τέλεια διαίρεση</b><p>Όταν το υπόλοιπο είναι 0, η διαίρεση λέγεται τέλεια.</p></article>
+          <article><b>4. Δοκιμή</b><p>Για έλεγχο κάνουμε: διαιρέτης·πηλίκο + υπόλοιπο.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>43 : 7</b><p>43 = 7·6 + 1, άρα πηλίκο 6 και υπόλοιπο 1.</p></div>
+          <div className="example"><b>Τέλεια διαίρεση</b><p>4002 : 69 = 58, γιατί 69·58 = 4002.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Βρες πηλίκο και υπόλοιπο:</p>
+          <div className="numberChips"><span>43 : 7</span><span>247 : 7</span><span>73 : 9</span></div>
+          <div className="answerLine">43=7·6+1, 247=7·35+2, 73=9·8+1</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.4" subtitle="Ευκλείδεια διαίρεση, υπόλοιπο και τέλεια διαίρεση." items={quiz14} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.4" items={teacherQuiz14} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Φύλακας του Υπολοίπου 🛡️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 1.4.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🛡️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Φύλακας της 1.4</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -715,7 +838,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('1.3')
+  const [activeLesson, setActiveLesson] = useState('1.4')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -723,7 +846,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
