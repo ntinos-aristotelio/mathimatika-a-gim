@@ -243,6 +243,108 @@ const teacherQuiz14 = [
   { tag: 'Άσκηση 30', question: 'Ποια σχέση δείχνει τέλεια διαίρεση;', options: ['72 = 8·9', '73 = 8·9 + 1', '74 = 8·9 + 2', '75 = 8·9 + 3'], answer: '72 = 8·9', explanation: 'Τέλεια διαίρεση σημαίνει υπόλοιπο 0.' },
 ]
 
+
+const quiz15 = [
+  { question: 'Ποιος αριθμός διαιρείται με το 2;', options: ['135', '248', '307', '421'], answer: '248', tip: 'Με το 2 διαιρούνται οι αριθμοί που τελειώνουν σε 0,2,4,6,8.' },
+  { question: 'Ποιος αριθμός διαιρείται με το 5;', options: ['342', '180', '126', '407'], answer: '180', tip: 'Με το 5 διαιρούνται οι αριθμοί που τελειώνουν σε 0 ή 5.' },
+  { question: 'Ποιο είναι το ΕΚΠ των 6 και 8;', options: ['24', '48', '12', '2'], answer: '24', tip: 'Τα πολλαπλάσια του 6 και του 8 συναντιούνται πρώτη φορά στο 24.' },
+  { question: 'Ποιος είναι ο ΜΚΔ των 12 και 18;', options: ['6', '3', '12', '36'], answer: '6', tip: 'Οι κοινοί διαιρέτες είναι 1,2,3,6 και ο μεγαλύτερος είναι το 6.' },
+]
+
+const teacherQuiz15 = [
+  { tag: 'Άσκηση 31', question: 'Ποιο είναι το ΕΚΠ των 6 και 8;', options: ['24', '12', '48', '2'], answer: '24', explanation: 'Πολλαπλάσια 6: 6,12,18,24. Πολλαπλάσια 8: 8,16,24. Άρα ΕΚΠ=24.' },
+  { tag: 'Άσκηση 31', question: 'Ποιος είναι ο ΜΚΔ των 6 και 8;', options: ['2', '4', '6', '8'], answer: '2', explanation: 'Κοινοί διαιρέτες: 1,2. Άρα ΜΚΔ=2.' },
+  { tag: 'Άσκηση 31', question: 'Ποιο είναι το ΕΚΠ(6,8);', options: ['24', '48', '14', '12'], answer: '24', explanation: 'Το μικρότερο κοινό πολλαπλάσιο των 6 και 8 είναι 24.' },
+
+  { tag: 'Άσκηση 32', question: 'Βρες το ΕΚΠ των 2 και 3.', options: ['6', '5', '3', '2'], answer: '6', explanation: '2=2, 3=3, άρα ΕΚΠ=2·3=6.' },
+  { tag: 'Άσκηση 32', question: 'Βρες το ΕΚΠ των 4 και 6.', options: ['12', '24', '10', '2'], answer: '12', explanation: 'Πολλαπλάσια 4: 4,8,12. Πολλαπλάσια 6: 6,12.' },
+  { tag: 'Άσκηση 32', question: 'Βρες το ΕΚΠ των 2 και 8.', options: ['8', '16', '10', '4'], answer: '8', explanation: 'Το 8 είναι πολλαπλάσιο και του 2 και του 8.' },
+  { tag: 'Άσκηση 32', question: 'Βρες το ΕΚΠ των 6 και 3.', options: ['6', '18', '9', '3'], answer: '6', explanation: 'Το 6 είναι πολλαπλάσιο και του 6 και του 3.' },
+  { tag: 'Άσκηση 32', question: 'Βρες το ΕΚΠ των 5 και 3.', options: ['15', '8', '30', '5'], answer: '15', explanation: 'Οι αριθμοί 5 και 3 είναι πρώτοι μεταξύ τους, άρα ΕΚΠ=15.' },
+  { tag: 'Άσκηση 32', question: 'Βρες το ΕΚΠ των 2 και 5.', options: ['10', '5', '2', '20'], answer: '10', explanation: 'ΕΚΠ(2,5)=10.' },
+
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 4 και 8.', options: ['8', '16', '32', '4'], answer: '8', explanation: 'Το 8 είναι πολλαπλάσιο του 4.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 4 και 5.', options: ['20', '10', '9', '40'], answer: '20', explanation: '4 και 5 είναι πρώτοι μεταξύ τους, άρα ΕΚΠ=20.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 7 και 8.', options: ['56', '15', '28', '64'], answer: '56', explanation: '7 και 8 είναι πρώτοι μεταξύ τους, άρα ΕΚΠ=56.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 8 και 12.', options: ['24', '12', '96', '48'], answer: '24', explanation: 'Το 24 είναι το μικρότερο κοινό πολλαπλάσιο.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 6 και 10.', options: ['30', '60', '20', '10'], answer: '30', explanation: '6=2·3 και 10=2·5, άρα ΕΚΠ=2·3·5=30.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 4, 5 και 12.', options: ['60', '20', '12', '120'], answer: '60', explanation: 'Το 60 είναι πολλαπλάσιο και των τριών.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 6, 8 και 10.', options: ['120', '240', '60', '80'], answer: '120', explanation: '6=2·3, 8=2³, 10=2·5, άρα ΕΚΠ=2³·3·5=120.' },
+  { tag: 'Άσκηση 33', question: 'Βρες το ΕΚΠ των 6, 15 και 20.', options: ['60', '120', '300', '30'], answer: '60', explanation: 'Το 60 διαιρείται με 6, 15 και 20.' },
+
+  { tag: 'Άσκηση 34', question: 'Ποιοι είναι οι κοινοί διαιρέτες των 8 και 12;', options: ['1,2,4', '1,2,3,4', '2,4,8', '1,4,8'], answer: '1,2,4', explanation: 'Διαιρέτες 8: 1,2,4,8. Διαιρέτες 12: 1,2,3,4,6,12.' },
+  { tag: 'Άσκηση 34', question: 'Ποιος είναι ο ΜΚΔ(8,12);', options: ['4', '2', '8', '12'], answer: '4', explanation: 'Ο μεγαλύτερος κοινός διαιρέτης είναι το 4.' },
+
+  { tag: 'Άσκηση 35', question: 'Βρες τον ΜΚΔ των 2 και 3.', options: ['1', '2', '3', '6'], answer: '1', explanation: 'Το μόνο κοινό διαιρέτη είναι το 1.' },
+  { tag: 'Άσκηση 35', question: 'Βρες τον ΜΚΔ των 3 και 6.', options: ['3', '6', '2', '1'], answer: '3', explanation: 'Κοινοί διαιρέτες: 1,3.' },
+  { tag: 'Άσκηση 35', question: 'Βρες τον ΜΚΔ των 3 και 9.', options: ['3', '9', '1', '6'], answer: '3', explanation: 'Το 3 είναι ο μεγαλύτερος κοινός διαιρέτης.' },
+  { tag: 'Άσκηση 35', question: 'Βρες τον ΜΚΔ των 6 και 8.', options: ['2', '4', '6', '8'], answer: '2', explanation: 'Κοινοί διαιρέτες: 1,2.' },
+  { tag: 'Άσκηση 35', question: 'Βρες τον ΜΚΔ των 6 και 15.', options: ['3', '6', '5', '1'], answer: '3', explanation: 'Κοινοί διαιρέτες: 1,3.' },
+  { tag: 'Άσκηση 35', question: 'Βρες τον ΜΚΔ των 15 και 25.', options: ['5', '15', '25', '10'], answer: '5', explanation: 'Κοινοί διαιρέτες: 1,5.' },
+
+  { tag: 'Άσκηση 36', question: 'Βρες τον ΜΚΔ των 12 και 18.', options: ['6', '3', '12', '18'], answer: '6', explanation: '12=2²·3 και 18=2·3², κοινό μέρος 2·3=6.' },
+  { tag: 'Άσκηση 36', question: 'Βρες τον ΜΚΔ των 15 και 20.', options: ['5', '10', '15', '1'], answer: '5', explanation: 'Κοινοί διαιρέτες: 1,5.' },
+  { tag: 'Άσκηση 36', question: 'Βρες τον ΜΚΔ των 36 και 24.', options: ['12', '6', '24', '18'], answer: '12', explanation: '36=3·12 και 24=2·12.' },
+  { tag: 'Άσκηση 36', question: 'Βρες τον ΜΚΔ των 21 και 42.', options: ['21', '7', '14', '42'], answer: '21', explanation: 'Το 42 είναι πολλαπλάσιο του 21.' },
+
+  { tag: 'Άσκηση 37', question: 'Βρες τον ΜΚΔ των 12, 54 και 72.', options: ['6', '12', '18', '3'], answer: '6', explanation: 'Ο μεγαλύτερος κοινός διαιρέτης και των τριών είναι το 6.' },
+  { tag: 'Άσκηση 37', question: 'Βρες τον ΜΚΔ των 24, 18 και 64.', options: ['2', '6', '8', '4'], answer: '2', explanation: 'Κοινός μέγιστος διαιρέτης είναι το 2.' },
+  { tag: 'Άσκηση 37', question: 'Βρες τον ΜΚΔ των 16, 18 και 48.', options: ['2', '4', '6', '8'], answer: '2', explanation: 'Το 2 διαιρεί και τους τρεις, μεγαλύτερος κοινός δεν υπάρχει.' },
+
+  { tag: 'Άσκηση 38', question: 'Ανάλυσε το 18 σε γινόμενο πρώτων παραγόντων.', options: ['2·3²', '2²·3', '3³', '2·9²'], answer: '2·3²', explanation: '18=2·9=2·3².' },
+  { tag: 'Άσκηση 38', question: 'Ανάλυσε το 24 σε γινόμενο πρώτων παραγόντων.', options: ['2³·3', '2²·6', '3³', '2·3²'], answer: '2³·3', explanation: '24=8·3=2³·3.' },
+  { tag: 'Άσκηση 38', question: 'Ανάλυσε το 30 σε γινόμενο πρώτων παραγόντων.', options: ['2·3·5', '2·15', '3·10', '5·6'], answer: '2·3·5', explanation: '30=2·3·5.' },
+  { tag: 'Άσκηση 38', question: 'Ανάλυσε το 35 σε γινόμενο πρώτων παραγόντων.', options: ['5·7', '3·5·7', '35²', '2·5·7'], answer: '5·7', explanation: '35=5·7.' },
+  { tag: 'Άσκηση 38', question: 'Ανάλυσε το 50 σε γινόμενο πρώτων παραγόντων.', options: ['2·5²', '2²·5', '10·5', '25·2²'], answer: '2·5²', explanation: '50=2·25=2·5².' },
+  { tag: 'Άσκηση 38', question: 'Ανάλυσε το 64 σε γινόμενο πρώτων παραγόντων.', options: ['2⁶', '2⁵', '4³', '8²'], answer: '2⁶', explanation: '64=2·2·2·2·2·2=2⁶.' },
+
+  { tag: 'Άσκηση 39', question: 'Ανάλυσε το 60 σε γινόμενο πρώτων παραγόντων.', options: ['2²·3·5', '2·3·5', '2²·15', '3·20'], answer: '2²·3·5', explanation: '60=4·15=2²·3·5.' },
+  { tag: 'Άσκηση 39', question: 'Ανάλυσε το 48 σε γινόμενο πρώτων παραγόντων.', options: ['2⁴·3', '2³·6', '4·12', '2⁵·3'], answer: '2⁴·3', explanation: '48=16·3=2⁴·3.' },
+  { tag: 'Άσκηση 39', question: 'Ανάλυσε το 42 σε γινόμενο πρώτων παραγόντων.', options: ['2·3·7', '6·7', '2·21', '3·14'], answer: '2·3·7', explanation: '42=2·3·7.' },
+  { tag: 'Άσκηση 39', question: 'Ανάλυσε το 80 σε γινόμενο πρώτων παραγόντων.', options: ['2⁴·5', '2³·10', '16·5', '2⁵·5'], answer: '2⁴·5', explanation: '80=16·5=2⁴·5.' },
+  { tag: 'Άσκηση 39', question: 'Ανάλυσε το 120 σε γινόμενο πρώτων παραγόντων.', options: ['2³·3·5', '2²·3·5', '12·10', '2³·15'], answer: '2³·3·5', explanation: '120=8·15=2³·3·5.' },
+  { tag: 'Άσκηση 39', question: 'Ανάλυσε το 360 σε γινόμενο πρώτων παραγόντων.', options: ['2³·3²·5', '2²·3²·5', '36·10', '2³·45'], answer: '2³·3²·5', explanation: '360=8·45=2³·3²·5.' },
+
+  { tag: 'Άσκηση 40', question: 'Βρες το ΕΚΠ των 18 και 24.', options: ['72', '48', '216', '6'], answer: '72', explanation: '18=2·3², 24=2³·3, άρα ΕΚΠ=2³·3²=72.' },
+  { tag: 'Άσκηση 40', question: 'Βρες το ΕΚΠ των 28 και 30.', options: ['420', '210', '840', '58'], answer: '420', explanation: '28=2²·7 και 30=2·3·5, άρα ΕΚΠ=2²·3·5·7=420.' },
+  { tag: 'Άσκηση 40', question: 'Βρες το ΕΚΠ των 12, 21 και 36.', options: ['252', '126', '108', '36'], answer: '252', explanation: '12=2²·3, 21=3·7, 36=2²·3², άρα ΕΚΠ=2²·3²·7=252.' },
+  { tag: 'Άσκηση 40', question: 'Βρες το ΕΚΠ των 30, 40 και 64.', options: ['960', '640', '1920', '120'], answer: '960', explanation: '30=2·3·5, 40=2³·5, 64=2⁶, άρα ΕΚΠ=2⁶·3·5=960.' },
+  { tag: 'Άσκηση 40', question: 'Βρες το ΕΚΠ των 50, 60 και 72.', options: ['1800', '3600', '900', '720'], answer: '1800', explanation: '50=2·5², 60=2²·3·5, 72=2³·3², άρα ΕΚΠ=2³·3²·5²=1800.' },
+
+  { tag: 'Άσκηση 41', question: 'Με τη βοήθεια των αριθμών 18,20,25,36,45,50,64,72, βρες ΕΚΠ(18,20).', options: ['180', '360', '90', '72'], answer: '180', explanation: '18=2·3² και 20=2²·5, άρα ΕΚΠ=2²·3²·5=180.' },
+  { tag: 'Άσκηση 41', question: 'Βρες ΜΚΔ(18,36).', options: ['18', '6', '9', '36'], answer: '18', explanation: 'Το 36 είναι πολλαπλάσιο του 18.' },
+  { tag: 'Άσκηση 41', question: 'Βρες ΕΚΠ(20,50).', options: ['100', '50', '200', '20'], answer: '100', explanation: '20=2²·5 και 50=2·5², άρα ΕΚΠ=2²·5²=100.' },
+  { tag: 'Άσκηση 41', question: 'Βρες ΜΚΔ(25,50).', options: ['25', '5', '50', '10'], answer: '25', explanation: 'Το 50 είναι πολλαπλάσιο του 25.' },
+
+  { tag: 'Άσκηση 42', question: 'Ανάλυσε το 20 σε πρώτους παράγοντες.', options: ['2²·5', '2·10', '4·5', '2·5²'], answer: '2²·5', explanation: '20=4·5=2²·5.' },
+  { tag: 'Άσκηση 42', question: 'Ανάλυσε το 36 σε πρώτους παράγοντες.', options: ['2²·3²', '2·3²', '6²', '2³·3'], answer: '2²·3²', explanation: '36=4·9=2²·3².' },
+  { tag: 'Άσκηση 42', question: 'Βρες ΕΚΠ(20,36).', options: ['180', '360', '720', '90'], answer: '180', explanation: '20=2²·5, 36=2²·3², άρα ΕΚΠ=2²·3²·5=180.' },
+  { tag: 'Άσκηση 42', question: 'Βρες ΜΚΔ(20,36).', options: ['4', '2', '20', '36'], answer: '4', explanation: 'Κοινό μέρος 2²=4.' },
+
+  { tag: 'Άσκηση 43', question: 'Βρες ΕΚΠ(48,72).', options: ['144', '288', '72', '24'], answer: '144', explanation: '48=2⁴·3 και 72=2³·3², άρα ΕΚΠ=2⁴·3²=144.' },
+  { tag: 'Άσκηση 43', question: 'Βρες ΜΚΔ(48,72).', options: ['24', '12', '48', '72'], answer: '24', explanation: 'Κοινό μέρος 2³·3=24.' },
+
+  { tag: 'Άσκηση 44', question: 'Βρες ΕΚΠ(64,48).', options: ['192', '128', '384', '64'], answer: '192', explanation: '64=2⁶, 48=2⁴·3, άρα ΕΚΠ=2⁶·3=192.' },
+  { tag: 'Άσκηση 44', question: 'Βρες ΜΚΔ(64,48).', options: ['16', '8', '32', '48'], answer: '16', explanation: 'Κοινό μέρος 2⁴=16.' },
+
+  { tag: 'Άσκηση 45', question: 'Βρες ΕΚΠ(56,72).', options: ['504', '252', '1008', '72'], answer: '504', explanation: '56=2³·7, 72=2³·3², άρα ΕΚΠ=2³·3²·7=504.' },
+  { tag: 'Άσκηση 45', question: 'Βρες ΜΚΔ(56,72).', options: ['8', '4', '16', '7'], answer: '8', explanation: 'Κοινό μέρος 2³=8.' },
+
+  { tag: 'Άσκηση 46', question: 'Βρες ΕΚΠ(100,144).', options: ['3600', '7200', '14400', '1200'], answer: '3600', explanation: '100=2²·5², 144=2⁴·3², άρα ΕΚΠ=2⁴·3²·5²=3600.' },
+  { tag: 'Άσκηση 46', question: 'Βρες ΜΚΔ(100,144).', options: ['4', '8', '12', '2'], answer: '4', explanation: 'Κοινό μέρος 2²=4.' },
+
+  { tag: 'Άσκηση 47', question: 'Βρες ΕΚΠ(240,196).', options: ['11760', '23520', '5880', '1960'], answer: '11760', explanation: '240=2⁴·3·5, 196=2²·7², άρα ΕΚΠ=2⁴·3·5·7²=11760.' },
+  { tag: 'Άσκηση 47', question: 'Βρες ΜΚΔ(240,196).', options: ['4', '2', '12', '8'], answer: '4', explanation: 'Κοινό μέρος 2²=4.' },
+
+  { tag: 'Άσκηση 48', question: 'Γιάννης ανά 2 ημέρες, Αποστολία ανά 5, Γιώργος ανά 4. Μετά από πόσες ημέρες θα ξανασυναντηθούν;', options: ['20', '10', '40', '11'], answer: '20', explanation: 'Ψάχνουμε ΕΚΠ(2,5,4)=20.' },
+  { tag: 'Άσκηση 49', question: 'Οι μαθητές παρατάσσονται ανά 3,4,5 χωρίς να περισσεύει κανείς και είναι 200-300. Πόσοι είναι;', options: ['240', '260', '280', '300'], answer: '240', explanation: 'ΕΚΠ(3,4,5)=60. Ανάμεσα στο 200 και 300 είναι το 240.' },
+  { tag: 'Άσκηση 50', question: 'Μαρία κάθε 16 ημέρες, Κώστας κάθε 12. Αν συναντήθηκαν σήμερα, μετά από πόσες ημέρες θα ξαναβρεθούν;', options: ['48', '24', '96', '28'], answer: '48', explanation: 'ΕΚΠ(16,12)=48.' },
+  { tag: 'Άσκηση 51', question: '24 τριαντάφυλλα, 16 γαρύφαλλα, 36 τουλίπες. Πόσες ίδιες ανθοδέσμες χωρίς υπόλοιπο μπορούν να γίνουν το πολύ;', options: ['4', '6', '8', '12'], answer: '4', explanation: 'Ψάχνουμε ΜΚΔ(24,16,36)=4.' },
+  { tag: 'Άσκηση 51', question: 'Σε κάθε ανθοδέσμη πόσα τριαντάφυλλα θα μπουν;', options: ['6', '4', '9', '8'], answer: '6', explanation: '24 τριαντάφυλλα σε 4 ανθοδέσμες: 24:4=6.' },
+  { tag: 'Άσκηση 51', question: 'Σε κάθε ανθοδέσμη πόσα γαρύφαλλα θα μπουν;', options: ['4', '6', '9', '16'], answer: '4', explanation: '16 γαρύφαλλα σε 4 ανθοδέσμες: 16:4=4.' },
+  { tag: 'Άσκηση 51', question: 'Σε κάθε ανθοδέσμη πόσες τουλίπες θα μπουν;', options: ['9', '6', '4', '12'], answer: '9', explanation: '36 τουλίπες σε 4 ανθοδέσμες: 36:4=9.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -827,6 +929,92 @@ function Lesson14() {
 }
 
 
+
+function Lesson15() {
+  const [xp, setXp] = useState(650)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το ΕΚΠ(6,8) είναι 24;', ok: true },
+    { q: 'Ο ΜΚΔ(20,36) είναι 10;', ok: false },
+    { q: 'Το 64 αναλύεται ως 2⁶;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 1.5</div>
+          <h1>Χαρακτήρες διαιρετότητας — ΕΚΠ — ΜΚΔ</h1>
+          <p>Μαθαίνουμε να αναγνωρίζουμε διαιρετότητα, να βρίσκουμε ΕΚΠ και ΜΚΔ και να αναλύουμε αριθμούς σε γινόμενο πρώτων παραγόντων.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.5 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Χαρακτήρες διαιρετότητας</b><p>Με το 2 διαιρούνται οι αριθμοί που τελειώνουν σε 0,2,4,6,8. Με το 5 όσοι τελειώνουν σε 0 ή 5.</p></article>
+          <article><b>2. ΕΚΠ</b><p>Το ελάχιστο κοινό πολλαπλάσιο είναι το μικρότερο θετικό κοινό πολλαπλάσιο δύο ή περισσότερων αριθμών.</p></article>
+          <article><b>3. ΜΚΔ</b><p>Ο μέγιστος κοινός διαιρέτης είναι ο μεγαλύτερος αριθμός που διαιρεί ακριβώς τους αριθμούς.</p></article>
+          <article><b>4. Πρώτοι παράγοντες</b><p>Αναλύουμε έναν αριθμό σε γινόμενο πρώτων αριθμών για να βρίσκουμε πιο εύκολα ΕΚΠ και ΜΚΔ.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>ΕΚΠ</b><p>ΕΚΠ(6,8)=24, γιατί 24 είναι το μικρότερο κοινό πολλαπλάσιο.</p></div>
+          <div className="example"><b>ΜΚΔ</b><p>ΜΚΔ(20,36)=4, γιατί 4 είναι ο μεγαλύτερος κοινός διαιρέτης.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Ανάλυση σε πρώτους παράγοντες:</p>
+          <div className="numberChips"><span>60=2²·3·5</span><span>48=2⁴·3</span><span>64=2⁶</span></div>
+          <div className="answerLine">Χρησιμοποίησε την ανάλυση για ΕΚΠ και ΜΚΔ.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.5" subtitle="Διαιρετότητα, ΕΚΠ, ΜΚΔ και πρώτοι παράγοντες." items={quiz15} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.5" items={teacherQuiz15} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Άρχοντας των Κοινών Πολλαπλασίων 👑</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 1.5.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Άρχοντας της 1.5</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -838,7 +1026,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('1.4')
+  const [activeLesson, setActiveLesson] = useState('1.5')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -846,7 +1034,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
