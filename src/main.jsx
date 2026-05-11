@@ -19,10 +19,10 @@ const curriculum = [
         lessons: [
           { id: '1.1', title: 'Φυσικοί αριθμοί - Διάταξη - Στρογγυλοποίηση', ready: true },
           { id: '1.2', title: 'Πρόσθεση, αφαίρεση και πολλαπλασιασμός', ready: true },
-          { id: '1.3', title: 'Δυνάμεις φυσικών αριθμών', ready: false },
-          { id: '1.4', title: 'Ευκλείδεια διαίρεση - Διαιρετότητα', ready: false },
-          { id: '1.5', title: 'Χαρακτήρες διαιρετότητας - ΜΚΔ - ΕΚΠ', ready: false },
-          { id: 'A1G', title: 'Γενικές Ασκήσεις Κεφαλαίου 1', ready: false },
+          { id: '1.3', title: 'Δυνάμεις φυσικών αριθμών', ready: true },
+          { id: '1.4', title: 'Ευκλείδεια διαίρεση - Διαιρετότητα', ready: true },
+          { id: '1.5', title: 'Χαρακτήρες διαιρετότητας - ΜΚΔ - ΕΚΠ', ready: true },
+          { id: 'A1G', title: 'Γενικές Ασκήσεις Κεφαλαίου 1', ready: true },
         ],
       },
       {
@@ -30,12 +30,12 @@ const curriculum = [
         title: 'Κεφάλαιο 2 — Τα κλάσματα',
         progress: 0,
         lessons: [
-          { id: '2.1', title: 'Η έννοια του κλάσματος', ready: false },
-          { id: '2.2', title: 'Ισοδύναμα κλάσματα', ready: false },
-          { id: '2.3', title: 'Σύγκριση κλασμάτων', ready: false },
-          { id: '2.4', title: 'Πρόσθεση και αφαίρεση κλασμάτων', ready: false },
-          { id: '2.5', title: 'Πολλαπλασιασμός κλασμάτων', ready: false },
-          { id: '2.6', title: 'Διαίρεση κλασμάτων', ready: false },
+          { id: '2.1', title: 'Η έννοια του κλάσματος', ready: true },
+          { id: '2.2', title: 'Ισοδύναμα κλάσματα', ready: true },
+          { id: '2.3', title: 'Σύγκριση κλασμάτων', ready: true },
+          { id: '2.4', title: 'Πρόσθεση και αφαίρεση κλασμάτων', ready: true },
+          { id: '2.5', title: 'Πολλαπλασιασμός κλασμάτων', ready: true },
+          { id: '2.6', title: 'Διαίρεση κλασμάτων', ready: true },
         ],
       },
       {
@@ -43,11 +43,11 @@ const curriculum = [
         title: 'Κεφάλαιο 3 — Δεκαδικοί αριθμοί',
         progress: 0,
         lessons: [
-          { id: '3.1', title: 'Δεκαδικοί αριθμοί', ready: false },
-          { id: '3.2', title: 'Πράξεις με δεκαδικούς', ready: false },
-          { id: '3.3', title: 'Υπολογιστής τσέπης', ready: false },
-          { id: '3.4', title: 'Τυποποιημένη μορφή', ready: false },
-          { id: '3.5', title: 'Μονάδες μέτρησης', ready: false },
+          { id: '3.1', title: 'Δεκαδικοί αριθμοί', ready: true },
+          { id: '3.2', title: 'Πράξεις με δεκαδικούς', ready: true },
+          { id: '3.3', title: 'Υπολογιστής τσέπης', ready: true },
+          { id: '3.4', title: 'Τυποποιημένη μορφή', ready: true },
+          { id: '3.5', title: 'Μονάδες μέτρησης', ready: true },
         ],
       },
     ],
@@ -61,9 +61,9 @@ const curriculum = [
         title: 'Κεφάλαιο 1 — Βασικές γεωμετρικές έννοιες',
         progress: 0,
         lessons: [
-          { id: 'Β1.1', title: 'Σημείο - Ευθύγραμμο τμήμα - Ευθεία', ready: false },
-          { id: 'Β1.2', title: 'Γωνία - Γραμμή - Επίπεδα σχήματα', ready: false },
-          { id: 'Β1.3', title: 'Μέτρηση ευθυγράμμων τμημάτων', ready: false },
+          { id: 'Β1.1', title: 'Σημείο - Ευθύγραμμο τμήμα - Ευθεία', ready: true },
+          { id: 'Β1.2', title: 'Γωνία - Γραμμή - Επίπεδα σχήματα', ready: true },
+          { id: 'Β1.3', title: 'Μέτρηση ευθυγράμμων τμημάτων', ready: true },
         ],
       },
     ],
@@ -552,7 +552,13 @@ function Lesson12() {
 }
 
 function ComingSoon({ id }) {
-  return <main className="contentPanel emptyLesson"><h1>{id}</h1><p>Η ενότητα αυτή είναι κλειδωμένη για επόμενο update.</p></main>
+  return (
+    <main className="contentPanel emptyLesson">
+      <h1>Ενότητα {id}</h1>
+      <p>Για τη δοκιμή είναι ανοιχτή η πλοήγηση σε όλες τις ενότητες.</p>
+      <p>Το πλήρες διαδραστικό περιεχόμενο θα προστεθεί όταν φτάσουμε σε αυτή την ενότητα.</p>
+    </main>
+  )
 }
 
 function Platform({ goHome }) {
