@@ -684,6 +684,73 @@ const teacherQuiz24 = [
   { tag: 'Άσκηση 65', question: 'Ένας εργάτης τελειώνει έργο σε 8 μέρες και άλλος σε 10. Τι μέρος κάνουν μαζί σε 1 μέρα;', options: ['1/18', '9/40', '18/80', '2/18'], answer: '9/40', explanation: '1/8+1/10=9/40.' },
 ]
 
+
+const quiz25 = [
+  { question: 'Πόσο κάνει 2/3 · 3/5;', options: ['2/5', '6/15', '5/8', '1/5'], answer: '2/5', tip: 'Πολλαπλασιάζουμε αριθμητή με αριθμητή και παρονομαστή με παρονομαστή: 6/15=2/5.' },
+  { question: 'Τι κάνουμε πριν πολλαπλασιάσουμε κλάσματα όταν γίνεται;', options: ['Απλοποιούμε', 'Προσθέτουμε παρονομαστές', 'Αλλάζουμε τα πρόσημα', 'Βρίσκουμε πάντα ΕΚΠ'], answer: 'Απλοποιούμε', tip: 'Η απλοποίηση πριν την πράξη κάνει τους αριθμούς μικρότερους.' },
+  { question: 'Πόσο είναι το 1/4 του 20;', options: ['5', '4', '20/4', '10'], answer: '5', tip: 'Το “του” στα προβλήματα κλασμάτων συχνά σημαίνει πολλαπλασιασμό.' },
+  { question: 'Πόσο κάνει 3/5 · 10;', options: ['6', '30/5', '3/50', '13/5'], answer: '6', tip: '10 = 10/1, άρα 3/5 · 10/1 = 30/5 = 6.' },
+]
+
+const teacherQuiz25 = [
+  { tag: 'Άσκηση 66α', question: 'Υπολόγισε: 2/9 · 3/5', options: ['2/15', '6/45', '5/14', '1/15'], answer: '2/15', explanation: '2·3 / 9·5 = 6/45 = 2/15.' },
+  { tag: 'Άσκηση 66β', question: 'Υπολόγισε: 18/5 · 6/7', options: ['108/35', '24/12', '3', '18/35'], answer: '108/35', explanation: '18·6 / 5·7 = 108/35.' },
+  { tag: 'Άσκηση 66γ', question: 'Υπολόγισε: 3/5 · 2/4', options: ['3/10', '6/20', '5/9', '1/2'], answer: '3/10', explanation: '3·2 / 5·4 = 6/20 = 3/10.' },
+  { tag: 'Άσκηση 66δ', question: 'Υπολόγισε: 7/8 · 9/5', options: ['63/40', '16/13', '7/5', '9/8'], answer: '63/40', explanation: '7·9 / 8·5 = 63/40.' },
+  { tag: 'Άσκηση 66ε', question: 'Υπολόγισε: 7/12 · 16/3', options: ['28/9', '112/36', '4/3', '7/3'], answer: '28/9', explanation: '7·16 / 12·3 = 112/36 = 28/9.' },
+  { tag: 'Άσκηση 66στ', question: 'Υπολόγισε: 2·4/9·6/7', options: ['16/21', '48/63', '12/63', '8/9'], answer: '16/21', explanation: '2=2/1, άρα 2·4·6 / 1·9·7 = 48/63 = 16/21.' },
+  { tag: 'Άσκηση 66ζ', question: 'Υπολόγισε: 6/4 · 2/7 · 5/3', options: ['5/7', '60/84', '10/7', '13/14'], answer: '5/7', explanation: '60/84 = 5/7.' },
+
+  { tag: 'Άσκηση 67α', question: 'Υπολόγισε: 2 1/3 · 1/2', options: ['7/6', '3/6', '2/6', '5/6'], answer: '7/6', explanation: '2 1/3 = 7/3, άρα 7/3·1/2=7/6.' },
+  { tag: 'Άσκηση 67β', question: 'Υπολόγισε: 4 3/5 · 1/5', options: ['23/25', '4/25', '7/10', '23/5'], answer: '23/25', explanation: '4 3/5=23/5 και 23/5·1/5=23/25.' },
+  { tag: 'Άσκηση 67γ', question: 'Υπολόγισε: 4 1/6 · 1/3', options: ['25/18', '4/18', '5/2', '25/6'], answer: '25/18', explanation: '4 1/6=25/6, άρα 25/6·1/3=25/18.' },
+  { tag: 'Άσκηση 67δ', question: 'Υπολόγισε: 2 1/3 · 1/5', options: ['7/15', '2/15', '8/15', '7/3'], answer: '7/15', explanation: '2 1/3=7/3, άρα 7/3·1/5=7/15.' },
+  { tag: 'Άσκηση 67ε', question: 'Υπολόγισε: 3 2/5 · 1/2', options: ['17/10', '3/10', '7/10', '17/5'], answer: '17/10', explanation: '3 2/5=17/5 και 17/5·1/2=17/10.' },
+
+  { tag: 'Άσκηση 68α', question: 'Υπολόγισε με απλοποίηση: 3/4 · 5/8', options: ['15/32', '8/12', '5/12', '15/12'], answer: '15/32', explanation: 'Δεν υπάρχει διαγώνια απλοποίηση, αποτέλεσμα 15/32.' },
+  { tag: 'Άσκηση 68β', question: 'Υπολόγισε με απλοποίηση: 7/14 · 5/2', options: ['5/4', '35/28', '1/4', '7/4'], answer: '5/4', explanation: '7/14=1/2, άρα 1/2·5/2=5/4.' },
+  { tag: 'Άσκηση 68γ', question: 'Υπολόγισε με απλοποίηση: 4/15 · 25/16', options: ['5/12', '100/240', '25/60', '4/16'], answer: '5/12', explanation: 'Απλοποιούμε 4 με 16 και 25 με 15: παίρνουμε 5/12.' },
+  { tag: 'Άσκηση 68δ', question: 'Υπολόγισε με απλοποίηση: 5/2 · 8/10', options: ['2', '40/20', '4', '1'], answer: '2', explanation: '8/10=4/5, άρα 5/2·4/5=2.' },
+  { tag: 'Άσκηση 68ε', question: 'Υπολόγισε με απλοποίηση: 12/7 · 9/21', options: ['36/49', '108/147', '4/7', '3/7'], answer: '36/49', explanation: '9/21=3/7, άρα 12/7·3/7=36/49.' },
+
+  { tag: 'Άσκηση 69α', question: 'Υπολόγισε: 3/5 · 1/2 · 2/3', options: ['1/5', '6/30', '3/10', '1/3'], answer: '1/5', explanation: 'Απλοποιώντας 3 με 3 και 2 με 2 μένει 1/5.' },
+  { tag: 'Άσκηση 69β', question: 'Υπολόγισε: 3/4 · 2/3 · 2/6', options: ['1/6', '12/72', '2/9', '1/3'], answer: '1/6', explanation: 'Το γινόμενο είναι 12/72=1/6.' },
+  { tag: 'Άσκηση 69γ', question: 'Υπολόγισε: 3/7 · 1/4 · 3/2', options: ['9/56', '7/24', '9/24', '3/56'], answer: '9/56', explanation: '3·1·3 / 7·4·2 = 9/56.' },
+  { tag: 'Άσκηση 69δ', question: 'Υπολόγισε: 8/3 · 4/2 · 1/3', options: ['32/18', '16/9', '8/9', '4/3'], answer: '16/9', explanation: '8·4·1 / 3·2·3 = 32/18 = 16/9.' },
+  { tag: 'Άσκηση 69ε', question: 'Υπολόγισε: 3/2 · 7/4 · 6/5', options: ['63/20', '126/40', '21/20', '9/10'], answer: '63/20', explanation: '3·7·6 / 2·4·5 = 126/40 = 63/20.' },
+  { tag: 'Άσκηση 69στ', question: 'Υπολόγισε: 4/3 · 4/2 · 6/6', options: ['8/3', '96/36', '4/3', '16/6'], answer: '8/3', explanation: '6/6=1 και 4/3·4/2=16/6=8/3.' },
+  { tag: 'Άσκηση 69ζ', question: 'Υπολόγισε: 4/5 · 3/4 · 5/2', options: ['3/2', '60/40', '12/20', '5/8'], answer: '3/2', explanation: 'Απλοποιώντας μένει 3/2.' },
+  { tag: 'Άσκηση 69η', question: 'Υπολόγισε: 1/3 · 2/3 · 5/3 · 3/2 · 6/6', options: ['5/27', '60/324', '10/27', '1/3'], answer: '5/27', explanation: 'Με απλοποίηση παίρνουμε 5/27.' },
+
+  { tag: 'Άσκηση 70α', question: 'Υπολόγισε παράσταση με γινόμενο: 8/6 · 9/5 · 8/7', options: ['96/35', '576/210', '25/21', '12/35'], answer: '96/35', explanation: '8·9·8 / 6·5·7 = 576/210 = 96/35.' },
+  { tag: 'Άσκηση 70β', question: 'Υπολόγισε: 2/5 · 2/7 · 3/7 · 2/5', options: ['24/1225', '24/245', '12/245', '6/35'], answer: '24/1225', explanation: 'Πολλαπλασιάζουμε όλους τους αριθμητές και όλους τους παρονομαστές.' },
+  { tag: 'Άσκηση 70γ', question: 'Υπολόγισε: 2/5 · 3 1/2', options: ['7/5', '3/5', '14/10', '5/7'], answer: '7/5', explanation: '3 1/2=7/2, άρα 2/5·7/2=7/5.' },
+  { tag: 'Άσκηση 70δ', question: 'Υπολόγισε: 2/3 · 5/3 · 2', options: ['20/9', '10/9', '20/18', '4/3'], answer: '20/9', explanation: '2/3·5/3·2/1=20/9.' },
+  { tag: 'Άσκηση 70ε', question: 'Υπολόγισε: 2/3 · (1/2 - 1/3)', options: ['1/9', '2/6', '1/6', '2/9'], answer: '1/9', explanation: '1/2-1/3=1/6, και 2/3·1/6=2/18=1/9.' },
+
+  { tag: 'Άσκηση 71', question: 'Στις σύνθετες παραστάσεις της 71, ποιο βήμα κάνουμε πρώτα;', options: ['Παρενθέσεις', 'Τελικό αποτέλεσμα', 'Πρόσθεση χωρίς σειρά', 'Απλοποίηση στο τέλος μόνο'], answer: 'Παρενθέσεις', explanation: 'Πρώτα υπολογίζουμε παρενθέσεις και μετά γινόμενα.' },
+  { tag: 'Άσκηση 72', question: 'Στις παραστάσεις της 72 με παρενθέσεις και γινόμενα, τι προσέχουμε;', options: ['Τη σειρά πράξεων', 'Μόνο τους αριθμητές', 'Να προσθέσουμε παρονομαστές', 'Να αγνοήσουμε τις παρενθέσεις'], answer: 'Τη σειρά πράξεων', explanation: 'Παρενθέσεις, γινόμενα, μετά προσθέσεις/αφαιρέσεις.' },
+  { tag: 'Άσκηση 73', question: 'Σε παράσταση με μικτούς αριθμούς, τι βοηθά πριν τον πολλαπλασιασμό;', options: ['Μετατροπή σε κλάσματα', 'Να κρατήσουμε το ακέραιο χωριστά πάντα', 'Να αλλάξουμε μόνο παρονομαστή', 'Να σβήσουμε τις παρενθέσεις'], answer: 'Μετατροπή σε κλάσματα', explanation: 'Οι μικτοί γίνονται καταχρηστικά κλάσματα.' },
+  { tag: 'Άσκηση 74', question: 'Σε παραστάσεις με αγκύλες και παρενθέσεις, τι λύνουμε πρώτα;', options: ['Το πιο εσωτερικό', 'Το τελευταίο', 'Μόνο τα γινόμενα', 'Τίποτα'], answer: 'Το πιο εσωτερικό', explanation: 'Λύνουμε πρώτα τις εσωτερικές παρενθέσεις.' },
+  { tag: 'Άσκηση 75', question: 'Στην 75, γιατί χρειάζεται προσοχή;', options: ['Έχει δυνάμεις, παρενθέσεις και κλάσματα', 'Έχει μόνο πρόσθεση', 'Δεν έχει πράξεις', 'Όλα είναι ακέραιοι'], answer: 'Έχει δυνάμεις, παρενθέσεις και κλάσματα', explanation: 'Ακολουθούμε αυστηρά σειρά πράξεων.' },
+
+  { tag: 'Άσκηση 76α', question: 'Τα 2/3 του 45 είναι:', options: ['30', '45', '15', '90'], answer: '30', explanation: '2/3·45 = 30.' },
+  { tag: 'Άσκηση 76β', question: 'Τα 2/7 των 30 είναι:', options: ['60/7', '30/7', '15', '7/30'], answer: '60/7', explanation: '2/7·30=60/7.' },
+  { tag: 'Άσκηση 76γ', question: 'Τα 4/5 των 60 λεπτών είναι:', options: ['48', '45', '50', '12'], answer: '48', explanation: '4/5·60=48.' },
+  { tag: 'Άσκηση 76δ', question: 'Τα 3/5 των 400 g είναι:', options: ['240', '120', '200', '300'], answer: '240', explanation: '3/5·400=240.' },
+
+  { tag: 'Άσκηση 77', question: 'Έφαγαν τα 3/4 από 1200 κιλά σταφύλια. Πόσα κιλά έφαγαν;', options: ['900', '300', '1200', '600'], answer: '900', explanation: '3/4·1200=900.' },
+  { tag: 'Άσκηση 78', question: 'Η Μαρία έμεινε τα 2/5 από 20 ημέρες στη Χαλκιδική. Πόσες ημέρες;', options: ['8', '10', '12', '5'], answer: '8', explanation: '2/5·20=8.' },
+  { tag: 'Άσκηση 78β', question: 'Πόσες ημέρες έμεινε στην Αθήνα;', options: ['12', '8', '10', '20'], answer: '12', explanation: '20-8=12.' },
+  { tag: 'Άσκηση 79', question: 'Αν η Μαρία ξόδεψε τα 3/8 του μισθού και μετά τα 2/5 στην αδερφή της, τι πράξη δείχνει το συνολικό μέρος;', options: ['3/8 + 2/5', '3/8 · 2/5', '3/8 - 2/5', '2/5 - 3/8'], answer: '3/8 + 2/5', explanation: 'Ζητείται συνολικό μέρος από δύο δαπάνες.' },
+  { tag: 'Άσκηση 80', question: 'Σε σχολείο 60 μαθητών, το 1/6 είναι αγόρια και από αυτά τα 3/5 συμμετέχουν. Πόσα αγόρια συμμετέχουν;', options: ['6', '10', '30', '18'], answer: '6', explanation: '1/6·60=10 αγόρια, και 3/5·10=6.' },
+  { tag: 'Άσκηση 81', question: 'Τα 3/4 της βάρκας είναι σε καλή κατάσταση και η Τρίτη χρειάζεται 1/2 από αυτά. Τι μέρος χρειάζεται η Τρίτη;', options: ['3/8', '1/2', '3/4', '5/4'], answer: '3/8', explanation: '1/2·3/4=3/8.' },
+  { tag: 'Άσκηση 82', question: 'Από 360 μαθητές, τα 2/3 συμμετέχουν σε ομάδα και τα 3/4 από αυτούς είναι κορίτσια. Πόσα κορίτσια;', options: ['180', '240', '120', '90'], answer: '180', explanation: '2/3·360=240 και 3/4·240=180.' },
+  { tag: 'Άσκηση 83', question: 'Σε σχολείο 360 μαθητών, τα 3/4 μιλούν Αγγλικά και από αυτούς τα 2/5 είναι αγόρια. Πόσα αγόρια;', options: ['108', '270', '120', '90'], answer: '108', explanation: '3/4·360=270 και 2/5·270=108.' },
+  { tag: 'Άσκηση 84', question: 'Ο Σωτήρης έφαγε 2/8 και η Τρίτη 1/6 από 64 καραμέλες. Πόσες έφαγαν μαζί;', options: ['80/3', '16', '32', '64'], answer: '80/3', explanation: '2/8·64=16 και 1/6·64=64/6. Σύνολο 16+64/6=80/3.' },
+  { tag: 'Άσκηση 85', question: 'Ο Παναγιώτης διάβασε τα 3/5 από 1/3 του βιβλίου. Τι μέρος διάβασε;', options: ['1/5', '3/8', '4/5', '1/3'], answer: '1/5', explanation: '3/5·1/3=3/15=1/5.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -1789,6 +1856,93 @@ function Lesson24() {
 }
 
 
+
+function Lesson25() {
+  const [xp, setXp] = useState(1550)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στον πολλαπλασιασμό κλασμάτων πολλαπλασιάζουμε αριθμητή με αριθμητή και παρονομαστή με παρονομαστή;', ok: true },
+    { q: 'Το 2/3 · 3/5 είναι 5/8;', ok: false },
+    { q: 'Τα 3/5 των 400 g είναι 240 g;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.5</div>
+          <h1>Πολλαπλασιασμός Κλασμάτων</h1>
+          <p>Μαθαίνουμε να πολλαπλασιάζουμε κλάσματα, να απλοποιούμε πριν την πράξη και να λύνουμε προβλήματα με «μέρος από ποσότητα».</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.5 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Κανόνας</b><p>Πολλαπλασιάζουμε αριθμητή με αριθμητή και παρονομαστή με παρονομαστή.</p></article>
+          <article><b>2. Απλοποίηση</b><p>Αν γίνεται, απλοποιούμε πριν πολλαπλασιάσουμε για πιο εύκολους αριθμούς.</p></article>
+          <article><b>3. Μικτοί αριθμοί</b><p>Τους μετατρέπουμε πρώτα σε καταχρηστικά κλάσματα.</p></article>
+          <article><b>4. Προβλήματα</b><p>Η φράση «τα 3/5 των 400» σημαίνει 3/5 · 400.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>2/3 · 3/5</b><p>2·3 / 3·5 = 6/15 = 2/5</p></div>
+          <div className="example"><b>3/5 του 400</b><p>3/5 · 400 = 240</p></div>
+          <div className="example"><b>Μικτός αριθμός</b><p>2 1/3 · 1/2 = 7/3 · 1/2 = 7/6</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Lab</h3>
+          <p>Γρήγορες αποστολές πολλαπλασιασμού:</p>
+          <div className="numberChips"><span>4/15 · 25/16 = 5/12</span><span>4/5 · 3/4 · 5/2 = 3/2</span><span>3/5 · 1/3 = 1/5</span></div>
+          <div className="answerLine">Βήματα: μετατροπή μικτών → απλοποίηση → πολλαπλασιασμός.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.5" subtitle="Πολλαπλασιασμός, απλοποίηση και προβλήματα κλασμάτων." items={quiz25} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.5" items={teacherQuiz25} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Πολλαπλασιαστής των Κλασμάτων ✖️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.5.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">✖️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Πολλαπλασιαστής της 2.5</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -1800,7 +1954,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.4')
+  const [activeLesson, setActiveLesson] = useState('2.5')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1808,7 +1962,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
