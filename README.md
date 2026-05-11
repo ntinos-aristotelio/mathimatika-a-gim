@@ -1,3 +1,12 @@
-# Η Ακαδημία των Μαθηματικών Ηρώων - v6 Navigation
+# Η Ακαδημία των Μαθηματικών Ηρώων — v7
 
-Έτοιμο GitHub Pages project με accordion navigation, mobile drawer και μάθημα 1.1.
+Περιλαμβάνει:
+- Αρχική σελίδα
+- Accordion menu κεφαλαίων
+- Mobile drawer menu
+- Ενότητα 1.1
+- Extra Ασκήσεις Καθηγητή από το φύλλο εργασίας
+- Σύγκριση αριθμών
+- Φθίνουσα σειρά
+- Στρογγυλοποίηση
+- Quiz, XP, Boss Challenge
