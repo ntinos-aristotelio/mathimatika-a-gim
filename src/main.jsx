@@ -1391,15 +1391,44 @@ function Lesson24() {
     </div>
    </section>
 
-   <section className="contentPanel twoCol">
+   <section className="contentPanel twoCol fractionStudio">
     <div>
       <div className="sectionHeader small"><Wand2/><h2>Visual Fractions</h2></div>
-      <div className="example"><b>1/5 + 2/5 = 3/5</b><p>Ίδιος παρονομαστής.</p></div>
-      <div className="example"><b>3/4 - 1/2 = 1/4</b><p>Μετατρέπουμε σε ομώνυμα.</p></div>
+      <div className="fractionShowcase">
+        <div className="fractionVisualCard">
+          <div className="fractionLabel">Ομώνυμα κλάσματα</div>
+          <h3>1/5 + 2/5 = 3/5</h3>
+          <div className="fractionBars">
+            <div className="barRow"><span className="fill"></span><span></span><span></span><span></span><span></span></div>
+            <div className="plusSign">+</div>
+            <div className="barRow"><span className="fill"></span><span className="fill"></span><span></span><span></span><span></span></div>
+            <div className="equalsSign">=</div>
+            <div className="barRow result"><span className="fill"></span><span className="fill"></span><span className="fill"></span><span></span><span></span></div>
+          </div>
+          <p>Όταν οι παρονομαστές είναι ίδιοι, προσθέτουμε μόνο τους αριθμητές.</p>
+        </div>
+        <div className="fractionVisualCard">
+          <div className="fractionLabel">Ετερώνυμα κλάσματα</div>
+          <h3>3/4 - 1/2 = 1/4</h3>
+          <div className="fractionSteps">
+            <span>1/2 = 2/4</span>
+            <span>3/4 - 2/4</span>
+            <span>1/4</span>
+          </div>
+          <p>Πρώτα φτιάχνουμε κοινό παρονομαστή και μετά κάνουμε την πράξη.</p>
+        </div>
+      </div>
     </div>
-    <div className="practiceBox">
+    <div className="practiceBox fractionLabBox">
       <h3>Fraction Lab</h3>
-      <div className="numberChips"><span>1/2 + 1/4 = 3/4</span><span>5/8 - 1/8 = 4/8</span></div>
+      <p>Γρήγορος οδηγός πράξεων:</p>
+      <div className="labSteps">
+        <div><b>1</b><span>Ελέγχω αν είναι ομώνυμα.</span></div>
+        <div><b>2</b><span>Αν δεν είναι, βρίσκω κοινό παρονομαστή.</span></div>
+        <div><b>3</b><span>Κάνω πρόσθεση ή αφαίρεση στους αριθμητές.</span></div>
+        <div><b>4</b><span>Απλοποιώ αν γίνεται.</span></div>
+      </div>
+      <div className="answerLine">Παράδειγμα: 1/2 + 1/4 = 2/4 + 1/4 = 3/4</div>
     </div>
    </section>
 
@@ -1407,8 +1436,25 @@ function Lesson24() {
    <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.4" items={teacherQuiz24} addXp={addXp}/>
 
    <section className="bossPanel">
-    <div><div className="pill danger">⚗️ Boss Challenge</div><h2>Ο Αλχημιστής των Κλασμάτων</h2></div>
-    <div className="badgeWin">🏅 Ολοκλήρωσες την 2.4!</div>
+    <div>
+      <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+      <h2>Ο Αλχημιστής των Κλασμάτων ⚗️</h2>
+      <p>Συνδύασε ομώνυμα και ετερώνυμα κλάσματα, βρες κοινό παρονομαστή και κέρδισε το badge της 2.4.</p>
+    </div>
+    <div className="bossGame fractionBoss">
+      <div className="dragon">⚗️</div>
+      <p>Τελική δοκιμασία</p>
+      <h3>1/2 + 1/4 = 3/4</h3>
+      <div className="bossMiniGrid">
+        <span>Κοινός παρονομαστής</span>
+        <b>4</b>
+        <span>Μετατροπή</span>
+        <b>2/4 + 1/4</b>
+        <span>Τελικό αποτέλεσμα</span>
+        <b>3/4</b>
+      </div>
+      <div className="badgeWin"><Medal/> Badge: Αλχημιστής της 2.4</div>
+    </div>
    </section>
   </main>
  )
