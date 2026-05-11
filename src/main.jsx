@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import {
   BookOpen, Brain, Castle, ChevronDown, ChevronRight, Gamepad2, Home, Lock,
   Menu, Medal, Play, ShieldCheck, Sparkles, Sword, Trophy, Wand2, X,
-  GraduationCap, CheckCircle2, RotateCcw
+  GraduationCap, RotateCcw
 } from 'lucide-react'
 import './styles.css'
 
@@ -91,27 +91,92 @@ const quiz = [
   },
 ]
 
-const comparisons = [
-  { left: '763', right: '836', answer: '<' },
-  { left: '6542', right: '6452', answer: '>' },
-  { left: '1890', right: '1980', answer: '<' },
-  { left: '7020', right: '7020', answer: '=' },
-  { left: '9999', right: '10000', answer: '<' },
-  { left: '4506', right: '4056', answer: '>' },
-]
-
-const descendingNumbers = ['423', '243', '324', '234', '342', '432']
-const descendingAnswer = ['432', '423', '342', '324', '243', '234']
-
-const rounding = [
-  { number: '345', place: 'πλησιέστερη εκατοντάδα', answer: '300' },
-  { number: '761', place: 'πλησιέστερη εκατοντάδα', answer: '800' },
-  { number: '659', place: 'πλησιέστερη εκατοντάδα', answer: '700' },
-  { number: '2.567', place: 'πλησιέστερη εκατοντάδα', answer: '2.600' },
-  { number: '9.532', place: 'πλησιέστερη εκατοντάδα', answer: '9.500' },
-  { number: '7.568.349', place: 'δεκάδες', answer: '7.568.350' },
-  { number: '7.568.349', place: 'εκατοντάδες', answer: '7.568.300' },
-  { number: '7.568.349', place: 'χιλιάδες', answer: '7.568.000' },
+const teacherQuiz = [
+  {
+    type: 'choice',
+    tag: 'Σύγκριση',
+    question: 'Συμπλήρωσε σωστά: 763 ___ 836',
+    options: ['<', '>', '='],
+    answer: '<',
+    explanation: 'Το 763 είναι μικρότερο από το 836.',
+  },
+  {
+    type: 'choice',
+    tag: 'Σύγκριση',
+    question: 'Συμπλήρωσε σωστά: 6542 ___ 6452',
+    options: ['<', '>', '='],
+    answer: '>',
+    explanation: 'Στις εκατοντάδες έχουμε 5 > 4, άρα 6542 > 6452.',
+  },
+  {
+    type: 'choice',
+    tag: 'Σύγκριση',
+    question: 'Συμπλήρωσε σωστά: 7020 ___ 7020',
+    options: ['<', '>', '='],
+    answer: '=',
+    explanation: 'Οι αριθμοί είναι ίδιοι.',
+  },
+  {
+    type: 'choice',
+    tag: 'Φθίνουσα σειρά',
+    question: 'Ποια είναι η σωστή φθίνουσα σειρά των αριθμών 423, 243, 324, 234, 342, 432;',
+    options: [
+      '432, 423, 342, 324, 243, 234',
+      '234, 243, 324, 342, 423, 432',
+      '432, 342, 423, 324, 243, 234',
+      '423, 432, 342, 324, 243, 234'
+    ],
+    answer: '432, 423, 342, 324, 243, 234',
+    explanation: 'Φθίνουσα σημαίνει από τον μεγαλύτερο προς τον μικρότερο.',
+  },
+  {
+    type: 'choice',
+    tag: 'Στρογγυλοποίηση',
+    question: 'Το 345 στην πλησιέστερη εκατοντάδα γίνεται:',
+    options: ['300', '400', '350', '340'],
+    answer: '300',
+    explanation: 'Το ψηφίο των δεκάδων είναι 4, άρα μένουμε στο 300.',
+  },
+  {
+    type: 'choice',
+    tag: 'Στρογγυλοποίηση',
+    question: 'Το 761 στην πλησιέστερη εκατοντάδα γίνεται:',
+    options: ['700', '760', '800', '761'],
+    answer: '800',
+    explanation: 'Το ψηφίο των δεκάδων είναι 6, άρα ανεβαίνουμε στο 800.',
+  },
+  {
+    type: 'choice',
+    tag: 'Στρογγυλοποίηση',
+    question: 'Το 659 στην πλησιέστερη εκατοντάδα γίνεται:',
+    options: ['600', '650', '660', '700'],
+    answer: '700',
+    explanation: 'Το ψηφίο των δεκάδων είναι 5, άρα ανεβαίνουμε στο 700.',
+  },
+  {
+    type: 'choice',
+    tag: 'Στρογγυλοποίηση',
+    question: 'Το 2.567 στην πλησιέστερη εκατοντάδα γίνεται:',
+    options: ['2.500', '2.600', '2.560', '3.000'],
+    answer: '2.600',
+    explanation: 'Το ψηφίο των δεκάδων είναι 6, άρα οι εκατοντάδες αυξάνονται.',
+  },
+  {
+    type: 'choice',
+    tag: 'Στρογγυλοποίηση',
+    question: 'Το 9.532 στην πλησιέστερη εκατοντάδα γίνεται:',
+    options: ['9.500', '9.600', '9.530', '10.000'],
+    answer: '9.500',
+    explanation: 'Το ψηφίο των δεκάδων είναι 3, άρα μένουμε στο 9.500.',
+  },
+  {
+    type: 'choice',
+    tag: 'Στρογγυλοποίηση',
+    question: 'Το 7.568.349 στις χιλιάδες γίνεται:',
+    options: ['7.568.000', '7.569.000', '7.568.300', '7.570.000'],
+    answer: '7.568.000',
+    explanation: 'Κοιτάμε τις εκατοντάδες: είναι 3, άρα δεν ανεβάζουμε τις χιλιάδες.',
+  },
 ]
 
 function ProgressBar({ value }) {
@@ -149,7 +214,7 @@ function HomePage({ onStart }) {
 
       <section className="features">
         <div className="feature"><Gamepad2/><h3>Quiz</h3><p>Άμεση ανατροφοδότηση και XP.</p></div>
-        <div className="feature"><GraduationCap/><h3>Extra Ασκήσεις</h3><p>Οι ασκήσεις καθηγητή μπαίνουν μέσα στην εφαρμογή.</p></div>
+        <div className="feature"><GraduationCap/><h3>Extra Quiz</h3><p>Οι ασκήσεις καθηγητή εμφανίζονται μία-μία.</p></div>
         <div className="feature"><Sword/><h3>Boss Challenge</h3><p>Τελική πρόκληση κάθε ενότητας.</p></div>
         <div className="feature"><Brain/><h3>Σχολική ύλη</h3><p>Δομή βασισμένη στο βιβλίο.</p></div>
       </section>
@@ -159,7 +224,6 @@ function HomePage({ onStart }) {
 
 function CurriculumMenu({ activeLesson, setActiveLesson, closeMenu }) {
   const [openChapters, setOpenChapters] = useState({ A1: true })
-
   const toggle = (id) => setOpenChapters((current) => ({ ...current, [id]: !current[id] }))
 
   const chooseLesson = (lesson) => {
@@ -237,166 +301,109 @@ function MobileDrawer({ open, close, activeLesson, setActiveLesson, goHome }) {
   )
 }
 
-function ComparisonGame({ addXp }) {
-  const [answers, setAnswers] = useState({})
+function ExtraTeacherQuiz({ addXp }) {
+  const [index, setIndex] = useState(0)
+  const [picked, setPicked] = useState('')
+  const [answered, setAnswered] = useState(false)
+  const [score, setScore] = useState(0)
+  const [finished, setFinished] = useState(false)
 
-  const score = comparisons.filter((item, i) => answers[i] === item.answer).length
+  const item = teacherQuiz[index]
+  const correct = picked === item.answer
+  const progress = Math.round(((index + (answered ? 1 : 0)) / teacherQuiz.length) * 100)
 
-  function choose(i, symbol) {
-    setAnswers((prev) => ({ ...prev, [i]: symbol }))
-    if (symbol === comparisons[i].answer) addXp(5)
+  function choose(option) {
+    if (answered) return
+    setPicked(option)
+    setAnswered(true)
+    if (option === item.answer) {
+      setScore((s) => s + 1)
+      addXp(8)
+    }
+  }
+
+  function next() {
+    if (index + 1 >= teacherQuiz.length) {
+      setFinished(true)
+      return
+    }
+    setIndex((i) => i + 1)
+    setPicked('')
+    setAnswered(false)
+  }
+
+  function restart() {
+    setIndex(0)
+    setPicked('')
+    setAnswered(false)
+    setScore(0)
+    setFinished(false)
   }
 
   return (
-    <div className="teacherExercise">
-      <div className="exerciseTop">
-        <h3>1. Σύγκριση αριθμών</h3>
-        <span>{score}/{comparisons.length}</span>
-      </div>
-      <p>Διάλεξε το σωστό σύμβολο: &lt;, &gt; ή =.</p>
-      <div className="comparisonGrid">
-        {comparisons.map((item, i) => {
-          const picked = answers[i]
-          const isCorrect = picked === item.answer
-          return (
-            <div className="comparisonRow" key={`${item.left}-${item.right}`}>
-              <b>{item.left}</b>
-              <div className="symbolBtns">
-                {['<', '>', '='].map((s) => (
-                  <button
-                    key={s}
-                    className={picked === s ? (isCorrect ? 'rightPick' : 'wrongPick') : ''}
-                    onClick={() => choose(i, s)}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
-              <b>{item.right}</b>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  )
-}
-
-function SortingGame({ addXp }) {
-  const [order, setOrder] = useState(descendingNumbers)
-  const [checked, setChecked] = useState(false)
-
-  const correct = order.join(',') === descendingAnswer.join(',')
-
-  function move(index, dir) {
-    const next = [...order]
-    const target = index + dir
-    if (target < 0 || target >= next.length) return
-    const temp = next[index]
-    next[index] = next[target]
-    next[target] = temp
-    setOrder(next)
-    setChecked(false)
-  }
-
-  function check() {
-    setChecked(true)
-    if (correct) addXp(25)
-  }
-
-  function reset() {
-    setOrder(descendingNumbers)
-    setChecked(false)
-  }
-
-  return (
-    <div className="teacherExercise">
-      <div className="exerciseTop">
-        <h3>2. Φθίνουσα σειρά</h3>
-        <span>σειρά αριθμών</span>
-      </div>
-      <p>Βάλε τους αριθμούς από τον μεγαλύτερο στον μικρότερο. Στον υπολογιστή και στο κινητό χρησιμοποίησε τα βελάκια.</p>
-      <div className="sortList">
-        {order.map((n, i) => (
-          <div className="sortItem" key={n}>
-            <strong>{n}</strong>
-            <div>
-              <button onClick={() => move(i, -1)}>↑</button>
-              <button onClick={() => move(i, 1)}>↓</button>
-            </div>
+    <section className="contentPanel teacherQuizPanel">
+      <div className="teacherQuizTop">
+        <div className="sectionHeader noMargin">
+          <GraduationCap />
+          <div>
+            <h2>Extra Quiz Καθηγητή — 1.1</h2>
+            <p>Οι έξτρα ασκήσεις εμφανίζονται μία-μία για να μη γεμίζει η σελίδα.</p>
           </div>
-        ))}
-      </div>
-      <div className="exerciseActions">
-        <button onClick={check}><CheckCircle2 size={16}/> Έλεγχος</button>
-        <button onClick={reset}><RotateCcw size={16}/> Επαναφορά</button>
-      </div>
-      {checked && <div className={correct ? 'okBox' : 'noBox'}>{correct ? '✅ Άριστα! Η σειρά είναι σωστή.' : '❌ Όχι ακόμα. Σωστή σειρά: 432 → 423 → 342 → 324 → 243 → 234'}</div>}
-    </div>
-  )
-}
-
-function RoundingGame({ addXp }) {
-  const [answers, setAnswers] = useState({})
-  const [checked, setChecked] = useState(false)
-
-  const score = rounding.filter((item, i) => (answers[i] || '').trim() === item.answer).length
-
-  function check() {
-    setChecked(true)
-    addXp(score * 3)
-  }
-
-  return (
-    <div className="teacherExercise">
-      <div className="exerciseTop">
-        <h3>3. Στρογγυλοποίηση</h3>
-        <span>{checked ? `${score}/${rounding.length}` : 'πίνακας'}</span>
-      </div>
-      <p>Γράψε το αποτέλεσμα της στρογγυλοποίησης.</p>
-      <div className="roundingTable">
-        <div className="tableHead">Αριθμός</div>
-        <div className="tableHead">Στρογγυλοποίηση</div>
-        <div className="tableHead">Απάντηση</div>
-        {rounding.map((item, i) => {
-          const val = answers[i] || ''
-          const isCorrect = val.trim() === item.answer
-          return (
-            <React.Fragment key={`${item.number}-${item.place}`}>
-              <div>{item.number}</div>
-              <div>{item.place}</div>
-              <div>
-                <input
-                  value={val}
-                  onChange={(e) => setAnswers((prev) => ({ ...prev, [i]: e.target.value }))}
-                  placeholder="π.χ. 800"
-                  className={checked ? (isCorrect ? 'inputGood' : 'inputBad') : ''}
-                />
-                {checked && !isCorrect && <small>Σωστό: {item.answer}</small>}
-              </div>
-            </React.Fragment>
-          )
-        })}
-      </div>
-      <button className="primaryBtn compact" onClick={check}>Έλεγχος στρογγυλοποίησης</button>
-    </div>
-  )
-}
-
-function ExtraTeacherExercises({ addXp }) {
-  return (
-    <section className="contentPanel teacherPanel">
-      <div className="sectionHeader">
-        <GraduationCap />
-        <div>
-          <h2>Extra Ασκήσεις Καθηγητή — 1.1</h2>
-          <p>Όλες οι ασκήσεις από το φύλλο εργασίας μπαίνουν εδώ ως έξτρα practice mode.</p>
+        </div>
+        <div className="quizScore">
+          <b>{score}/{teacherQuiz.length}</b>
+          <span>score</span>
         </div>
       </div>
-      <div className="teacherGrid">
-        <ComparisonGame addXp={addXp} />
-        <SortingGame addXp={addXp} />
-        <RoundingGame addXp={addXp} />
-      </div>
+
+      <ProgressBar value={finished ? 100 : progress} />
+
+      {!finished ? (
+        <div className="compactQuizCard">
+          <div className="questionMeta">
+            <span>{item.tag}</span>
+            <b>Ερώτηση {index + 1} από {teacherQuiz.length}</b>
+          </div>
+          <h3>{item.question}</h3>
+
+          <div className="compactOptions">
+            {item.options.map((option) => (
+              <button
+                key={option}
+                className={
+                  answered && option === item.answer
+                    ? 'correctChoice'
+                    : answered && option === picked && option !== item.answer
+                    ? 'wrongChoice'
+                    : ''
+                }
+                onClick={() => choose(option)}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+
+          {answered && (
+            <div className={correct ? 'okBox' : 'noBox'}>
+              {correct ? '✅ Σωστό!' : '❌ Όχι ακόμα.'} {item.explanation}
+            </div>
+          )}
+
+          <div className="compactActions">
+            <button className="primaryBtn compact" onClick={next} disabled={!answered}>
+              {index + 1 >= teacherQuiz.length ? 'Ολοκλήρωση' : 'Επόμενη'}
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="quizFinished">
+          <div className="bigMedal">🏅</div>
+          <h3>Ολοκλήρωσες το Extra Quiz!</h3>
+          <p>Σκορ: {score}/{teacherQuiz.length}</p>
+          <button className="primaryBtn compact" onClick={restart}><RotateCcw size={16}/> Ξανά προσπάθεια</button>
+        </div>
+      )}
     </section>
   )
 }
@@ -488,7 +495,7 @@ function Lesson11() {
         <button className="primaryBtn compact" onClick={next}>Επόμενη ερώτηση</button>
       </section>
 
-      <ExtraTeacherExercises addXp={addXp} />
+      <ExtraTeacherQuiz addXp={addXp} />
 
       <section className="bossPanel">
         <div>
