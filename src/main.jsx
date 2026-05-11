@@ -23,6 +23,7 @@ const curriculum = [
           { id: '1.4', title: 'Ευκλείδεια διαίρεση - Διαιρετότητα', ready: true },
           { id: '1.5', title: 'Χαρακτήρες διαιρετότητας - ΜΚΔ - ΕΚΠ', ready: true },
           { id: 'A1G', title: 'Γενικές Ασκήσεις Κεφαλαίου 1', ready: true },
+    { id: '2.1', title: '2.1 Η έννοια του κλάσματος', ready: true },
         ],
       },
       {
@@ -395,6 +396,11 @@ const teacherQuizA1G = [
   { tag: 'Άσκηση 59', question: 'Οι αριθμοί Α=328 και Β=4562 διαιρούνται με το 3;', options: ['Όχι', 'Ναι'], answer: 'Όχι', explanation: '3+2+8=13 και 4+5+6+2=17, κανένα άθροισμα ψηφίων δεν διαιρείται με 3.' },
   { tag: 'Άσκηση 59', question: 'Είναι και οι δύο αριθμοί Α=328 και Β=4562 διαιρετοί με το 4;', options: ['Όχι', 'Ναι'], answer: 'Όχι', explanation: '328 διαιρείται με 4, αλλά 4562 δεν διαιρείται με 4.' },
 ]
+
+
+const quiz21 = [{ question:'Τι δείχνει ο αριθμητής;', options:['Πόσα μέρη παίρνουμε','Σε πόσα μέρη χωρίζουμε'], answer:'Πόσα μέρη παίρνουμε', tip:'Ο αριθμητής δείχνει πόσα κομμάτια παίρνουμε.' }]
+const teacherQuiz21 = [{ tag:'Άσκηση 1', question:'Ποιο είναι το μισό;', options:['1/2','1/3'], answer:'1/2', explanation:'Το μισό γράφεται 1/2.' }]
+function Lesson21(){ return <main className='contentPanel'><h1>2.1 Η έννοια του κλάσματος</h1><p>Θεωρία, παραδείγματα και quiz κλασμάτων.</p><StandardQuiz title='Quiz Αστραπή — 2.1' subtitle='Κλάσματα' items={quiz21} addXp={()=>{}} /><ExtraTeacherQuiz title='Extra Quiz Καθηγητή — 2.1' items={teacherQuiz21} addXp={()=>{}} /></main> }
 
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
@@ -1163,7 +1169,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('A1G')
+  const [activeLesson, setActiveLesson] = useState('2.1')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1171,7 +1177,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
