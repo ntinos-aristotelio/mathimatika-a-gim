@@ -345,6 +345,57 @@ const teacherQuiz15 = [
   { tag: 'Άσκηση 51', question: 'Σε κάθε ανθοδέσμη πόσες τουλίπες θα μπουν;', options: ['9', '6', '4', '12'], answer: '9', explanation: '36 τουλίπες σε 4 ανθοδέσμες: 36:4=9.' },
 ]
 
+
+const quizA1G = [
+  { question: 'Ποιο είναι το αποτέλεσμα της παράστασης 6 - 6:3 + 2;', options: ['6', '4', '8', '2'], answer: '6', tip: 'Πρώτα η διαίρεση: 6:3=2, άρα 6-2+2=6.' },
+  { question: 'Αν x = 3, πόσο κάνει 12 + x + 8 + 6;', options: ['29', '26', '32', '23'], answer: '29', tip: '12+3+8+6=29.' },
+  { question: 'Αν x+y=14, πόσο κάνει 12+x+17+y+5;', options: ['48', '34', '31', '62'], answer: '48', tip: '12+17+5=34 και x+y=14, άρα 48.' },
+  { question: 'Ποιο είναι το ΕΚΠ των 6 και 8;', options: ['24', '12', '48', '2'], answer: '24', tip: 'Το 24 είναι το μικρότερο κοινό πολλαπλάσιο.' },
+]
+
+const teacherQuizA1G = [
+  { tag: 'Άσκηση 52', question: 'Υπολόγισε: Α = 6 - 6:3 + (6·7):21 + (18:6)·3', options: ['15', '12', '9', '18'], answer: '15', explanation: '6:3=2, (6·7):21=42:21=2, (18:6)·3=3·3=9. Άρα 6-2+2+9=15.' },
+  { tag: 'Άσκηση 52', question: 'Υπολόγισε: Β = 8²:16 + 6²:(5·8-4) + (4·9-6²):789', options: ['5', '4', '6', '1'], answer: '5', explanation: '64:16=4, 36:(40-4)=36:36=1, (36-36):789=0. Άρα Β=5.' },
+  { tag: 'Άσκηση 52', question: 'Υπολόγισε σωστά: Γ = 2·3² + 2·(3³-5²)³ - (3²-2³)²⁰¹⁷ + 6²:3²', options: ['37', '21', '33', '39'], answer: '37', explanation: '18+2·2³-1+4 = 18+16-1+4=37.' },
+
+  { tag: 'Άσκηση 53', question: 'Αν x=3, υπολόγισε Α = 12+x+8+6.', options: ['29', '26', '23', '32'], answer: '29', explanation: '12+3+8+6=29.' },
+  { tag: 'Άσκηση 53', question: 'Αν x=6, υπολόγισε Β = 12-8+x+7.', options: ['17', '13', '21', '15'], answer: '17', explanation: '12-8+6+7=17.' },
+  { tag: 'Άσκηση 53', question: 'Αν x=3 και y=5, υπολόγισε Γ = x+13+7-3+y.', options: ['25', '28', '22', '20'], answer: '25', explanation: '3+13+7-3+5=25.' },
+  { tag: 'Άσκηση 53', question: 'Αν x=4 και y=2, υπολόγισε Δ = 18+2-13+x+8+y.', options: ['21', '19', '23', '17'], answer: '21', explanation: '18+2-13+4+8+2=21.' },
+
+  { tag: 'Άσκηση 54', question: 'Αν x+y=14, υπολόγισε Α = 12+x+17+y+5.', options: ['48', '34', '31', '45'], answer: '48', explanation: '12+17+5=34 και x+y=14, άρα 48.' },
+  { tag: 'Άσκηση 54', question: 'Αν x+y=14, υπολόγισε Β = x+43+18+y.', options: ['75', '61', '57', '80'], answer: '75', explanation: '43+18=61 και x+y=14, άρα 75.' },
+
+  { tag: 'Άσκηση 55', question: 'Υπολόγισε με επιμεριστική: (3+4)·(2+9).', options: ['77', '70', '63', '88'], answer: '77', explanation: '7·11=77.' },
+  { tag: 'Άσκηση 55', question: 'Υπολόγισε με επιμεριστική: (3+7)·(13+5).', options: ['180', '160', '200', '150'], answer: '180', explanation: '10·18=180.' },
+
+  { tag: 'Άσκηση 56', question: 'Α = 17 - 7·2 + 12:6. Ποια είναι η τιμή του Α;', options: ['5', '7', '15', '3'], answer: '5', explanation: '7·2=14 και 12:6=2, άρα 17-14+2=5.' },
+  { tag: 'Άσκηση 56', question: 'Β = 5·(7-3) - 3·(15-3·4)+1. Ποια είναι η τιμή του Β;', options: ['12', '21', '18', '9'], answer: '12', explanation: '5·4=20 και 15-12=3, άρα 20-3·3+1=12.' },
+  { tag: 'Άσκηση 56', question: 'Οι αριθμοί Α=5 και Β=12 είναι πρώτοι μεταξύ τους;', options: ['Ναι', 'Όχι'], answer: 'Ναι', explanation: 'ΜΚΔ(5,12)=1.' },
+  { tag: 'Άσκηση 56', question: 'Βρες ΕΚΠ(5,12).', options: ['60', '12', '5', '24'], answer: '60', explanation: 'Επειδή είναι πρώτοι μεταξύ τους, ΕΚΠ=5·12=60.' },
+  { tag: 'Άσκηση 56', question: 'Βρες ΜΚΔ(5,12).', options: ['1', '5', '12', '60'], answer: '1', explanation: 'Δεν έχουν κοινό διαιρέτη εκτός από το 1.' },
+
+  { tag: 'Άσκηση 57', question: 'Α = 13 + 7·2 - 12:3 - 18. Ποια είναι η τιμή του Α;', options: ['5', '9', '3', '7'], answer: '5', explanation: '7·2=14, 12:3=4, άρα 13+14-4-18=5.' },
+  { tag: 'Άσκηση 57', question: 'Β = 17 - 7·2 + 3·(5² - 6·4):3. Ποια είναι η τιμή του Β;', options: ['4', '5', '6', '3'], answer: '4', explanation: '5²-6·4=25-24=1, 3·1:3=1, άρα 17-14+1=4.' },
+  { tag: 'Άσκηση 57', question: 'Οι αριθμοί Α=5 και Β=4 είναι πρώτοι μεταξύ τους;', options: ['Ναι', 'Όχι'], answer: 'Ναι', explanation: 'ΜΚΔ(5,4)=1.' },
+  { tag: 'Άσκηση 57', question: 'Βρες ΕΚΠ(5,4).', options: ['20', '10', '5', '4'], answer: '20', explanation: 'Επειδή είναι πρώτοι μεταξύ τους, ΕΚΠ=20.' },
+  { tag: 'Άσκηση 57', question: 'Βρες ΜΚΔ(5,4).', options: ['1', '4', '5', '20'], answer: '1', explanation: 'Κοινός διαιρέτης μόνο το 1.' },
+
+  { tag: 'Άσκηση 58', question: 'Α = 3² - 2³ + 1¹⁷. Ποια είναι η τιμή του Α;', options: ['2', '1', '3', '0'], answer: '2', explanation: '9-8+1=2.' },
+  { tag: 'Άσκηση 58', question: 'Β = 2·5² - 3·(7² - 3·2⁴):3 - 3³. Ποια είναι η τιμή του Β;', options: ['22', '20', '25', '18'], answer: '22', explanation: '2·25=50, 7²-3·16=49-48=1, 3·1:3=1, άρα 50-1-27=22.' },
+  { tag: 'Άσκηση 58', question: 'Οι αριθμοί Α=2 και Β=22 είναι πρώτοι μεταξύ τους;', options: ['Όχι', 'Ναι'], answer: 'Όχι', explanation: 'Έχουν κοινό διαιρέτη το 2.' },
+  { tag: 'Άσκηση 58', question: 'Βρες ΕΚΠ(2,22).', options: ['22', '44', '11', '2'], answer: '22', explanation: 'Το 22 είναι πολλαπλάσιο του 2.' },
+  { tag: 'Άσκηση 58', question: 'Βρες ΜΚΔ(2,22).', options: ['2', '1', '11', '22'], answer: '2', explanation: 'Ο μεγαλύτερος κοινός διαιρέτης είναι το 2.' },
+  { tag: 'Άσκηση 58', question: 'Ο Α=2 διαιρείται με το 2 ή το 9;', options: ['Με το 2', 'Με το 9', 'Και με τα δύο', 'Με κανένα'], answer: 'Με το 2', explanation: 'Το 2 είναι άρτιος αριθμός, όχι πολλαπλάσιο του 9.' },
+  { tag: 'Άσκηση 58', question: 'Ο Β=22 διαιρείται με το 2 ή το 9;', options: ['Με το 2', 'Με το 9', 'Και με τα δύο', 'Με κανένα'], answer: 'Με το 2', explanation: 'Το 22 είναι άρτιος αριθμός και 2+2=4, άρα όχι με το 9.' },
+
+  { tag: 'Άσκηση 59', question: 'Υπολόγισε σωστά το Α = 5·(2³)² - (11² - 3⁴ - 5·2³)²⁰¹⁷ + 2⁵:4.', options: ['328', '327', '320', '336'], answer: '328', explanation: '5·64=320, η παρένθεση είναι 0, και 32:4=8, άρα Α=328.' },
+  { tag: 'Άσκηση 59', question: 'Β = 5⁴ - 15² - (12² - 3²·2⁴)¹⁷:2017 + 13² + 3·11³. Ποια είναι η τιμή του Β;', options: ['4562', '4560', '4552', '4662'], answer: '4562', explanation: '625-225=400, 144-144=0, 13²=169, 3·1331=3993. Άρα 400+169+3993=4562.' },
+  { tag: 'Άσκηση 59', question: 'Οι αριθμοί Α=328 και Β=4562 είναι πρώτοι μεταξύ τους;', options: ['Όχι', 'Ναι'], answer: 'Όχι', explanation: 'Είναι και οι δύο άρτιοι, άρα έχουν κοινό διαιρέτη το 2.' },
+  { tag: 'Άσκηση 59', question: 'Οι αριθμοί Α=328 και Β=4562 διαιρούνται με το 3;', options: ['Όχι', 'Ναι'], answer: 'Όχι', explanation: '3+2+8=13 και 4+5+6+2=17, κανένα άθροισμα ψηφίων δεν διαιρείται με 3.' },
+  { tag: 'Άσκηση 59', question: 'Είναι και οι δύο αριθμοί Α=328 και Β=4562 διαιρετοί με το 4;', options: ['Όχι', 'Ναι'], answer: 'Όχι', explanation: '328 διαιρείται με 4, αλλά 4562 δεν διαιρείται με 4.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -1015,6 +1066,92 @@ function Lesson15() {
 }
 
 
+
+function LessonA1G() {
+  const [xp, setXp] = useState(780)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Αν x+y=14, τότε 12+x+17+y+5 = 48;', ok: true },
+    { q: 'Το ΕΚΠ(5,12) είναι 17;', ok: false },
+    { q: 'Το ΜΚΔ(2,22) είναι 2;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Γενικές Ασκήσεις</div>
+          <h1>Γενικές Ασκήσεις — Κεφάλαιο 1</h1>
+          <p>Επαναλαμβάνουμε όλο το Κεφάλαιο 1: φυσικούς αριθμούς, πράξεις, δυνάμεις, παραστάσεις, ΕΚΠ, ΜΚΔ και διαιρετότητα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Τι επαναλαμβάνουμε</h2><p>Όλο το Κεφάλαιο 1 σε μικρές αποστολές.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Πράξεις</b><p>Σεβόμαστε την προτεραιότητα: παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις.</p></article>
+          <article><b>2. Μεταβλητές</b><p>Αν γνωρίζουμε την τιμή του x ή του y, αντικαθιστούμε και υπολογίζουμε.</p></article>
+          <article><b>3. ΕΚΠ και ΜΚΔ</b><p>Το ΕΚΠ βοηθά σε κοινές επαναλήψεις, ο ΜΚΔ σε μέγιστο μοίρασμα.</p></article>
+          <article><b>4. Διαιρετότητα</b><p>Χρησιμοποιούμε χαρακτήρες διαιρετότητας για 2, 3, 4, 5, 9 κ.ά.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Μεταβλητές</b><p>Αν x=3, τότε 12+x+8+6 = 29.</p></div>
+          <div className="example"><b>ΕΚΠ / ΜΚΔ</b><p>Για 5 και 12: ΕΚΠ=60 και ΜΚΔ=1.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Έλεγξε γρήγορα:</p>
+          <div className="numberChips"><span>Α=5</span><span>Β=12</span><span>ΕΚΠ=60</span><span>ΜΚΔ=1</span></div>
+          <div className="answerLine">Οι αριθμοί 5 και 12 είναι πρώτοι μεταξύ τους.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — Γενικές Κεφαλαίου 1" subtitle="Επανάληψη σε όλο το Κεφάλαιο 1." items={quizA1G} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Γενικές Ασκήσεις Κεφαλαίου 1" items={teacherQuizA1G} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Final Boss Κεφαλαίου 1</div>
+          <h2>Ο Τελικός Φύλακας των Φυσικών Αριθμών 🏰</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να ολοκληρώσεις το Κεφάλαιο 1.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🏰</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Ολοκληρωτής Κεφαλαίου 1</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -1026,7 +1163,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('1.5')
+  const [activeLesson, setActiveLesson] = useState('A1G')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1034,7 +1171,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
