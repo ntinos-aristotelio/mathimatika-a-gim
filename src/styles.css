@@ -388,15 +388,8 @@ button:disabled { opacity: .45; cursor: not-allowed; }
   color: white;
 }
 
-.quizScore b {
-  display: block;
-  font-size: 22px;
-}
-
-.quizScore span {
-  color: #cbd5e1;
-  font-size: 12px;
-}
+.quizScore b { display: block; font-size: 22px; }
+.quizScore span { color: #cbd5e1; font-size: 12px; }
 
 .compactQuizCard {
   margin-top: 16px;
@@ -423,22 +416,11 @@ button:disabled { opacity: .45; cursor: not-allowed; }
   font-size: 13px;
 }
 
-.questionMeta b {
-  color: #64748b;
-  font-size: 13px;
-}
+.questionMeta b { color: #64748b; font-size: 13px; }
 
-.compactQuizCard h3 {
-  font-size: 22px;
-  line-height: 1.35;
-  margin: 18px 0;
-}
+.compactQuizCard h3 { font-size: 22px; line-height: 1.35; margin: 18px 0; }
 
-.compactOptions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
+.compactOptions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 
 .compactOptions button {
   border: 1px solid #cbd5e1;
@@ -449,30 +431,12 @@ button:disabled { opacity: .45; cursor: not-allowed; }
   text-align: center;
 }
 
-.compactOptions .correctChoice {
-  background: #dcfce7;
-  border-color: #22c55e;
-  color: #166534;
-}
+.compactOptions .correctChoice { background: #dcfce7; border-color: #22c55e; color: #166534; }
+.compactOptions .wrongChoice { background: #fee2e2; border-color: #ef4444; color: #991b1b; }
 
-.compactOptions .wrongChoice {
-  background: #fee2e2;
-  border-color: #ef4444;
-  color: #991b1b;
-}
+.compactActions { display: flex; justify-content: flex-end; }
 
-.compactActions {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.okBox, .noBox {
-  margin-top: 14px;
-  border-radius: 18px;
-  padding: 14px;
-  font-weight: 900;
-}
-
+.okBox, .noBox { margin-top: 14px; border-radius: 18px; padding: 14px; font-weight: 900; }
 .okBox { background: #dcfce7; color: #166534; }
 .noBox { background: #fee2e2; color: #991b1b; }
 
@@ -485,9 +449,7 @@ button:disabled { opacity: .45; cursor: not-allowed; }
   text-align: center;
 }
 
-.bigMedal {
-  font-size: 54px;
-}
+.bigMedal { font-size: 54px; }
 
 .bossPanel {
   border-radius: 34px;
@@ -569,17 +531,9 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 }
 
 @media (max-width: 700px) {
-  .compactOptions {
-    grid-template-columns: 1fr;
-  }
-
-  .teacherQuizTop {
-    grid-template-columns: 1fr;
-  }
-
-  .quizScore {
-    width: fit-content;
-  }
+  .compactOptions { grid-template-columns: 1fr; }
+  .teacherQuizTop { grid-template-columns: 1fr; }
+  .quizScore { width: fit-content; }
 }
 
 @media (max-width: 640px) {
@@ -598,7 +552,5 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 
   .lessonBtn { grid-template-columns: 44px 1fr 18px; }
 
-  .compactQuizCard h3 {
-    font-size: 18px;
-  }
+  .compactQuizCard h3 { font-size: 18px; }
 }
