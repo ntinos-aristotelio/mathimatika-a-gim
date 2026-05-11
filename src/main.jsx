@@ -601,6 +601,67 @@ const teacherQuiz23 = [
   { tag: 'Άσκηση 46', question: 'Σύγκρινε το νέο κλάσμα 9/10 με τη μονάδα.', options: ['< 1', '> 1', '= 1'], answer: '< 1', explanation: '9/10 έχει αριθμητή μικρότερο από παρονομαστή.' },
 ]
 
+
+const quiz24 = [
+ { question:'Πόσο κάνει 1/5 + 2/5;', options:['4/5','3/5','2/10','1/10'], answer:'3/5', tip:'Στα ομώνυμα προσθέτουμε μόνο αριθμητές.'},
+ { question:'Πόσο κάνει 7/8 - 3/8;', options:['1/2','4/8','3/8','5/8'], answer:'4/8', tip:'Αφαιρούμε τους αριθμητές.'},
+ { question:'Τι κάνουμε πρώτα στα ετερώνυμα κλάσματα;', options:['Βρίσκουμε κοινό παρονομαστή','Προσθέτουμε αριθμητές','Απλοποιούμε πάντα','Αλλάζουμε μόνο παρονομαστή'], answer:'Βρίσκουμε κοινό παρονομαστή', tip:'Χρειαζόμαστε κοινό παρονομαστή.'}
+]
+
+const teacherQuiz24 = [
+ { tag:'Άσκηση 47', question:'1/3 + 1/3 = ?', options:['2/3','1/6','2/6','1'], answer:'2/3', explanation:'1+1=2.'},
+ { tag:'Άσκηση 48', question:'5/8 - 1/8 = ?', options:['1/2','4/8','3/8','5/16'], answer:'4/8', explanation:'5-1=4.'},
+ { tag:'Άσκηση 49', question:'1/2 + 1/4 = ?', options:['2/6','3/4','1/4','2/4'], answer:'3/4', explanation:'1/2=2/4, άρα 2/4+1/4=3/4.'},
+ { tag:'Άσκηση 50', question:'3/4 - 1/2 = ?', options:['1/4','2/4','1/2','3/8'], answer:'1/4', explanation:'1/2=2/4, άρα 3/4-2/4=1/4.'},
+]
+
+function Lesson24() {
+ const [xp,setXp]=useState(1400)
+ const addXp=(n)=>setXp(v=>v+n)
+ return (
+  <main className="appGrid">
+   <section className="lessonHero">
+    <div>
+      <div className="pill blue">➕ Ενότητα 2.4</div>
+      <h1>Πρόσθεση και Αφαίρεση Κλασμάτων</h1>
+      <p>Μαθαίνουμε πράξεις με ομώνυμα και ετερώνυμα κλάσματα.</p>
+    </div>
+    <ProfileCard xp={xp}/>
+   </section>
+
+   <section className="contentPanel">
+    <div className="sectionHeader"><ShieldCheck/><div><h2>Θεωρία</h2></div></div>
+    <div className="theoryGrid">
+      <article><b>Ομώνυμα</b><p>Προσθέτουμε ή αφαιρούμε μόνο αριθμητές.</p></article>
+      <article><b>Ετερώνυμα</b><p>Βρίσκουμε πρώτα κοινό παρονομαστή.</p></article>
+      <article><b>Απλοποίηση</b><p>Στο τέλος απλοποιούμε αν γίνεται.</p></article>
+      <article><b>Παράδειγμα</b><p>1/2 + 1/4 = 2/4 + 1/4 = 3/4.</p></article>
+    </div>
+   </section>
+
+   <section className="contentPanel twoCol">
+    <div>
+      <div className="sectionHeader small"><Wand2/><h2>Visual Fractions</h2></div>
+      <div className="example"><b>1/5 + 2/5 = 3/5</b><p>Ίδιος παρονομαστής.</p></div>
+      <div className="example"><b>3/4 - 1/2 = 1/4</b><p>Μετατρέπουμε σε ομώνυμα.</p></div>
+    </div>
+    <div className="practiceBox">
+      <h3>Fraction Lab</h3>
+      <div className="numberChips"><span>1/2 + 1/4 = 3/4</span><span>5/8 - 1/8 = 4/8</span></div>
+    </div>
+   </section>
+
+   <StandardQuiz title="Quiz Αστραπή — 2.4" subtitle="Πράξεις κλασμάτων." items={quiz24} addXp={addXp}/>
+   <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.4" items={teacherQuiz24} addXp={addXp}/>
+
+   <section className="bossPanel">
+    <div><div className="pill danger">⚗️ Boss Challenge</div><h2>Ο Αλχημιστής των Κλασμάτων</h2></div>
+    <div className="badgeWin">🏅 Ολοκλήρωσες την 2.4!</div>
+   </section>
+  </main>
+ )
+}
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -1626,7 +1687,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.3')
+  const [activeLesson, setActiveLesson] = useState('2.4')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1634,7 +1695,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
