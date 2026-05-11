@@ -139,6 +139,73 @@ const teacherQuiz12 = [
   { tag: 'Άσκηση 13', question: 'Το 2026, πόσο χρονών είναι ο Κώστας;', options: ['29', '30', '28', '31'], answer: '29', explanation: '2026-1997=29.' },
 ]
 
+
+const quiz13 = [
+  { question: 'Πώς γράφεται το γινόμενο 2·2·2 σε μορφή δύναμης;', options: ['2³', '3²', '2²', '6¹'], answer: '2³', tip: 'Η βάση είναι το 2 και έχουμε 3 ίδιους παράγοντες.' },
+  { question: 'Ποια είναι η τιμή του 5³;', options: ['15', '25', '125', '625'], answer: '125', tip: '5³ = 5·5·5 = 125.' },
+  { question: 'Ποια πράξη γίνεται πρώτη σε παράσταση με δυνάμεις;', options: ['Προσθέσεις', 'Αφαιρέσεις', 'Δυνάμεις', 'Τελευταία παρένθεση'], answer: 'Δυνάμεις', tip: 'Πρώτα παρενθέσεις, μετά δυνάμεις, μετά πολλαπλασιασμοί/διαιρέσεις.' },
+  { question: 'Πόσο κάνει 2017⁰;', options: ['0', '1', '2017', '2017²'], answer: '1', tip: 'Κάθε μη μηδενικός αριθμός στη μηδενική δύναμη ισούται με 1.' },
+]
+
+const teacherQuiz13 = [
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δύναμης: 2·2·2', options: ['2³', '3²', '2²', '2⁴'], answer: '2³', explanation: 'Το 2 εμφανίζεται 3 φορές ως παράγοντας.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δύναμης: 3·3·3·3', options: ['3⁴', '4³', '3³', '12¹'], answer: '3⁴', explanation: 'Το 3 εμφανίζεται 4 φορές.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δύναμης: α·α·α·α·α·α', options: ['α⁶', '6α', 'α⁵', '6ᵅ'], answer: 'α⁶', explanation: 'Η βάση είναι το α και ο εκθέτης είναι 6.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δύναμης: x·x·x·x', options: ['x⁴', '4x', 'x³', '4ˣ'], answer: 'x⁴', explanation: 'Το x εμφανίζεται 4 φορές.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δυνάμεων: α·α·α·4·4', options: ['α³·4²', 'α²·4³', '3α·8', 'α³·4'], answer: 'α³·4²', explanation: 'Τρία α και δύο 4.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δυνάμεων: 2·2·2·2·3·3', options: ['2⁴·3²', '2²·3⁴', '2⁴·3', '8·6'], answer: '2⁴·3²', explanation: 'Τέσσερα 2 και δύο 3.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δυνάμεων: 3·3·3·3·2·2·5·5', options: ['3⁴·2²·5²', '3³·2²·5²', '3⁴·2·5²', '12·4·10'], answer: '3⁴·2²·5²', explanation: 'Ομαδοποιούμε ίδιους παράγοντες.' },
+  { tag: 'Άσκηση 14', question: 'Γράψε σε μορφή δυνάμεων: 3·3·7·7·7·5', options: ['3²·7³·5', '3³·7²·5', '3²·7²·5²', '21³·5'], answer: '3²·7³·5', explanation: 'Δύο 3, τρία 7 και ένα 5.' },
+
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 2³', options: ['8', '6', '9', '12'], answer: '8', explanation: '2·2·2=8.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 3²', options: ['9', '6', '8', '12'], answer: '9', explanation: '3·3=9.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 4³', options: ['64', '12', '16', '81'], answer: '64', explanation: '4·4·4=64.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 2⁵', options: ['32', '10', '25', '16'], answer: '32', explanation: '2·2·2·2·2=32.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 5³', options: ['125', '15', '25', '625'], answer: '125', explanation: '5·5·5=125.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 10⁴', options: ['10.000', '1.000', '100.000', '40'], answer: '10.000', explanation: 'Το 10⁴ έχει 4 μηδενικά.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 1¹²', options: ['1', '12', '0', '144'], answer: '1', explanation: 'Όλες οι δυνάμεις του 1 είναι 1.' },
+  { tag: 'Άσκηση 15', question: 'Υπολόγισε: 2017⁰', options: ['1', '0', '2017', '2017²'], answer: '1', explanation: 'Κάθε μη μηδενικός αριθμός στη δύναμη 0 ισούται με 1.' },
+
+  { tag: 'Άσκηση 16', question: 'Υπολόγισε: 2² + 3²', options: ['13', '25', '10', '12'], answer: '13', explanation: '4+9=13.' },
+  { tag: 'Άσκηση 16', question: 'Υπολόγισε: 3³ + 5²', options: ['52', '34', '62', '225'], answer: '52', explanation: '27+25=52.' },
+  { tag: 'Άσκηση 16', question: 'Υπολόγισε: 5² - 2³', options: ['17', '21', '13', '7'], answer: '17', explanation: '25-8=17.' },
+  { tag: 'Άσκηση 16', question: 'Υπολόγισε: 4² - 3²', options: ['7', '5', '25', '1'], answer: '7', explanation: '16-9=7.' },
+  { tag: 'Άσκηση 16', question: 'Υπολόγισε: 3³ - 2³ + 5²', options: ['44', '36', '52', '20'], answer: '44', explanation: '27-8+25=44.' },
+  { tag: 'Άσκηση 16', question: 'Υπολόγισε: 4² + 2³ - 7¹', options: ['17', '24', '21', '15'], answer: '17', explanation: '16+8-7=17.' },
+
+  { tag: 'Άσκηση 17', question: 'Υπολόγισε: 2·3² + 8', options: ['26', '20', '44', '18'], answer: '26', explanation: '2·9+8=26.' },
+  { tag: 'Άσκηση 17', question: 'Υπολόγισε: 3²·12 - 2', options: ['106', '34', '108', '97'], answer: '106', explanation: '9·12-2=106.' },
+  { tag: 'Άσκηση 17', question: 'Υπολόγισε: 6 + 4·3²', options: ['42', '90', '30', '38'], answer: '42', explanation: '6+4·9=42.' },
+  { tag: 'Άσκηση 17', question: 'Υπολόγισε: 4·5² - 30', options: ['70', '50', '100', '20'], answer: '70', explanation: '4·25-30=70.' },
+  { tag: 'Άσκηση 17', question: 'Υπολόγισε: 2³·3² + 4²·3', options: ['120', '104', '96', '72'], answer: '120', explanation: '8·9 + 16·3 = 72+48=120.' },
+  { tag: 'Άσκηση 17', question: 'Υπολόγισε: 5³ - 2·7²', options: ['27', '125', '98', '23'], answer: '27', explanation: '125-2·49=125-98=27.' },
+
+  { tag: 'Άσκηση 18', question: 'Υπολόγισε: 2³ + (5² - 4)', options: ['29', '21', '37', '25'], answer: '29', explanation: '8+(25-4)=29.' },
+  { tag: 'Άσκηση 18', question: 'Υπολόγισε: 3²·4 + (25 - 4²)', options: ['45', '36', '25', '61'], answer: '45', explanation: '9·4+(25-16)=36+9=45.' },
+  { tag: 'Άσκηση 18', question: 'Υπολόγισε: 10² - 2·(3² - 4)', options: ['90', '100', '92', '82'], answer: '90', explanation: '100-2·(9-4)=100-10=90.' },
+  { tag: 'Άσκηση 18', question: 'Υπολόγισε: (3³ - 12) + (4² + 3²)', options: ['40', '25', '49', '52'], answer: '40', explanation: '(27-12)+(16+9)=15+25=40.' },
+
+  { tag: 'Άσκηση 19', question: 'Υπολόγισε: 4·2² + (3+2)²', options: ['41', '29', '45', '20'], answer: '41', explanation: '4·4+5²=16+25=41.' },
+  { tag: 'Άσκηση 19', question: 'Υπολόγισε: 5²·2³ + (8-3)²', options: ['225', '200', '125', '175'], answer: '225', explanation: '25·8+25=225.' },
+  { tag: 'Άσκηση 19', question: 'Υπολόγισε: 6²·2 - (10-7)³', options: ['45', '72', '99', '27'], answer: '45', explanation: '36·2 - 3³ = 72-27=45.' },
+  { tag: 'Άσκηση 19', question: 'Υπολόγισε: (7+2)² - 9·3²', options: ['0', '9', '18', '81'], answer: '0', explanation: '9² - 9·9 = 81-81=0.' },
+
+  { tag: 'Άσκηση 20', question: 'Υπολόγισε: Α = 2⁴ + (3²-5) + 8²', options: ['84', '80', '76', '92'], answer: '84', explanation: '16+(9-5)+64=84.' },
+  { tag: 'Άσκηση 20', question: 'Υπολόγισε: Β = (5²-13) + (3³-26)²⁰¹⁷', options: ['13', '12', '1', '0'], answer: '13', explanation: '25-13=12 και 27-26=1, άρα 12+1=13.' },
+  { tag: 'Άσκηση 20', question: 'Υπολόγισε: Γ = 4·5² - 43⁰ + (9-7)⁵', options: ['131', '100', '132', '99'], answer: '131', explanation: '4·25 - 1 + 2⁵ = 100-1+32=131.' },
+  { tag: 'Άσκηση 20', question: 'Υπολόγισε: Δ = 3³·2 + 5·4² - 2·(50-7²)', options: ['132', '134', '122', '54'], answer: '132', explanation: '54+80-2·1=132.' },
+
+  { tag: 'Άσκηση 21', question: 'Υπολόγισε: Α = (5³ - 8² - 4·9) + (10² - 5²·3)', options: ['50', '25', '75', '100'], answer: '50', explanation: '(125-64-36)+(100-75)=25+25=50.' },
+  { tag: 'Άσκηση 21', question: 'Υπολόγισε: Β = (6·3²+10) - 4²·3 + 6²', options: ['52', '40', '62', '42'], answer: '52', explanation: '(54+10)-48+36=52.' },
+  { tag: 'Άσκηση 21', question: 'Υπολόγισε: Γ = 2·(4²-10) + 3·(7²-6·8)', options: ['15', '12', '18', '9'], answer: '15', explanation: '2·6 + 3·1 = 15.' },
+  { tag: 'Άσκηση 21', question: 'Υπολόγισε: Δ = (5²+5²·3) + (7·2³ - 5·11)¹⁵', options: ['101', '100', '99', '75'], answer: '101', explanation: '25+75=100 και (56-55)¹⁵=1, άρα 101.' },
+
+  { tag: 'Άσκηση 22', question: 'Υπολόγισε: Α = 9² + [(5²-16) - 5·2²]', options: ['70', '81', '90', '61'], answer: '70', explanation: '81 + [(25-16)-20] = 81-11=70.' },
+  { tag: 'Άσκηση 22', question: 'Υπολόγισε: Β = 2·10² - [6² + 2·(3²·2³ - 2⁵)]', options: ['84', '72', '80', '116'], answer: '84', explanation: '200 - [36 + 2·(72-32)] = 200 - 116 = 84.' },
+  { tag: 'Άσκηση 22', question: 'Υπολόγισε: Γ = [(6²+2⁶) - 2·(3³-4·5)] + 2017⁰', options: ['87', '91', '90', '86'], answer: '87', explanation: '36+64=100, 3³-20=7, 2·7=14, άρα 100-14+1=87.' },
+  { tag: 'Άσκηση 22', question: 'Υπολόγισε: Δ = [(2²·3² - 5²)² - 10²] + (151 - 6·5²)²⁰¹⁷', options: ['22', '21', '20', '1'], answer: '22', explanation: '2²·3²=36, 36-25=11, 11²-100=21 και (151-150)²⁰¹⁷=1, άρα 22.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -551,6 +618,92 @@ function Lesson12() {
   )
 }
 
+
+function Lesson13() {
+  const [xp, setXp] = useState(410)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: '5³ = 125;', ok: true },
+    { q: '2³ + 3² = 17;', ok: false },
+    { q: '2017⁰ = 1;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Flame size={16}/> Ενότητα 1.3</div>
+          <h1>Δυνάμεις φυσικών αριθμών</h1>
+          <p>Μαθαίνουμε να γράφουμε επαναλαμβανόμενα γινόμενα ως δυνάμεις, να υπολογίζουμε δυνάμεις και να τηρούμε την προτεραιότητα των πράξεων.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.3 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Δύναμη</b><p>Το γινόμενο α·α·α·...·α με ν ίδιους παράγοντες γράφεται αⁿ.</p></article>
+          <article><b>2. Βάση και εκθέτης</b><p>Στο αⁿ, το α λέγεται βάση και το ν λέγεται εκθέτης.</p></article>
+          <article><b>3. Τετράγωνο και κύβος</b><p>Το α² λέγεται τετράγωνο του α και το α³ κύβος του α.</p></article>
+          <article><b>4. Προτεραιότητα</b><p>Πρώτα παρενθέσεις, μετά δυνάμεις, μετά πολλαπλασιασμοί/διαιρέσεις και στο τέλος προσθέσεις/αφαιρέσεις.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Γράφω ως δύναμη</b><p>2·2·2·2 = 2⁴</p></div>
+          <div className="example"><b>Υπολογίζω παράσταση</b><p>2³ + 3² = 8 + 9 = 17</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Βρες γρήγορα τις τιμές:</p>
+          <div className="numberChips"><span>2⁵</span><span>5³</span><span>10⁴</span></div>
+          <div className="answerLine">32, 125, 10.000</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.3" subtitle="Δυνάμεις, εκθέτες και προτεραιότητα πράξεων." items={quiz13} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.3" items={teacherQuiz13} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Μάγος των Δυνάμεων 🧙‍♂️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 1.3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🧙‍♂️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Μάγος της 1.3</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -562,7 +715,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('1.2')
+  const [activeLesson, setActiveLesson] = useState('1.3')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -570,7 +723,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
