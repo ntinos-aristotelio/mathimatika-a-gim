@@ -1,14 +1,13 @@
-# Η Ακαδημία των Μαθηματικών Ηρώων — v17 stable restore
+# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 15
 
-Ασφαλής επαναφορά της 2.4 σε έκδοση που ανοίγει κανονικά:
-- 2.4 ενεργή στο μενού
-- Quiz Αστραπή
-- Extra Quiz Καθηγητή με τις ασκήσεις 47–65
-- Χωρίς το broken rewrite που προκάλεσε λευκή σελίδα
+Βάση: teliko-14.zip, σωστό μέχρι 2.3.
 
-Σημείωση: πρώτα σταθεροποιούμε την εφαρμογή, μετά συνεχίζουμε με μικρές visual βελτιώσεις.
+Προστέθηκε καθαρά η ενότητα 2.4:
+- Πρόσθεση και Αφαίρεση Κλασμάτων
+- ίδια λογική/μορφή με 2.3
+- Quiz Αστραπή 2.4
+- Extra Quiz Καθηγητή 47–65
+- interactive Boss Challenge
+- έτοιμο prebuilt dist για GitHub Pages
 
-
-## Deploy note
-This build includes a prebuilt `dist/` folder.
-GitHub Actions deploys `dist/` directly and does not run `npm install` or `npm run build`.
+Το workflow ανεβάζει απευθείας το dist και δεν τρέχει npm install στο GitHub.
