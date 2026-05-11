@@ -488,6 +488,60 @@ const teacherQuiz21 = [
   { tag: 'Άσκηση 25', question: 'Ποια φράση περιγράφει καλύτερα το κλάσμα 5/12;', options: ['12 από 5 ίσα μέρη', '12-5 μέρη', '5 από 12 ίσα μέρη', '5 και 12 μονάδες'], answer: '5 από 12 ίσα μέρη', explanation: 'Ο αριθμητής 5 δείχνει τα μέρη που παίρνουμε και ο παρονομαστής 12 τα ίσα μέρη του όλου.' },
 ]
 
+
+const quiz22 = [
+  { question: 'Ποιο κλάσμα είναι ισοδύναμο με το 1/2;', options: ['3/5', '4/8', '2/5', '5/8'], answer: '4/8', tip: '1/2 = 2/4 = 4/8.' },
+  { question: 'Πώς δημιουργούμε ισοδύναμα κλάσματα;', options: ['Αλλάζουμε μόνο τον αριθμητή', 'Πολλαπλασιάζουμε ή διαιρούμε αριθμητή και παρονομαστή με τον ίδιο αριθμό', 'Προσθέτουμε πάντα 1', 'Αλλάζουμε μόνο τον παρονομαστή'], answer: 'Πολλαπλασιάζουμε ή διαιρούμε αριθμητή και παρονομαστή με τον ίδιο αριθμό', tip: 'Πρέπει να κάνουμε την ίδια πράξη και στον αριθμητή και στον παρονομαστή.' },
+  { question: 'Ποια είναι η απλοποιημένη μορφή του 6/9;', options: ['3/2', '2/3', '6/3', '1/9'], answer: '2/3', tip: 'Διαιρούμε αριθμητή και παρονομαστή με το 3.' },
+  { question: 'Ποιο κλάσμα είναι ισοδύναμο με το 3/4;', options: ['3/8', '9/12', '4/3', '6/10'], answer: '9/12', tip: '3·3 / 4·3 = 9/12.' },
+]
+
+const teacherQuiz22 = [
+  { tag: 'Άσκηση 26', question: 'Συμπλήρωσε: 1/2 = ?/4', options: ['3', '2', '1', '4'], answer: '2', explanation: 'Πολλαπλασιάζουμε 1 και 2 με το 2: 1/2 = 2/4.' },
+  { tag: 'Άσκηση 26', question: 'Συμπλήρωσε: 1/2 = 3/?', options: ['4', '6', '5', '8'], answer: '6', explanation: '1·3=3 και 2·3=6, άρα 1/2 = 3/6.' },
+  { tag: 'Άσκηση 26', question: 'Συμπλήρωσε: 2/3 = ?/6', options: ['2', '4', '3', '5'], answer: '4', explanation: '2·2=4 και 3·2=6.' },
+
+  { tag: 'Άσκηση 27', question: 'Ποιο κλάσμα είναι ισοδύναμο με το 3/5;', options: ['9/10', '6/10', '3/10', '5/3'], answer: '6/10', explanation: '3·2 / 5·2 = 6/10.' },
+  { tag: 'Άσκηση 27', question: 'Ποιο κλάσμα είναι ισοδύναμο με το 4/7;', options: ['8/14', '4/14', '7/4', '12/14'], answer: '8/14', explanation: '4·2 / 7·2 = 8/14.' },
+  { tag: 'Άσκηση 27', question: 'Ποιο κλάσμα είναι ισοδύναμο με το 5/6;', options: ['5/12', '10/12', '15/12', '6/5'], answer: '10/12', explanation: '5·2 / 6·2 = 10/12.' },
+
+  { tag: 'Άσκηση 28', question: 'Απλοποίησε το 2/4.', options: ['2/2', '1/2', '1/4', '4/2'], answer: '1/2', explanation: 'Διαιρούμε αριθμητή και παρονομαστή με το 2.' },
+  { tag: 'Άσκηση 28', question: 'Απλοποίησε το 4/8.', options: ['1/2', '2/3', '4/4', '3/4'], answer: '1/2', explanation: 'Διαιρούμε με το 4: 4/8 = 1/2.' },
+  { tag: 'Άσκηση 28', question: 'Απλοποίησε το 6/9.', options: ['3/2', '2/3', '6/3', '1/3'], answer: '2/3', explanation: 'Διαιρούμε με το 3: 6/9 = 2/3.' },
+
+  { tag: 'Άσκηση 29', question: 'Ποιο είναι ισοδύναμο του 2/5;', options: ['2/10', '4/10', '5/2', '6/10'], answer: '4/10', explanation: '2·2 / 5·2 = 4/10.' },
+  { tag: 'Άσκηση 29', question: 'Ποιο είναι ισοδύναμο του 7/8;', options: ['14/16', '7/16', '8/7', '21/16'], answer: '14/16', explanation: '7·2 / 8·2 = 14/16.' },
+  { tag: 'Άσκηση 29', question: 'Ποιο είναι ισοδύναμο του 3/10;', options: ['3/20', '6/20', '10/3', '9/20'], answer: '6/20', explanation: '3·2 / 10·2 = 6/20.' },
+
+  { tag: 'Άσκηση 30', question: 'Απλοποίησε το 10/15.', options: ['2/3', '3/2', '5/3', '1/3'], answer: '2/3', explanation: 'Διαιρούμε με το 5: 10/15 = 2/3.' },
+  { tag: 'Άσκηση 30', question: 'Απλοποίησε το 12/18.', options: ['6/9', '2/3', '3/2', '4/9'], answer: '2/3', explanation: 'Διαιρούμε με το 6: 12/18 = 2/3.' },
+  { tag: 'Άσκηση 30', question: 'Απλοποίησε το 9/12.', options: ['3/4', '9/4', '4/3', '6/8'], answer: '3/4', explanation: 'Διαιρούμε με το 3: 9/12 = 3/4.' },
+
+  { tag: 'Άσκηση 31', question: 'Συμπλήρωσε: 3/4 = ?/8', options: ['3', '4', '6', '8'], answer: '6', explanation: '3·2=6 και 4·2=8.' },
+  { tag: 'Άσκηση 31', question: 'Συμπλήρωσε: 5/7 = 10/?', options: ['7', '12', '14', '21'], answer: '14', explanation: '5·2=10 και 7·2=14.' },
+  { tag: 'Άσκηση 31', question: 'Συμπλήρωσε: 4/9 = ?/27', options: ['8', '12', '16', '13'], answer: '12', explanation: '9·3=27, άρα 4·3=12.' },
+
+  { tag: 'Άσκηση 32', question: 'Ποια από τα παρακάτω είναι ισοδύναμα;', options: ['2/3 και 4/9', '2/3 και 4/6', '2/3 και 3/4', '2/3 και 5/6'], answer: '2/3 και 4/6', explanation: '2·2 / 3·2 = 4/6.' },
+  { tag: 'Άσκηση 32', question: 'Ποια από τα παρακάτω είναι ισοδύναμα;', options: ['3/5 και 6/15', '3/5 και 9/15', '3/5 και 5/3', '3/5 και 6/5'], answer: '3/5 και 9/15', explanation: '3·3 / 5·3 = 9/15.' },
+  { tag: 'Άσκηση 32', question: 'Ποια από τα παρακάτω είναι ισοδύναμα;', options: ['4/6 και 2/3', '4/6 και 3/2', '4/6 και 4/3', '4/6 και 1/3'], answer: '4/6 και 2/3', explanation: '4/6 απλοποιείται σε 2/3.' },
+
+  { tag: 'Άσκηση 33', question: 'Ποιο είναι το ανάγωγο κλάσμα του 8/12;', options: ['4/6', '2/3', '8/6', '3/2'], answer: '2/3', explanation: 'Διαιρούμε με ΜΚΔ(8,12)=4.' },
+  { tag: 'Άσκηση 33', question: 'Ποιο είναι το ανάγωγο κλάσμα του 15/20;', options: ['3/4', '5/4', '15/4', '4/3'], answer: '3/4', explanation: 'Διαιρούμε με 5.' },
+  { tag: 'Άσκηση 33', question: 'Ποιο είναι το ανάγωγο κλάσμα του 18/24;', options: ['6/8', '3/4', '9/12', '4/3'], answer: '3/4', explanation: 'Διαιρούμε με 6.' },
+
+  { tag: 'Άσκηση 34', question: 'Ποιο είναι ισοδύναμο με το 1/3;', options: ['3/6', '2/6', '3/9', '1/6'], answer: '3/9', explanation: '1·3 / 3·3 = 3/9.' },
+  { tag: 'Άσκηση 34', question: 'Ποιο είναι ισοδύναμο με το 2/7;', options: ['6/21', '4/7', '7/2', '2/14'], answer: '6/21', explanation: '2·3 / 7·3 = 6/21.' },
+  { tag: 'Άσκηση 34', question: 'Ποιο είναι ισοδύναμο με το 4/5;', options: ['8/10', '4/10', '5/4', '6/10'], answer: '8/10', explanation: '4·2 / 5·2 = 8/10.' },
+
+  { tag: 'Άσκηση 35', question: 'Ποιο κλάσμα προκύπτει αν επεκτείνουμε το 2/3 με το 5;', options: ['10/15', '7/8', '2/15', '10/3'], answer: '10/15', explanation: 'Πολλαπλασιάζουμε και τους δύο όρους με 5.' },
+  { tag: 'Άσκηση 35', question: 'Ποιο κλάσμα προκύπτει αν επεκτείνουμε το 3/4 με το 6;', options: ['18/24', '9/10', '3/24', '18/4'], answer: '18/24', explanation: '3·6 / 4·6 = 18/24.' },
+  { tag: 'Άσκηση 35', question: 'Ποιο κλάσμα προκύπτει αν επεκτείνουμε το 5/8 με το 3;', options: ['15/24', '8/11', '5/24', '15/8'], answer: '15/24', explanation: '5·3 / 8·3 = 15/24.' },
+
+  { tag: 'Άσκηση 36', question: 'Ποια πράξη κρατά το κλάσμα ισοδύναμο;', options: ['Πολλαπλασιάζω μόνο τον αριθμητή', 'Πολλαπλασιάζω αριθμητή και παρονομαστή με τον ίδιο αριθμό', 'Προσθέτω 1 μόνο στον παρονομαστή', 'Αλλάζω τη θέση των όρων'], answer: 'Πολλαπλασιάζω αριθμητή και παρονομαστή με τον ίδιο αριθμό', explanation: 'Η επέκταση δημιουργεί ισοδύναμο κλάσμα.' },
+  { tag: 'Άσκηση 36', question: 'Ποια πράξη είναι απλοποίηση;', options: ['Διαιρώ μόνο τον αριθμητή', 'Διαιρώ αριθμητή και παρονομαστή με τον ίδιο κοινό διαιρέτη', 'Προσθέτω τον ίδιο αριθμό', 'Αντιστρέφω το κλάσμα'], answer: 'Διαιρώ αριθμητή και παρονομαστή με τον ίδιο κοινό διαιρέτη', explanation: 'Η απλοποίηση κρατά το ίδιο μέρος του όλου.' },
+  { tag: 'Άσκηση 36', question: 'Πότε ένα κλάσμα είναι ανάγωγο;', options: ['Όταν αριθμητής και παρονομαστής έχουν ΜΚΔ 1', 'Όταν ο αριθμητής είναι 0', 'Όταν ο παρονομαστής είναι 1 πάντα', 'Όταν είναι μεγαλύτερο από 1'], answer: 'Όταν αριθμητής και παρονομαστής έχουν ΜΚΔ 1', explanation: 'Τότε δεν απλοποιείται άλλο.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -1330,6 +1384,92 @@ function Lesson21() {
 }
 
 
+
+function Lesson22() {
+  const [xp, setXp] = useState(1120)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 1/2 είναι ισοδύναμο με το 4/8;', ok: true },
+    { q: 'Για να φτιάξω ισοδύναμο κλάσμα αλλάζω μόνο τον αριθμητή;', ok: false },
+    { q: 'Το 12/18 απλοποιείται σε 2/3;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.2</div>
+          <h1>Ισοδύναμα Κλάσματα</h1>
+          <p>Μαθαίνουμε ότι διαφορετικά κλάσματα μπορούν να παριστάνουν το ίδιο μέρος, με επέκταση και απλοποίηση.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.2 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ισοδύναμα κλάσματα</b><p>Είναι κλάσματα που φαίνονται διαφορετικά αλλά δείχνουν το ίδιο μέρος του όλου.</p></article>
+          <article><b>2. Επέκταση</b><p>Πολλαπλασιάζουμε αριθμητή και παρονομαστή με τον ίδιο φυσικό αριθμό.</p></article>
+          <article><b>3. Απλοποίηση</b><p>Διαιρούμε αριθμητή και παρονομαστή με τον ίδιο κοινό διαιρέτη.</p></article>
+          <article><b>4. Ανάγωγο κλάσμα</b><p>Ένα κλάσμα λέγεται ανάγωγο όταν δεν απλοποιείται άλλο.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Επέκταση</b><p>1/2 = 2/4 = 4/8</p></div>
+          <div className="example"><b>Απλοποίηση</b><p>12/18 = 2/3, γιατί διαιρούμε και τους δύο όρους με το 6.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Visual Fraction Match</h3>
+          <p>Τα παρακάτω δείχνουν το ίδιο μέρος:</p>
+          <div className="numberChips"><span>■□ = 1/2</span><span>■■□□ = 2/4</span><span>■■■■□□□□ = 4/8</span></div>
+          <div className="answerLine">Όσο κι αν αλλάζουν τα κομμάτια, το μέρος μένει ίδιο.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.2" subtitle="Ισοδύναμα κλάσματα, επέκταση και απλοποίηση." items={quiz22} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.2" items={teacherQuiz22} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Μάγος των Ισοδύναμων 🧙</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.2.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🧙</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Μάγος της 2.2</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -1341,7 +1481,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.1')
+  const [activeLesson, setActiveLesson] = useState('2.2')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1349,7 +1489,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
