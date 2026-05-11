@@ -542,6 +542,65 @@ const teacherQuiz22 = [
   { tag: 'Άσκηση 36', question: 'Πότε ένα κλάσμα είναι ανάγωγο;', options: ['Όταν αριθμητής και παρονομαστής έχουν ΜΚΔ 1', 'Όταν ο αριθμητής είναι 0', 'Όταν ο παρονομαστής είναι 1 πάντα', 'Όταν είναι μεγαλύτερο από 1'], answer: 'Όταν αριθμητής και παρονομαστής έχουν ΜΚΔ 1', explanation: 'Τότε δεν απλοποιείται άλλο.' },
 ]
 
+
+const quiz23 = [
+  { question: 'Ποιο είναι μεγαλύτερο: 2/6 ή 3/6;', options: ['3/6', '2/6', 'Είναι ίσα', 'Δεν συγκρίνονται'], answer: '3/6', tip: 'Ίδιος παρονομαστής: μεγαλύτερος αριθμητής σημαίνει μεγαλύτερο κλάσμα.' },
+  { question: 'Ποιο είναι μικρότερο: 5/8 ή 5/6;', options: ['5/8', '5/6', 'Είναι ίσα', 'Κανένα'], answer: '5/8', tip: 'Ίδιος αριθμητής: μεγαλύτερος παρονομαστής σημαίνει μικρότερο κλάσμα.' },
+  { question: 'Ποιο κλάσμα είναι ίσο με τη μονάδα;', options: ['7/7', '7/3', '3/7', '1/7'], answer: '7/7', tip: 'Όταν αριθμητής και παρονομαστής είναι ίσοι, το κλάσμα είναι 1.' },
+  { question: 'Ποιο είναι μεγαλύτερο από τη μονάδα;', options: ['9/8', '5/9', '4/4', '1/3'], answer: '9/8', tip: 'Αν αριθμητής > παρονομαστής, το κλάσμα είναι μεγαλύτερο από 1.' },
+]
+
+const teacherQuiz23 = [
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 2/6 ___ 3/6', options: ['<', '>', '='], answer: '<', explanation: 'Ίδιος παρονομαστής 6, και 2<3.' },
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 3/4 ___ 8/12', options: ['>', '<', '='], answer: '>', explanation: '3/4=9/12 και 9/12>8/12.' },
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 8/3 ___ 8/3', options: ['=', '<', '>'], answer: '=', explanation: 'Είναι ακριβώς τα ίδια κλάσματα.' },
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 4/3 ___ 9/10', options: ['>', '<', '='], answer: '>', explanation: '4/3 είναι μεγαλύτερο από 1, ενώ 9/10 είναι μικρότερο από 1.' },
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 3/5 ___ 1', options: ['<', '>', '='], answer: '<', explanation: '3/5 είναι μικρότερο από 5/5=1.' },
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 12/8 ___ 1', options: ['>', '<', '='], answer: '>', explanation: '12/8 έχει αριθμητή μεγαλύτερο από παρονομαστή.' },
+  { tag: 'Άσκηση 37', question: 'Σύγκρινε: 5/5 ___ 1', options: ['=', '<', '>'], answer: '=', explanation: '5/5=1.' },
+
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 4/3 ___ 4/6', options: ['>', '<', '='], answer: '>', explanation: 'Ίδιος αριθμητής: μικρότερος παρονομαστής σημαίνει μεγαλύτερο κλάσμα.' },
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 20/7 ___ 12/7', options: ['>', '<', '='], answer: '>', explanation: 'Ίδιος παρονομαστής και 20>12.' },
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 3/4 ___ 5/8', options: ['>', '<', '='], answer: '>', explanation: '3/4=6/8 και 6/8>5/8.' },
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 5/6 ___ 4/3', options: ['<', '>', '='], answer: '<', explanation: '5/6<1 ενώ 4/3>1.' },
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 7/8 ___ 6/5', options: ['<', '>', '='], answer: '<', explanation: '7/8<1 ενώ 6/5>1.' },
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 6/8 ___ 12/16', options: ['=', '<', '>'], answer: '=', explanation: '6/8=3/4 και 12/16=3/4.' },
+  { tag: 'Άσκηση 38', question: 'Σύγκρινε: 8/9 ___ 11/6', options: ['<', '>', '='], answer: '<', explanation: '8/9<1 ενώ 11/6>1.' },
+
+  { tag: 'Άσκηση 39', question: 'Βάλε σε φθίνουσα σειρά: 24/12, 24/20, 24/18, 24/4, 24/9, 24/7. Ποιο είναι πρώτο;', options: ['24/4', '24/7', '24/12', '24/20'], answer: '24/4', explanation: 'Ίδιος αριθμητής: μικρότερος παρονομαστής δίνει μεγαλύτερο κλάσμα.' },
+  { tag: 'Άσκηση 39', question: 'Ποια είναι η σωστή φθίνουσα σειρά;', options: ['24/4, 24/7, 24/9, 24/12, 24/18, 24/20', '24/20, 24/18, 24/12, 24/9, 24/7, 24/4', '24/12, 24/20, 24/18, 24/4, 24/9, 24/7', '24/7, 24/4, 24/9, 24/12, 24/18, 24/20'], answer: '24/4, 24/7, 24/9, 24/12, 24/18, 24/20', explanation: 'Με ίδιο αριθμητή, όσο μικρότερος ο παρονομαστής τόσο μεγαλύτερο το κλάσμα.' },
+
+  { tag: 'Άσκηση 40', question: 'Ποια είναι η σωστή αύξουσα σειρά: 2/5, 8/15, 3/5, 5/10, 7/5, 20/15;', options: ['2/5, 5/10, 8/15, 3/5, 20/15, 7/5', '7/5, 20/15, 3/5, 8/15, 5/10, 2/5', '2/5, 8/15, 3/5, 5/10, 7/5, 20/15', '5/10, 2/5, 8/15, 3/5, 20/15, 7/5'], answer: '2/5, 5/10, 8/15, 3/5, 20/15, 7/5', explanation: 'Τιμές: 0.4, 0.5, 0.533..., 0.6, 1.333..., 1.4.' },
+  { tag: 'Άσκηση 40', question: 'Από τα κλάσματα της άσκησης, ποιο είναι το μεγαλύτερο;', options: ['7/5', '20/15', '3/5', '8/15'], answer: '7/5', explanation: '7/5=1.4, ενώ 20/15=4/3≈1.333.' },
+
+  { tag: 'Άσκηση 41', question: 'Ποιο από τα κλάσματα 5/3, 7/2, 8/11, 9/7 είναι μικρότερο από 1;', options: ['8/11', '5/3', '7/2', '9/7'], answer: '8/11', explanation: 'Μόνο το 8/11 έχει αριθμητή μικρότερο από παρονομαστή.' },
+  { tag: 'Άσκηση 41', question: 'Ποιο είναι μεγαλύτερο από τα 28/4 και 62/9;', options: ['28/4', '62/9', 'Είναι ίσα', 'Δεν συγκρίνονται'], answer: '28/4', explanation: '28/4=7 και 62/9≈6.89.' },
+  { tag: 'Άσκηση 41', question: 'Ποιο είναι μεγαλύτερο από τα 18/3 και 28/4;', options: ['28/4', '18/3', 'Είναι ίσα', 'Κανένα'], answer: '28/4', explanation: '18/3=6 και 28/4=7.' },
+
+  { tag: 'Άσκηση 42', question: 'Μεταξύ ποιων διαδοχικών φυσικών βρίσκεται το 3/5;', options: ['0 και 1', '1 και 2', '2 και 3', '3 και 4'], answer: '0 και 1', explanation: '3/5 είναι μικρότερο από 1 και μεγαλύτερο από 0.' },
+  { tag: 'Άσκηση 42', question: 'Μεταξύ ποιων διαδοχικών φυσικών βρίσκεται το 6/4;', options: ['1 και 2', '0 και 1', '2 και 3', '6 και 7'], answer: '1 και 2', explanation: '6/4=1.5.' },
+  { tag: 'Άσκηση 42', question: 'Μεταξύ ποιων διαδοχικών φυσικών βρίσκεται το 7/2;', options: ['3 και 4', '2 και 3', '1 και 2', '7 και 8'], answer: '3 και 4', explanation: '7/2=3.5.' },
+  { tag: 'Άσκηση 42', question: 'Μεταξύ ποιων διαδοχικών φυσικών βρίσκεται το 12/8;', options: ['1 και 2', '0 και 1', '2 και 3', '8 και 12'], answer: '1 και 2', explanation: '12/8=1.5.' },
+  { tag: 'Άσκηση 42', question: 'Μεταξύ ποιων διαδοχικών φυσικών βρίσκεται το 30/4;', options: ['7 και 8', '6 και 7', '8 και 9', '3 και 4'], answer: '7 και 8', explanation: '30/4=7.5.' },
+
+  { tag: 'Άσκηση 43', question: 'Σύγκρινε: α/β ___ (α+1)/β', options: ['<', '>', '='], answer: '<', explanation: 'Ίδιος παρονομαστής β και α < α+1.' },
+  { tag: 'Άσκηση 43', question: 'Σύγκρινε: α/β ___ α/(β+1), με α≠0', options: ['>', '<', '='], answer: '>', explanation: 'Ίδιος αριθμητής α, μεγαλύτερος παρονομαστής κάνει μικρότερο κλάσμα.' },
+  { tag: 'Άσκηση 43', question: 'Σύγκρινε με τη μονάδα: α/(α+1)', options: ['< 1', '> 1', '= 1'], answer: '< 1', explanation: 'Ο αριθμητής είναι μικρότερος από τον παρονομαστή.' },
+  { tag: 'Άσκηση 43', question: 'Σύγκρινε με τη μονάδα: (α+2)/α', options: ['> 1', '< 1', '= 1'], answer: '> 1', explanation: 'Ο αριθμητής είναι μεγαλύτερος από τον παρονομαστή.' },
+
+  { tag: 'Άσκηση 44', question: 'Βρες κλάσμα μεγαλύτερο από 1/5 και μικρότερο από 3/5.', options: ['2/5', '4/5', '1/6', '3/5'], answer: '2/5', explanation: '2/5 βρίσκεται ανάμεσα στο 1/5 και στο 3/5.' },
+  { tag: 'Άσκηση 44', question: 'Βρες κλάσμα μεγαλύτερο από 7/5 και μικρότερο από 7/3.', options: ['7/4', '7/6', '7/2', '7/5'], answer: '7/4', explanation: '7/5=1.4, 7/4=1.75, 7/3≈2.33.' },
+  { tag: 'Άσκηση 44', question: 'Βρες κλάσμα μεγαλύτερο από 1/3 και μικρότερο από 1.', options: ['2/3', '4/3', '1/4', '1'], answer: '2/3', explanation: '2/3 είναι ανάμεσα στο 1/3 και στο 1.' },
+  { tag: 'Άσκηση 44', question: 'Βρες κλάσμα μεγαλύτερο από 2/3 και μικρότερο από 4/5.', options: ['3/4', '1/2', '5/4', '4/5'], answer: '3/4', explanation: '2/3≈0.667, 3/4=0.75, 4/5=0.8.' },
+  { tag: 'Άσκηση 44', question: 'Βρες κλάσμα μεγαλύτερο από 1/2 και μικρότερο από 2/3.', options: ['3/5', '1/3', '5/3', '2/3'], answer: '3/5', explanation: '1/2=0.5, 3/5=0.6, 2/3≈0.667.' },
+
+  { tag: 'Άσκηση 45', question: 'Γράψε κλάσμα με αριθμητή 5 και μικρότερο από τη μονάδα.', options: ['5/6', '5/5', '6/5', '5/4'], answer: '5/6', explanation: 'Για να είναι μικρότερο από 1, ο παρονομαστής πρέπει να είναι μεγαλύτερος από 5.' },
+  { tag: 'Άσκηση 45', question: 'Γράψε κλάσμα με παρονομαστή 8 και μεγαλύτερο από 1.', options: ['9/8', '8/8', '7/8', '1/8'], answer: '9/8', explanation: 'Για να είναι μεγαλύτερο από 1, ο αριθμητής πρέπει να είναι μεγαλύτερος από 8.' },
+
+  { tag: 'Άσκηση 46', question: 'Πρόσθεσε στον παρονομαστή του 9/8 το 2. Ποιο κλάσμα προκύπτει;', options: ['9/10', '11/8', '9/6', '11/10'], answer: '9/10', explanation: 'Ο νέος παρονομαστής είναι 8+2=10.' },
+  { tag: 'Άσκηση 46', question: 'Σύγκρινε το νέο κλάσμα 9/10 με τη μονάδα.', options: ['< 1', '> 1', '= 1'], answer: '< 1', explanation: '9/10 έχει αριθμητή μικρότερο από παρονομαστή.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -1470,6 +1529,92 @@ function Lesson22() {
 }
 
 
+
+function Lesson23() {
+  const [xp, setXp] = useState(1250)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Με ίδιο παρονομαστή, μεγαλύτερος αριθμητής σημαίνει μεγαλύτερο κλάσμα;', ok: true },
+    { q: 'Το 5/8 είναι μεγαλύτερο από το 5/6;', ok: false },
+    { q: 'Το 9/8 είναι μεγαλύτερο από τη μονάδα;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.3</div>
+          <h1>Σύγκριση Κλασμάτων</h1>
+          <p>Μαθαίνουμε να συγκρίνουμε κλάσματα με ίδιο παρονομαστή, ίδιο αριθμητή, με τη μονάδα και με μετατροπή σε ισοδύναμα κλάσματα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.3 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ίδιος παρονομαστής</b><p>Μεγαλύτερο είναι το κλάσμα με τον μεγαλύτερο αριθμητή.</p></article>
+          <article><b>2. Ίδιος αριθμητής</b><p>Μεγαλύτερο είναι το κλάσμα με τον μικρότερο παρονομαστή.</p></article>
+          <article><b>3. Σύγκριση με το 1</b><p>Αν αριθμητής μικρότερος από παρονομαστή, το κλάσμα είναι μικρότερο από 1.</p></article>
+          <article><b>4. Ισοδύναμα</b><p>Για δύσκολη σύγκριση, φτιάχνουμε ισοδύναμα κλάσματα με κοινό παρονομαστή.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>2/6 &lt; 3/6</b><p>Ίδιος παρονομαστής, 2&lt;3.</p></div>
+          <div className="example"><b>5/8 &lt; 5/6</b><p>Ίδιος αριθμητής, μικρότερο είναι εκείνο με μεγαλύτερο παρονομαστή.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Duel</h3>
+          <p>Γρήγορες συγκρίσεις:</p>
+          <div className="numberChips"><span>3/4 &gt; 5/8</span><span>6/8 = 12/16</span><span>8/9 &lt; 11/6</span></div>
+          <div className="answerLine">Βρες πρώτα αν είναι κάτω, ίσα ή πάνω από τη μονάδα.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.3" subtitle="Σύγκριση κλασμάτων." items={quiz23} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.3" items={teacherQuiz23} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Κριτής των Κλασμάτων ⚖️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">⚖️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Κριτής της 2.3</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -1481,7 +1626,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.2')
+  const [activeLesson, setActiveLesson] = useState('2.3')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1489,7 +1634,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
