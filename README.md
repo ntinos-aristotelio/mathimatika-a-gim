@@ -7,3 +7,8 @@
 - Χωρίς το broken rewrite που προκάλεσε λευκή σελίδα
 
 Σημείωση: πρώτα σταθεροποιούμε την εφαρμογή, μετά συνεχίζουμε με μικρές visual βελτιώσεις.
+
+
+## Deploy note
+This build includes a prebuilt `dist/` folder.
+GitHub Actions deploys `dist/` directly and does not run `npm install` or `npm run build`.
