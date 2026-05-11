@@ -884,6 +884,68 @@ const teacherGeneral2 = [
   { tag:'Final Challenge 60', question:'Πόσο κάνει 1/8 + 1;', options:['1/17','9/8','9/10','9/1'], answer:'9/8', explanation:'1=8/8, άρα αποτέλεσμα 9/8.' },
 ]
 
+
+const quiz31 = [
+  { question: 'Ποιο δεκαδικό κλάσμα είναι ίσο με 0,7;', options: ['7/10', '7/100', '70/1000', '10/7'], answer: '7/10', tip: 'Το 0,7 έχει ένα δεκαδικό ψηφίο, άρα είναι 7 δέκατα.' },
+  { question: 'Πώς γράφεται το 3,25 ως δεκαδικό κλάσμα;', options: ['325/100', '325/10', '32/5', '3/25'], answer: '325/100', tip: 'Δύο δεκαδικά ψηφία σημαίνει παρονομαστής 100.' },
+  { question: 'Ποιος είναι μεγαλύτερος;', options: ['4,08', '4,8', '4,008', '4,080'], answer: '4,8', tip: '4,8 = 4,800 και είναι μεγαλύτερο από 4,080 και 4,008.' },
+  { question: 'Στρογγυλοποίησε το 7,86 στη μονάδα.', options: ['8', '7', '7,8', '7,9'], answer: '8', tip: 'Το δεκαδικό μέρος είναι 0,86, άρα ανεβαίνουμε στην επόμενη μονάδα.' },
+]
+
+const teacherQuiz31 = [
+  { tag: 'Άσκηση 1α', question: 'Γράψε ως δεκαδικό αριθμό: 3/10', options: ['0,3', '0,03', '3,10', '10,3'], answer: '0,3', explanation: '3/10 = 0,3.' },
+  { tag: 'Άσκηση 1β', question: 'Γράψε ως δεκαδικό αριθμό: 7/100', options: ['0,07', '0,7', '7,00', '0,007'], answer: '0,07', explanation: '7 εκατοστά = 0,07.' },
+  { tag: 'Άσκηση 1γ', question: 'Γράψε ως δεκαδικό αριθμό: 25/100', options: ['0,25', '2,5', '0,025', '25,100'], answer: '0,25', explanation: '25/100 = 0,25.' },
+  { tag: 'Άσκηση 1δ', question: 'Γράψε ως δεκαδικό αριθμό: 304/100', options: ['3,04', '30,4', '0,304', '304,100'], answer: '3,04', explanation: '304 εκατοστά = 3,04.' },
+
+  { tag: 'Άσκηση 2α', question: 'Γράψε ως δεκαδικό κλάσμα: 0,8', options: ['8/10', '8/100', '80/10', '10/8'], answer: '8/10', explanation: 'Ένα δεκαδικό ψηφίο σημαίνει δέκατα.' },
+  { tag: 'Άσκηση 2β', question: 'Γράψε ως δεκαδικό κλάσμα: 0,45', options: ['45/100', '45/10', '4/5', '100/45'], answer: '45/100', explanation: 'Δύο δεκαδικά ψηφία σημαίνει εκατοστά.' },
+  { tag: 'Άσκηση 2γ', question: 'Γράψε ως δεκαδικό κλάσμα: 6,2', options: ['62/10', '62/100', '6/2', '10/62'], answer: '62/10', explanation: '6,2 = 62/10.' },
+  { tag: 'Άσκηση 2δ', question: 'Γράψε ως δεκαδικό κλάσμα: 12,035', options: ['12035/1000', '12035/100', '1235/1000', '12/35'], answer: '12035/1000', explanation: 'Τρία δεκαδικά ψηφία σημαίνει χιλιοστά.' },
+
+  { tag: 'Άσκηση 3α', question: 'Σύγκρινε: 0,5 ___ 0,50', options: ['=', '<', '>', 'Δεν συγκρίνονται'], answer: '=', explanation: 'Τα μηδενικά στο τέλος δεν αλλάζουν την τιμή.' },
+  { tag: 'Άσκηση 3β', question: 'Σύγκρινε: 3,14 ___ 3,4', options: ['<', '>', '=', 'Δεν συγκρίνονται'], answer: '<', explanation: '3,14 είναι μικρότερο από 3,40.' },
+  { tag: 'Άσκηση 3γ', question: 'Σύγκρινε: 7,08 ___ 7,8', options: ['<', '>', '=', 'Δεν συγκρίνονται'], answer: '<', explanation: '7,08 είναι μικρότερο από 7,80.' },
+  { tag: 'Άσκηση 3δ', question: 'Σύγκρινε: 12,305 ___ 12,35', options: ['<', '>', '=', 'Δεν συγκρίνονται'], answer: '<', explanation: '12,305 < 12,350.' },
+
+  { tag: 'Άσκηση 4α', question: 'Βάλε σε αύξουσα σειρά: 0,7, 0,07, 0,77, 0,707. Ποιο είναι πρώτο;', options: ['0,07', '0,7', '0,707', '0,77'], answer: '0,07', explanation: '0,07 είναι το μικρότερο.' },
+  { tag: 'Άσκηση 4β', question: 'Βάλε σε αύξουσα σειρά: 3,5, 3,05, 3,55, 3,505. Ποιο είναι μεγαλύτερο;', options: ['3,55', '3,5', '3,505', '3,05'], answer: '3,55', explanation: '3,55 = 3,550 και είναι το μεγαλύτερο.' },
+  { tag: 'Άσκηση 4γ', question: 'Ποιος αριθμός βρίσκεται ανάμεσα στο 2,3 και στο 2,4;', options: ['2,35', '2,45', '2,03', '2,5'], answer: '2,35', explanation: '2,35 είναι μεγαλύτερο από 2,3 και μικρότερο από 2,4.' },
+
+  { tag: 'Άσκηση 5α', question: 'Στρογγυλοποίησε το 4,62 στη μονάδα.', options: ['5', '4', '4,6', '4,7'], answer: '5', explanation: 'Το 0,62 είναι μεγαλύτερο από 0,5, άρα 5.' },
+  { tag: 'Άσκηση 5β', question: 'Στρογγυλοποίησε το 9,31 στη μονάδα.', options: ['9', '10', '9,3', '9,4'], answer: '9', explanation: 'Το 0,31 είναι μικρότερο από 0,5.' },
+  { tag: 'Άσκηση 5γ', question: 'Στρογγυλοποίησε το 15,78 στα δέκατα.', options: ['15,8', '15,7', '16', '15,78'], answer: '15,8', explanation: 'Το ψηφίο των εκατοστών είναι 8, άρα ανεβαίνει το δέκατο.' },
+  { tag: 'Άσκηση 5δ', question: 'Στρογγυλοποίησε το 6,243 στα εκατοστά.', options: ['6,24', '6,25', '6,2', '6,3'], answer: '6,24', explanation: 'Το ψηφίο των χιλιοστών είναι 3, άρα δεν ανεβαίνει.' },
+
+  { tag: 'Άσκηση 6α', question: 'Ποια είναι η αξία του ψηφίου 7 στον αριθμό 5,73;', options: ['7 δέκατα', '7 εκατοστά', '7 μονάδες', '7 χιλιοστά'], answer: '7 δέκατα', explanation: 'Το 7 είναι πρώτο ψηφίο μετά την υποδιαστολή.' },
+  { tag: 'Άσκηση 6β', question: 'Ποια είναι η αξία του ψηφίου 3 στον αριθμό 5,73;', options: ['3 εκατοστά', '3 δέκατα', '3 μονάδες', '3 χιλιοστά'], answer: '3 εκατοστά', explanation: 'Το 3 είναι δεύτερο ψηφίο μετά την υποδιαστολή.' },
+  { tag: 'Άσκηση 6γ', question: 'Ποια είναι η αξία του ψηφίου 8 στον αριθμό 12,508;', options: ['8 χιλιοστά', '8 εκατοστά', '8 δέκατα', '8 μονάδες'], answer: '8 χιλιοστά', explanation: 'Το τρίτο δεκαδικό ψηφίο είναι τα χιλιοστά.' },
+
+  { tag: 'Άσκηση 7α', question: 'Ποιος αριθμός είναι ίσος με 4,5;', options: ['4,50', '4,05', '45,0', '0,45'], answer: '4,50', explanation: 'Τα μηδενικά στο τέλος δεν αλλάζουν τον αριθμό.' },
+  { tag: 'Άσκηση 7β', question: 'Ποιος αριθμός είναι ίσος με 0,300;', options: ['0,3', '0,03', '3,00', '0,003'], answer: '0,3', explanation: '0,300 = 0,3.' },
+
+  { tag: 'Άσκηση 8α', question: 'Μετέτρεψε σε μέτρα: 35 cm', options: ['0,35 m', '3,5 m', '0,035 m', '35 m'], answer: '0,35 m', explanation: '35 cm = 35/100 m = 0,35 m.' },
+  { tag: 'Άσκηση 8β', question: 'Μετέτρεψε σε κιλά: 750 g', options: ['0,750 kg', '7,50 kg', '75 kg', '0,075 kg'], answer: '0,750 kg', explanation: '750 g = 750/1000 kg.' },
+  { tag: 'Άσκηση 8γ', question: 'Μετέτρεψε σε ευρώ: 45 λεπτά', options: ['0,45 €', '4,5 €', '45 €', '0,045 €'], answer: '0,45 €', explanation: '45 λεπτά = 45/100 ευρώ.' },
+
+  { tag: 'Άσκηση 9α', question: 'Ποιος είναι πιο κοντά στο 1: 0,89 ή 1,12;', options: ['0,89', '1,12', 'Ίσα', 'Κανένας'], answer: '0,89', explanation: 'Απέχει 0,11 από το 1, ενώ το 1,12 απέχει 0,12.' },
+  { tag: 'Άσκηση 9β', question: 'Ποιος είναι πιο κοντά στο 5: 4,91 ή 5,08;', options: ['5,08', '4,91', 'Ίσα', 'Κανένας'], answer: '5,08', explanation: 'Απέχει 0,08 από το 5, ενώ το 4,91 απέχει 0,09.' },
+
+  { tag: 'Άσκηση 10α', question: 'Ποιο δεκαδικό κλάσμα αντιστοιχεί στο 2,07;', options: ['207/100', '207/10', '27/100', '2/7'], answer: '207/100', explanation: 'Δύο δεκαδικά ψηφία, άρα παρονομαστής 100.' },
+  { tag: 'Άσκηση 10β', question: 'Ποιο δεκαδικό κλάσμα αντιστοιχεί στο 0,009;', options: ['9/1000', '9/100', '9/10', '90/1000'], answer: '9/1000', explanation: 'Τρία δεκαδικά ψηφία, άρα χιλιοστά.' },
+
+  { tag: 'Άσκηση 11α', question: 'Βάλε το σωστό σύμβολο: 6,205 ___ 6,25', options: ['<', '>', '=', 'Δεν συγκρίνονται'], answer: '<', explanation: '6,205 < 6,250.' },
+  { tag: 'Άσκηση 11β', question: 'Βάλε το σωστό σύμβολο: 0,999 ___ 1', options: ['<', '>', '=', 'Δεν συγκρίνονται'], answer: '<', explanation: '0,999 είναι λίγο μικρότερο από 1.' },
+  { tag: 'Άσκηση 11γ', question: 'Βάλε το σωστό σύμβολο: 12,04 ___ 12,040', options: ['=', '<', '>', 'Δεν συγκρίνονται'], answer: '=', explanation: 'Το μηδενικό στο τέλος δεν αλλάζει την τιμή.' },
+
+  { tag: 'Άσκηση 12α', question: 'Στρογγυλοποίησε το 28,496 στα δέκατα.', options: ['28,5', '28,4', '28,49', '28'], answer: '28,5', explanation: 'Στα δέκατα κοιτάμε τα εκατοστά: 9, άρα ανεβαίνει.' },
+  { tag: 'Άσκηση 12β', question: 'Στρογγυλοποίησε το 28,496 στα εκατοστά.', options: ['28,50', '28,49', '28,4', '28,496'], answer: '28,50', explanation: 'Στα εκατοστά κοιτάμε τα χιλιοστά: 6, άρα 9 ανεβαίνει και γίνεται 50 εκατοστά.' },
+  { tag: 'Άσκηση 12γ', question: 'Στρογγυλοποίησε το 28,496 στη μονάδα.', options: ['28', '29', '28,5', '30'], answer: '28', explanation: 'Το δεκαδικό μέρος 0,496 είναι μικρότερο από 0,5.' },
+
+  { tag: 'Άσκηση 13α', question: 'Ποια είναι σωστή διάταξη αύξουσα: 1,02, 1,2, 1,002, 1,22;', options: ['1,002, 1,02, 1,2, 1,22', '1,22, 1,2, 1,02, 1,002', '1,02, 1,002, 1,2, 1,22', '1,2, 1,22, 1,02, 1,002'], answer: '1,002, 1,02, 1,2, 1,22', explanation: 'Γράφουμε με ίδια δεκαδικά ψηφία: 1,002 < 1,020 < 1,200 < 1,220.' },
+  { tag: 'Άσκηση 13β', question: 'Ποιος αριθμός είναι ανάμεσα στο 0,4 και στο 0,5;', options: ['0,45', '0,35', '0,55', '0,04'], answer: '0,45', explanation: '0,45 βρίσκεται ανάμεσα στο 0,4 και στο 0,5.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -2264,6 +2326,94 @@ function LessonGeneral2() {
   )
 }
 
+
+function Lesson31() {
+  const [xp, setXp] = useState(2200)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 0,7 είναι ίσο με 7/10;', ok: true },
+    { q: 'Το 3,14 είναι μεγαλύτερο από το 3,4;', ok: false },
+    { q: 'Το 4,50 είναι ίσο με το 4,5;', ok: true },
+    { q: 'Στρογγυλοποιώντας το 7,86 στη μονάδα παίρνουμε 8;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 3.1</div>
+          <h1>Δεκαδικά Κλάσματα — Δεκαδικοί Αριθμοί</h1>
+          <p>Μαθαίνουμε να μετατρέπουμε δεκαδικά κλάσματα σε δεκαδικούς αριθμούς, να συγκρίνουμε, να διατάσσουμε και να στρογγυλοποιούμε.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 3.1 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Δεκαδικά κλάσματα</b><p>Έχουν παρονομαστή 10, 100, 1000 κτλ.</p></article>
+          <article><b>2. Δεκαδικοί αριθμοί</b><p>Η υποδιαστολή χωρίζει το ακέραιο από το δεκαδικό μέρος.</p></article>
+          <article><b>3. Σύγκριση</b><p>Συμπληρώνουμε μηδενικά στο τέλος για να συγκρίνουμε πιο εύκολα.</p></article>
+          <article><b>4. Στρογγυλοποίηση</b><p>Κοιτάμε το επόμενο ψηφίο: αν είναι 5 ή μεγαλύτερο, ανεβάζουμε.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Decimal Lab</h2></div>
+          <div className="example"><b>7/10 = 0,7</b><p>Ένα δεκαδικό ψηφίο δείχνει δέκατα.</p></div>
+          <div className="example"><b>325/100 = 3,25</b><p>Δύο δεκαδικά ψηφία δείχνουν εκατοστά.</p></div>
+          <div className="example"><b>4,5 = 4,50</b><p>Τα μηδενικά στο τέλος δεν αλλάζουν την τιμή.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Rounding Trainer</h3>
+          <p>Γρήγορες αποστολές:</p>
+          <div className="numberChips"><span>7,86 → 8</span><span>15,78 → 15,8</span><span>6,243 → 6,24</span><span>28,496 → 28</span></div>
+          <div className="answerLine">Στόχος: σύγκριση, διάταξη και στρογγυλοποίηση χωρίς παγίδες.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.1" subtitle="Δεκαδικά κλάσματα, δεκαδικοί αριθμοί και στρογγυλοποίηση." items={quiz31} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.1" items={teacherQuiz31} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Άρχοντας των Δεκαδικών 👑</h2>
+          <p>Απάντησε σωστά σε 4 γρήγορες κρίσεις για να πάρεις το badge της 3.1.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Άρχοντας της 3.1</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -2275,7 +2425,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.gen')
+  const [activeLesson, setActiveLesson] = useState('3.1')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -2283,7 +2433,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
