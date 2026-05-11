@@ -36,6 +36,7 @@ const curriculum = [
           { id: '2.4', title: 'Πρόσθεση και αφαίρεση κλασμάτων', ready: true },
           { id: '2.5', title: 'Πολλαπλασιασμός κλασμάτων', ready: true },
           { id: '2.6', title: 'Διαίρεση κλασμάτων', ready: true },
+    { id: '2.gen', title: 'Γενικές Ασκήσεις Κεφ. 2', ready: true },
         ],
       },
       {
@@ -809,6 +810,28 @@ const teacherQuiz26 = [
   { tag: 'Άσκηση 95ε', question: 'Υπολόγισε: 2/4 : 3/2', options: ['1/3', '4/12', '3/4', '2/3'], answer: '1/3', explanation: '2/4=1/2 και 1/2·2/3=1/3.' },
 
   { tag: 'Άσκηση 96', question: 'Σε μεγάλες κλασματικές παραστάσεις όπως η 96, ποια στρατηγική είναι σωστή;', options: ['Λύνω πρώτα αριθμητή και παρονομαστή χωριστά', 'Κάνω όλες τις πράξεις μαζί', 'Αγνοώ τις παρενθέσεις', 'Αντιστρέφω όλο το κλάσμα από την αρχή'], answer: 'Λύνω πρώτα αριθμητή και παρονομαστή χωριστά', explanation: 'Στις σύνθετες κλασματικές παραστάσεις δουλεύουμε οργανωμένα.' },
+]
+
+
+const generalQuiz2 = [
+  { question:'Ποιο κλάσμα είναι ισοδύναμο με το 1/2;', options:['3/6','2/5','5/8','4/5'], answer:'3/6', tip:'Πολλαπλασιάζουμε αριθμητή και παρονομαστή με τον ίδιο αριθμό.'},
+  { question:'Ποιο είναι μεγαλύτερο;', options:['3/4','2/3','Ίσα','Δεν συγκρίνονται'], answer:'3/4', tip:'3/4=0.75 ενώ 2/3≈0.66'},
+  { question:'Πόσο κάνει 2/5 + 1/5;', options:['3/5','3/10','2/10','1/5'], answer:'3/5', tip:'Ίδιος παρονομαστής.'},
+  { question:'Πόσο κάνει 3/4 · 2/3;', options:['1/2','6/12','3/8','5/7'], answer:'1/2', tip:'6/12=1/2.'},
+  { question:'Πόσο κάνει 2/3 : 4/5;', options:['5/6','8/15','10/12','2/15'], answer:'5/6', tip:'Πολλαπλασιάζουμε με το αντίστροφο.'},
+]
+
+const teacherGeneral2 = [
+  { tag:'Επανάληψη 2.1', question:'Απλοποίησε το 12/18.', options:['2/3','6/9','3/2','4/9'], answer:'2/3', explanation:'Διαίρεση με 6.'},
+  { tag:'Επανάληψη 2.2', question:'Ποιο είναι ισοδύναμο με το 4/5;', options:['8/10','12/20','6/5','5/4'], answer:'8/10', explanation:'4·2 / 5·2.'},
+  { tag:'Επανάληψη 2.3', question:'Ποιο είναι μεγαλύτερο;', options:['7/8','5/6','Ίσα','Δεν ξέρουμε'], answer:'7/8', explanation:'7/8=0.875 > 0.833.'},
+  { tag:'Επανάληψη 2.4', question:'Πόσο κάνει 3/4 + 1/8;', options:['7/8','4/12','1','5/8'], answer:'7/8', explanation:'6/8+1/8=7/8.'},
+  { tag:'Επανάληψη 2.4', question:'Πόσο κάνει 5/6 - 1/3;', options:['1/2','4/3','2/6','5/3'], answer:'1/2', explanation:'5/6-2/6=3/6=1/2.'},
+  { tag:'Επανάληψη 2.5', question:'Πόσο κάνει 2/3 · 9/4;', options:['3/2','18/12','2/12','9/7'], answer:'3/2', explanation:'18/12=3/2.'},
+  { tag:'Επανάληψη 2.6', question:'Πόσο κάνει 3/5 : 9/10;', options:['2/3','27/50','30/45','3/2'], answer:'2/3', explanation:'3/5·10/9=30/45=2/3.'},
+  { tag:'Mixed', question:'Πόσο κάνει 1/2 + 3/4 · 2/3;', options:['1','5/4','3/2','7/6'], answer:'1', explanation:'3/4·2/3=1/2, άρα 1/2+1/2=1.'},
+  { tag:'Mixed', question:'Πόσο κάνει (5/6 - 1/3) : 1/2;', options:['1','2/3','5/3','1/2'], answer:'1', explanation:'5/6-2/6=3/6=1/2 και 1/2:1/2=1.'},
+  { tag:'Πρόβλημα', question:'Τα 3/5 των 100 είναι:', options:['60','40','80','20'], answer:'60', explanation:'3/5·100=60.'},
 ]
 
 function ProgressBar({ value }) {
@@ -2090,6 +2113,107 @@ function Lesson26() {
 }
 
 
+
+function LessonGeneral2() {
+  const [xp, setXp] = useState(2000)
+  const [boss, setBoss] = useState({ round:0, score:0, done:false })
+  const addXp = (a)=>setXp(v=>v+a)
+
+  const bossQuestions = [
+    { q:'Στη διαίρεση κλασμάτων χρησιμοποιούμε το αντίστροφο;', ok:true },
+    { q:'Το 3/4 + 1/4 κάνει 2;', ok:false },
+    { q:'Το 2/3 · 3/5 απλοποιείται σε 2/5;', ok:true },
+    { q:'Το 5/6 είναι μικρότερο από το 1/2;', ok:false },
+  ]
+
+  function bossAnswer(ok){
+    if(boss.done) return
+    const cur=bossQuestions[boss.round]
+    const nr=boss.round+1
+    const ns=boss.score + (ok===cur.ok ? 1:0)
+    setBoss({round:nr,score:ns,done:nr>=bossQuestions.length})
+    if(ok===cur.ok) addXp(30)
+  }
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Κεφάλαιο 2</div>
+          <h1>Γενικές Ασκήσεις — Κεφάλαιο 2 👑</h1>
+          <p>Τελική επανάληψη σε όλα τα κλάσματα: ισοδύναμα, σύγκριση, πράξεις, πολλαπλασιασμός και διαίρεση.</p>
+        </div>
+        <ProfileCard xp={xp}/>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <ShieldCheck/>
+          <div>
+            <h2>Fraction Tournament</h2>
+            <p>Το μεγάλο recap του Κεφαλαίου 2.</p>
+          </div>
+        </div>
+
+        <div className="theoryGrid">
+          <article><b>2.1</b><p>Απλοποίηση και βασικές έννοιες.</p></article>
+          <article><b>2.2</b><p>Ισοδύναμα κλάσματα.</p></article>
+          <article><b>2.3</b><p>Σύγκριση και διάταξη.</p></article>
+          <article><b>2.4</b><p>Πρόσθεση και αφαίρεση.</p></article>
+          <article><b>2.5</b><p>Πολλαπλασιασμός κλασμάτων.</p></article>
+          <article><b>2.6</b><p>Διαίρεση κλασμάτων.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Final Fraction Lab</h2></div>
+          <div className="example"><b>2/3 + 1/6 = 5/6</b><p>Κάνουμε ομώνυμα.</p></div>
+          <div className="example"><b>3/4 · 2/3 = 1/2</b><p>Απλοποιούμε πριν ή μετά.</p></div>
+          <div className="example"><b>2/3 : 4/5 = 5/6</b><p>Αντιστρέφουμε το δεύτερο κλάσμα.</p></div>
+        </div>
+
+        <div className="practiceBox">
+          <h3>Championship Arena 🏆</h3>
+          <div className="numberChips">
+            <span>8/10 = 4/5</span>
+            <span>5/6 &gt; 3/4</span>
+            <span>3/4 + 1/8 = 7/8</span>
+            <span>3/5 : 9/10 = 2/3</span>
+          </div>
+          <div className="answerLine">Όλες οι δεξιότητες του κεφαλαίου μαζί.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Mega Quiz — Κεφάλαιο 2" subtitle="Γρήγορη επανάληψη από όλες τις ενότητες." items={generalQuiz2} addXp={addXp}/>
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Γενικές Ασκήσεις Κεφ. 2" items={teacherGeneral2} addXp={addXp}/>
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Final Boss</div>
+          <h2>Ο Αυτοκράτορας των Κλασμάτων 👑</h2>
+          <p>Η τελική δοκιμασία του Κεφαλαίου 2.</p>
+        </div>
+
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Μάχη {Math.min(boss.round+1,4)} / 4</p>
+          <h3>{boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q}</h3>
+
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={()=>bossAnswer(true)}>Σωστό</button>
+              <button onClick={()=>bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Master of Fractions — Chapter 2</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -2101,7 +2225,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.6')
+  const [activeLesson, setActiveLesson] = useState('2.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -2109,7 +2233,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
