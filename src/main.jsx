@@ -1052,6 +1052,79 @@ const teacherQuiz34 = [
   { tag: 'Challenge', question: 'Ποια γραφή ΔΕΝ είναι τυποποιημένη μορφή;', options: ['1,25·10⁵', '12,5·10⁴', '9,3·10⁷', '3·10²'], answer: '12,5·10⁴', explanation: 'Το 12,5 είναι μεγαλύτερο από 10.' },
 ]
 
+
+const quiz35 = [
+  { question: 'Πόσα μέτρα είναι τα 3,5 km;', options: ['3500 m', '350 m', '35 m', '0,35 m'], answer: '3500 m', tip: '1 km = 1000 m, άρα 3,5 km = 3500 m.' },
+  { question: 'Πόσα cm είναι τα 2,4 m;', options: ['240 cm', '24 cm', '2400 cm', '0,24 cm'], answer: '240 cm', tip: '1 m = 100 cm.' },
+  { question: 'Πόσα cm² είναι το 1 m²;', options: ['10.000 cm²', '100 cm²', '1000 cm²', '1.000.000 cm²'], answer: '10.000 cm²', tip: '1 m = 100 cm, άρα 1 m² = 100·100 = 10.000 cm².' },
+  { question: 'Πόσα λεπτά είναι οι 2,5 ώρες;', options: ['150 λεπτά', '120 λεπτά', '250 λεπτά', '25 λεπτά'], answer: '150 λεπτά', tip: '1 ώρα = 60 λεπτά, άρα 2,5·60=150.' },
+]
+
+const teacherQuiz35 = [
+  { tag:'Άσκηση 29α', question:'Μετέτρεψε: 4 km σε m', options:['4000 m','400 m','40 m','0,4 m'], answer:'4000 m', explanation:'1 km = 1000 m, άρα 4 km = 4000 m.' },
+  { tag:'Άσκηση 29β', question:'Μετέτρεψε: 3,2 km σε m', options:['3200 m','320 m','32 m','0,32 m'], answer:'3200 m', explanation:'3,2·1000=3200.' },
+  { tag:'Άσκηση 29γ', question:'Μετέτρεψε: 4500 m σε km', options:['4,5 km','45 km','0,45 km','450 km'], answer:'4,5 km', explanation:'4500:1000=4,5.' },
+  { tag:'Άσκηση 29δ', question:'Μετέτρεψε: 75 cm σε m', options:['0,75 m','7,5 m','0,075 m','75 m'], answer:'0,75 m', explanation:'75:100=0,75.' },
+
+  { tag:'Άσκηση 30α', question:'Μετέτρεψε: 2,4 m σε cm', options:['240 cm','24 cm','2400 cm','0,24 cm'], answer:'240 cm', explanation:'2,4·100=240.' },
+  { tag:'Άσκηση 30β', question:'Μετέτρεψε: 8 dm σε cm', options:['80 cm','8 cm','800 cm','0,8 cm'], answer:'80 cm', explanation:'1 dm=10 cm, άρα 8 dm=80 cm.' },
+  { tag:'Άσκηση 30γ', question:'Μετέτρεψε: 350 mm σε cm', options:['35 cm','3,5 cm','3500 cm','0,35 cm'], answer:'35 cm', explanation:'1 cm=10 mm, άρα 350:10=35.' },
+  { tag:'Άσκηση 30δ', question:'Μετέτρεψε: 12,5 cm σε mm', options:['125 mm','12,5 mm','1,25 mm','1250 mm'], answer:'125 mm', explanation:'12,5·10=125.' },
+
+  { tag:'Άσκηση 31α', question:'Μετέτρεψε: 1 m² σε cm²', options:['10.000 cm²','100 cm²','1000 cm²','1.000.000 cm²'], answer:'10.000 cm²', explanation:'1 m² = 100 cm · 100 cm = 10.000 cm².' },
+  { tag:'Άσκηση 31β', question:'Μετέτρεψε: 2 m² σε cm²', options:['20.000 cm²','200 cm²','2000 cm²','2.000.000 cm²'], answer:'20.000 cm²', explanation:'2·10.000=20.000.' },
+  { tag:'Άσκηση 31γ', question:'Μετέτρεψε: 35.000 cm² σε m²', options:['3,5 m²','35 m²','0,35 m²','350 m²'], answer:'3,5 m²', explanation:'35.000:10.000=3,5.' },
+  { tag:'Άσκηση 31δ', question:'Μετέτρεψε: 4,2 m² σε dm²', options:['420 dm²','42 dm²','4200 dm²','0,42 dm²'], answer:'420 dm²', explanation:'1 m² = 100 dm², άρα 4,2·100=420.' },
+
+  { tag:'Άσκηση 32α', question:'Μετέτρεψε: 1 m³ σε dm³', options:['1000 dm³','100 dm³','10 dm³','1.000.000 dm³'], answer:'1000 dm³', explanation:'1 m³ = 10·10·10 dm³ = 1000 dm³.' },
+  { tag:'Άσκηση 32β', question:'Μετέτρεψε: 2,5 m³ σε dm³', options:['2500 dm³','250 dm³','25 dm³','0,25 dm³'], answer:'2500 dm³', explanation:'2,5·1000=2500.' },
+  { tag:'Άσκηση 32γ', question:'Μετέτρεψε: 3000 cm³ σε dm³', options:['3 dm³','30 dm³','0,3 dm³','300 dm³'], answer:'3 dm³', explanation:'1 dm³=1000 cm³, άρα 3000:1000=3.' },
+  { tag:'Άσκηση 32δ', question:'Μετέτρεψε: 0,75 dm³ σε cm³', options:['750 cm³','75 cm³','7500 cm³','0,75 cm³'], answer:'750 cm³', explanation:'0,75·1000=750.' },
+
+  { tag:'Άσκηση 33α', question:'Μετέτρεψε: 3 h σε min', options:['180 min','300 min','60 min','120 min'], answer:'180 min', explanation:'3·60=180.' },
+  { tag:'Άσκηση 33β', question:'Μετέτρεψε: 2,5 h σε min', options:['150 min','250 min','120 min','25 min'], answer:'150 min', explanation:'2,5·60=150.' },
+  { tag:'Άσκηση 33γ', question:'Μετέτρεψε: 420 sec σε min', options:['7 min','42 min','4,2 min','70 min'], answer:'7 min', explanation:'420:60=7.' },
+  { tag:'Άσκηση 33δ', question:'Μετέτρεψε: 1 h 20 min σε min', options:['80 min','120 min','60 min','100 min'], answer:'80 min', explanation:'1 ώρα=60 λεπτά, άρα 60+20=80.' },
+
+  { tag:'Άσκηση 34α', question:'Ένα μήκος είναι 2,3 m και άλλο 45 cm. Πόσο είναι συνολικά σε m;', options:['2,75 m','47,3 m','2,345 m','6,8 m'], answer:'2,75 m', explanation:'45 cm=0,45 m, άρα 2,3+0,45=2,75.' },
+  { tag:'Άσκηση 34β', question:'Ένα μονοπάτι έχει 1,2 km και περπατήσαμε 350 m. Πόσο μένει σε m;', options:['850 m','1550 m','1,55 m','950 m'], answer:'850 m', explanation:'1,2 km=1200 m, άρα 1200-350=850.' },
+  { tag:'Άσκηση 34γ', question:'Πόσα cm είναι 1,5 m + 25 cm;', options:['175 cm','150,25 cm','40 cm','1525 cm'], answer:'175 cm', explanation:'1,5 m=150 cm, άρα 150+25=175.' },
+
+  { tag:'Άσκηση 35α', question:'Ορθογώνιο έχει πλευρές 3 m και 40 cm. Εμβαδόν σε m²;', options:['1,2 m²','120 m²','12 m²','0,12 m²'], answer:'1,2 m²', explanation:'40 cm=0,4 m, άρα Ε=3·0,4=1,2 m².' },
+  { tag:'Άσκηση 35β', question:'Τετράγωνο πλευράς 50 cm. Εμβαδόν σε m²;', options:['0,25 m²','25 m²','2500 m²','0,5 m²'], answer:'0,25 m²', explanation:'50 cm=0,5 m, άρα 0,5²=0,25 m².' },
+  { tag:'Άσκηση 35γ', question:'Πλακάκι 20 cm x 30 cm. Εμβαδόν σε cm²;', options:['600 cm²','50 cm²','0,06 cm²','6000 cm²'], answer:'600 cm²', explanation:'20·30=600 cm².' },
+
+  { tag:'Άσκηση 36α', question:'Κύβος ακμής 2 dm. Όγκος σε dm³;', options:['8 dm³','4 dm³','6 dm³','2 dm³'], answer:'8 dm³', explanation:'V=2³=8 dm³.' },
+  { tag:'Άσκηση 36β', question:'Ορθογώνιο παραλληλεπίπεδο 2 m x 3 m x 4 m. Όγκος;', options:['24 m³','9 m³','14 m³','12 m³'], answer:'24 m³', explanation:'2·3·4=24 m³.' },
+  { tag:'Άσκηση 36γ', question:'Δεξαμενή 1 m³ χωράει πόσα λίτρα;', options:['1000 L','100 L','10 L','1 L'], answer:'1000 L', explanation:'1 m³ = 1000 L.' },
+
+  { tag:'Άσκηση 37α', question:'Πόσο είναι 2 kg σε g;', options:['2000 g','200 g','20 g','0,2 g'], answer:'2000 g', explanation:'1 kg=1000 g.' },
+  { tag:'Άσκηση 37β', question:'Πόσο είναι 750 g σε kg;', options:['0,75 kg','7,5 kg','75 kg','0,075 kg'], answer:'0,75 kg', explanation:'750:1000=0,75.' },
+  { tag:'Άσκηση 37γ', question:'Πόσο είναι 3,4 t σε kg;', options:['3400 kg','340 kg','34 kg','0,34 kg'], answer:'3400 kg', explanation:'1 t=1000 kg.' },
+
+  { tag:'Άσκηση 38α', question:'Ποια μετατροπή είναι σωστή;', options:['5 m = 500 cm','5 m = 50 cm','5 m = 5000 cm','5 m = 0,5 cm'], answer:'5 m = 500 cm', explanation:'1 m=100 cm.' },
+  { tag:'Άσκηση 38β', question:'Ποια μετατροπή είναι σωστή;', options:['2 h = 120 min','2 h = 20 min','2 h = 200 min','2 h = 720 min'], answer:'2 h = 120 min', explanation:'2·60=120.' },
+  { tag:'Άσκηση 38γ', question:'Ποια μετατροπή είναι σωστή;', options:['1 L = 1000 mL','1 L = 100 mL','1 L = 10 mL','1 L = 0,001 mL'], answer:'1 L = 1000 mL', explanation:'1 λίτρο=1000 mL.' },
+
+  { tag:'Άσκηση 39α', question:'Ένα μπουκάλι έχει 1,5 L. Πόσα mL είναι;', options:['1500 mL','150 mL','15 mL','0,15 mL'], answer:'1500 mL', explanation:'1,5·1000=1500.' },
+  { tag:'Άσκηση 39β', question:'Πόσα L είναι τα 250 mL;', options:['0,25 L','2,5 L','25 L','0,025 L'], answer:'0,25 L', explanation:'250:1000=0,25.' },
+  { tag:'Άσκηση 39γ', question:'Πόσα mL είναι 0,75 L;', options:['750 mL','75 mL','7500 mL','0,75 mL'], answer:'750 mL', explanation:'0,75·1000=750.' },
+
+  { tag:'Άσκηση 40α', question:'Αγώνας αρχίζει 10:35 και τελειώνει 12:05. Διάρκεια;', options:['1 h 30 min','2 h 30 min','90 h','1 h'], answer:'1 h 30 min', explanation:'Από 10:35 έως 12:05 είναι 90 λεπτά.' },
+  { tag:'Άσκηση 40β', question:'Μάθημα 45 min ξεκινά 9:20. Τι ώρα τελειώνει;', options:['10:05','9:65','10:15','9:55'], answer:'10:05', explanation:'9:20 + 45 min = 10:05.' },
+  { tag:'Άσκηση 40γ', question:'3 ώρες και 15 λεπτά είναι πόσα λεπτά;', options:['195 min','180 min','315 min','165 min'], answer:'195 min', explanation:'3·60+15=195.' },
+
+  { tag:'Άσκηση 41', question:'Ποιο είναι μεγαλύτερο: 3,5 m ή 320 cm;', options:['3,5 m','320 cm','Ίσα','Δεν συγκρίνονται'], answer:'3,5 m', explanation:'3,5 m=350 cm > 320 cm.' },
+  { tag:'Άσκηση 42', question:'Ποιο είναι μικρότερο: 0,8 kg ή 750 g;', options:['750 g','0,8 kg','Ίσα','Δεν συγκρίνονται'], answer:'750 g', explanation:'0,8 kg=800 g, άρα 750 g μικρότερο.' },
+  { tag:'Άσκηση 43', question:'Ποιο είναι μεγαλύτερο: 1,2 L ή 950 mL;', options:['1,2 L','950 mL','Ίσα','Δεν συγκρίνονται'], answer:'1,2 L', explanation:'1,2 L=1200 mL.' },
+  { tag:'Άσκηση 44', question:'Πόσα πλακάκια 0,25 m² χρειάζονται για 5 m²;', options:['20','10','25','5'], answer:'20', explanation:'5:0,25=20.' },
+  { tag:'Άσκηση 45', question:'Πόσα μπουκάλια 0,5 L γεμίζουν 3 L;', options:['6','3','1,5','5'], answer:'6', explanation:'3:0,5=6.' },
+  { tag:'Άσκηση 46', question:'Πόσα σακουλάκια 250 g κάνουν 2 kg;', options:['8','4','6','10'], answer:'8', explanation:'2 kg=2000 g και 2000:250=8.' },
+  { tag:'Άσκηση 47', question:'Αν περπατώ 1,5 km κάθε μέρα, πόσα m περπατώ σε 4 μέρες;', options:['6000 m','600 m','60 m','4000 m'], answer:'6000 m', explanation:'1,5 km=1500 m και 1500·4=6000.' },
+  { tag:'Άσκηση 48', question:'Κήπος 12 m x 8 m. Εμβαδόν;', options:['96 m²','20 m²','40 m²','192 m²'], answer:'96 m²', explanation:'12·8=96.' },
+  { tag:'Άσκηση 49', question:'Δοχείο 2,5 L γεμίζει ποτήρια 250 mL. Πόσα ποτήρια;', options:['10','8','12','6'], answer:'10', explanation:'2,5 L=2500 mL και 2500:250=10.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -2694,6 +2767,98 @@ function Lesson34() {
   )
 }
 
+
+function Lesson35() {
+  const [xp, setXp] = useState(2700)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 1 km είναι 1000 m;', ok: true },
+    { q: 'Το 1 m² είναι 100 cm²;', ok: false },
+    { q: 'Οι 2,5 ώρες είναι 150 λεπτά;', ok: true },
+    { q: 'Το 1 L είναι 1000 mL;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 3.5</div>
+          <h1>Μονάδες Μέτρησης</h1>
+          <p>Μαθαίνουμε μετατροπές μήκους, εμβαδού, όγκου, μάζας, χωρητικότητας και χρόνου μέσα από πρακτικά προβλήματα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η 3.5 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Μήκος</b><p>km → m → dm → cm → mm. Κάθε βήμα αλλάζει με ×10 ή :10.</p></article>
+          <article><b>2. Εμβαδό</b><p>Στα τετραγωνικά, κάθε βήμα αλλάζει με ×100 ή :100.</p></article>
+          <article><b>3. Όγκος</b><p>Στα κυβικά, κάθε βήμα αλλάζει με ×1000 ή :1000.</p></article>
+          <article><b>4. Χρόνος</b><p>1 ώρα = 60 λεπτά και 1 λεπτό = 60 δευτερόλεπτα.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Conversion Lab</h2></div>
+          <div className="example"><b>3,5 km = 3500 m</b><p>Πολλαπλασιάζουμε με 1000.</p></div>
+          <div className="example"><b>1 m² = 10.000 cm²</b><p>Για εμβαδό, το 100 γίνεται 100².</p></div>
+          <div className="example"><b>2,5 h = 150 min</b><p>2,5·60 = 150.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Metric Explorer 📏</h3>
+          <p>Γρήγορες μετατροπές:</p>
+          <div className="numberChips">
+            <span>750 g = 0,75 kg</span>
+            <span>1,5 L = 1500 mL</span>
+            <span>2 m² = 20.000 cm²</span>
+            <span>1 m³ = 1000 L</span>
+          </div>
+          <div className="answerLine">Πρώτα φέρνουμε όλες τις ποσότητες στην ίδια μονάδα.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.5" subtitle="Μετατροπές μονάδων και προβλήματα μέτρησης." items={quiz35} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.5" items={teacherQuiz35} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Master of Measurements 📏⏱️🧪</h2>
+          <p>Απάντησε σωστά σε 4 γρήγορες κρίσεις για να πάρεις το badge της 3.5.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">📏</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Master of Measurements</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -2705,7 +2870,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('3.4')
+  const [activeLesson, setActiveLesson] = useState('3.5')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -2713,7 +2878,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
