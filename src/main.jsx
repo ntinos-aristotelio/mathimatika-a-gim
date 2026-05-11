@@ -49,6 +49,7 @@ const curriculum = [
           { id: '3.3', title: '3.3 Δυνάμεις με Βάση Δεκαδικό', ready: true },
           { id: '3.4', title: 'Τυποποιημένη μορφή', ready: true },
           { id: '3.5', title: 'Μονάδες μέτρησης', ready: true },
+    { id: '3.gen', title: 'Γενικές Ασκήσεις Κεφ. 3', ready: true },
         ],
       },
     ],
@@ -1123,6 +1124,69 @@ const teacherQuiz35 = [
   { tag:'Άσκηση 47', question:'Αν περπατώ 1,5 km κάθε μέρα, πόσα m περπατώ σε 4 μέρες;', options:['6000 m','600 m','60 m','4000 m'], answer:'6000 m', explanation:'1,5 km=1500 m και 1500·4=6000.' },
   { tag:'Άσκηση 48', question:'Κήπος 12 m x 8 m. Εμβαδόν;', options:['96 m²','20 m²','40 m²','192 m²'], answer:'96 m²', explanation:'12·8=96.' },
   { tag:'Άσκηση 49', question:'Δοχείο 2,5 L γεμίζει ποτήρια 250 mL. Πόσα ποτήρια;', options:['10','8','12','6'], answer:'10', explanation:'2,5 L=2500 mL και 2500:250=10.' },
+]
+
+
+const generalQuiz3 = [
+  { question:'Πόσο κάνει 9,2 + 3,7;', options:['12,9','12,7','13,9','5,5'], answer:'12,9', tip:'Ευθυγραμμίζουμε τις υποδιαστολές.' },
+  { question:'Πόσο κάνει 0,3²;', options:['0,09','0,6','0,03','0,9'], answer:'0,09', tip:'0,3·0,3=0,09.' },
+  { question:'Ποια είναι η τυποποιημένη μορφή του 45.000;', options:['4,5·10⁴','45·10³','0,45·10⁵','4,5·10³'], answer:'4,5·10⁴', tip:'Πρώτος παράγοντας από 1 έως μικρότερος του 10.' },
+  { question:'Πόσα μέτρα είναι τα 3,5 km;', options:['3500 m','350 m','35 m','0,35 m'], answer:'3500 m', tip:'1 km=1000 m.' },
+  { question:'Πόσα λεπτά είναι οι 2,5 ώρες;', options:['150 min','250 min','120 min','25 min'], answer:'150 min', tip:'2,5·60=150.' },
+]
+const teacherGeneral3 = [
+  { tag: '3.1', question: 'Γράψε ως δεκαδικό αριθμό: 7/10', options: ['0,07','0,7','7,10','10,7'], answer: '0,7', explanation: '7/10 = 0,7.' },
+  { tag: '3.1', question: 'Γράψε ως δεκαδικό αριθμό: 34/100', options: ['0,34','3,4','0,034','34,100'], answer: '0,34', explanation: '34 εκατοστά = 0,34.' },
+  { tag: '3.1', question: 'Γράψε ως δεκαδικό κλάσμα: 5,08', options: ['508/100','508/10','58/100','5/8'], answer: '508/100', explanation: 'Δύο δεκαδικά ψηφία, παρονομαστής 100.' },
+  { tag: '3.1', question: 'Σύγκρινε: 4,06 ___ 4,6', options: ['<','>','=','Δεν συγκρίνονται'], answer: '<', explanation: '4,06 < 4,60.' },
+  { tag: '3.1', question: 'Στρογγυλοποίησε το 12,76 στη μονάδα.', options: ['13','12','12,8','12,7'], answer: '13', explanation: 'Το 0,76 ανεβάζει τη μονάδα.' },
+  { tag: '3.1', question: 'Στρογγυλοποίησε το 8,243 στα εκατοστά.', options: ['8,24','8,25','8,2','8,3'], answer: '8,24', explanation: 'Το χιλιοστό είναι 3, δεν ανεβαίνει.' },
+  { tag: '3.1', question: 'Ποιος είναι μεγαλύτερος;', options: ['0,909','0,99','0,9','0,099'], answer: '0,99', explanation: '0,99 = 0,990 και είναι μεγαλύτερο.' },
+  { tag: '3.1', question: 'Ποια αύξουσα σειρά είναι σωστή;', options: ['1,02, 1,2, 1,22','1,22, 1,2, 1,02','1,2, 1,02, 1,22','1,02, 1,22, 1,2'], answer: '1,02, 1,2, 1,22', explanation: '1,020 < 1,200 < 1,220.' },
+  { tag: '3.2', question: 'Υπολόγισε: 9,2 + 3,7', options: ['12,9','12,7','13,9','5,5'], answer: '12,9', explanation: 'Ευθυγραμμίζουμε υποδιαστολές.' },
+  { tag: '3.2', question: 'Υπολόγισε: 20,18 - 13,751', options: ['6,429','7,429','6,531','33,931'], answer: '6,429', explanation: '20,180 - 13,751 = 6,429.' },
+  { tag: '3.2', question: 'Υπολόγισε: 13,4 · 2,3', options: ['30,82','308,2','3,082','15,7'], answer: '30,82', explanation: '134·23=3082 και δύο δεκαδικά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 0,01 · 5,4', options: ['0,054','0,54','5,4','0,0054'], answer: '0,054', explanation: 'Με ×0,01 δύο θέσεις αριστερά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 27,3 : 0,7', options: ['39','3,9','390','19,11'], answer: '39', explanation: '27,3:0,7 = 273:7 = 39.' },
+  { tag: '3.2', question: 'Υπολόγισε: 2,5 : 0,5', options: ['5','0,5','50','1,25'], answer: '5', explanation: '25:5=5.' },
+  { tag: '3.2', question: 'Υπολόγισε: 2,34 · 100', options: ['234','23,4','0,234','2340'], answer: '234', explanation: 'Η υποδιαστολή πάει δύο θέσεις δεξιά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 56,3 : 10', options: ['5,63','563','0,563','56,30'], answer: '5,63', explanation: 'Η υποδιαστολή πάει μία θέση αριστερά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 1,23 : 0,001', options: ['1230','123','12,3','0,00123'], answer: '1230', explanation: 'Διαίρεση με 0,001 σημαίνει ×1000.' },
+  { tag: '3.2', question: 'Υπολόγισε: 420·0,1 + 0,2·100', options: ['62','42,2','420,2','22'], answer: '62', explanation: '42+20=62.' },
+  { tag: '3.2', question: 'Υπολόγισε: 24·6 - 3,4 + 2,9', options: ['143,5','144','137,7','149,3'], answer: '143,5', explanation: '144-3,4+2,9=143,5.' },
+  { tag: '3.3', question: 'Υπολόγισε: 0,2²', options: ['0,04','0,4','0,02','4'], answer: '0,04', explanation: '0,2·0,2=0,04.' },
+  { tag: '3.3', question: 'Υπολόγισε: 1,3²', options: ['1,69','2,6','1,6','16,9'], answer: '1,69', explanation: '1,3·1,3=1,69.' },
+  { tag: '3.3', question: 'Υπολόγισε: 0,3³', options: ['0,027','0,09','0,9','0,003'], answer: '0,027', explanation: '0,3·0,3·0,3=0,027.' },
+  { tag: '3.3', question: 'Υπολόγισε: 0,01²', options: ['0,0001','0,01','0,001','0,1'], answer: '0,0001', explanation: '0,01·0,01=0,0001.' },
+  { tag: '3.3', question: 'Ποιο κάνουμε πρώτα στην παράσταση 2 + 0,5²;', options: ['Τη δύναμη','Την πρόσθεση','Τη στρογγυλοποίηση','Τίποτα'], answer: 'Τη δύναμη', explanation: 'Οι δυνάμεις προηγούνται.' },
+  { tag: '3.3', question: 'Υπολόγισε: 2 + 0,5²', options: ['2,25','2,5','1','2,10'], answer: '2,25', explanation: '0,5²=0,25 και 2+0,25=2,25.' },
+  { tag: '3.4', question: 'Γράψε σε τυποποιημένη μορφή: 45.000', options: ['4,5·10⁴','45·10³','0,45·10⁵','4,5·10³'], answer: '4,5·10⁴', explanation: '45.000=4,5·10.000.' },
+  { tag: '3.4', question: 'Γράψε σε τυποποιημένη μορφή: 8.200.000', options: ['8,2·10⁶','82·10⁵','0,82·10⁷','8,2·10⁵'], answer: '8,2·10⁶', explanation: '8.200.000=8,2·10⁶.' },
+  { tag: '3.4', question: 'Γράψε ως αριθμό: 7,5·10⁴', options: ['75.000','7.500','750.000','0,00075'], answer: '75.000', explanation: '7,5·10.000=75.000.' },
+  { tag: '3.4', question: 'Γράψε ως αριθμό: 2,36·10⁶', options: ['2.360.000','236.000','23.600.000','0,000236'], answer: '2.360.000', explanation: '2,36·1.000.000.' },
+  { tag: '3.4', question: 'Ποια είναι σωστή τυποποιημένη μορφή;', options: ['6,4·10⁵','64·10⁴','0,64·10⁶','640·10³'], answer: '6,4·10⁵', explanation: 'Ο πρώτος παράγοντας είναι από 1 μέχρι μικρότερος του 10.' },
+  { tag: '3.4', question: 'Ποια ΔΕΝ είναι τυποποιημένη μορφή;', options: ['12,5·10⁴','1,25·10⁵','9,3·10⁷','3·10²'], answer: '12,5·10⁴', explanation: 'Το 12,5 είναι μεγαλύτερο από 10.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 3,5 km σε m', options: ['3500 m','350 m','35 m','0,35 m'], answer: '3500 m', explanation: '3,5·1000=3500.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 75 cm σε m', options: ['0,75 m','7,5 m','0,075 m','75 m'], answer: '0,75 m', explanation: '75:100=0,75.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 1 m² σε cm²', options: ['10.000 cm²','100 cm²','1000 cm²','1.000.000 cm²'], answer: '10.000 cm²', explanation: '100·100=10.000.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 2,5 m³ σε dm³', options: ['2500 dm³','250 dm³','25 dm³','0,25 dm³'], answer: '2500 dm³', explanation: '2,5·1000=2500.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 2,5 h σε min', options: ['150 min','250 min','120 min','25 min'], answer: '150 min', explanation: '2,5·60=150.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 750 g σε kg', options: ['0,75 kg','7,5 kg','75 kg','0,075 kg'], answer: '0,75 kg', explanation: '750:1000=0,75.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 1,5 L σε mL', options: ['1500 mL','150 mL','15 mL','0,15 mL'], answer: '1500 mL', explanation: '1,5·1000=1500.' },
+  { tag: '3.5', question: 'Ποιο είναι μεγαλύτερο: 3,5 m ή 320 cm;', options: ['3,5 m','320 cm','Ίσα','Δεν συγκρίνονται'], answer: '3,5 m', explanation: '3,5 m=350 cm.' },
+  { tag: '3.5', question: 'Πόσα πλακάκια 0,25 m² χρειάζονται για 5 m²;', options: ['20','10','25','5'], answer: '20', explanation: '5:0,25=20.' },
+  { tag: '3.5', question: 'Δοχείο 2,5 L γεμίζει ποτήρια 250 mL. Πόσα ποτήρια;', options: ['10','8','12','6'], answer: '10', explanation: '2,5 L=2500 mL, 2500:250=10.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 1,2·10 + 0,8', options: ['12,8','1,28','20','2,0'], answer: '12,8', explanation: '1,2·10=12 και +0,8=12,8.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 3,5 m + 40 cm σε m', options: ['3,9 m','43,5 m','3,54 m','7,5 m'], answer: '3,9 m', explanation: '40 cm=0,4 m.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 0,5² + 0,25', options: ['0,5','0,75','0,25','1'], answer: '0,5', explanation: '0,5²=0,25 και +0,25=0,5.' },
+  { tag: 'Mixed', question: 'Ποιο είναι μεγαλύτερο: 4,5·10³ ή 450;', options: ['4,5·10³','450','Ίσα','Δεν συγκρίνονται'], answer: '4,5·10³', explanation: '4,5·10³=4500.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 2,4 m σε cm και μετά επί 2', options: ['480 cm','240 cm','48 cm','4,8 cm'], answer: '480 cm', explanation: '2,4 m=240 cm και 240·2=480.' },
+  { tag: 'Mixed', question: 'Στρογγυλοποίησε το 9,96 στη μονάδα.', options: ['10','9','9,9','9,96'], answer: '10', explanation: '0,96 ανεβάζει τη μονάδα.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 7,5·10⁴ + 25.000', options: ['100.000','75.025','750.000','50.000'], answer: '100.000', explanation: '7,5·10⁴=75.000 και +25.000=100.000.' },
+  { tag: 'Mixed', question: 'Αγώνας 1 h 45 min. Πόσα λεπτά;', options: ['105 min','145 min','100 min','90 min'], answer: '105 min', explanation: '60+45=105.' },
+  { tag: 'Mixed', question: 'Κήπος 12 m x 8 m. Εμβαδόν;', options: ['96 m²','20 m²','40 m²','192 m²'], answer: '96 m²', explanation: '12·8=96.' },
+  { tag: 'Final Boss', question: 'Ποια είναι η σωστή σειρά πράξεων;', options: ['Παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις','Προσθέσεις πρώτα','Τυχαία','Διαιρέσεις πάντα τελευταίες'], answer: 'Παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις', explanation: 'Αυτή είναι η βασική σειρά πράξεων.' },
+  { tag: 'Final Boss', question: 'Ποια απάντηση είναι σωστή: 0,3² + 0,91', options: ['1','1,21','0,94','0,091'], answer: '1', explanation: '0,3²=0,09 και 0,09+0,91=1.' }
 ]
 
 function ProgressBar({ value }) {
@@ -2859,6 +2923,103 @@ function Lesson35() {
   )
 }
 
+
+function LessonGeneral3() {
+  const [xp, setXp] = useState(3000)
+  const [boss, setBoss] = useState({ round:0, score:0, done:false })
+  const addXp = (a)=>setXp(v=>v+a)
+
+  const bossQuestions = [
+    { q:'Το 0,3² είναι 0,09;', ok:true },
+    { q:'Το 4,5·10⁴ είναι 45.000;', ok:true },
+    { q:'Το 1 m² είναι 100 cm²;', ok:false },
+    { q:'Το 27,3 : 0,7 είναι 39;', ok:true },
+    { q:'Το 3,5 km είναι 350 m;', ok:false },
+  ]
+
+  function bossAnswer(ok){
+    if(boss.done) return
+    const cur=bossQuestions[boss.round]
+    const nr=boss.round+1
+    const ns=boss.score + (ok===cur.ok ? 1:0)
+    setBoss({round:nr,score:ns,done:nr>=bossQuestions.length})
+    if(ok===cur.ok) addXp(30)
+  }
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Κεφάλαιο 3</div>
+          <h1>Γενικές Ασκήσεις — Κεφάλαιο 3 👑</h1>
+          <p>Τελική επανάληψη σε δεκαδικούς, πράξεις, δυνάμεις, τυποποιημένη μορφή και μονάδες μέτρησης.</p>
+        </div>
+        <ProfileCard xp={xp}/>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <ShieldCheck/>
+          <div>
+            <h2>Grand Arena — Chapter 3</h2>
+            <p>Όλες οι δεξιότητες του κεφαλαίου σε μία τελική αρένα.</p>
+          </div>
+        </div>
+        <div className="theoryGrid">
+          <article><b>3.1</b><p>Δεκαδικά κλάσματα, διάταξη και στρογγυλοποίηση.</p></article>
+          <article><b>3.2</b><p>Πράξεις με δεκαδικούς αριθμούς.</p></article>
+          <article><b>3.3</b><p>Δυνάμεις με βάση δεκαδικό.</p></article>
+          <article><b>3.4</b><p>Τυποποιημένη μορφή μεγάλων αριθμών.</p></article>
+          <article><b>3.5</b><p>Μονάδες μέτρησης και προβλήματα.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Mission Lab</h2></div>
+          <div className="example"><b>Decimal Mission</b><p>20,18 - 13,751 = 6,429</p></div>
+          <div className="example"><b>Power Mission</b><p>0,3² + 0,91 = 1</p></div>
+          <div className="example"><b>Measurement Mission</b><p>3,5 km = 3500 m</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Dimension Control Center ⚡</h3>
+          <div className="numberChips">
+            <span>4,5·10⁴ = 45.000</span>
+            <span>1 m² = 10.000 cm²</span>
+            <span>2,5 h = 150 min</span>
+            <span>27,3 : 0,7 = 39</span>
+          </div>
+          <div className="answerLine">Το Κεφάλαιο 3 ενώνει δεκαδικούς, δυνάμεις και μετρήσεις.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Mega Quiz — Κεφάλαιο 3" subtitle="Γρήγορη επανάληψη από όλες τις ενότητες." items={generalQuiz3} addXp={addXp}/>
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Γενικές Ασκήσεις Κεφ. 3" items={teacherGeneral3} addXp={addXp}/>
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Final Boss</div>
+          <h2>The Dimension Master 👑⚡📏</h2>
+          <p>Η τελική δοκιμασία του Κεφαλαίου 3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Μάχη {Math.min(boss.round+1,5)} / 5</p>
+          <h3>{boss.done ? `Τελικό σκορ: ${boss.score}/5` : bossQuestions[boss.round].q}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={()=>bossAnswer(true)}>Σωστό</button>
+              <button onClick={()=>bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Master of Chapter 3</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -2870,7 +3031,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('3.5')
+  const [activeLesson, setActiveLesson] = useState('3.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -2878,7 +3039,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
