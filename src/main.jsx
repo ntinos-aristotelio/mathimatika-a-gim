@@ -946,6 +946,89 @@ const teacherQuiz31 = [
   { tag: 'Άσκηση 13β', question: 'Ποιος αριθμός είναι ανάμεσα στο 0,4 και στο 0,5;', options: ['0,45', '0,35', '0,55', '0,04'], answer: '0,45', explanation: '0,45 βρίσκεται ανάμεσα στο 0,4 και στο 0,5.' },
 ]
 
+
+const quiz3233 = [
+  { question: 'Πόσο κάνει 9,2 + 3,7;', options: ['12,9', '12,7', '13,9', '5,5'], answer: '12,9', tip: 'Ευθυγραμμίζουμε τις υποδιαστολές.' },
+  { question: 'Πόσο κάνει 14,2 - 8,4;', options: ['5,8', '6,2', '6,8', '5,2'], answer: '5,8', tip: '14,2 - 8,4 = 5,8.' },
+  { question: 'Πόσο κάνει 1,2 · 0,5;', options: ['0,6', '6', '0,06', '1,7'], answer: '0,6', tip: '12·5=60 και έχουμε δύο δεκαδικά ψηφία συνολικά.' },
+  { question: 'Πόσο κάνει 4,8 : 0,6;', options: ['8', '0,8', '80', '2,88'], answer: '8', tip: 'Πολλαπλασιάζουμε και τα δύο με 10: 48:6=8.' },
+  { question: 'Πόσο κάνει 0,3²;', options: ['0,09', '0,6', '0,03', '0,9'], answer: '0,09', tip: '0,3·0,3=0,09.' },
+]
+
+const teacherQuiz3233 = [
+  { tag: 'Άσκηση 14α', question: 'Υπολόγισε: 9,2 + 3,7', options: ['12,9', '12,7', '13,9', '5,5'], answer: '12,9', explanation: '9,2+3,7=12,9.' },
+  { tag: 'Άσκηση 14β', question: 'Υπολόγισε: 19,2 + 11,4', options: ['30,6', '30,4', '31,6', '7,8'], answer: '30,6', explanation: '19,2+11,4=30,6.' },
+  { tag: 'Άσκηση 14γ', question: 'Υπολόγισε: 12,84 + 5,64', options: ['18,48', '17,48', '18,38', '7,20'], answer: '18,48', explanation: '12,84+5,64=18,48.' },
+  { tag: 'Άσκηση 14δ', question: 'Υπολόγισε: 7,9 + 12,08', options: ['19,98', '19,17', '20,98', '4,18'], answer: '19,98', explanation: '7,90+12,08=19,98.' },
+  { tag: 'Άσκηση 14ε', question: 'Υπολόγισε: 18,931 + 8,357', options: ['27,288', '26,288', '27,188', '10,574'], answer: '27,288', explanation: '18,931+8,357=27,288.' },
+  { tag: 'Άσκηση 14στ', question: 'Υπολόγισε: 329,501 + 27,6', options: ['357,101', '356,101', '357,001', '301,901'], answer: '357,101', explanation: '329,501+27,600=357,101.' },
+  { tag: 'Άσκηση 14ζ', question: 'Υπολόγισε: 853,987 + 14,98 + 10,006', options: ['878,973', '878,873', '879,973', '868,967'], answer: '878,973', explanation: '853,987+14,980+10,006=878,973.' },
+
+  { tag: 'Άσκηση 15α', question: 'Υπολόγισε: 14,2 - 8,4', options: ['5,8', '6,2', '6,8', '5,2'], answer: '5,8', explanation: '14,2-8,4=5,8.' },
+  { tag: 'Άσκηση 15β', question: 'Υπολόγισε: 9,7 - 3,2', options: ['6,5', '6,9', '5,5', '12,9'], answer: '6,5', explanation: '9,7-3,2=6,5.' },
+  { tag: 'Άσκηση 15γ', question: 'Υπολόγισε: 20,18 - 13,751', options: ['6,429', '7,429', '6,531', '33,931'], answer: '6,429', explanation: '20,180-13,751=6,429.' },
+  { tag: 'Άσκηση 15δ', question: 'Υπολόγισε: 9,352 - 3,01', options: ['6,342', '6,352', '6,242', '12,362'], answer: '6,342', explanation: '9,352-3,010=6,342.' },
+  { tag: 'Άσκηση 15ε', question: 'Υπολόγισε: 48,75 - 3,567', options: ['45,183', '45,283', '44,183', '52,317'], answer: '45,183', explanation: '48,750-3,567=45,183.' },
+  { tag: 'Άσκηση 15στ', question: 'Υπολόγισε: 456 - 58,764', options: ['397,236', '398,236', '397,336', '514,764'], answer: '397,236', explanation: '456,000-58,764=397,236.' },
+  { tag: 'Άσκηση 15ζ', question: 'Υπολόγισε: 1.070,8005 - 701,387', options: ['369,4135', '369,5135', '368,4135', '1.772,1875'], answer: '369,4135', explanation: '1070,8005-701,3870=369,4135.' },
+  { tag: 'Άσκηση 15η', question: 'Υπολόγισε: 192,986', options: ['192,986', '192,896', '129,986', '193'], answer: '192,986', explanation: 'Η τιμή της παράστασης είναι ο ίδιος αριθμός, αν δεν υπάρχει δεύτερος όρος.' },
+
+  { tag: 'Άσκηση 16α', question: 'Υπολόγισε: 12,7 · 6', options: ['76,2', '7,62', '762', '18,7'], answer: '76,2', explanation: '127·6=762 και βάζουμε ένα δεκαδικό ψηφίο.' },
+  { tag: 'Άσκηση 16β', question: 'Υπολόγισε: 13,4 · 2,3', options: ['30,82', '308,2', '3,082', '15,7'], answer: '30,82', explanation: '134·23=3082 με δύο δεκαδικά ψηφία.' },
+  { tag: 'Άσκηση 16γ', question: 'Υπολόγισε: 0,01 · 5,4', options: ['0,054', '0,54', '5,4', '0,0054'], answer: '0,054', explanation: 'Πολλαπλασιασμός με 0,01 μετακινεί την υποδιαστολή δύο θέσεις αριστερά.' },
+  { tag: 'Άσκηση 16δ', question: 'Υπολόγισε: 63,7 · 1,4', options: ['89,18', '891,8', '65,1', '8,918'], answer: '89,18', explanation: '637·14=8918 με δύο δεκαδικά ψηφία.' },
+  { tag: 'Άσκηση 16ε', question: 'Υπολόγισε: 11,7 · 8,7', options: ['101,79', '10,179', '20,4', '1017,9'], answer: '101,79', explanation: '117·87=10179 με δύο δεκαδικά.' },
+  { tag: 'Άσκηση 16στ', question: 'Υπολόγισε: 13,8 · 0,51', options: ['7,038', '70,38', '14,31', '0,7038'], answer: '7,038', explanation: '138·51=7038 με τρία δεκαδικά.' },
+  { tag: 'Άσκηση 16ζ', question: 'Υπολόγισε: 0,302 · 0,76', options: ['0,22952', '2,2952', '0,022952', '1,062'], answer: '0,22952', explanation: '302·76=22952 με πέντε δεκαδικά.' },
+  { tag: 'Άσκηση 16η', question: 'Υπολόγισε: 52 · 0,52', options: ['27,04', '270,4', '2,704', '52,52'], answer: '27,04', explanation: '52·52=2704 με δύο δεκαδικά.' },
+
+  { tag: 'Άσκηση 17α', question: 'Υπολόγισε: 204,4 : 4', options: ['51,1', '511', '5,11', '52'], answer: '51,1', explanation: '204,4:4=51,1.' },
+  { tag: 'Άσκηση 17β', question: 'Υπολόγισε: 27,3 : 0,7', options: ['39', '3,9', '390', '19,11'], answer: '39', explanation: '27,3:0,7 = 273:7=39.' },
+  { tag: 'Άσκηση 17γ', question: 'Υπολόγισε: 2,5 : 0,5', options: ['5', '0,5', '50', '1,25'], answer: '5', explanation: '25:5=5.' },
+  { tag: 'Άσκηση 17δ', question: 'Υπολόγισε: 482 : 0,12', options: ['4016,666...', '40,166...', '401,666...', '57,84'], answer: '4016,666...', explanation: '482:0,12 = 48200:12 = 4016,666...' },
+  { tag: 'Άσκηση 17ε', question: 'Υπολόγισε: 64,5 : 13,8', options: ['4,6739...', '46,739...', '0,467...', '78,3'], answer: '4,6739...', explanation: '64,5:13,8≈4,6739.' },
+  { tag: 'Άσκηση 17στ', question: 'Υπολόγισε: 584,47 : 24,82', options: ['23,548...', '2,3548...', '235,48...', '14,82'], answer: '23,548...', explanation: '584,47:24,82≈23,548.' },
+  { tag: 'Άσκηση 17ζ', question: 'Υπολόγισε: 84,35 : 7,2', options: ['11,715...', '1,1715...', '117,15...', '91,55'], answer: '11,715...', explanation: '84,35:7,2≈11,715.' },
+
+  { tag: 'Άσκηση 18α', question: 'Υπολόγισε: 2,3 · 10', options: ['23', '0,23', '2,30', '230'], answer: '23', explanation: 'Με ·10 η υποδιαστολή πάει μία θέση δεξιά.' },
+  { tag: 'Άσκηση 18β', question: 'Υπολόγισε: 2,34 · 100', options: ['234', '23,4', '0,234', '2340'], answer: '234', explanation: 'Με ·100 πάει δύο θέσεις δεξιά.' },
+  { tag: 'Άσκηση 18γ', question: 'Υπολόγισε: 34,5 · 1000', options: ['34500', '3450', '3,45', '345'], answer: '34500', explanation: 'Με ·1000 πάει τρεις θέσεις δεξιά.' },
+  { tag: 'Άσκηση 18δ', question: 'Υπολόγισε: 0,004 · 100', options: ['0,4', '0,04', '4', '0,0004'], answer: '0,4', explanation: 'Δύο θέσεις δεξιά.' },
+  { tag: 'Άσκηση 18ε', question: 'Υπολόγισε: 0,5 · 10', options: ['5', '0,05', '50', '0,5'], answer: '5', explanation: 'Μία θέση δεξιά.' },
+  { tag: 'Άσκηση 18στ', question: 'Υπολόγισε: 56,3 : 10', options: ['5,63', '563', '0,563', '56,30'], answer: '5,63', explanation: 'Με :10 πάει μία θέση αριστερά.' },
+  { tag: 'Άσκηση 18ζ', question: 'Υπολόγισε: 1.345 : 100', options: ['13,45', '134,5', '1,345', '1345'], answer: '13,45', explanation: 'Δύο θέσεις αριστερά.' },
+  { tag: 'Άσκηση 18η', question: 'Υπολόγισε: 345 : 1000', options: ['0,345', '3,45', '34,5', '345000'], answer: '0,345', explanation: 'Τρεις θέσεις αριστερά.' },
+
+  { tag: 'Άσκηση 19α', question: 'Υπολόγισε: 2,3 : 0,1', options: ['23', '2,3', '0,23', '230'], answer: '23', explanation: 'Διαίρεση με 0,1 ισοδυναμεί με ·10.' },
+  { tag: 'Άσκηση 19β', question: 'Υπολόγισε: 56,7 : 0,01', options: ['5670', '567', '5,67', '0,567'], answer: '5670', explanation: 'Διαίρεση με 0,01 ισοδυναμεί με ·100.' },
+  { tag: 'Άσκηση 19γ', question: 'Υπολόγισε: 1,529 : 0,01', options: ['152,9', '15,29', '1529', '0,01529'], answer: '152,9', explanation: 'Με :0,01 πολλαπλασιάζουμε επί 100.' },
+  { tag: 'Άσκηση 19δ', question: 'Υπολόγισε: 1,23 : 0,001', options: ['1230', '123', '12,3', '0,00123'], answer: '1230', explanation: 'Με :0,001 πολλαπλασιάζουμε επί 1000.' },
+
+  { tag: 'Άσκηση 20α', question: 'Υπολόγισε: 420 · 0,1 + 0,2 · 100', options: ['62', '42,2', '420,2', '22'], answer: '62', explanation: '42+20=62.' },
+  { tag: 'Άσκηση 20β', question: 'Υπολόγισε: 5,27 · 0,01 + 0,819 · 10', options: ['8,2427', '8,19', '0,8717', '13,46'], answer: '8,2427', explanation: '0,0527+8,19=8,2427.' },
+  { tag: 'Άσκηση 20γ', question: 'Υπολόγισε: 63 : 0,1 - 27 : 10', options: ['627,3', '603', '632,7', '60,3'], answer: '627,3', explanation: '630-2,7=627,3.' },
+  { tag: 'Άσκηση 20δ', question: 'Υπολόγισε: 0,75 : 0,0001 - 8.732 : 1000', options: ['7491,268', '7500', '7499,127', '8,732'], answer: '7491,268', explanation: '7500-8,732=7491,268.' },
+
+  { tag: 'Άσκηση 21α', question: 'Υπολόγισε: 24 · 6 - 3,4 + 2,9', options: ['143,5', '144', '137,7', '149,3'], answer: '143,5', explanation: '144-3,4+2,9=143,5.' },
+  { tag: 'Άσκηση 21β', question: 'Υπολόγισε: 8 · 7,5 - 9 + 27,4 : 2', options: ['64,7', '73,7', '13,7', '60'], answer: '64,7', explanation: '60-9+13,7=64,7.' },
+  { tag: 'Άσκηση 21γ', question: 'Υπολόγισε: 9,8 : 0,2 - 0,49 : 100 + 6 : 0,1', options: ['108,9951', '109', '49,0049', '60,0049'], answer: '108,9951', explanation: '49 - 0,0049 + 60 = 108,9951.' },
+  { tag: 'Άσκηση 21δ', question: 'Υπολόγισε: 6,7 · 3,2 - 48,6 : 6,2 + 8,12 : 0,2', options: ['54,203...', '40,6', '21,44', '62,1'], answer: '54,203...', explanation: '21,44 - 7,838... + 40,6 ≈ 54,203.' },
+
+  { tag: 'Άσκηση 22α', question: 'Υπολόγισε: 0,2²', options: ['0,04', '0,4', '0,02', '4'], answer: '0,04', explanation: '0,2·0,2=0,04.' },
+  { tag: 'Άσκηση 22β', question: 'Υπολόγισε: 1,3²', options: ['1,69', '2,6', '1,6', '16,9'], answer: '1,69', explanation: '1,3·1,3=1,69.' },
+  { tag: 'Άσκηση 22γ', question: 'Υπολόγισε: 2,6²', options: ['6,76', '5,2', '67,6', '4,6'], answer: '6,76', explanation: '2,6·2,6=6,76.' },
+  { tag: 'Άσκηση 22δ', question: 'Υπολόγισε: 7,01²', options: ['49,1401', '49,01', '14,02', '491,401'], answer: '49,1401', explanation: '7,01·7,01=49,1401.' },
+  { tag: 'Άσκηση 22ε', question: 'Υπολόγισε: 0,3³', options: ['0,027', '0,09', '0,9', '0,003'], answer: '0,027', explanation: '0,3·0,3·0,3=0,027.' },
+  { tag: 'Άσκηση 22στ', question: 'Υπολόγισε: 4,6³', options: ['97,336', '21,16', '12,6', '973,36'], answer: '97,336', explanation: '4,6³=97,336.' },
+  { tag: 'Άσκηση 22ζ', question: 'Υπολόγισε: 0,5²', options: ['0,25', '1', '0,10', '0,05'], answer: '0,25', explanation: '0,5·0,5=0,25.' },
+  { tag: 'Άσκηση 22η', question: 'Υπολόγισε: 0,01²', options: ['0,0001', '0,01', '0,001', '0,1'], answer: '0,0001', explanation: '0,01·0,01=0,0001.' },
+
+  { tag: 'Άσκηση 23', question: 'Στις παραστάσεις Α, Β, Γ, Δ με δεκαδικούς και δυνάμεις, τι κάνουμε πρώτα;', options: ['Δυνάμεις και παρενθέσεις', 'Τελικές προσθέσεις', 'Τυχαία πράξη', 'Στρογγυλοποίηση'], answer: 'Δυνάμεις και παρενθέσεις', explanation: 'Ακολουθούμε σειρά πράξεων: παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις.' },
+  { tag: 'Άσκηση 24', question: 'Σε παράσταση με 4·(5,4:0,9), ποιο υπολογίζουμε πρώτα;', options: ['5,4:0,9', '4·5,4', '0,9·4', 'Τίποτα'], answer: '5,4:0,9', explanation: 'Πρώτα η παρένθεση.' },
+  { tag: 'Άσκηση 25', question: 'Περίμετρος τετραγώνου 21,6 cm. Πλευρά;', options: ['5,4 cm', '86,4 cm', '10,8 cm', '4,5 cm'], answer: '5,4 cm', explanation: 'Πλευρά = περίμετρος : 4 = 21,6 : 4 = 5,4.' },
+  { tag: 'Άσκηση 26', question: 'Περίμετρος ισοσκελούς τριγώνου 56,28 cm και βάση 12,04 cm. Πόσο είναι κάθε ίση πλευρά;', options: ['22,12 cm', '44,24 cm', '34,24 cm', '28,14 cm'], answer: '22,12 cm', explanation: '56,28-12,04=44,24 και 44,24:2=22,12.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -2414,6 +2497,94 @@ function Lesson31() {
 }
 
 
+
+function Lesson3233() {
+  const [xp, setXp] = useState(2400)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στην πρόσθεση δεκαδικών ευθυγραμμίζουμε τις υποδιαστολές;', ok: true },
+    { q: 'Το 0,3² είναι 0,6;', ok: false },
+    { q: 'Το 2,5 : 0,5 είναι 5;', ok: true },
+    { q: 'Με πολλαπλασιασμό επί 100 η υποδιαστολή πάει δύο θέσεις δεξιά;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητες 3.2–3.3</div>
+          <h1>Πράξεις με Δεκαδικούς — Δυνάμεις</h1>
+          <p>Μαθαίνουμε πρόσθεση, αφαίρεση, πολλαπλασιασμό, διαίρεση δεκαδικών και δυνάμεις με βάση δεκαδικό.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 3.2–3.3 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Πρόσθεση/Αφαίρεση</b><p>Ευθυγραμμίζουμε τις υποδιαστολές και συμπληρώνουμε μηδενικά όπου χρειάζεται.</p></article>
+          <article><b>2. Πολλαπλασιασμός</b><p>Μετράμε πόσα δεκαδικά ψηφία έχουν συνολικά οι παράγοντες.</p></article>
+          <article><b>3. Διαίρεση</b><p>Μετακινούμε την υποδιαστολή ώστε ο διαιρέτης να γίνει ακέραιος.</p></article>
+          <article><b>4. Δυνάμεις</b><p>0,3² σημαίνει 0,3·0,3, όχι 0,3·2.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Decimal Operations Lab</h2></div>
+          <div className="example"><b>12,84 + 5,64 = 18,48</b><p>Υποδιαστολή κάτω από υποδιαστολή.</p></div>
+          <div className="example"><b>13,4 · 2,3 = 30,82</b><p>Δύο δεκαδικά ψηφία στο αποτέλεσμα.</p></div>
+          <div className="example"><b>27,3 : 0,7 = 39</b><p>Μετατρέπουμε σε 273 : 7.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Power Lab</h3>
+          <p>Γρήγορες αποστολές:</p>
+          <div className="numberChips"><span>0,2² = 0,04</span><span>1,3² = 1,69</span><span>0,01² = 0,0001</span><span>7,01² = 49,1401</span></div>
+          <div className="answerLine">Στόχος: σωστή θέση υποδιαστολής και σωστή σειρά πράξεων.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.2–3.3" subtitle="Πράξεις με δεκαδικούς και δυνάμεις." items={quiz3233} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.2–3.3" items={teacherQuiz3233} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Μηχανικός των Δεκαδικών ⚙️</h2>
+          <p>Απάντησε σωστά σε 4 γρήγορες κρίσεις για να πάρεις το badge των 3.2–3.3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">⚙️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Μηχανικός των Δεκαδικών</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -2425,7 +2596,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('3.1')
+  const [activeLesson, setActiveLesson] = useState('3.2-3.3')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -2433,7 +2604,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2-3.3' ? <Lesson3233 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
