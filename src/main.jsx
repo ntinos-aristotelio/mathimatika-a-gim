@@ -751,6 +751,66 @@ const teacherQuiz25 = [
   { tag: 'Άσκηση 85', question: 'Ο Παναγιώτης διάβασε τα 3/5 από 1/3 του βιβλίου. Τι μέρος διάβασε;', options: ['1/5', '3/8', '4/5', '1/3'], answer: '1/5', explanation: '3/5·1/3=3/15=1/5.' },
 ]
 
+
+const quiz26 = [
+  { question: 'Πώς διαιρούμε δύο κλάσματα;', options: ['Πολλαπλασιάζουμε με το αντίστροφο του δεύτερου', 'Προσθέτουμε παρονομαστές', 'Αφαιρούμε αριθμητές', 'Αντιστρέφουμε το πρώτο'], answer: 'Πολλαπλασιάζουμε με το αντίστροφο του δεύτερου', tip: 'α/β : γ/δ = α/β · δ/γ.' },
+  { question: 'Πόσο κάνει 3/4 : 2/5;', options: ['15/8', '6/20', '5/6', '8/15'], answer: '15/8', tip: '3/4 : 2/5 = 3/4 · 5/2 = 15/8.' },
+  { question: 'Ποιο είναι το αντίστροφο του 7/3;', options: ['3/7', '7/3', '10/3', '4/7'], answer: '3/7', tip: 'Αντίστροφο σημαίνει αλλάζω θέση σε αριθμητή και παρονομαστή.' },
+  { question: 'Πόσο κάνει 6 : 3/2;', options: ['4', '9', '6/5', '3'], answer: '4', tip: '6 = 6/1, άρα 6/1 · 2/3 = 12/3 = 4.' },
+]
+
+const teacherQuiz26 = [
+  { tag: 'Άσκηση 86α', question: 'Υπολόγισε: 3/4 : 2/5', options: ['15/8', '6/20', '5/6', '8/15'], answer: '15/8', explanation: '3/4 : 2/5 = 3/4 · 5/2 = 15/8.' },
+  { tag: 'Άσκηση 86β', question: 'Υπολόγισε: 6 : 2/3', options: ['9', '4', '12', '3'], answer: '9', explanation: '6 · 3/2 = 18/2 = 9.' },
+  { tag: 'Άσκηση 86γ', question: 'Υπολόγισε: 7/2 : 7/3', options: ['3/2', '49/6', '1/6', '2/3'], answer: '3/2', explanation: '7/2 · 3/7 = 3/2.' },
+  { tag: 'Άσκηση 86δ', question: 'Υπολόγισε: 8/7 : 3', options: ['8/21', '24/7', '11/7', '7/24'], answer: '8/21', explanation: '8/7 : 3 = 8/7 · 1/3 = 8/21.' },
+  { tag: 'Άσκηση 86ε', question: 'Υπολόγισε: 7/9 : 1/7', options: ['49/9', '7/63', '1/9', '9/49'], answer: '49/9', explanation: '7/9 · 7/1 = 49/9.' },
+  { tag: 'Άσκηση 86στ', question: 'Υπολόγισε: 1/3 : 5/6', options: ['2/5', '5/18', '6/15', '1/2'], answer: '2/5', explanation: '1/3 · 6/5 = 6/15 = 2/5.' },
+  { tag: 'Άσκηση 86ζ', question: 'Υπολόγισε: 2/3 : 4/5', options: ['5/6', '8/15', '6/5', '3/10'], answer: '5/6', explanation: '2/3 · 5/4 = 10/12 = 5/6.' },
+
+  { tag: 'Άσκηση 87α', question: 'Μετέτρεψε το 4/5 σε ακέραιο επί κλάσμα: 4/5 = 4 · ?', options: ['1/5', '5', '4/5', '5/4'], answer: '1/5', explanation: '4/5 = 4 · 1/5.' },
+  { tag: 'Άσκηση 87β', question: 'Μετέτρεψε το 6/18 σε ακέραιο επί κλάσμα: 6/18 = 6 · ?', options: ['1/18', '18', '1/6', '6/18'], answer: '1/18', explanation: '6/18 = 6 · 1/18.' },
+  { tag: 'Άσκηση 87γ', question: 'Μετέτρεψε το 5/20 σε ακέραιο επί κλάσμα: 5/20 = 5 · ?', options: ['1/20', '20', '1/5', '5/20'], answer: '1/20', explanation: '5/20 = 5 · 1/20.' },
+  { tag: 'Άσκηση 87δ', question: 'Μετέτρεψε το 9/6 σε ακέραιο επί κλάσμα: 9/6 = 9 · ?', options: ['1/6', '6', '1/9', '9/6'], answer: '1/6', explanation: '9/6 = 9 · 1/6.' },
+  { tag: 'Άσκηση 87ε', question: 'Μετέτρεψε το 9/12 σε ακέραιο επί κλάσμα: 9/12 = 9 · ?', options: ['1/12', '12', '1/9', '9/12'], answer: '1/12', explanation: '9/12 = 9 · 1/12.' },
+  { tag: 'Άσκηση 87στ', question: 'Μετέτρεψε το 7/3 σε ακέραιο επί κλάσμα: 7/3 = 7 · ?', options: ['1/3', '3', '1/7', '7/3'], answer: '1/3', explanation: '7/3 = 7 · 1/3.' },
+
+  { tag: 'Άσκηση 88α', question: 'Υπολόγισε: 3/5 : 2/6 : 7/5', options: ['9/14', '42/150', '3/7', '5/14'], answer: '9/14', explanation: '3/5·6/2·5/7 = 9/14.' },
+  { tag: 'Άσκηση 88β', question: 'Υπολόγισε: 4/3 : 5/2 : 2/3', options: ['4/5', '40/18', '8/15', '1'], answer: '4/5', explanation: '4/3·2/5·3/2 = 4/5.' },
+  { tag: 'Άσκηση 88γ', question: 'Υπολόγισε: 3 : 2 + 1/2 : 1/3', options: ['3', '2', '5/2', '9/2'], answer: '3', explanation: '3:2=3/2 και 1/2:1/3=3/2, σύνολο 3.' },
+  { tag: 'Άσκηση 88δ', question: 'Υπολόγισε: 6/7 + 5/3 : 7/3', options: ['11/7', '6/7', '5/7', '16/7'], answer: '11/7', explanation: '5/3:7/3=5/7, άρα 6/7+5/7=11/7.' },
+
+  { tag: 'Άσκηση 89α', question: 'Υπολόγισε: 2 + 3/4 : 5/3 : 3/4 : 5', options: ['23/10', '2', '3/10', '9/10'], answer: '23/10', explanation: '3/4:5/3:3/4:5 = 3/10, άρα 2+3/10=23/10.' },
+  { tag: 'Άσκηση 89β', question: 'Υπολόγισε: 6/2 : 2/3 · 3/4 : 1/5 + 1/2', options: ['27/2', '13', '25/2', '10'], answer: '27/2', explanation: 'Υπολογίζουμε από αριστερά προς δεξιά και προσθέτουμε 1/2.' },
+  { tag: 'Άσκηση 89γ', question: 'Υπολόγισε: 6/8 : 2/6 - 1 + 3/6 : 6/5', options: ['67/40', '2', '27/40', '5/12'], answer: '67/40', explanation: '6/8:2/6=9/4 και 3/6:6/5=5/12, άρα 9/4-1+5/12=67/40.' },
+  { tag: 'Άσκηση 89δ', question: 'Υπολόγισε: 4 : 2/6 + 1 + 3/6 : 6', options: ['157/12', '13', '73/6', '1/12'], answer: '157/12', explanation: '4:2/6=12 και 3/6:6=1/12, άρα 13+1/12=157/12.' },
+
+  { tag: 'Άσκηση 90α', question: 'Υπολόγισε: (5/6 + 2/3) : 3/4', options: ['2', '3/2', '5/4', '4/3'], answer: '2', explanation: '5/6+2/3=9/6=3/2 και 3/2:3/4=2.' },
+  { tag: 'Άσκηση 90β', question: 'Υπολόγισε: (5/6 - 1/4) : 2/7', options: ['49/24', '7/12', '24/49', '2'], answer: '49/24', explanation: '5/6-1/4=7/12 και 7/12:2/7=49/24.' },
+  { tag: 'Άσκηση 90γ', question: 'Υπολόγισε: 6 : (5/3 - 2/9)', options: ['54/13', '13/9', '18/5', '6'], answer: '54/13', explanation: '5/3-2/9=13/9, άρα 6:13/9=54/13.' },
+  { tag: 'Άσκηση 90δ', question: 'Υπολόγισε: 5/3 : (1/2 : 1/3)', options: ['10/9', '5/2', '1', '9/10'], answer: '10/9', explanation: '1/2:1/3=3/2, άρα 5/3:3/2=10/9.' },
+  { tag: 'Άσκηση 90ε', question: 'Υπολόγισε: 2 3/4 : (1 - 1/3)', options: ['33/8', '11/4', '4', '8/33'], answer: '33/8', explanation: '2 3/4=11/4 και 1-1/3=2/3, άρα 11/4:2/3=33/8.' },
+
+  { tag: 'Άσκηση 91', question: 'Στις παραστάσεις της 91 τι κάνουμε πρώτα;', options: ['Παρενθέσεις', 'Τυχαία πράξη', 'Τελευταία διαίρεση', 'Μόνο αφαίρεση'], answer: 'Παρενθέσεις', explanation: 'Πρώτα λύνουμε παρενθέσεις, μετά πολλαπλασιασμούς/διαιρέσεις.' },
+  { tag: 'Άσκηση 92', question: 'Στις παραστάσεις της 92 με διαιρέσεις κλασμάτων, τι θυμόμαστε;', options: ['Διαίρεση = πολλαπλασιασμός με αντίστροφο', 'Προσθέτουμε παρονομαστές', 'Αντιστρέφουμε το πρώτο κλάσμα', 'Κρατάμε πάντα ίδιο αποτέλεσμα'], answer: 'Διαίρεση = πολλαπλασιασμός με αντίστροφο', explanation: 'Αυτός είναι ο βασικός κανόνας.' },
+  { tag: 'Άσκηση 93', question: 'Σε σύνθετες παραστάσεις με παρενθέσεις και άνω-κάτω τελείες, τι προσέχουμε;', options: ['Σειρά πράξεων', 'Μόνο αριθμητές', 'Να μη λύνουμε παρενθέσεις', 'Να προσθέτουμε πάντα'], answer: 'Σειρά πράξεων', explanation: 'Η σειρά πράξεων είναι κρίσιμη.' },
+
+  { tag: 'Άσκηση 94', question: 'Ποια πράξη είναι σωστή για 2/3 : 1/6;', options: ['2/3 · 6/1', '2/3 · 1/6', '3/2 · 1/6', '2/6 · 1/3'], answer: '2/3 · 6/1', explanation: 'Στη διαίρεση πολλαπλασιάζουμε με το αντίστροφο.' },
+  { tag: 'Άσκηση 94β', question: 'Πόσο κάνει 2/3 : 1/6;', options: ['4', '2/18', '1/9', '6'], answer: '4', explanation: '2/3·6=12/3=4.' },
+  { tag: 'Άσκηση 94γ', question: 'Πόσο κάνει 8/3 : 1/2;', options: ['16/3', '8/6', '4/3', '3/16'], answer: '16/3', explanation: '8/3·2=16/3.' },
+  { tag: 'Άσκηση 94δ', question: 'Πόσο κάνει 1/4 : 3/6;', options: ['1/2', '6/12', '3/24', '2'], answer: '1/2', explanation: '1/4·6/3=6/12=1/2.' },
+  { tag: 'Άσκηση 94ε', question: 'Πόσο κάνει 7/3 : 5/6;', options: ['14/5', '35/18', '18/35', '7/18'], answer: '14/5', explanation: '7/3·6/5=42/15=14/5.' },
+  { tag: 'Άσκηση 94στ', question: 'Πόσο κάνει 1/3 : 5/2;', options: ['2/15', '5/6', '15/2', '2/5'], answer: '2/15', explanation: '1/3·2/5=2/15.' },
+
+  { tag: 'Άσκηση 95α', question: 'Υπολόγισε: 3/4 : 1/5', options: ['15/4', '3/20', '4/15', '5/4'], answer: '15/4', explanation: '3/4·5=15/4.' },
+  { tag: 'Άσκηση 95β', question: 'Υπολόγισε: 4/3 : 2/8', options: ['16/3', '8/6', '3/16', '2/3'], answer: '16/3', explanation: '4/3·8/2=16/3.' },
+  { tag: 'Άσκηση 95γ', question: 'Υπολόγισε: 12/5 : 1/2', options: ['24/5', '12/10', '5/24', '6/5'], answer: '24/5', explanation: '12/5·2=24/5.' },
+  { tag: 'Άσκηση 95δ', question: 'Υπολόγισε: 3/9 : 1/5', options: ['5/3', '3/45', '1/15', '15'], answer: '5/3', explanation: '3/9=1/3 και 1/3:1/5=5/3.' },
+  { tag: 'Άσκηση 95ε', question: 'Υπολόγισε: 2/4 : 3/2', options: ['1/3', '4/12', '3/4', '2/3'], answer: '1/3', explanation: '2/4=1/2 και 1/2·2/3=1/3.' },
+
+  { tag: 'Άσκηση 96', question: 'Σε μεγάλες κλασματικές παραστάσεις όπως η 96, ποια στρατηγική είναι σωστή;', options: ['Λύνω πρώτα αριθμητή και παρονομαστή χωριστά', 'Κάνω όλες τις πράξεις μαζί', 'Αγνοώ τις παρενθέσεις', 'Αντιστρέφω όλο το κλάσμα από την αρχή'], answer: 'Λύνω πρώτα αριθμητή και παρονομαστή χωριστά', explanation: 'Στις σύνθετες κλασματικές παραστάσεις δουλεύουμε οργανωμένα.' },
+]
+
 function ProgressBar({ value }) {
   return <div className="progress"><span style={{ width: `${value}%` }} /></div>
 }
@@ -1943,6 +2003,93 @@ function Lesson25() {
 }
 
 
+
+function Lesson26() {
+  const [xp, setXp] = useState(1700)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Η διαίρεση κλασμάτων γίνεται πολλαπλασιάζοντας με το αντίστροφο του δεύτερου;', ok: true },
+    { q: 'Το 3/4 : 2/5 είναι 6/20;', ok: false },
+    { q: 'Το αντίστροφο του 7/3 είναι 3/7;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.6</div>
+          <h1>Διαίρεση Κλασμάτων</h1>
+          <p>Μαθαίνουμε να διαιρούμε κλάσματα μετατρέποντας τη διαίρεση σε πολλαπλασιασμό με το αντίστροφο.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.6 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Αντίστροφο κλάσμα</b><p>Αντίστροφο του α/β είναι το β/α, με α≠0.</p></article>
+          <article><b>2. Κανόνας διαίρεσης</b><p>α/β : γ/δ = α/β · δ/γ.</p></article>
+          <article><b>3. Μικτοί αριθμοί</b><p>Πρώτα τους μετατρέπουμε σε κλάσματα.</p></article>
+          <article><b>4. Σύνθετες παραστάσεις</b><p>Λύνουμε παρενθέσεις και ακολουθούμε τη σειρά πράξεων.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>3/4 : 2/5</b><p>3/4 · 5/2 = 15/8</p></div>
+          <div className="example"><b>6 : 3/2</b><p>6/1 · 2/3 = 4</p></div>
+          <div className="example"><b>5/12 : 2/8</b><p>5/12 · 8/2 = 5/3</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Lab</h3>
+          <p>Γρήγορες αποστολές διαίρεσης:</p>
+          <div className="numberChips"><span>3/4 : 2/5 = 15/8</span><span>2/3 : 4/5 = 5/6</span><span>2/3 : 1/6 = 4</span></div>
+          <div className="answerLine">Βήματα: αντιστρέφω το δεύτερο → πολλαπλασιάζω → απλοποιώ.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.6" subtitle="Διαίρεση κλασμάτων και σύνθετες παραστάσεις." items={quiz26} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.6" items={teacherQuiz26} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Αντιστροφέας των Κλασμάτων 🔁</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.6.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🔁</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Αντιστροφέας της 2.6</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -1954,7 +2101,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('2.5')
+  const [activeLesson, setActiveLesson] = useState('2.6')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1962,7 +2109,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
