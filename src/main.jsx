@@ -45,8 +45,8 @@ const curriculum = [
         progress: 0,
         lessons: [
           { id: '3.1', title: 'Δεκαδικοί αριθμοί', ready: true },
-          { id: '3.2', title: 'Πράξεις με δεκαδικούς', ready: true },
-          { id: '3.3', title: 'Υπολογιστής τσέπης', ready: true },
+          { id: '3.2', title: '3.2 Πράξεις με Δεκαδικούς', ready: true },
+          { id: '3.3', title: '3.3 Δυνάμεις με Βάση Δεκαδικό', ready: true },
           { id: '3.4', title: 'Τυποποιημένη μορφή', ready: true },
           { id: '3.5', title: 'Μονάδες μέτρησης', ready: true },
         ],
@@ -2498,7 +2498,7 @@ function Lesson31() {
 
 
 
-function Lesson3233() {
+function Lesson3233({ mode = '3.2' }) {
   const [xp, setXp] = useState(2400)
   const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
   const addXp = (amount) => setXp((v) => v + amount)
@@ -2525,9 +2525,9 @@ function Lesson3233() {
     <main className="appGrid">
       <section className="lessonHero">
         <div>
-          <div className="pill blue"><Calculator size={16}/> Ενότητες 3.2–3.3</div>
-          <h1>Πράξεις με Δεκαδικούς — Δυνάμεις</h1>
-          <p>Μαθαίνουμε πρόσθεση, αφαίρεση, πολλαπλασιασμό, διαίρεση δεκαδικών και δυνάμεις με βάση δεκαδικό.</p>
+          <div className="pill blue"><Calculator size={16}/> {mode === '3.3' ? 'Ενότητα 3.3' : 'Ενότητα 3.2'}</div>
+          <h1>{mode === '3.3' ? 'Δυνάμεις με Βάση Δεκαδικό' : 'Πράξεις με Δεκαδικούς'}</h1>
+          <p>{mode === '3.3' ? 'Μαθαίνουμε δυνάμεις με βάση δεκαδικό αριθμό και σωστή σειρά πράξεων.' : 'Μαθαίνουμε πρόσθεση, αφαίρεση, πολλαπλασιασμό και διαίρεση δεκαδικών αριθμών.'}</p>
         </div>
         <ProfileCard xp={xp} />
       </section>
@@ -2604,7 +2604,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 /> : activeLesson === '3.3' ? <Lesson3233 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
