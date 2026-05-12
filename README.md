@@ -1,7 +1,8 @@
-# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 27
+# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 27 fixed
 
 Difficulty Upgrade Demo:
-- Αναβαθμίστηκαν οι Γενικές Ασκήσεις Κεφαλαίου 3
+- Βάση: teliko-26 stable
+- Δεν πειράχτηκε το render/routing structure
+- Αναβαθμίστηκαν μόνο τα quiz arrays των Γενικών Ασκήσεων Κεφ. 3
 - Rookie → Skilled → Advanced → Expert → Nightmare
-- Realistic traps και πολυβηματικές ερωτήσεις
-- Build OK και prebuilt dist
+- Build validation OK
