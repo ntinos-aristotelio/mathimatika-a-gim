@@ -50,6 +50,7 @@ const curriculum = [
           { id: '3.4', title: 'Τυποποιημένη μορφή', ready: true },
           { id: '3.5', title: 'Μονάδες μέτρησης', ready: true },
     { id: '3.gen', title: 'Γενικές Ασκήσεις Κεφ. 3', ready: true },
+    { id: '3.diff', title: 'Demo Δυσκολίας Κεφ. 3', ready: true },
         ],
       },
     ],
@@ -1127,46 +1128,1816 @@ const teacherQuiz35 = [
 ]
 
 
-
 const generalQuiz3 = [
-  { question:'🟢 Rookie — 9,2 + 3,7 = ;', options:['12,9','12,7','13,9','5,5'], answer:'12,9', tip:'Ευθυγραμμίζουμε τις υποδιαστολές.' },
-  { question:'🟢 Rookie — 0,3² = ;', options:['0,09','0,6','0,03','0,9'], answer:'0,09', tip:'0,3·0,3=0,09.' },
-  { question:'🔵 Skilled — 2,4·10² + 3,6·10 = ;', options:['276','243,6','600','27,6'], answer:'276', tip:'240+36=276.' },
-  { question:'🔵 Skilled — 1,25 m + 35 cm = ;', options:['160 cm','1,60 cm','12535 cm','90 cm'], answer:'160 cm', tip:'1,25 m=125 cm, άρα 125+35=160.' },
-  { question:'🟣 Advanced — (20,18 - 13,751) + 0,3² = ;', options:['6,519','6,429','6,339','6,729'], answer:'6,519', tip:'6,429+0,09=6,519.' },
-  { question:'🟣 Advanced — Ποιο είναι μεγαλύτερο: 4,5·10³ ή 3,8 km σε μέτρα;', options:['4,5·10³','3,8 km','Ίσα','Δεν συγκρίνονται'], answer:'4,5·10³', tip:'4500 > 3800.' },
-  { question:'🔴 Expert — Κήπος 12 m x 8 m. Καλύπτουμε τα 3/4 με πλακάκια 0,25 m². Πόσα πλακάκια;', options:['288','72','384','96'], answer:'288', tip:'96·3/4=72 και 72:0,25=288.' },
-  { question:'🔴 Expert — 7,5·10⁴ - (2,5 h σε λεπτά)·100 = ;', options:['60.000','74.850','7.350','90.000'], answer:'60.000', tip:'75.000-15.000=60.000.' },
-  { question:'⚫ Nightmare — Δεξαμενή 2,4 m³ γεμίζει μπουκάλια 0,75 L. Πόσα μπουκάλια γεμίζουν τα 2/5 της δεξαμενής;', options:['1280','3200','960','1920'], answer:'1280', tip:'2,4 m³=2400 L, 2/5=960 L, 960:0,75=1280.' },
-  { question:'⚫ Nightmare — Στρογγυλοποίησε στη μονάδα: (0,3³ + 1,973)·10²', options:['200','201','197','20'], answer:'200', tip:'0,027+1,973=2 και 2·100=200.' },
+  { question:'Πόσο κάνει 9,2 + 3,7;', options:['12,9','12,7','13,9','5,5'], answer:'12,9', tip:'Ευθυγραμμίζουμε τις υποδιαστολές.' },
+  { question:'Πόσο κάνει 0,3²;', options:['0,09','0,6','0,03','0,9'], answer:'0,09', tip:'0,3·0,3=0,09.' },
+  { question:'Ποια είναι η τυποποιημένη μορφή του 45.000;', options:['4,5·10⁴','45·10³','0,45·10⁵','4,5·10³'], answer:'4,5·10⁴', tip:'Πρώτος παράγοντας από 1 έως μικρότερος του 10.' },
+  { question:'Πόσα μέτρα είναι τα 3,5 km;', options:['3500 m','350 m','35 m','0,35 m'], answer:'3500 m', tip:'1 km=1000 m.' },
+  { question:'Πόσα λεπτά είναι οι 2,5 ώρες;', options:['150 min','250 min','120 min','25 min'], answer:'150 min', tip:'2,5·60=150.' },
 ]
-
 const teacherGeneral3 = [
-  { tag:'🟢 Rookie 1', question:'Γράψε ως δεκαδικό: 45/100', options:['0,45','4,5','0,045','45,100'], answer:'0,45', explanation:'45 εκατοστά = 0,45.' },
-  { tag:'🟢 Rookie 2', question:'Στρογγυλοποίησε το 8,74 στη μονάδα.', options:['9','8','8,7','8,8'], answer:'9', explanation:'Το 0,74 ανεβάζει τη μονάδα.' },
-  { tag:'🟢 Rookie 3', question:'Υπολόγισε: 12,5 + 3,75', options:['16,25','15,125','16,15','8,75'], answer:'16,25', explanation:'12,50+3,75=16,25.' },
-  { tag:'🟢 Rookie 4', question:'Υπολόγισε: 0,4²', options:['0,16','0,8','0,04','1,6'], answer:'0,16', explanation:'0,4·0,4=0,16.' },
-
-  { tag:'🔵 Skilled 1', question:'Υπολόγισε: 3,6·10² - 45', options:['315','360','405','31,5'], answer:'315', explanation:'3,6·100=360 και 360-45=315.' },
-  { tag:'🔵 Skilled 2', question:'Μετέτρεψε και πρόσθεσε: 2,5 m + 80 cm', options:['3,3 m','2,58 m','82,5 m','250,8 m'], answer:'3,3 m', explanation:'80 cm=0,8 m, άρα 2,5+0,8=3,3 m.' },
-  { tag:'🔵 Skilled 3', question:'Ποια είναι η τυποποιημένη μορφή του 63.000.000;', options:['6,3·10⁷','63·10⁶','0,63·10⁸','6,3·10⁶'], answer:'6,3·10⁷', explanation:'63.000.000=6,3·10.000.000.' },
-  { tag:'🔵 Skilled 4', question:'Υπολόγισε: 4,8 : 0,6 + 0,5²', options:['8,25','8,5','4,25','80,25'], answer:'8,25', explanation:'4,8:0,6=8 και 0,5²=0,25.' },
-
-  { tag:'🟣 Advanced 1', question:'Υπολόγισε: (15,2 - 7,85)·0,4', options:['2,94','29,4','7,0','3,34'], answer:'2,94', explanation:'15,2-7,85=7,35 και 7,35·0,4=2,94.' },
-  { tag:'🟣 Advanced 2', question:'Πόσα cm² είναι τα 0,75 m²;', options:['7500 cm²','750 cm²','75.000 cm²','0,0075 cm²'], answer:'7500 cm²', explanation:'1 m²=10.000 cm², άρα 0,75·10.000=7500.' },
-  { tag:'🟣 Advanced 3', question:'Υπολόγισε: 2,5·10³ + 4,2·10²', options:['2920','6700','2542','292'], answer:'2920', explanation:'2500+420=2920.' },
-  { tag:'🟣 Advanced 4', question:'Ποιο είναι πιο κοντά στο 10;', options:['9,96','10,07','9,8','10,2'], answer:'9,96', explanation:'Απέχει 0,04 από το 10.' },
-
-  { tag:'🔴 Expert 1', question:'Κουτί 0,5 m x 40 cm x 30 cm. Όγκος σε dm³;', options:['60 dm³','600 dm³','6 dm³','0,6 dm³'], answer:'60 dm³', explanation:'0,5 m=5 dm, 40 cm=4 dm, 30 cm=3 dm, όγκος=60 dm³.' },
-  { tag:'🔴 Expert 2', question:'Υπολόγισε: (0,2³ + 0,992)·10³', options:['1000','100','1','1008'], answer:'1000', explanation:'0,008+0,992=1 και ·1000=1000.' },
-  { tag:'🔴 Expert 3', question:'Αγώνας αρχίζει 9:45 και διαρκεί 2,35 h. Περίπου τι ώρα τελειώνει;', options:['12:06','12:20','11:80','12:35'], answer:'12:06', explanation:'2,35 h = 2 h 21 min. 9:45+2:21=12:06.' },
-  { tag:'🔴 Expert 4', question:'Το 3/5 μιας απόστασης 2,4 km είναι πόσα μέτρα;', options:['1440 m','1400 m','1,44 m','4000 m'], answer:'1440 m', explanation:'2,4 km=2400 m και 3/5·2400=1440.' },
-
-  { tag:'⚫ Nightmare 1', question:'Δωμάτιο 4,5 m x 3,2 m. Πλακάκι 0,24 m². Πόσα πλακάκια χρειάζονται;', options:['60','14,4','600','45'], answer:'60', explanation:'Εμβαδό=14,4 m² και 14,4:0,24=60.' },
-  { tag:'⚫ Nightmare 2', question:'Υπολόγισε: 6,3·10⁵ - 0,45·10⁶', options:['180.000','585.000','225.000','18.000'], answer:'180.000', explanation:'630.000-450.000=180.000.' },
-  { tag:'⚫ Nightmare 3', question:'Δεξαμενή 1,8 m³. Γεμίζουμε τα 2/3 και μετά αφαιρούμε 250 L. Πόσα L μένουν;', options:['950 L','1200 L','1450 L','700 L'], answer:'950 L', explanation:'1,8 m³=1800 L, τα 2/3 είναι 1200 L, 1200-250=950 L.' },
-  { tag:'⚫ Nightmare 4', question:'Υπολόγισε: (12,5:0,5 - 0,5²)·10', options:['247,5','250','24,75','252,5'], answer:'247,5', explanation:'12,5:0,5=25, 0,5²=0,25, 25-0,25=24,75 και ·10=247,5.' },
+  { tag: '3.1', question: 'Γράψε ως δεκαδικό αριθμό: 7/10', options: ['0,07','0,7','7,10','10,7'], answer: '0,7', explanation: '7/10 = 0,7.' },
+  { tag: '3.1', question: 'Γράψε ως δεκαδικό αριθμό: 34/100', options: ['0,34','3,4','0,034','34,100'], answer: '0,34', explanation: '34 εκατοστά = 0,34.' },
+  { tag: '3.1', question: 'Γράψε ως δεκαδικό κλάσμα: 5,08', options: ['508/100','508/10','58/100','5/8'], answer: '508/100', explanation: 'Δύο δεκαδικά ψηφία, παρονομαστής 100.' },
+  { tag: '3.1', question: 'Σύγκρινε: 4,06 ___ 4,6', options: ['<','>','=','Δεν συγκρίνονται'], answer: '<', explanation: '4,06 < 4,60.' },
+  { tag: '3.1', question: 'Στρογγυλοποίησε το 12,76 στη μονάδα.', options: ['13','12','12,8','12,7'], answer: '13', explanation: 'Το 0,76 ανεβάζει τη μονάδα.' },
+  { tag: '3.1', question: 'Στρογγυλοποίησε το 8,243 στα εκατοστά.', options: ['8,24','8,25','8,2','8,3'], answer: '8,24', explanation: 'Το χιλιοστό είναι 3, δεν ανεβαίνει.' },
+  { tag: '3.1', question: 'Ποιος είναι μεγαλύτερος;', options: ['0,909','0,99','0,9','0,099'], answer: '0,99', explanation: '0,99 = 0,990 και είναι μεγαλύτερο.' },
+  { tag: '3.1', question: 'Ποια αύξουσα σειρά είναι σωστή;', options: ['1,02, 1,2, 1,22','1,22, 1,2, 1,02','1,2, 1,02, 1,22','1,02, 1,22, 1,2'], answer: '1,02, 1,2, 1,22', explanation: '1,020 < 1,200 < 1,220.' },
+  { tag: '3.2', question: 'Υπολόγισε: 9,2 + 3,7', options: ['12,9','12,7','13,9','5,5'], answer: '12,9', explanation: 'Ευθυγραμμίζουμε υποδιαστολές.' },
+  { tag: '3.2', question: 'Υπολόγισε: 20,18 - 13,751', options: ['6,429','7,429','6,531','33,931'], answer: '6,429', explanation: '20,180 - 13,751 = 6,429.' },
+  { tag: '3.2', question: 'Υπολόγισε: 13,4 · 2,3', options: ['30,82','308,2','3,082','15,7'], answer: '30,82', explanation: '134·23=3082 και δύο δεκαδικά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 0,01 · 5,4', options: ['0,054','0,54','5,4','0,0054'], answer: '0,054', explanation: 'Με ×0,01 δύο θέσεις αριστερά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 27,3 : 0,7', options: ['39','3,9','390','19,11'], answer: '39', explanation: '27,3:0,7 = 273:7 = 39.' },
+  { tag: '3.2', question: 'Υπολόγισε: 2,5 : 0,5', options: ['5','0,5','50','1,25'], answer: '5', explanation: '25:5=5.' },
+  { tag: '3.2', question: 'Υπολόγισε: 2,34 · 100', options: ['234','23,4','0,234','2340'], answer: '234', explanation: 'Η υποδιαστολή πάει δύο θέσεις δεξιά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 56,3 : 10', options: ['5,63','563','0,563','56,30'], answer: '5,63', explanation: 'Η υποδιαστολή πάει μία θέση αριστερά.' },
+  { tag: '3.2', question: 'Υπολόγισε: 1,23 : 0,001', options: ['1230','123','12,3','0,00123'], answer: '1230', explanation: 'Διαίρεση με 0,001 σημαίνει ×1000.' },
+  { tag: '3.2', question: 'Υπολόγισε: 420·0,1 + 0,2·100', options: ['62','42,2','420,2','22'], answer: '62', explanation: '42+20=62.' },
+  { tag: '3.2', question: 'Υπολόγισε: 24·6 - 3,4 + 2,9', options: ['143,5','144','137,7','149,3'], answer: '143,5', explanation: '144-3,4+2,9=143,5.' },
+  { tag: '3.3', question: 'Υπολόγισε: 0,2²', options: ['0,04','0,4','0,02','4'], answer: '0,04', explanation: '0,2·0,2=0,04.' },
+  { tag: '3.3', question: 'Υπολόγισε: 1,3²', options: ['1,69','2,6','1,6','16,9'], answer: '1,69', explanation: '1,3·1,3=1,69.' },
+  { tag: '3.3', question: 'Υπολόγισε: 0,3³', options: ['0,027','0,09','0,9','0,003'], answer: '0,027', explanation: '0,3·0,3·0,3=0,027.' },
+  { tag: '3.3', question: 'Υπολόγισε: 0,01²', options: ['0,0001','0,01','0,001','0,1'], answer: '0,0001', explanation: '0,01·0,01=0,0001.' },
+  { tag: '3.3', question: 'Ποιο κάνουμε πρώτα στην παράσταση 2 + 0,5²;', options: ['Τη δύναμη','Την πρόσθεση','Τη στρογγυλοποίηση','Τίποτα'], answer: 'Τη δύναμη', explanation: 'Οι δυνάμεις προηγούνται.' },
+  { tag: '3.3', question: 'Υπολόγισε: 2 + 0,5²', options: ['2,25','2,5','1','2,10'], answer: '2,25', explanation: '0,5²=0,25 και 2+0,25=2,25.' },
+  { tag: '3.4', question: 'Γράψε σε τυποποιημένη μορφή: 45.000', options: ['4,5·10⁴','45·10³','0,45·10⁵','4,5·10³'], answer: '4,5·10⁴', explanation: '45.000=4,5·10.000.' },
+  { tag: '3.4', question: 'Γράψε σε τυποποιημένη μορφή: 8.200.000', options: ['8,2·10⁶','82·10⁵','0,82·10⁷','8,2·10⁵'], answer: '8,2·10⁶', explanation: '8.200.000=8,2·10⁶.' },
+  { tag: '3.4', question: 'Γράψε ως αριθμό: 7,5·10⁴', options: ['75.000','7.500','750.000','0,00075'], answer: '75.000', explanation: '7,5·10.000=75.000.' },
+  { tag: '3.4', question: 'Γράψε ως αριθμό: 2,36·10⁶', options: ['2.360.000','236.000','23.600.000','0,000236'], answer: '2.360.000', explanation: '2,36·1.000.000.' },
+  { tag: '3.4', question: 'Ποια είναι σωστή τυποποιημένη μορφή;', options: ['6,4·10⁵','64·10⁴','0,64·10⁶','640·10³'], answer: '6,4·10⁵', explanation: 'Ο πρώτος παράγοντας είναι από 1 μέχρι μικρότερος του 10.' },
+  { tag: '3.4', question: 'Ποια ΔΕΝ είναι τυποποιημένη μορφή;', options: ['12,5·10⁴','1,25·10⁵','9,3·10⁷','3·10²'], answer: '12,5·10⁴', explanation: 'Το 12,5 είναι μεγαλύτερο από 10.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 3,5 km σε m', options: ['3500 m','350 m','35 m','0,35 m'], answer: '3500 m', explanation: '3,5·1000=3500.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 75 cm σε m', options: ['0,75 m','7,5 m','0,075 m','75 m'], answer: '0,75 m', explanation: '75:100=0,75.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 1 m² σε cm²', options: ['10.000 cm²','100 cm²','1000 cm²','1.000.000 cm²'], answer: '10.000 cm²', explanation: '100·100=10.000.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 2,5 m³ σε dm³', options: ['2500 dm³','250 dm³','25 dm³','0,25 dm³'], answer: '2500 dm³', explanation: '2,5·1000=2500.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 2,5 h σε min', options: ['150 min','250 min','120 min','25 min'], answer: '150 min', explanation: '2,5·60=150.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 750 g σε kg', options: ['0,75 kg','7,5 kg','75 kg','0,075 kg'], answer: '0,75 kg', explanation: '750:1000=0,75.' },
+  { tag: '3.5', question: 'Μετέτρεψε: 1,5 L σε mL', options: ['1500 mL','150 mL','15 mL','0,15 mL'], answer: '1500 mL', explanation: '1,5·1000=1500.' },
+  { tag: '3.5', question: 'Ποιο είναι μεγαλύτερο: 3,5 m ή 320 cm;', options: ['3,5 m','320 cm','Ίσα','Δεν συγκρίνονται'], answer: '3,5 m', explanation: '3,5 m=350 cm.' },
+  { tag: '3.5', question: 'Πόσα πλακάκια 0,25 m² χρειάζονται για 5 m²;', options: ['20','10','25','5'], answer: '20', explanation: '5:0,25=20.' },
+  { tag: '3.5', question: 'Δοχείο 2,5 L γεμίζει ποτήρια 250 mL. Πόσα ποτήρια;', options: ['10','8','12','6'], answer: '10', explanation: '2,5 L=2500 mL, 2500:250=10.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 1,2·10 + 0,8', options: ['12,8','1,28','20','2,0'], answer: '12,8', explanation: '1,2·10=12 και +0,8=12,8.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 3,5 m + 40 cm σε m', options: ['3,9 m','43,5 m','3,54 m','7,5 m'], answer: '3,9 m', explanation: '40 cm=0,4 m.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 0,5² + 0,25', options: ['0,5','0,75','0,25','1'], answer: '0,5', explanation: '0,5²=0,25 και +0,25=0,5.' },
+  { tag: 'Mixed', question: 'Ποιο είναι μεγαλύτερο: 4,5·10³ ή 450;', options: ['4,5·10³','450','Ίσα','Δεν συγκρίνονται'], answer: '4,5·10³', explanation: '4,5·10³=4500.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 2,4 m σε cm και μετά επί 2', options: ['480 cm','240 cm','48 cm','4,8 cm'], answer: '480 cm', explanation: '2,4 m=240 cm και 240·2=480.' },
+  { tag: 'Mixed', question: 'Στρογγυλοποίησε το 9,96 στη μονάδα.', options: ['10','9','9,9','9,96'], answer: '10', explanation: '0,96 ανεβάζει τη μονάδα.' },
+  { tag: 'Mixed', question: 'Υπολόγισε: 7,5·10⁴ + 25.000', options: ['100.000','75.025','750.000','50.000'], answer: '100.000', explanation: '7,5·10⁴=75.000 και +25.000=100.000.' },
+  { tag: 'Mixed', question: 'Αγώνας 1 h 45 min. Πόσα λεπτά;', options: ['105 min','145 min','100 min','90 min'], answer: '105 min', explanation: '60+45=105.' },
+  { tag: 'Mixed', question: 'Κήπος 12 m x 8 m. Εμβαδόν;', options: ['96 m²','20 m²','40 m²','192 m²'], answer: '96 m²', explanation: '12·8=96.' },
+  { tag: 'Final Boss', question: 'Ποια είναι η σωστή σειρά πράξεων;', options: ['Παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις','Προσθέσεις πρώτα','Τυχαία','Διαιρέσεις πάντα τελευταίες'], answer: 'Παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις', explanation: 'Αυτή είναι η βασική σειρά πράξεων.' },
+  { tag: 'Final Boss', question: 'Ποια απάντηση είναι σωστή: 0,3² + 0,91', options: ['1','1,21','0,94','0,091'], answer: '1', explanation: '0,3²=0,09 και 0,09+0,91=1.' }
 ]
+
+
+const difficultyDemo3 = [
+  { tag:'🟢 Rookie', question:'9,2 + 3,7 = ;', options:['12,9','12,7','13,9','5,5'], answer:'12,9', explanation:'Ευθυγραμμίζουμε τις υποδιαστολές.' },
+  { tag:'🟢 Rookie', question:'0,3² = ;', options:['0,09','0,6','0,03','0,9'], answer:'0,09', explanation:'0,3·0,3=0,09.' },
+  { tag:'🔵 Skilled', question:'2,4·10² + 3,6·10 = ;', options:['276','243,6','600','27,6'], answer:'276', explanation:'2,4·100=240 και 3,6·10=36, άρα 276.' },
+  { tag:'🔵 Skilled', question:'1,25 m + 35 cm = ;', options:['160 cm','1,60 cm','12535 cm','90 cm'], answer:'160 cm', explanation:'1,25 m=125 cm, άρα 125+35=160 cm.' },
+  { tag:'🟣 Advanced', question:'(20,18 - 13,751) + 0,3² = ;', options:['6,519','6,429','6,339','6,729'], answer:'6,519', explanation:'20,18-13,751=6,429 και 0,3²=0,09. Άρα 6,519.' },
+  { tag:'🟣 Advanced', question:'Ποιο είναι μεγαλύτερο: 4,5·10³ ή 3,8 km σε μέτρα;', options:['4,5·10³','3,8 km','Ίσα','Δεν συγκρίνονται'], answer:'4,5·10³', explanation:'4,5·10³=4500 και 3,8 km=3800 m.' },
+  { tag:'🔴 Expert', question:'Κήπος 12 m x 8 m. Καλύπτουμε τα 3/4 με πλακάκια 0,25 m². Πόσα πλακάκια;', options:['288','72','384','96'], answer:'288', explanation:'Εμβαδόν 96 m². Τα 3/4 είναι 72 m². 72:0,25=288.' },
+  { tag:'🔴 Expert', question:'7,5·10⁴ - (2,5 ώρες σε λεπτά)·100 = ;', options:['60.000','74.850','7.350','90.000'], answer:'60.000', explanation:'2,5 ώρες=150 λεπτά. 150·100=15.000 και 75.000-15.000=60.000.' },
+  { tag:'⚫ Nightmare', question:'Δεξαμενή 2,4 m³ γεμίζει μπουκάλια 0,75 L. Πόσα μπουκάλια γεμίζουν τα 2/5 της δεξαμενής;', options:['1280','3200','960','1920'], answer:'1280', explanation:'2,4 m³=2400 L. Τα 2/5 είναι 960 L. 960:0,75=1280.' },
+  { tag:'⚫ Nightmare', question:'Στρογγυλοποίησε στη μονάδα: (0,3³ + 1,973)·10²', options:['200','201','197','20'], answer:'200', explanation:'0,3³=0,027. 0,027+1,973=2 και 2·100=200.' },
+]
+
+function ProgressBar({ value }) {
+  return <div className="progress"><span style={{ width: `${value}%` }} /></div>
+}
+
+function HomePage({ onStart }) {
+  return (
+    <div className="home">
+      <nav className="topbar">
+        <div className="brand"><span className="brandIcon">π</span> Math Heroes Academy</div>
+        <button className="ghostBtn" onClick={onStart}>Δες τα μαθήματα</button>
+      </nav>
+
+      <section className="hero">
+        <div className="heroText">
+          <div className="pill"><Sparkles size={16}/> Μαθηματικά Α' Γυμνασίου</div>
+          <h1>Η Ακαδημία των Μαθηματικών Ηρώων</h1>
+          <p>Κάθε παράγραφος γίνεται αποστολή, κάθε σωστή απάντηση δίνει XP και κάθε ενότητα οδηγεί σε boss challenge.</p>
+          <div className="heroActions">
+            <button className="primaryBtn" onClick={onStart}><Play size={18}/> Ξεκίνα περιπέτεια</button>
+            <button className="secondaryBtn" onClick={onStart}><BookOpen size={18}/> Άνοιξε τα κεφάλαια</button>
+          </div>
+        </div>
+
+        <div className="heroCard">
+          <div className="questCard">
+            <div className="questTop"><Castle/> Νέα αποστολή</div>
+            <h2>1.2 Πράξεις φυσικών αριθμών</h2>
+            <p>Πρόσθεση, αφαίρεση, πολλαπλασιασμός και επιμεριστική ιδιότητα.</p>
+            <ProgressBar value={68} />
+          </div>
+        </div>
+      </section>
+
+      <section className="features">
+        <div className="feature"><Gamepad2/><h3>Quiz</h3><p>Άμεση ανατροφοδότηση και XP.</p></div>
+        <div className="feature"><GraduationCap/><h3>Extra Quiz</h3><p>Οι ασκήσεις καθηγητή εμφανίζονται μία-μία.</p></div>
+        <div className="feature"><Sword/><h3>Boss Challenge</h3><p>Τελική πρόκληση κάθε ενότητας.</p></div>
+        <div className="feature"><Brain/><h3>Σχολική ύλη</h3><p>Δομή βασισμένη στο βιβλίο.</p></div>
+      </section>
+    </div>
+  )
+}
+
+function CurriculumMenu({ activeLesson, setActiveLesson, closeMenu }) {
+  const [openChapters, setOpenChapters] = useState({ A1: true })
+  const toggle = (id) => setOpenChapters((current) => ({ ...current, [id]: !current[id] }))
+
+  const chooseLesson = (lesson) => {
+    if (!lesson.ready) return
+    setActiveLesson(lesson.id)
+    closeMenu?.()
+  }
+
+  return (
+    <div className="curriculumMenu">
+      {curriculum.map((part) => (
+        <section key={part.part} className="partBlock">
+          <div className="partHeader"><span>{part.part}</span><b>{part.title}</b></div>
+          {part.chapters.map((chapter) => {
+            const open = !!openChapters[chapter.id]
+            return (
+              <div className="chapterBlock" key={chapter.id}>
+                <button className="chapterBtn" onClick={() => toggle(chapter.id)}>
+                  {open ? <ChevronDown size={17}/> : <ChevronRight size={17}/>}
+                  <span>{chapter.title}</span>
+                </button>
+                <ProgressBar value={chapter.progress} />
+                {open && (
+                  <div className="lessonList">
+                    {chapter.lessons.map((lesson) => (
+                      <button
+                        key={lesson.id}
+                        className={`lessonBtn ${activeLesson === lesson.id ? 'active' : ''} ${!lesson.ready ? 'locked' : ''}`}
+                        onClick={() => chooseLesson(lesson)}
+                      >
+                        <span className="lessonId">{lesson.id}</span>
+                        <span>{lesson.title}</span>
+                        {lesson.ready ? <ChevronRight size={15}/> : <Lock size={14}/>}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </section>
+      ))}
+    </div>
+  )
+}
+
+function Sidebar({ activeLesson, setActiveLesson, goHome }) {
+  return (
+    <aside className="sidebar desktopSidebar">
+      <button className="homeBtn" onClick={goHome}><Home size={18}/> Αρχική</button>
+      <CurriculumMenu activeLesson={activeLesson} setActiveLesson={setActiveLesson} />
+    </aside>
+  )
+}
+
+function MobileHeader({ openMenu, goHome }) {
+  return (
+    <header className="mobileHeader">
+      <button onClick={openMenu}><Menu size={20}/> Μαθήματα</button>
+      <button onClick={goHome}><Home size={18}/> Αρχική</button>
+    </header>
+  )
+}
+
+function MobileDrawer({ open, close, activeLesson, setActiveLesson, goHome }) {
+  if (!open) return null
+  return (
+    <div className="drawerOverlay" onClick={close}>
+      <aside className="mobileDrawer" onClick={(e) => e.stopPropagation()}>
+        <div className="drawerTop"><b>Μαθήματα</b><button onClick={close}><X size={20}/></button></div>
+        <button className="homeBtn drawerHome" onClick={() => { goHome(); close(); }}><Home size={18}/> Αρχική</button>
+        <CurriculumMenu activeLesson={activeLesson} setActiveLesson={setActiveLesson} closeMenu={close} />
+      </aside>
+    </div>
+  )
+}
+
+function StandardQuiz({ title, subtitle, items, addXp }) {
+  const [qIndex, setQIndex] = useState(0)
+  const [picked, setPicked] = useState('')
+  const current = items[qIndex]
+  const correct = picked === current.answer
+
+  function choose(option) {
+    setPicked(option)
+    if (option === current.answer) addXp(15)
+  }
+
+  function next() {
+    setPicked('')
+    setQIndex((qIndex + 1) % items.length)
+  }
+
+  return (
+    <section className="contentPanel quizPanel">
+      <div className="sectionHeader"><Gamepad2/><div><h2>{title}</h2><p>{subtitle}</p></div></div>
+      <div className="question">{current.question}</div>
+      <div className="optionsGrid">
+        {current.options.map((option) => (
+          <button key={option} className={`option ${picked === option ? (correct ? 'good' : 'bad') : ''}`} onClick={() => choose(option)}>
+            {option}
+          </button>
+        ))}
+      </div>
+      {picked && <div className={`feedback ${correct ? 'goodText' : 'badText'}`}>{correct ? '✅ Μπράβο! Κέρδισες XP.' : `❌ Όχι ακόμα. ${current.tip}`}</div>}
+      <button className="primaryBtn compact" onClick={next}>Επόμενη ερώτηση</button>
+    </section>
+  )
+}
+
+function ExtraTeacherQuiz({ addXp, title, items }) {
+  const [index, setIndex] = useState(0)
+  const [picked, setPicked] = useState('')
+  const [answered, setAnswered] = useState(false)
+  const [score, setScore] = useState(0)
+  const [finished, setFinished] = useState(false)
+
+  const item = items[index]
+  const correct = picked === item.answer
+  const progress = Math.round(((index + (answered ? 1 : 0)) / items.length) * 100)
+
+  function choose(option) {
+    if (answered) return
+    setPicked(option)
+    setAnswered(true)
+    if (option === item.answer) {
+      setScore((s) => s + 1)
+      addXp(8)
+    }
+  }
+
+  function next() {
+    if (index + 1 >= items.length) {
+      setFinished(true)
+      return
+    }
+    setIndex((i) => i + 1)
+    setPicked('')
+    setAnswered(false)
+  }
+
+  function restart() {
+    setIndex(0)
+    setPicked('')
+    setAnswered(false)
+    setScore(0)
+    setFinished(false)
+  }
+
+  return (
+    <section className="contentPanel teacherQuizPanel">
+      <div className="teacherQuizTop">
+        <div className="sectionHeader noMargin">
+          <GraduationCap />
+          <div>
+            <h2>{title}</h2>
+            <p>Μία ερώτηση κάθε φορά, για να μη γεμίζει η σελίδα.</p>
+          </div>
+        </div>
+        <div className="quizScore">
+          <b>{score}/{items.length}</b>
+          <span>score</span>
+        </div>
+      </div>
+
+      <ProgressBar value={finished ? 100 : progress} />
+
+      {!finished ? (
+        <div className="compactQuizCard">
+          <div className="questionMeta">
+            <span>{item.tag}</span>
+            <b>Ερώτηση {index + 1} από {items.length}</b>
+          </div>
+          <h3>{item.question}</h3>
+
+          <div className="compactOptions">
+            {item.options.map((option) => (
+              <button
+                key={option}
+                className={
+                  answered && option === item.answer
+                    ? 'correctChoice'
+                    : answered && option === picked && option !== item.answer
+                    ? 'wrongChoice'
+                    : ''
+                }
+                onClick={() => choose(option)}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+
+          {answered && (
+            <div className={correct ? 'okBox' : 'noBox'}>
+              {correct ? '✅ Σωστό!' : '❌ Όχι ακόμα.'} {item.explanation}
+            </div>
+          )}
+
+          <div className="compactActions">
+            <button className="primaryBtn compact" onClick={next} disabled={!answered}>
+              {index + 1 >= items.length ? 'Ολοκλήρωση' : 'Επόμενη'}
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="quizFinished">
+          <div className="bigMedal">🏅</div>
+          <h3>Ολοκλήρωσες το Extra Quiz!</h3>
+          <p>Σκορ: {score}/{items.length}</p>
+          <button className="primaryBtn compact" onClick={restart}><RotateCcw size={16}/> Ξανά προσπάθεια</button>
+        </div>
+      )}
+    </section>
+  )
+}
+
+function ProfileCard({ xp }) {
+  const level = useMemo(() => Math.floor(xp / 100) + 1, [xp])
+  return (
+    <div className="profileCard">
+      <span>Προφίλ μαθητή</span>
+      <h2>Επίπεδο {level}</h2>
+      <ProgressBar value={xp % 100} />
+      <div className="statsRow">
+        <div>⭐ <b>{xp}</b><small>XP</small></div>
+        <div>🔥 <b>4</b><small>σερί</small></div>
+        <div>🏅 <b>6</b><small>badges</small></div>
+      </div>
+    </div>
+  )
+}
+
+function Lesson11() {
+  const [xp, setXp] = useState(240)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= 3 })
+    if (ok) addXp(20)
+  }
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><BookOpen size={16}/> Ενότητα 1.1</div>
+          <h1>Φυσικοί αριθμοί — Διάταξη — Στρογγυλοποίηση</h1>
+          <p>Μαθαίνουμε τους φυσικούς αριθμούς, πώς τους συγκρίνουμε και πότε αντικαθιστούμε έναν αριθμό με μια κοντινή προσέγγιση.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Φυσικοί αριθμοί</b><p>Οι αριθμοί 0, 1, 2, 3, 4, ... ονομάζονται φυσικοί αριθμοί.</p></article>
+          <article><b>2. Άρτιοι και περιττοί</b><p>Άρτιοι είναι οι φυσικοί που διαιρούνται με το 2.</p></article>
+          <article><b>3. Διάταξη</b><p>Χρησιμοποιούμε τα σύμβολα =, &lt;, &gt;.</p></article>
+          <article><b>4. Στρογγυλοποίηση</b><p>Αν το επόμενο ψηφίο είναι 5–9, ανεβάζουμε κατά 1.</p></article>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή" subtitle="Κάθε σωστή απάντηση δίνει +15 XP." items={quiz11} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.1" items={teacherQuiz11} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div><div className="pill danger"><Sword size={16}/> Boss Challenge</div><h2>Ο Δράκος της Στρογγυλοποίησης 🐉</h2><p>Απάντησε σε 3 γρήγορες προκλήσεις.</p></div>
+        <div className="bossGame">
+          <div className="dragon">🐉</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{boss.done ? `Τελικό σκορ: ${boss.score}/3` : 'Το 761 στην πλησιέστερη εκατοντάδα είναι 800;'}</h3>
+          {!boss.done ? <div className="bossBtns"><button onClick={() => bossAnswer(true)}>Σωστό</button><button onClick={() => bossAnswer(false)}>Λάθος</button></div> : <div className="badgeWin"><Medal/> Κέρδισες: Φύλακας της 1.1</div>}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+function Lesson12() {
+  const [xp, setXp] = useState(320)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: '13·93 + 13·7 = 1300;', ok: true },
+    { q: '34 - [12 + (8-6)] = 24;', ok: false },
+    { q: '56·99 = 5544;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 1.2</div>
+          <h1>Πρόσθεση — Αφαίρεση — Πολλαπλασιασμός φυσικών αριθμών</h1>
+          <p>Μαθαίνουμε να εκτελούμε πράξεις, να σεβόμαστε την προτεραιότητα και να χρησιμοποιούμε έξυπνα την επιμεριστική ιδιότητα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.2 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Πρόσθεση</b><p>Στην πρόσθεση οι αριθμοί λέγονται προσθετέοι και το αποτέλεσμα άθροισμα.</p></article>
+          <article><b>2. Αφαίρεση</b><p>Στους φυσικούς αριθμούς ο αφαιρετέος πρέπει να είναι μικρότερος ή ίσος του μειωτέου.</p></article>
+          <article><b>3. Πολλαπλασιασμός</b><p>Οι αριθμοί που πολλαπλασιάζονται λέγονται παράγοντες και το αποτέλεσμα γινόμενο.</p></article>
+          <article><b>4. Ιδιότητες</b><p>Αντιμεταθετική, προσεταιριστική και επιμεριστική ιδιότητα βοηθούν στους γρήγορους υπολογισμούς.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Προτεραιότητα</b><p>1 + 2·3 - 4 = 1 + 6 - 4 = 3</p></div>
+          <div className="example"><b>Επιμεριστική</b><p>13·93 + 13·7 = 13·(93+7) = 13·100 = 1300</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Κυνήγι γρήγορης πράξης:</p>
+          <div className="numberChips"><span>34·13</span><span>45·102</span><span>56·99</span></div>
+          <div className="answerLine">Χρησιμοποίησε 10, 100 ή επιμεριστική για πιο γρήγορη λύση.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.2" subtitle="Πράξεις, παρενθέσεις και ιδιότητες." items={quiz12} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.2" items={teacherQuiz12} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Goblin των Πράξεων ⚔️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις πράξεων για να πάρεις το badge της 1.2.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🧌</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Κυρίαρχος της 1.2</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+function Lesson13() {
+  const [xp, setXp] = useState(410)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: '5³ = 125;', ok: true },
+    { q: '2³ + 3² = 17;', ok: false },
+    { q: '2017⁰ = 1;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Flame size={16}/> Ενότητα 1.3</div>
+          <h1>Δυνάμεις φυσικών αριθμών</h1>
+          <p>Μαθαίνουμε να γράφουμε επαναλαμβανόμενα γινόμενα ως δυνάμεις, να υπολογίζουμε δυνάμεις και να τηρούμε την προτεραιότητα των πράξεων.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.3 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Δύναμη</b><p>Το γινόμενο α·α·α·...·α με ν ίδιους παράγοντες γράφεται αⁿ.</p></article>
+          <article><b>2. Βάση και εκθέτης</b><p>Στο αⁿ, το α λέγεται βάση και το ν λέγεται εκθέτης.</p></article>
+          <article><b>3. Τετράγωνο και κύβος</b><p>Το α² λέγεται τετράγωνο του α και το α³ κύβος του α.</p></article>
+          <article><b>4. Προτεραιότητα</b><p>Πρώτα παρενθέσεις, μετά δυνάμεις, μετά πολλαπλασιασμοί/διαιρέσεις και στο τέλος προσθέσεις/αφαιρέσεις.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Γράφω ως δύναμη</b><p>2·2·2·2 = 2⁴</p></div>
+          <div className="example"><b>Υπολογίζω παράσταση</b><p>2³ + 3² = 8 + 9 = 17</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Βρες γρήγορα τις τιμές:</p>
+          <div className="numberChips"><span>2⁵</span><span>5³</span><span>10⁴</span></div>
+          <div className="answerLine">32, 125, 10.000</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.3" subtitle="Δυνάμεις, εκθέτες και προτεραιότητα πράξεων." items={quiz13} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.3" items={teacherQuiz13} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Μάγος των Δυνάμεων 🧙‍♂️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 1.3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🧙‍♂️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Μάγος της 1.3</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson14() {
+  const [xp, setXp] = useState(510)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: '43 = 7·6 + 1 είναι σωστή Ευκλείδεια διαίρεση;', ok: true },
+    { q: 'Σε Ευκλείδεια διαίρεση με διαιρέτη 8, το υπόλοιπο μπορεί να είναι 8;', ok: false },
+    { q: 'Αν το υπόλοιπο είναι 0, η διαίρεση είναι τέλεια;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 1.4</div>
+          <h1>Ευκλείδεια διαίρεση — Διαιρετότητα</h1>
+          <p>Μαθαίνουμε τη σχέση Δ = δ·π + υ, τον ρόλο του υπολοίπου και πότε μια διαίρεση είναι τέλεια.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.4 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ευκλείδεια διαίρεση</b><p>Για φυσικούς αριθμούς ισχύει Δ = δ·π + υ, με υ &lt; δ.</p></article>
+          <article><b>2. Ονόματα</b><p>Δ: διαιρετέος, δ: διαιρέτης, π: πηλίκο, υ: υπόλοιπο.</p></article>
+          <article><b>3. Τέλεια διαίρεση</b><p>Όταν το υπόλοιπο είναι 0, η διαίρεση λέγεται τέλεια.</p></article>
+          <article><b>4. Δοκιμή</b><p>Για έλεγχο κάνουμε: διαιρέτης·πηλίκο + υπόλοιπο.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>43 : 7</b><p>43 = 7·6 + 1, άρα πηλίκο 6 και υπόλοιπο 1.</p></div>
+          <div className="example"><b>Τέλεια διαίρεση</b><p>4002 : 69 = 58, γιατί 69·58 = 4002.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Βρες πηλίκο και υπόλοιπο:</p>
+          <div className="numberChips"><span>43 : 7</span><span>247 : 7</span><span>73 : 9</span></div>
+          <div className="answerLine">43=7·6+1, 247=7·35+2, 73=9·8+1</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.4" subtitle="Ευκλείδεια διαίρεση, υπόλοιπο και τέλεια διαίρεση." items={quiz14} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.4" items={teacherQuiz14} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Φύλακας του Υπολοίπου 🛡️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 1.4.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🛡️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Φύλακας της 1.4</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson15() {
+  const [xp, setXp] = useState(650)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το ΕΚΠ(6,8) είναι 24;', ok: true },
+    { q: 'Ο ΜΚΔ(20,36) είναι 10;', ok: false },
+    { q: 'Το 64 αναλύεται ως 2⁶;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 1.5</div>
+          <h1>Χαρακτήρες διαιρετότητας — ΕΚΠ — ΜΚΔ</h1>
+          <p>Μαθαίνουμε να αναγνωρίζουμε διαιρετότητα, να βρίσκουμε ΕΚΠ και ΜΚΔ και να αναλύουμε αριθμούς σε γινόμενο πρώτων παραγόντων.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 1.5 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Χαρακτήρες διαιρετότητας</b><p>Με το 2 διαιρούνται οι αριθμοί που τελειώνουν σε 0,2,4,6,8. Με το 5 όσοι τελειώνουν σε 0 ή 5.</p></article>
+          <article><b>2. ΕΚΠ</b><p>Το ελάχιστο κοινό πολλαπλάσιο είναι το μικρότερο θετικό κοινό πολλαπλάσιο δύο ή περισσότερων αριθμών.</p></article>
+          <article><b>3. ΜΚΔ</b><p>Ο μέγιστος κοινός διαιρέτης είναι ο μεγαλύτερος αριθμός που διαιρεί ακριβώς τους αριθμούς.</p></article>
+          <article><b>4. Πρώτοι παράγοντες</b><p>Αναλύουμε έναν αριθμό σε γινόμενο πρώτων αριθμών για να βρίσκουμε πιο εύκολα ΕΚΠ και ΜΚΔ.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>ΕΚΠ</b><p>ΕΚΠ(6,8)=24, γιατί 24 είναι το μικρότερο κοινό πολλαπλάσιο.</p></div>
+          <div className="example"><b>ΜΚΔ</b><p>ΜΚΔ(20,36)=4, γιατί 4 είναι ο μεγαλύτερος κοινός διαιρέτης.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Ανάλυση σε πρώτους παράγοντες:</p>
+          <div className="numberChips"><span>60=2²·3·5</span><span>48=2⁴·3</span><span>64=2⁶</span></div>
+          <div className="answerLine">Χρησιμοποίησε την ανάλυση για ΕΚΠ και ΜΚΔ.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 1.5" subtitle="Διαιρετότητα, ΕΚΠ, ΜΚΔ και πρώτοι παράγοντες." items={quiz15} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 1.5" items={teacherQuiz15} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Άρχοντας των Κοινών Πολλαπλασίων 👑</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 1.5.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Άρχοντας της 1.5</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function LessonA1G() {
+  const [xp, setXp] = useState(780)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Αν x+y=14, τότε 12+x+17+y+5 = 48;', ok: true },
+    { q: 'Το ΕΚΠ(5,12) είναι 17;', ok: false },
+    { q: 'Το ΜΚΔ(2,22) είναι 2;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Γενικές Ασκήσεις</div>
+          <h1>Γενικές Ασκήσεις — Κεφάλαιο 1</h1>
+          <p>Επαναλαμβάνουμε όλο το Κεφάλαιο 1: φυσικούς αριθμούς, πράξεις, δυνάμεις, παραστάσεις, ΕΚΠ, ΜΚΔ και διαιρετότητα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Τι επαναλαμβάνουμε</h2><p>Όλο το Κεφάλαιο 1 σε μικρές αποστολές.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Πράξεις</b><p>Σεβόμαστε την προτεραιότητα: παρενθέσεις, δυνάμεις, πολλαπλασιασμοί/διαιρέσεις, προσθέσεις/αφαιρέσεις.</p></article>
+          <article><b>2. Μεταβλητές</b><p>Αν γνωρίζουμε την τιμή του x ή του y, αντικαθιστούμε και υπολογίζουμε.</p></article>
+          <article><b>3. ΕΚΠ και ΜΚΔ</b><p>Το ΕΚΠ βοηθά σε κοινές επαναλήψεις, ο ΜΚΔ σε μέγιστο μοίρασμα.</p></article>
+          <article><b>4. Διαιρετότητα</b><p>Χρησιμοποιούμε χαρακτήρες διαιρετότητας για 2, 3, 4, 5, 9 κ.ά.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Μεταβλητές</b><p>Αν x=3, τότε 12+x+8+6 = 29.</p></div>
+          <div className="example"><b>ΕΚΠ / ΜΚΔ</b><p>Για 5 και 12: ΕΚΠ=60 και ΜΚΔ=1.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Mini αποστολή</h3>
+          <p>Έλεγξε γρήγορα:</p>
+          <div className="numberChips"><span>Α=5</span><span>Β=12</span><span>ΕΚΠ=60</span><span>ΜΚΔ=1</span></div>
+          <div className="answerLine">Οι αριθμοί 5 και 12 είναι πρώτοι μεταξύ τους.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — Γενικές Κεφαλαίου 1" subtitle="Επανάληψη σε όλο το Κεφάλαιο 1." items={quizA1G} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Γενικές Ασκήσεις Κεφαλαίου 1" items={teacherQuizA1G} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Final Boss Κεφαλαίου 1</div>
+          <h2>Ο Τελικός Φύλακας των Φυσικών Αριθμών 🏰</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να ολοκληρώσεις το Κεφάλαιο 1.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🏰</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Ολοκληρωτής Κεφαλαίου 1</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson21() {
+  const [xp, setXp] = useState(900)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στο κλάσμα 3/5, ο αριθμητής είναι το 3;', ok: true },
+    { q: 'Στο κλάσμα 3/5, ο παρονομαστής δείχνει πόσα μέρη παίρνουμε;', ok: false },
+    { q: 'Το 6/6 είναι μία ολόκληρη μονάδα;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.1</div>
+          <h1>Η έννοια του κλάσματος</h1>
+          <p>Μαθαίνουμε τι σημαίνει κλάσμα, ποιος είναι ο αριθμητής, ποιος είναι ο παρονομαστής και πώς ένα κλάσμα παριστάνει μέρος ενός όλου.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.1 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Κλάσμα</b><p>Κλάσμα είναι ένας τρόπος να δείχνουμε μέρος μιας μονάδας ή ενός συνόλου.</p></article>
+          <article><b>2. Αριθμητής</b><p>Ο αριθμητής είναι ο πάνω αριθμός και δείχνει πόσα ίσα μέρη παίρνουμε.</p></article>
+          <article><b>3. Παρονομαστής</b><p>Ο παρονομαστής είναι ο κάτω αριθμός και δείχνει σε πόσα ίσα μέρη χωρίζεται το όλο.</p></article>
+          <article><b>4. Προσοχή</b><p>Ο παρονομαστής δεν μπορεί να είναι 0, γιατί δεν γίνεται να χωρίσουμε σε 0 μέρη.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>3/5</b><p>Το όλο χωρίζεται σε 5 ίσα μέρη και παίρνουμε τα 3.</p></div>
+          <div className="example"><b>1/2</b><p>Το μισό σημαίνει 1 από τα 2 ίσα μέρη.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Visual Fraction</h3>
+          <p>Οπτική αναπαράσταση:</p>
+          <div className="numberChips"><span>■■□□ = 2/4</span><span>■□ = 1/2</span><span>■■■□□ = 3/5</span></div>
+          <div className="answerLine">Τα γεμάτα τετράγωνα δείχνουν τον αριθμητή.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.1" subtitle="Η έννοια του κλάσματος, αριθμητής και παρονομαστής." items={quiz21} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.1" items={teacherQuiz21} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Φύλακας των Κλασμάτων 🍕</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.1.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🍕</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Φύλακας της 2.1</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson22() {
+  const [xp, setXp] = useState(1120)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 1/2 είναι ισοδύναμο με το 4/8;', ok: true },
+    { q: 'Για να φτιάξω ισοδύναμο κλάσμα αλλάζω μόνο τον αριθμητή;', ok: false },
+    { q: 'Το 12/18 απλοποιείται σε 2/3;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.2</div>
+          <h1>Ισοδύναμα Κλάσματα</h1>
+          <p>Μαθαίνουμε ότι διαφορετικά κλάσματα μπορούν να παριστάνουν το ίδιο μέρος, με επέκταση και απλοποίηση.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.2 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ισοδύναμα κλάσματα</b><p>Είναι κλάσματα που φαίνονται διαφορετικά αλλά δείχνουν το ίδιο μέρος του όλου.</p></article>
+          <article><b>2. Επέκταση</b><p>Πολλαπλασιάζουμε αριθμητή και παρονομαστή με τον ίδιο φυσικό αριθμό.</p></article>
+          <article><b>3. Απλοποίηση</b><p>Διαιρούμε αριθμητή και παρονομαστή με τον ίδιο κοινό διαιρέτη.</p></article>
+          <article><b>4. Ανάγωγο κλάσμα</b><p>Ένα κλάσμα λέγεται ανάγωγο όταν δεν απλοποιείται άλλο.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Επέκταση</b><p>1/2 = 2/4 = 4/8</p></div>
+          <div className="example"><b>Απλοποίηση</b><p>12/18 = 2/3, γιατί διαιρούμε και τους δύο όρους με το 6.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Visual Fraction Match</h3>
+          <p>Τα παρακάτω δείχνουν το ίδιο μέρος:</p>
+          <div className="numberChips"><span>■□ = 1/2</span><span>■■□□ = 2/4</span><span>■■■■□□□□ = 4/8</span></div>
+          <div className="answerLine">Όσο κι αν αλλάζουν τα κομμάτια, το μέρος μένει ίδιο.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.2" subtitle="Ισοδύναμα κλάσματα, επέκταση και απλοποίηση." items={quiz22} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.2" items={teacherQuiz22} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Μάγος των Ισοδύναμων 🧙</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.2.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🧙</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Μάγος της 2.2</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson23() {
+  const [xp, setXp] = useState(1250)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Με ίδιο παρονομαστή, μεγαλύτερος αριθμητής σημαίνει μεγαλύτερο κλάσμα;', ok: true },
+    { q: 'Το 5/8 είναι μεγαλύτερο από το 5/6;', ok: false },
+    { q: 'Το 9/8 είναι μεγαλύτερο από τη μονάδα;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.3</div>
+          <h1>Σύγκριση Κλασμάτων</h1>
+          <p>Μαθαίνουμε να συγκρίνουμε κλάσματα με ίδιο παρονομαστή, ίδιο αριθμητή, με τη μονάδα και με μετατροπή σε ισοδύναμα κλάσματα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.3 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ίδιος παρονομαστής</b><p>Μεγαλύτερο είναι το κλάσμα με τον μεγαλύτερο αριθμητή.</p></article>
+          <article><b>2. Ίδιος αριθμητής</b><p>Μεγαλύτερο είναι το κλάσμα με τον μικρότερο παρονομαστή.</p></article>
+          <article><b>3. Σύγκριση με το 1</b><p>Αν αριθμητής μικρότερος από παρονομαστή, το κλάσμα είναι μικρότερο από 1.</p></article>
+          <article><b>4. Ισοδύναμα</b><p>Για δύσκολη σύγκριση, φτιάχνουμε ισοδύναμα κλάσματα με κοινό παρονομαστή.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>2/6 &lt; 3/6</b><p>Ίδιος παρονομαστής, 2&lt;3.</p></div>
+          <div className="example"><b>5/8 &lt; 5/6</b><p>Ίδιος αριθμητής, μικρότερο είναι εκείνο με μεγαλύτερο παρονομαστή.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Duel</h3>
+          <p>Γρήγορες συγκρίσεις:</p>
+          <div className="numberChips"><span>3/4 &gt; 5/8</span><span>6/8 = 12/16</span><span>8/9 &lt; 11/6</span></div>
+          <div className="answerLine">Βρες πρώτα αν είναι κάτω, ίσα ή πάνω από τη μονάδα.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.3" subtitle="Σύγκριση κλασμάτων." items={quiz23} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.3" items={teacherQuiz23} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Κριτής των Κλασμάτων ⚖️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">⚖️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Κριτής της 2.3</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson24() {
+  const [xp, setXp] = useState(1400)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στα ομώνυμα κλάσματα κρατάμε τον παρονομαστή και προσθέτουμε αριθμητές;', ok: true },
+    { q: 'Στην πράξη 1/2 + 1/4 μπορούμε να γράψουμε κατευθείαν 2/6;', ok: false },
+    { q: 'Το 3/4 - 1/2 είναι ίσο με 1/4;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.4</div>
+          <h1>Πρόσθεση και Αφαίρεση Κλασμάτων</h1>
+          <p>Μαθαίνουμε πράξεις με ομώνυμα και ετερώνυμα κλάσματα, μετατροπή σε κοινό παρονομαστή και τελική απλοποίηση.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.4 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Ομώνυμα κλάσματα</b><p>Όταν έχουν ίδιο παρονομαστή, κάνουμε την πράξη μόνο στους αριθμητές.</p></article>
+          <article><b>2. Ετερώνυμα κλάσματα</b><p>Πρώτα τα κάνουμε ομώνυμα βρίσκοντας κοινό παρονομαστή.</p></article>
+          <article><b>3. Μικτοί αριθμοί</b><p>Στις πράξεις μπορούμε να τους μετατρέψουμε πρώτα σε κλάσματα.</p></article>
+          <article><b>4. Απλοποίηση</b><p>Στο τέλος απλοποιούμε το αποτέλεσμα, αν γίνεται.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>Ομώνυμα</b><p>1/5 + 2/5 = 3/5</p></div>
+          <div className="example"><b>Ετερώνυμα</b><p>1/2 + 1/4 = 2/4 + 1/4 = 3/4</p></div>
+          <div className="example"><b>Αφαίρεση</b><p>3/4 - 1/2 = 3/4 - 2/4 = 1/4</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Lab</h3>
+          <p>Γρήγορες αποστολές πράξεων:</p>
+          <div className="numberChips">
+            <span>4/6 + 2/6 = 6/6</span>
+            <span>5/12 - 2/8 = 1/6</span>
+            <span>2 + 3/4 = 11/4</span>
+          </div>
+          <div className="answerLine">Βήματα: κοινός παρονομαστής → πράξη στους αριθμητές → απλοποίηση.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.4" subtitle="Πρόσθεση, αφαίρεση, ομώνυμα και ετερώνυμα κλάσματα." items={quiz24} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.4" items={teacherQuiz24} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Αλχημιστής των Κλασμάτων ⚗️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.4.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">⚗️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Αλχημιστής της 2.4</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson25() {
+  const [xp, setXp] = useState(1550)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στον πολλαπλασιασμό κλασμάτων πολλαπλασιάζουμε αριθμητή με αριθμητή και παρονομαστή με παρονομαστή;', ok: true },
+    { q: 'Το 2/3 · 3/5 είναι 5/8;', ok: false },
+    { q: 'Τα 3/5 των 400 g είναι 240 g;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.5</div>
+          <h1>Πολλαπλασιασμός Κλασμάτων</h1>
+          <p>Μαθαίνουμε να πολλαπλασιάζουμε κλάσματα, να απλοποιούμε πριν την πράξη και να λύνουμε προβλήματα με «μέρος από ποσότητα».</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.5 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Κανόνας</b><p>Πολλαπλασιάζουμε αριθμητή με αριθμητή και παρονομαστή με παρονομαστή.</p></article>
+          <article><b>2. Απλοποίηση</b><p>Αν γίνεται, απλοποιούμε πριν πολλαπλασιάσουμε για πιο εύκολους αριθμούς.</p></article>
+          <article><b>3. Μικτοί αριθμοί</b><p>Τους μετατρέπουμε πρώτα σε καταχρηστικά κλάσματα.</p></article>
+          <article><b>4. Προβλήματα</b><p>Η φράση «τα 3/5 των 400» σημαίνει 3/5 · 400.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>2/3 · 3/5</b><p>2·3 / 3·5 = 6/15 = 2/5</p></div>
+          <div className="example"><b>3/5 του 400</b><p>3/5 · 400 = 240</p></div>
+          <div className="example"><b>Μικτός αριθμός</b><p>2 1/3 · 1/2 = 7/3 · 1/2 = 7/6</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Lab</h3>
+          <p>Γρήγορες αποστολές πολλαπλασιασμού:</p>
+          <div className="numberChips"><span>4/15 · 25/16 = 5/12</span><span>4/5 · 3/4 · 5/2 = 3/2</span><span>3/5 · 1/3 = 1/5</span></div>
+          <div className="answerLine">Βήματα: μετατροπή μικτών → απλοποίηση → πολλαπλασιασμός.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.5" subtitle="Πολλαπλασιασμός, απλοποίηση και προβλήματα κλασμάτων." items={quiz25} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.5" items={teacherQuiz25} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Πολλαπλασιαστής των Κλασμάτων ✖️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.5.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">✖️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Πολλαπλασιαστής της 2.5</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson26() {
+  const [xp, setXp] = useState(1700)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Η διαίρεση κλασμάτων γίνεται πολλαπλασιάζοντας με το αντίστροφο του δεύτερου;', ok: true },
+    { q: 'Το 3/4 : 2/5 είναι 6/20;', ok: false },
+    { q: 'Το αντίστροφο του 7/3 είναι 3/7;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(20)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 2.6</div>
+          <h1>Διαίρεση Κλασμάτων</h1>
+          <p>Μαθαίνουμε να διαιρούμε κλάσματα μετατρέποντας τη διαίρεση σε πολλαπλασιασμό με το αντίστροφο.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 2.6 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Αντίστροφο κλάσμα</b><p>Αντίστροφο του α/β είναι το β/α, με α≠0.</p></article>
+          <article><b>2. Κανόνας διαίρεσης</b><p>α/β : γ/δ = α/β · δ/γ.</p></article>
+          <article><b>3. Μικτοί αριθμοί</b><p>Πρώτα τους μετατρέπουμε σε κλάσματα.</p></article>
+          <article><b>4. Σύνθετες παραστάσεις</b><p>Λύνουμε παρενθέσεις και ακολουθούμε τη σειρά πράξεων.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>3/4 : 2/5</b><p>3/4 · 5/2 = 15/8</p></div>
+          <div className="example"><b>6 : 3/2</b><p>6/1 · 2/3 = 4</p></div>
+          <div className="example"><b>5/12 : 2/8</b><p>5/12 · 8/2 = 5/3</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Fraction Lab</h3>
+          <p>Γρήγορες αποστολές διαίρεσης:</p>
+          <div className="numberChips"><span>3/4 : 2/5 = 15/8</span><span>2/3 : 4/5 = 5/6</span><span>2/3 : 1/6 = 4</span></div>
+          <div className="answerLine">Βήματα: αντιστρέφω το δεύτερο → πολλαπλασιάζω → απλοποιώ.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 2.6" subtitle="Διαίρεση κλασμάτων και σύνθετες παραστάσεις." items={quiz26} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 2.6" items={teacherQuiz26} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Αντιστροφέας των Κλασμάτων 🔁</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 2.6.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🔁</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Αντιστροφέας της 2.6</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function LessonGeneral2() {
+  const [xp, setXp] = useState(2000)
+  const [boss, setBoss] = useState({ round:0, score:0, done:false })
+  const addXp = (a)=>setXp(v=>v+a)
+
+  const bossQuestions = [
+    { q:'Στη διαίρεση κλασμάτων χρησιμοποιούμε το αντίστροφο;', ok:true },
+    { q:'Το 3/4 + 1/4 κάνει 2;', ok:false },
+    { q:'Το 2/3 · 3/5 απλοποιείται σε 2/5;', ok:true },
+    { q:'Το 5/6 είναι μικρότερο από το 1/2;', ok:false },
+  ]
+
+  function bossAnswer(ok){
+    if(boss.done) return
+    const cur=bossQuestions[boss.round]
+    const nr=boss.round+1
+    const ns=boss.score + (ok===cur.ok ? 1:0)
+    setBoss({round:nr,score:ns,done:nr>=bossQuestions.length})
+    if(ok===cur.ok) addXp(30)
+  }
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Κεφάλαιο 2</div>
+          <h1>Γενικές Ασκήσεις — Κεφάλαιο 2 👑</h1>
+          <p>Τελική επανάληψη σε όλα τα κλάσματα: ισοδύναμα, σύγκριση, πράξεις, πολλαπλασιασμός και διαίρεση.</p>
+        </div>
+        <ProfileCard xp={xp}/>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <ShieldCheck/>
+          <div>
+            <h2>Fraction Tournament</h2>
+            <p>Το μεγάλο recap του Κεφαλαίου 2.</p>
+          </div>
+        </div>
+
+        <div className="theoryGrid">
+          <article><b>2.1</b><p>Απλοποίηση και βασικές έννοιες.</p></article>
+          <article><b>2.2</b><p>Ισοδύναμα κλάσματα.</p></article>
+          <article><b>2.3</b><p>Σύγκριση και διάταξη.</p></article>
+          <article><b>2.4</b><p>Πρόσθεση και αφαίρεση.</p></article>
+          <article><b>2.5</b><p>Πολλαπλασιασμός κλασμάτων.</p></article>
+          <article><b>2.6</b><p>Διαίρεση κλασμάτων.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Final Fraction Lab</h2></div>
+          <div className="example"><b>2/3 + 1/6 = 5/6</b><p>Κάνουμε ομώνυμα.</p></div>
+          <div className="example"><b>3/4 · 2/3 = 1/2</b><p>Απλοποιούμε πριν ή μετά.</p></div>
+          <div className="example"><b>2/3 : 4/5 = 5/6</b><p>Αντιστρέφουμε το δεύτερο κλάσμα.</p></div>
+        </div>
+
+        <div className="practiceBox">
+          <h3>Championship Arena 🏆</h3>
+          <div className="numberChips">
+            <span>8/10 = 4/5</span>
+            <span>5/6 &gt; 3/4</span>
+            <span>3/4 + 1/8 = 7/8</span>
+            <span>3/5 : 9/10 = 2/3</span>
+          </div>
+          <div className="answerLine">Όλες οι δεξιότητες του κεφαλαίου μαζί.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Mega Quiz — Κεφάλαιο 2" subtitle="Γρήγορη επανάληψη από όλες τις ενότητες." items={generalQuiz2} addXp={addXp}/>
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Γενικές Ασκήσεις Κεφ. 2" items={teacherGeneral2} addXp={addXp}/>
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Final Boss</div>
+          <h2>Ο Αυτοκράτορας των Κλασμάτων 👑</h2>
+          <p>Η τελική δοκιμασία του Κεφαλαίου 2.</p>
+        </div>
+
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Μάχη {Math.min(boss.round+1,4)} / 4</p>
+          <h3>{boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q}</h3>
+
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={()=>bossAnswer(true)}>Σωστό</button>
+              <button onClick={()=>bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Master of Fractions — Chapter 2</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+function Lesson31() {
+  const [xp, setXp] = useState(2200)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 0,7 είναι ίσο με 7/10;', ok: true },
+    { q: 'Το 3,14 είναι μεγαλύτερο από το 3,4;', ok: false },
+    { q: 'Το 4,50 είναι ίσο με το 4,5;', ok: true },
+    { q: 'Στρογγυλοποιώντας το 7,86 στη μονάδα παίρνουμε 8;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 3.1</div>
+          <h1>Δεκαδικά Κλάσματα — Δεκαδικοί Αριθμοί</h1>
+          <p>Μαθαίνουμε να μετατρέπουμε δεκαδικά κλάσματα σε δεκαδικούς αριθμούς, να συγκρίνουμε, να διατάσσουμε και να στρογγυλοποιούμε.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 3.1 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Δεκαδικά κλάσματα</b><p>Έχουν παρονομαστή 10, 100, 1000 κτλ.</p></article>
+          <article><b>2. Δεκαδικοί αριθμοί</b><p>Η υποδιαστολή χωρίζει το ακέραιο από το δεκαδικό μέρος.</p></article>
+          <article><b>3. Σύγκριση</b><p>Συμπληρώνουμε μηδενικά στο τέλος για να συγκρίνουμε πιο εύκολα.</p></article>
+          <article><b>4. Στρογγυλοποίηση</b><p>Κοιτάμε το επόμενο ψηφίο: αν είναι 5 ή μεγαλύτερο, ανεβάζουμε.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Decimal Lab</h2></div>
+          <div className="example"><b>7/10 = 0,7</b><p>Ένα δεκαδικό ψηφίο δείχνει δέκατα.</p></div>
+          <div className="example"><b>325/100 = 3,25</b><p>Δύο δεκαδικά ψηφία δείχνουν εκατοστά.</p></div>
+          <div className="example"><b>4,5 = 4,50</b><p>Τα μηδενικά στο τέλος δεν αλλάζουν την τιμή.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Rounding Trainer</h3>
+          <p>Γρήγορες αποστολές:</p>
+          <div className="numberChips"><span>7,86 → 8</span><span>15,78 → 15,8</span><span>6,243 → 6,24</span><span>28,496 → 28</span></div>
+          <div className="answerLine">Στόχος: σύγκριση, διάταξη και στρογγυλοποίηση χωρίς παγίδες.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.1" subtitle="Δεκαδικά κλάσματα, δεκαδικοί αριθμοί και στρογγυλοποίηση." items={quiz31} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.1" items={teacherQuiz31} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Άρχοντας των Δεκαδικών 👑</h2>
+          <p>Απάντησε σωστά σε 4 γρήγορες κρίσεις για να πάρεις το badge της 3.1.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Άρχοντας της 3.1</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson3233({ mode = '3.2' }) {
+  const [xp, setXp] = useState(2400)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στην πρόσθεση δεκαδικών ευθυγραμμίζουμε τις υποδιαστολές;', ok: true },
+    { q: 'Το 0,3² είναι 0,6;', ok: false },
+    { q: 'Το 2,5 : 0,5 είναι 5;', ok: true },
+    { q: 'Με πολλαπλασιασμό επί 100 η υποδιαστολή πάει δύο θέσεις δεξιά;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> {mode === '3.3' ? 'Ενότητα 3.3' : 'Ενότητα 3.2'}</div>
+          <h1>{mode === '3.3' ? 'Δυνάμεις με Βάση Δεκαδικό' : 'Πράξεις με Δεκαδικούς'}</h1>
+          <p>{mode === '3.3' ? 'Μαθαίνουμε δυνάμεις με βάση δεκαδικό αριθμό και σωστή σειρά πράξεων.' : 'Μαθαίνουμε πρόσθεση, αφαίρεση, πολλαπλασιασμό και διαίρεση δεκαδικών αριθμών.'}</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η θεωρία της 3.2–3.3 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Πρόσθεση/Αφαίρεση</b><p>Ευθυγραμμίζουμε τις υποδιαστολές και συμπληρώνουμε μηδενικά όπου χρειάζεται.</p></article>
+          <article><b>2. Πολλαπλασιασμός</b><p>Μετράμε πόσα δεκαδικά ψηφία έχουν συνολικά οι παράγοντες.</p></article>
+          <article><b>3. Διαίρεση</b><p>Μετακινούμε την υποδιαστολή ώστε ο διαιρέτης να γίνει ακέραιος.</p></article>
+          <article><b>4. Δυνάμεις</b><p>0,3² σημαίνει 0,3·0,3, όχι 0,3·2.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Decimal Operations Lab</h2></div>
+          <div className="example"><b>12,84 + 5,64 = 18,48</b><p>Υποδιαστολή κάτω από υποδιαστολή.</p></div>
+          <div className="example"><b>13,4 · 2,3 = 30,82</b><p>Δύο δεκαδικά ψηφία στο αποτέλεσμα.</p></div>
+          <div className="example"><b>27,3 : 0,7 = 39</b><p>Μετατρέπουμε σε 273 : 7.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Power Lab</h3>
+          <p>Γρήγορες αποστολές:</p>
+          <div className="numberChips"><span>0,2² = 0,04</span><span>1,3² = 1,69</span><span>0,01² = 0,0001</span><span>7,01² = 49,1401</span></div>
+          <div className="answerLine">Στόχος: σωστή θέση υποδιαστολής και σωστή σειρά πράξεων.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.2–3.3" subtitle="Πράξεις με δεκαδικούς και δυνάμεις." items={quiz3233} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.2–3.3" items={teacherQuiz3233} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Ο Μηχανικός των Δεκαδικών ⚙️</h2>
+          <p>Απάντησε σωστά σε 4 γρήγορες κρίσεις για να πάρεις το badge των 3.2–3.3.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">⚙️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Μηχανικός των Δεκαδικών</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+
+function Lesson34() {
+  const [xp, setXp] = useState(2550)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 5.000.000 γράφεται 5·10⁶;', ok: true },
+    { q: 'Το 72·10⁷ είναι τυποποιημένη μορφή;', ok: false },
+    { q: 'Το 3,2·10⁴ είναι 32.000;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/3` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 3.4</div>
+          <h1>Τυποποιημένη Μορφή Μεγάλων Αριθμών</h1>
+          <p>Μαθαίνουμε να γράφουμε πολύ μεγάλους αριθμούς σύντομα με δυνάμεις του 10.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η 3.4 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Δυνάμεις του 10</b><p>10³=1.000, 10⁶=1.000.000, 10⁹=1.000.000.000.</p></article>
+          <article><b>2. Τυποποιημένη μορφή</b><p>Ένας μεγάλος αριθμός γράφεται ως α·10ⁿ, όπου 1 ≤ α &lt; 10.</p></article>
+          <article><b>3. Μετατροπή</b><p>Μετακινούμε την υποδιαστολή ώστε να μείνει ένας αριθμός από 1 έως μικρότερος του 10.</p></article>
+          <article><b>4. Έλεγχος</b><p>Το 72·10⁷ δεν είναι τυποποιημένο, ενώ το 7,2·10⁸ είναι.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Scientific Notation Lab</h2></div>
+          <div className="example"><b>45.000 = 4,5·10⁴</b><p>Η υποδιαστολή μετακινείται 4 θέσεις.</p></div>
+          <div className="example"><b>8.200.000 = 8,2·10⁶</b><p>Μένει αριθμός ανάμεσα στο 1 και στο 10.</p></div>
+          <div className="example"><b>7,5·10⁴ = 75.000</b><p>Μετακινούμε την υποδιαστολή 4 θέσεις δεξιά.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Power of 10 Machine 🚀</h3>
+          <p>Γρήγορες μετατροπές:</p>
+          <div className="numberChips"><span>3.000 = 3·10³</span><span>340.000.000 = 3,4·10⁸</span><span>2,36·10⁶ = 2.360.000</span></div>
+          <div className="answerLine">Κανόνας: πρώτος παράγοντας από 1 μέχρι μικρότερος από 10.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.4" subtitle="Τυποποιημένη μορφή και δυνάμεις του 10." items={quiz34} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.4" items={teacherQuiz34} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Master of Mega Numbers 🚀</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις για να πάρεις το badge της 3.4.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">🚀</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 3)} / 3</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Master of Mega Numbers</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
+function Lesson35() {
+  const [xp, setXp] = useState(2700)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 1 km είναι 1000 m;', ok: true },
+    { q: 'Το 1 m² είναι 100 cm²;', ok: false },
+    { q: 'Οι 2,5 ώρες είναι 150 λεπτά;', ok: true },
+    { q: 'Το 1 L είναι 1000 mL;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Ενότητα 3.5</div>
+          <h1>Μονάδες Μέτρησης</h1>
+          <p>Μαθαίνουμε μετατροπές μήκους, εμβαδού, όγκου, μάζας, χωρητικότητας και χρόνου μέσα από πρακτικά προβλήματα.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Θυμόμαστε — Μαθαίνουμε</h2><p>Η 3.5 σε μικρά βήματα.</p></div></div>
+        <div className="theoryGrid">
+          <article><b>1. Μήκος</b><p>km → m → dm → cm → mm. Κάθε βήμα αλλάζει με ×10 ή :10.</p></article>
+          <article><b>2. Εμβαδό</b><p>Στα τετραγωνικά, κάθε βήμα αλλάζει με ×100 ή :100.</p></article>
+          <article><b>3. Όγκος</b><p>Στα κυβικά, κάθε βήμα αλλάζει με ×1000 ή :1000.</p></article>
+          <article><b>4. Χρόνος</b><p>1 ώρα = 60 λεπτά και 1 λεπτό = 60 δευτερόλεπτα.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Conversion Lab</h2></div>
+          <div className="example"><b>3,5 km = 3500 m</b><p>Πολλαπλασιάζουμε με 1000.</p></div>
+          <div className="example"><b>1 m² = 10.000 cm²</b><p>Για εμβαδό, το 100 γίνεται 100².</p></div>
+          <div className="example"><b>2,5 h = 150 min</b><p>2,5·60 = 150.</p></div>
+        </div>
+        <div className="practiceBox">
+          <h3>Metric Explorer 📏</h3>
+          <p>Γρήγορες μετατροπές:</p>
+          <div className="numberChips">
+            <span>750 g = 0,75 kg</span>
+            <span>1,5 L = 1500 mL</span>
+            <span>2 m² = 20.000 cm²</span>
+            <span>1 m³ = 1000 L</span>
+          </div>
+          <div className="answerLine">Πρώτα φέρνουμε όλες τις ποσότητες στην ίδια μονάδα.</div>
+        </div>
+      </section>
+
+      <StandardQuiz title="Quiz Αστραπή — 3.5" subtitle="Μετατροπές μονάδων και προβλήματα μέτρησης." items={quiz35} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — 3.5" items={teacherQuiz35} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Boss Challenge</div>
+          <h2>Master of Measurements 📏⏱️🧪</h2>
+          <p>Απάντησε σωστά σε 4 γρήγορες κρίσεις για να πάρεις το badge της 3.5.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">📏</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Master of Measurements</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 
 function LessonGeneral3() {
   const [xp, setXp] = useState(3000)
@@ -1237,8 +3008,8 @@ function LessonGeneral3() {
         </div>
       </section>
 
-      <StandardQuiz title="Progressive Quiz — Κεφάλαιο 3" subtitle="Κλιμακωτή δυσκολία: Rookie → Skilled → Advanced → Expert → Nightmare." items={generalQuiz3} addXp={addXp}/>
-      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Κλιμακωτό Challenge Κεφ. 3" items={teacherGeneral3} addXp={addXp}/>
+      <StandardQuiz title="Mega Quiz — Κεφάλαιο 3" subtitle="Γρήγορη επανάληψη από όλες τις ενότητες." items={generalQuiz3} addXp={addXp}/>
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Γενικές Ασκήσεις Κεφ. 3" items={teacherGeneral3} addXp={addXp}/>
 
       <section className="bossPanel">
         <div>
@@ -1264,6 +3035,78 @@ function LessonGeneral3() {
   )
 }
 
+
+function LessonDifficultyDemo3() {
+  const [xp, setXp] = useState(3200)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 0,3² είναι 0,09;', ok: true },
+    { q: 'Το 1 m² είναι 100 cm²;', ok: false },
+    { q: 'Το 4,5·10³ είναι 4500;', ok: true },
+    { q: 'Τα 2/5 των 2,4 m³ είναι 960 L;', ok: true },
+  ]
+
+  function bossAnswer(ok) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (ok === current.ok ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (ok === current.ok) addXp(35)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Difficulty Demo</div>
+          <h1>Κλιμακωτή Δυσκολία — Κεφάλαιο 3</h1>
+          <p>Demo νέας λογικής: οι ερωτήσεις ξεκινούν εύκολες και ανεβαίνουν μέχρι Nightmare επίπεδο.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Νέο Difficulty System</h2><p>Rookie → Skilled → Advanced → Expert → Nightmare</p></div></div>
+        <div className="theoryGrid">
+          <article><b>🟢 Rookie</b><p>Βασική πράξη ή αναγνώριση κανόνα.</p></article>
+          <article><b>🔵 Skilled</b><p>Δύο βήματα και μικρές παγίδες.</p></article>
+          <article><b>🟣 Advanced</b><p>Συνδυασμός εννοιών.</p></article>
+          <article><b>🔴 Expert</b><p>Προβλήματα με μετατροπές και στρατηγική.</p></article>
+          <article><b>⚫ Nightmare</b><p>Πολυβηματικά προβλήματα με realistic traps.</p></article>
+        </div>
+      </section>
+
+      <ExtraTeacherQuiz title="Progressive Challenge Demo — Κεφάλαιο 3" items={difficultyDemo3} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Nightmare Boss</div>
+          <h2>Ο Δοκιμαστής Δυσκολίας ⚫</h2>
+          <p>4 κρίσεις για να δοκιμάσουμε το νέο σύστημα δυσκολίας.</p>
+        </div>
+        <div className="bossGame">
+          <div className="dragon">⚫</div>
+          <p>Μάχη {Math.min(boss.round + 1, 4)} / 4</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Difficulty System Approved</div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function ComingSoon({ id }) {
   return (
     <main className="contentPanel emptyLesson">
@@ -1275,7 +3118,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('3.gen')
+  const [activeLesson, setActiveLesson] = useState('3.diff')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -1283,7 +3126,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '3.diff' ? <LessonDifficultyDemo3 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>

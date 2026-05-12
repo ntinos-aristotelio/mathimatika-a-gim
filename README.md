@@ -1,8 +1,8 @@
-# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 27 fixed
+# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 27 safe demo
 
-Difficulty Upgrade Demo:
+Safe Difficulty Upgrade Demo:
 - Βάση: teliko-26 stable
-- Δεν πειράχτηκε το render/routing structure
-- Αναβαθμίστηκαν μόνο τα quiz arrays των Γενικών Ασκήσεων Κεφ. 3
+- Δεν πειράχτηκαν οι υπάρχουσες ενότητες
+- Προστέθηκε νέα ξεχωριστή ενότητα: Demo Δυσκολίας Κεφ. 3
 - Rookie → Skilled → Advanced → Expert → Nightmare
 - Build validation OK
