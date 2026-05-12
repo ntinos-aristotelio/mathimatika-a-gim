@@ -30,7 +30,8 @@ const curriculum = [
         title: 'Κεφάλαιο 2 — Τα κλάσματα',
         progress: 0,
         lessons: [
-          { id: '2.1', title: 'Η έννοια του κλάσματος', ready: true },
+          { id: '1.up', title: 'Κεφάλαιο 1 — Αναβαθμισμένο Extra Quiz', ready: true },
+    { id: '2.1', title: 'Η έννοια του κλάσματος', ready: true },
           { id: '2.2', title: 'Ισοδύναμα κλάσματα', ready: true },
           { id: '2.3', title: 'Σύγκριση κλασμάτων', ready: true },
           { id: '2.4', title: 'Πρόσθεση και αφαίρεση κλασμάτων', ready: true },
@@ -50,7 +51,6 @@ const curriculum = [
           { id: '3.4', title: 'Τυποποιημένη μορφή', ready: true },
           { id: '3.5', title: 'Μονάδες μέτρησης', ready: true },
     { id: '3.gen', title: 'Γενικές Ασκήσεις Κεφ. 3', ready: true },
-    { id: '3.diff', title: 'Demo Δυσκολίας Κεφ. 3', ready: true },
         ],
       },
     ],
@@ -1190,18 +1190,607 @@ const teacherGeneral3 = [
   { tag: 'Final Boss', question: 'Ποια απάντηση είναι σωστή: 0,3² + 0,91', options: ['1','1,21','0,94','0,091'], answer: '1', explanation: '0,3²=0,09 και 0,09+0,91=1.' }
 ]
 
-
-const difficultyDemo3 = [
-  { tag:'🟢 Rookie', question:'9,2 + 3,7 = ;', options:['12,9','12,7','13,9','5,5'], answer:'12,9', explanation:'Ευθυγραμμίζουμε τις υποδιαστολές.' },
-  { tag:'🟢 Rookie', question:'0,3² = ;', options:['0,09','0,6','0,03','0,9'], answer:'0,09', explanation:'0,3·0,3=0,09.' },
-  { tag:'🔵 Skilled', question:'2,4·10² + 3,6·10 = ;', options:['276','243,6','600','27,6'], answer:'276', explanation:'2,4·100=240 και 3,6·10=36, άρα 276.' },
-  { tag:'🔵 Skilled', question:'1,25 m + 35 cm = ;', options:['160 cm','1,60 cm','12535 cm','90 cm'], answer:'160 cm', explanation:'1,25 m=125 cm, άρα 125+35=160 cm.' },
-  { tag:'🟣 Advanced', question:'(20,18 - 13,751) + 0,3² = ;', options:['6,519','6,429','6,339','6,729'], answer:'6,519', explanation:'20,18-13,751=6,429 και 0,3²=0,09. Άρα 6,519.' },
-  { tag:'🟣 Advanced', question:'Ποιο είναι μεγαλύτερο: 4,5·10³ ή 3,8 km σε μέτρα;', options:['4,5·10³','3,8 km','Ίσα','Δεν συγκρίνονται'], answer:'4,5·10³', explanation:'4,5·10³=4500 και 3,8 km=3800 m.' },
-  { tag:'🔴 Expert', question:'Κήπος 12 m x 8 m. Καλύπτουμε τα 3/4 με πλακάκια 0,25 m². Πόσα πλακάκια;', options:['288','72','384','96'], answer:'288', explanation:'Εμβαδόν 96 m². Τα 3/4 είναι 72 m². 72:0,25=288.' },
-  { tag:'🔴 Expert', question:'7,5·10⁴ - (2,5 ώρες σε λεπτά)·100 = ;', options:['60.000','74.850','7.350','90.000'], answer:'60.000', explanation:'2,5 ώρες=150 λεπτά. 150·100=15.000 και 75.000-15.000=60.000.' },
-  { tag:'⚫ Nightmare', question:'Δεξαμενή 2,4 m³ γεμίζει μπουκάλια 0,75 L. Πόσα μπουκάλια γεμίζουν τα 2/5 της δεξαμενής;', options:['1280','3200','960','1920'], answer:'1280', explanation:'2,4 m³=2400 L. Τα 2/5 είναι 960 L. 960:0,75=1280.' },
-  { tag:'⚫ Nightmare', question:'Στρογγυλοποίησε στη μονάδα: (0,3³ + 1,973)·10²', options:['200','201','197','20'], answer:'200', explanation:'0,3³=0,027. 0,027+1,973=2 και 2·100=200.' },
+const chapter1UpgradeQuiz = [
+  {
+    "tag": "Αρχάριος 1",
+    "question": "7 + 5 = ;",
+    "options": [
+      "12",
+      "11",
+      "13",
+      "2"
+    ],
+    "answer": "12",
+    "explanation": "7+5=12."
+  },
+  {
+    "tag": "Αρχάριος 2",
+    "question": "18 - 9 = ;",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "27"
+    ],
+    "answer": "9",
+    "explanation": "18-9=9."
+  },
+  {
+    "tag": "Αρχάριος 3",
+    "question": "6 · 4 = ;",
+    "options": [
+      "20",
+      "26",
+      "24",
+      "10"
+    ],
+    "answer": "24",
+    "explanation": "6·4=24."
+  },
+  {
+    "tag": "Αρχάριος 4",
+    "question": "35 : 5 = ;",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "30"
+    ],
+    "answer": "7",
+    "explanation": "35:5=7."
+  },
+  {
+    "tag": "Αρχάριος 5",
+    "question": "Ποιος αριθμός είναι ζυγός;",
+    "options": [
+      "17",
+      "18",
+      "21",
+      "25"
+    ],
+    "answer": "18",
+    "explanation": "Το 18 διαιρείται ακριβώς με το 2."
+  },
+  {
+    "tag": "Αρχάριος 6",
+    "question": "Ποιος αριθμός είναι μονός;",
+    "options": [
+      "20",
+      "23",
+      "18",
+      "16"
+    ],
+    "answer": "23",
+    "explanation": "Το 23 δεν διαιρείται ακριβώς με το 2."
+  },
+  {
+    "tag": "Αρχάριος 7",
+    "question": "10² = ;",
+    "options": [
+      "20",
+      "100",
+      "12",
+      "1000"
+    ],
+    "answer": "100",
+    "explanation": "10²=10·10=100."
+  },
+  {
+    "tag": "Αρχάριος 8",
+    "question": "3³ = ;",
+    "options": [
+      "27",
+      "9",
+      "6",
+      "30"
+    ],
+    "answer": "27",
+    "explanation": "3³=27."
+  },
+  {
+    "tag": "Αρχάριος 9",
+    "question": "Ποιο είναι μεγαλύτερο;",
+    "options": [
+      "45",
+      "56",
+      "49",
+      "50"
+    ],
+    "answer": "56",
+    "explanation": "Το 56 είναι το μεγαλύτερο."
+  },
+  {
+    "tag": "Αρχάριος 10",
+    "question": "Ποιο είναι μικρότερο;",
+    "options": [
+      "21",
+      "18",
+      "12",
+      "15"
+    ],
+    "answer": "12",
+    "explanation": "Το 12 είναι το μικρότερο."
+  },
+  {
+    "tag": "Καλός 1",
+    "question": "24 + 18 - 9 = ;",
+    "options": [
+      "42",
+      "33",
+      "31",
+      "51"
+    ],
+    "answer": "33",
+    "explanation": "24+18=42 και 42-9=33."
+  },
+  {
+    "tag": "Καλός 2",
+    "question": "6 · 5 + 8 = ;",
+    "options": [
+      "38",
+      "78",
+      "30",
+      "48"
+    ],
+    "answer": "38",
+    "explanation": "Πρώτα 6·5=30, μετά +8."
+  },
+  {
+    "tag": "Καλός 3",
+    "question": "48 : 6 + 11 = ;",
+    "options": [
+      "8",
+      "19",
+      "17",
+      "29"
+    ],
+    "answer": "19",
+    "explanation": "48:6=8 και 8+11=19."
+  },
+  {
+    "tag": "Καλός 4",
+    "question": "7 · (12 - 8) = ;",
+    "options": [
+      "76",
+      "20",
+      "28",
+      "84"
+    ],
+    "answer": "28",
+    "explanation": "12-8=4 και 7·4=28."
+  },
+  {
+    "tag": "Καλός 5",
+    "question": "Ποιος διαιρείται ακριβώς με το 3;",
+    "options": [
+      "125",
+      "127",
+      "123",
+      "128"
+    ],
+    "answer": "123",
+    "explanation": "1+2+3=6, άρα διαιρείται με το 3."
+  },
+  {
+    "tag": "Καλός 6",
+    "question": "Ποιος διαιρείται ακριβώς με το 5;",
+    "options": [
+      "242",
+      "245",
+      "248",
+      "251"
+    ],
+    "answer": "245",
+    "explanation": "Τελειώνει σε 5."
+  },
+  {
+    "tag": "Καλός 7",
+    "question": "Ποιος διαιρείται ακριβώς με το 10;",
+    "options": [
+      "307",
+      "377",
+      "370",
+      "37"
+    ],
+    "answer": "370",
+    "explanation": "Τελειώνει σε 0."
+  },
+  {
+    "tag": "Καλός 8",
+    "question": "2³ + 5² = ;",
+    "options": [
+      "29",
+      "33",
+      "13",
+      "100"
+    ],
+    "answer": "33",
+    "explanation": "8+25=33."
+  },
+  {
+    "tag": "Καλός 9",
+    "question": "4² · 3 = ;",
+    "options": [
+      "24",
+      "64",
+      "48",
+      "16"
+    ],
+    "answer": "48",
+    "explanation": "4²=16 και 16·3=48."
+  },
+  {
+    "tag": "Καλός 10",
+    "question": "Βρες x: x + 17 = 42",
+    "options": [
+      "59",
+      "25",
+      "35",
+      "24"
+    ],
+    "answer": "25",
+    "explanation": "x=42-17=25."
+  },
+  {
+    "tag": "Προχωρημένος 1",
+    "question": "3·(14+6) - 18 = ;",
+    "options": [
+      "42",
+      "60",
+      "24",
+      "78"
+    ],
+    "answer": "42",
+    "explanation": "3·20-18=42."
+  },
+  {
+    "tag": "Προχωρημένος 2",
+    "question": "72 : (9-3) + 5² = ;",
+    "options": [
+      "12",
+      "49",
+      "37",
+      "25"
+    ],
+    "answer": "37",
+    "explanation": "72:6=12, 12+25=37."
+  },
+  {
+    "tag": "Προχωρημένος 3",
+    "question": "2⁴ + 3³ = ;",
+    "options": [
+      "35",
+      "43",
+      "32",
+      "81"
+    ],
+    "answer": "43",
+    "explanation": "16+27=43."
+  },
+  {
+    "tag": "Προχωρημένος 4",
+    "question": "Ποιο είναι το ΕΚΠ των 6 και 8;",
+    "options": [
+      "14",
+      "24",
+      "48",
+      "2"
+    ],
+    "answer": "24",
+    "explanation": "Το μικρότερο κοινό πολλαπλάσιο είναι 24."
+  },
+  {
+    "tag": "Προχωρημένος 5",
+    "question": "Ποιος είναι ο ΜΚΔ των 18 και 24;",
+    "options": [
+      "12",
+      "3",
+      "6",
+      "72"
+    ],
+    "answer": "6",
+    "explanation": "Ο μεγαλύτερος κοινός διαιρέτης είναι 6."
+  },
+  {
+    "tag": "Προχωρημένος 6",
+    "question": "Ποιος αριθμός είναι πρώτος;",
+    "options": [
+      "21",
+      "29",
+      "33",
+      "39"
+    ],
+    "answer": "29",
+    "explanation": "Το 29 έχει διαιρέτες μόνο 1 και 29."
+  },
+  {
+    "tag": "Προχωρημένος 7",
+    "question": "Αν α=5, 3α² - 10 = ;",
+    "options": [
+      "35",
+      "215",
+      "65",
+      "25"
+    ],
+    "answer": "65",
+    "explanation": "3·25-10=65."
+  },
+  {
+    "tag": "Προχωρημένος 8",
+    "question": "(5² - 3²) : 4 = ;",
+    "options": [
+      "8",
+      "4",
+      "16",
+      "1"
+    ],
+    "answer": "4",
+    "explanation": "25-9=16, 16:4=4."
+  },
+  {
+    "tag": "Προχωρημένος 9",
+    "question": "7 κουτιά με 12 μολύβια και 5 ακόμα. Σύνολο;",
+    "options": [
+      "84",
+      "89",
+      "79",
+      "24"
+    ],
+    "answer": "89",
+    "explanation": "7·12=84 και +5=89."
+  },
+  {
+    "tag": "Προχωρημένος 10",
+    "question": "Ένας αριθμός αυξάνεται κατά 15 και γίνεται 64. Ποιος ήταν;",
+    "options": [
+      "79",
+      "49",
+      "51",
+      "45"
+    ],
+    "answer": "49",
+    "explanation": "64-15=49."
+  },
+  {
+    "tag": "Δύσκολο 1",
+    "question": "5² + 3·(18-7) - 2³ = ;",
+    "options": [
+      "58",
+      "42",
+      "50",
+      "33"
+    ],
+    "answer": "50",
+    "explanation": "25+33-8=50."
+  },
+  {
+    "tag": "Δύσκολο 2",
+    "question": "120 : [4·(8-5)] + 6² = ;",
+    "options": [
+      "46",
+      "10",
+      "66",
+      "36"
+    ],
+    "answer": "46",
+    "explanation": "120:12=10 και 10+36=46."
+  },
+  {
+    "tag": "Δύσκολο 3",
+    "question": "Μικρότερος αριθμός που διαιρείται με 4, 6 και 9;",
+    "options": [
+      "72",
+      "36",
+      "18",
+      "54"
+    ],
+    "answer": "36",
+    "explanation": "ΕΚΠ(4,6,9)=36."
+  },
+  {
+    "tag": "Δύσκολο 4",
+    "question": "ΜΚΔ των 36, 48 και 60;",
+    "options": [
+      "6",
+      "24",
+      "12",
+      "4"
+    ],
+    "answer": "12",
+    "explanation": "Ο μεγαλύτερος κοινός διαιρέτης είναι 12."
+  },
+  {
+    "tag": "Δύσκολο 5",
+    "question": "Αν x=4, 2x³ - 5x = ;",
+    "options": [
+      "44",
+      "108",
+      "64",
+      "128"
+    ],
+    "answer": "108",
+    "explanation": "2·64-20=108."
+  },
+  {
+    "tag": "Δύσκολο 6",
+    "question": "Διαίρεση με 7 δίνει πηλίκο 9 και υπόλοιπο 4. Ο αριθμός είναι:",
+    "options": [
+      "63",
+      "71",
+      "67",
+      "60"
+    ],
+    "answer": "67",
+    "explanation": "7·9+4=67."
+  },
+  {
+    "tag": "Δύσκολο 7",
+    "question": "96 κάρτες. Πρώτος 24, δεύτερος διπλάσιες. Τρίτος;",
+    "options": [
+      "48",
+      "24",
+      "72",
+      "12"
+    ],
+    "answer": "24",
+    "explanation": "Ο δεύτερος 48, άρα μένουν 24."
+  },
+  {
+    "tag": "Δύσκολο 8",
+    "question": "2·[3² + (20-8):4] = ;",
+    "options": [
+      "30",
+      "18",
+      "24",
+      "36"
+    ],
+    "answer": "24",
+    "explanation": "3²=9, (20-8):4=3, άρα 2·12=24."
+  },
+  {
+    "tag": "Δύσκολο 9",
+    "question": "Πολλαπλάσιο του 12 και μικρότερο από 50:",
+    "options": [
+      "50",
+      "48",
+      "54",
+      "42"
+    ],
+    "answer": "48",
+    "explanation": "Πολλαπλάσια: 12,24,36,48."
+  },
+  {
+    "tag": "Δύσκολο 10",
+    "question": "Ποιος έχει ΜΚΔ με το 18 ίσο με 6;",
+    "options": [
+      "25",
+      "24",
+      "35",
+      "10"
+    ],
+    "answer": "24",
+    "explanation": "ΜΚΔ(18,24)=6."
+  },
+  {
+    "tag": "Άθλος 1",
+    "question": "{[(3²+5²)·2] - 4³} : 2 = ;",
+    "options": [
+      "34",
+      "2",
+      "4",
+      "68"
+    ],
+    "answer": "2",
+    "explanation": "34·2=68, 68-64=4, 4:2=2."
+  },
+  {
+    "tag": "Άθλος 2",
+    "question": "Μικρότερος από 100, διαιρείται με 8 και 12, όχι με 5:",
+    "options": [
+      "40",
+      "60",
+      "24",
+      "96"
+    ],
+    "answer": "24",
+    "explanation": "Το 24 ταιριάζει στις συνθήκες."
+  },
+  {
+    "tag": "Άθλος 3",
+    "question": "Τα 2/3 των μαθητών είναι 18. Όλοι οι μαθητές;",
+    "options": [
+      "24",
+      "30",
+      "27",
+      "12"
+    ],
+    "answer": "27",
+    "explanation": "Το 1/3 είναι 9, άρα τα 3/3 είναι 27."
+  },
+  {
+    "tag": "Άθλος 4",
+    "question": "6² - [48:(2³-2)] + 5 = ;",
+    "options": [
+      "41",
+      "33",
+      "29",
+      "36"
+    ],
+    "answer": "33",
+    "explanation": "2³-2=6, 48:6=8, 36-8+5=33."
+  },
+  {
+    "tag": "Άθλος 5",
+    "question": "4x - 17 = 55. Βρες x.",
+    "options": [
+      "72",
+      "15",
+      "18",
+      "20"
+    ],
+    "answer": "18",
+    "explanation": "4x=72, άρα x=18."
+  },
+  {
+    "tag": "Άθλος 6",
+    "question": "Άθροισμα δύο αριθμών 84. Ο ένας τριπλάσιος του άλλου. Μικρός;",
+    "options": [
+      "28",
+      "21",
+      "63",
+      "42"
+    ],
+    "answer": "21",
+    "explanation": "4 μέρη=84, άρα 1 μέρος=21."
+  },
+  {
+    "tag": "Άθλος 7",
+    "question": "ΕΚΠ(8,12) + ΜΚΔ(30,45) = ;",
+    "options": [
+      "24",
+      "39",
+      "15",
+      "60"
+    ],
+    "answer": "39",
+    "explanation": "24+15=39."
+  },
+  {
+    "tag": "Άθλος 8",
+    "question": "Πολλαπλάσιο του 9, διαιρείται με 2, μικρότερο από 60:",
+    "options": [
+      "45",
+      "63",
+      "54",
+      "72"
+    ],
+    "answer": "54",
+    "explanation": "54 διαιρείται με 9 και 2."
+  },
+  {
+    "tag": "Άθλος 9",
+    "question": "100 - 3·[5² - (18:3)] = ;",
+    "options": [
+      "57",
+      "43",
+      "19",
+      "82"
+    ],
+    "answer": "43",
+    "explanation": "25-6=19, 3·19=57, 100-57=43."
+  },
+  {
+    "tag": "Άθλος 10",
+    "question": "8 σωστές απαντήσεις με 12 βαθμούς και 3 λάθος με -5. Σύνολο;",
+    "options": [
+      "96",
+      "81",
+      "111",
+      "69"
+    ],
+    "answer": "81",
+    "explanation": "8·12=96, 3·5=15, 96-15=81."
+  }
 ]
 
 function ProgressBar({ value }) {
@@ -3036,16 +3625,17 @@ function LessonGeneral3() {
 }
 
 
-function LessonDifficultyDemo3() {
-  const [xp, setXp] = useState(3200)
+function LessonChapter1Upgrade() {
+  const [xp, setXp] = useState(1800)
   const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
   const addXp = (amount) => setXp((v) => v + amount)
 
   const bossQuestions = [
-    { q: 'Το 0,3² είναι 0,09;', ok: true },
-    { q: 'Το 1 m² είναι 100 cm²;', ok: false },
-    { q: 'Το 4,5·10³ είναι 4500;', ok: true },
-    { q: 'Τα 2/5 των 2,4 m³ είναι 960 L;', ok: true },
+    { q: 'Το 3³ είναι ίσο με 27;', ok: true },
+    { q: 'Στην παράσταση 6·5+8 κάνουμε πρώτα την πρόσθεση;', ok: false },
+    { q: 'Ο ΜΚΔ των 18 και 24 είναι 6;', ok: true },
+    { q: 'Το ΕΚΠ των 8 και 12 είναι 20;', ok: false },
+    { q: 'Αν 4x-17=55, τότε x=18;', ok: true },
   ]
 
   function bossAnswer(ok) {
@@ -3057,41 +3647,41 @@ function LessonDifficultyDemo3() {
     if (ok === current.ok) addXp(35)
   }
 
-  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/4` : bossQuestions[boss.round].q
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/5` : bossQuestions[boss.round].q
 
   return (
     <main className="appGrid">
       <section className="lessonHero">
         <div>
-          <div className="pill blue"><Calculator size={16}/> Difficulty Demo</div>
-          <h1>Κλιμακωτή Δυσκολία — Κεφάλαιο 3</h1>
-          <p>Demo νέας λογικής: οι ερωτήσεις ξεκινούν εύκολες και ανεβαίνουν μέχρι Nightmare επίπεδο.</p>
+          <div className="pill blue"><Calculator size={16}/> Αναβάθμιση Κεφαλαίου 1</div>
+          <h1>Κεφάλαιο 1 — Κλιμακωτό Extra Quiz</h1>
+          <p>Νέο σύστημα δυσκολίας με επίπεδα: Αρχάριος, Καλός, Προχωρημένος, Δύσκολο και Άθλος.</p>
         </div>
         <ProfileCard xp={xp} />
       </section>
 
       <section className="contentPanel">
-        <div className="sectionHeader"><ShieldCheck/><div><h2>Νέο Difficulty System</h2><p>Rookie → Skilled → Advanced → Expert → Nightmare</p></div></div>
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Νέα Λογική Δυσκολίας</h2><p>Οι ερωτήσεις ανεβαίνουν σταδιακά, από απλές πράξεις μέχρι πολυβηματικά προβλήματα.</p></div></div>
         <div className="theoryGrid">
-          <article><b>🟢 Rookie</b><p>Βασική πράξη ή αναγνώριση κανόνα.</p></article>
-          <article><b>🔵 Skilled</b><p>Δύο βήματα και μικρές παγίδες.</p></article>
-          <article><b>🟣 Advanced</b><p>Συνδυασμός εννοιών.</p></article>
-          <article><b>🔴 Expert</b><p>Προβλήματα με μετατροπές και στρατηγική.</p></article>
-          <article><b>⚫ Nightmare</b><p>Πολυβηματικά προβλήματα με realistic traps.</p></article>
+          <article><b>🟢 Αρχάριος</b><p>Βασική πράξη, αναγνώριση αριθμών και απλές δυνάμεις.</p></article>
+          <article><b>🔵 Καλός</b><p>Δύο βήματα, παρενθέσεις και μικρές παγίδες σειράς πράξεων.</p></article>
+          <article><b>🟣 Προχωρημένος</b><p>Συνδυασμός δυνάμεων, διαιρετότητας, ΕΚΠ και ΜΚΔ.</p></article>
+          <article><b>🔴 Δύσκολο</b><p>Πολυβηματικές παραστάσεις και προβλήματα σκέψης.</p></article>
+          <article><b>⚫ Άθλος</b><p>Σύνθετες ασκήσεις που χρειάζονται στρατηγική.</p></article>
         </div>
       </section>
 
-      <ExtraTeacherQuiz title="Progressive Challenge Demo — Κεφάλαιο 3" items={difficultyDemo3} addXp={addXp} />
+      <ExtraTeacherQuiz title="Extra Quiz Καθηγητή — Αναβάθμιση Κεφαλαίου 1" items={chapter1UpgradeQuiz} addXp={addXp} />
 
       <section className="bossPanel">
         <div>
-          <div className="pill danger"><Sword size={16}/> Nightmare Boss</div>
-          <h2>Ο Δοκιμαστής Δυσκολίας ⚫</h2>
-          <p>4 κρίσεις για να δοκιμάσουμε το νέο σύστημα δυσκολίας.</p>
+          <div className="pill danger"><Sword size={16}/> Τελική Δοκιμασία</div>
+          <h2>Ο Φύλακας του Κεφαλαίου 1 ⚫</h2>
+          <p>Πέντε κρίσεις για να δοκιμάσεις τη νέα δυσκολία.</p>
         </div>
         <div className="bossGame">
           <div className="dragon">⚫</div>
-          <p>Μάχη {Math.min(boss.round + 1, 4)} / 4</p>
+          <p>Μάχη {Math.min(boss.round + 1, 5)} / 5</p>
           <h3>{bossText}</h3>
           {!boss.done ? (
             <div className="bossBtns">
@@ -3099,7 +3689,7 @@ function LessonDifficultyDemo3() {
               <button onClick={() => bossAnswer(false)}>Λάθος</button>
             </div>
           ) : (
-            <div className="badgeWin"><Medal/> Difficulty System Approved</div>
+            <div className="badgeWin"><Medal/> Η Αναβάθμιση Κεφαλαίου 1 Ολοκληρώθηκε</div>
           )}
         </div>
       </section>
@@ -3118,7 +3708,7 @@ function ComingSoon({ id }) {
 }
 
 function Platform({ goHome }) {
-  const [activeLesson, setActiveLesson] = useState('3.diff')
+  const [activeLesson, setActiveLesson] = useState('1.up')
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -3126,7 +3716,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '3.diff' ? <LessonDifficultyDemo3 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '1.up' ? <LessonChapter1Upgrade /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
