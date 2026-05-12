@@ -1,10 +1,7 @@
-# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 26
+# Η Ακαδημία των Μαθηματικών Ηρώων — teliko 27
 
-Βάση: teliko-25.
-
-Προστέθηκαν πραγματικά οι Γενικές Ασκήσεις Κεφαλαίου 3:
-- Grand Arena Chapter 3
-- Mega Quiz
-- Extra Quiz Καθηγητή με 55+ ερωτήσεις
-- Final Boss
-- prebuilt dist για GitHub Pages
+Difficulty Upgrade Demo:
+- Αναβαθμίστηκαν οι Γενικές Ασκήσεις Κεφαλαίου 3
+- Rookie → Skilled → Advanced → Expert → Nightmare
+- Realistic traps και πολυβηματικές ερωτήσεις
+- Build OK και prebuilt dist
