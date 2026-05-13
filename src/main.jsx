@@ -60,6 +60,7 @@ const curriculum = [
           { id: '4.1', title: '4.1 Η Έννοια της Εξίσωσης', ready: true },
           { id: '4.2', title: '4.2 Επίλυση Προβλημάτων', ready: true },
           { id: '4.gen', title: 'Γενικές Ασκήσεις Κεφαλαίου 4', ready: true },
+          { id: '5.1', title: '5.1 Ποσοστά', ready: true },
         ],
       },
     ],
@@ -9349,6 +9350,679 @@ const teacherΚουίζ4gen = [
   }
 ]
 
+
+const quiz51 = [
+  {
+    "question": "Το 1/2 ως ποσοστό είναι:",
+    "options": [
+      "25%",
+      "50%",
+      "75%",
+      "100%"
+    ],
+    "answer": "50%",
+    "tip": "1/2=0,5=50%"
+  },
+  {
+    "question": "Το 0,25 ως ποσοστό είναι:",
+    "options": [
+      "2,5%",
+      "25%",
+      "250%",
+      "0,25%"
+    ],
+    "answer": "25%",
+    "tip": "0,25×100"
+  },
+  {
+    "question": "Το 20% των 100 είναι:",
+    "options": [
+      "2",
+      "20",
+      "50",
+      "80"
+    ],
+    "answer": "20",
+    "tip": "20/100×100"
+  },
+  {
+    "question": "Αν ένα προϊόν 100€ αυξηθεί κατά 10%, γίνεται:",
+    "options": [
+      "105€",
+      "110€",
+      "120€",
+      "90€"
+    ],
+    "answer": "110€",
+    "tip": "10€ αύξηση"
+  },
+  {
+    "question": "Αν 80 μειωθεί κατά 25%, γίνεται:",
+    "options": [
+      "20",
+      "40",
+      "60",
+      "75"
+    ],
+    "answer": "60",
+    "tip": "25% του 80 είναι 20"
+  },
+  {
+    "question": "Το 75% γράφεται ως δεκαδικός:",
+    "options": [
+      "0,075",
+      "0,75",
+      "7,5",
+      "75"
+    ],
+    "answer": "0,75",
+    "tip": "75/100"
+  }
+]
+
+const teacherΚουίζ51 = [
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 10% των 100 είναι:",
+    "options": [
+      "0",
+      "20",
+      "10",
+      "30"
+    ],
+    "answer": "10",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 20% των 100 είναι:",
+    "options": [
+      "40",
+      "30",
+      "10",
+      "20"
+    ],
+    "answer": "20",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 30% των 100 είναι:",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "20"
+    ],
+    "answer": "30",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 40% των 100 είναι:",
+    "options": [
+      "60",
+      "40",
+      "30",
+      "50"
+    ],
+    "answer": "40",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 50% των 100 είναι:",
+    "options": [
+      "50",
+      "60",
+      "40",
+      "70"
+    ],
+    "answer": "50",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 60% των 100 είναι:",
+    "options": [
+      "70",
+      "60",
+      "80",
+      "50"
+    ],
+    "answer": "60",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 70% των 100 είναι:",
+    "options": [
+      "60",
+      "80",
+      "70",
+      "90"
+    ],
+    "answer": "70",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 80% των 100 είναι:",
+    "options": [
+      "100",
+      "70",
+      "80",
+      "90"
+    ],
+    "answer": "80",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 90% των 100 είναι:",
+    "options": [
+      "110",
+      "90",
+      "80",
+      "100"
+    ],
+    "answer": "90",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟢 Εύκολη",
+    "question": "Το 100% των 100 είναι:",
+    "options": [
+      "120",
+      "100",
+      "110",
+      "90"
+    ],
+    "answer": "100",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,1 ως ποσοστό είναι:",
+    "options": [
+      "1%",
+      "20%",
+      "10%",
+      "5%"
+    ],
+    "answer": "10%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,2 ως ποσοστό είναι:",
+    "options": [
+      "10%",
+      "2%",
+      "40%",
+      "20%"
+    ],
+    "answer": "20%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,3 ως ποσοστό είναι:",
+    "options": [
+      "15%",
+      "60%",
+      "30%",
+      "3%"
+    ],
+    "answer": "30%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,4 ως ποσοστό είναι:",
+    "options": [
+      "80%",
+      "20%",
+      "4%",
+      "40%"
+    ],
+    "answer": "40%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,5 ως ποσοστό είναι:",
+    "options": [
+      "5%",
+      "50%",
+      "25%",
+      "100%"
+    ],
+    "answer": "50%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,6 ως ποσοστό είναι:",
+    "options": [
+      "60%",
+      "30%",
+      "6%",
+      "120%"
+    ],
+    "answer": "60%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,7 ως ποσοστό είναι:",
+    "options": [
+      "70%",
+      "35%",
+      "7%",
+      "140%"
+    ],
+    "answer": "70%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,8 ως ποσοστό είναι:",
+    "options": [
+      "160%",
+      "8%",
+      "40%",
+      "80%"
+    ],
+    "answer": "80%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,9 ως ποσοστό είναι:",
+    "options": [
+      "9%",
+      "45%",
+      "90%",
+      "180%"
+    ],
+    "answer": "90%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟡 Μέτρια",
+    "question": "Το 0,10 ως ποσοστό είναι:",
+    "options": [
+      "50%",
+      "10%",
+      "200%",
+      "100%"
+    ],
+    "answer": "100%",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 20 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "18",
+      "22",
+      "20",
+      "24"
+    ],
+    "answer": "22",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 40 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "44",
+      "40",
+      "48",
+      "36"
+    ],
+    "answer": "44",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 60 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "54",
+      "72",
+      "60",
+      "66"
+    ],
+    "answer": "66",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 80 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "80",
+      "88",
+      "96",
+      "72"
+    ],
+    "answer": "88",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 100 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "110",
+      "90",
+      "120",
+      "100"
+    ],
+    "answer": "110",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 120 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "120",
+      "144",
+      "132",
+      "108"
+    ],
+    "answer": "132",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 140 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "168",
+      "140",
+      "126",
+      "154"
+    ],
+    "answer": "154",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 160 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "176",
+      "192",
+      "144",
+      "160"
+    ],
+    "answer": "176",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 180 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "216",
+      "162",
+      "198",
+      "180"
+    ],
+    "answer": "198",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🟠 Δύσκολη",
+    "question": "Αριθμός 200 αυξάνεται κατά 10%. Γίνεται:",
+    "options": [
+      "200",
+      "240",
+      "220",
+      "180"
+    ],
+    "answer": "220",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 40 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "32",
+      "40",
+      "36",
+      "24"
+    ],
+    "answer": "32",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 80 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "80",
+      "48",
+      "64",
+      "72"
+    ],
+    "answer": "64",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 120 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "108",
+      "120",
+      "96",
+      "72"
+    ],
+    "answer": "96",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 160 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "96",
+      "128",
+      "144",
+      "160"
+    ],
+    "answer": "128",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 200 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "160",
+      "180",
+      "200",
+      "120"
+    ],
+    "answer": "160",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 240 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "144",
+      "240",
+      "216",
+      "192"
+    ],
+    "answer": "192",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 280 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "280",
+      "168",
+      "252",
+      "224"
+    ],
+    "answer": "224",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 320 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "256",
+      "320",
+      "192",
+      "288"
+    ],
+    "answer": "256",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 360 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "288",
+      "324",
+      "216",
+      "360"
+    ],
+    "answer": "288",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🔴 Πολύ δύσκολη",
+    "question": "Αριθμός 400 μειώνεται κατά 20%. Γίνεται:",
+    "options": [
+      "240",
+      "360",
+      "320",
+      "400"
+    ],
+    "answer": "320",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 100 είναι:",
+    "options": [
+      "100",
+      "25",
+      "50",
+      "20"
+    ],
+    "answer": "25",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 200 είναι:",
+    "options": [
+      "100",
+      "50",
+      "200",
+      "40"
+    ],
+    "answer": "50",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 300 είναι:",
+    "options": [
+      "75",
+      "150",
+      "60",
+      "300"
+    ],
+    "answer": "75",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 400 είναι:",
+    "options": [
+      "400",
+      "100",
+      "200",
+      "80"
+    ],
+    "answer": "100",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 500 είναι:",
+    "options": [
+      "100",
+      "125",
+      "250",
+      "500"
+    ],
+    "answer": "125",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 600 είναι:",
+    "options": [
+      "120",
+      "300",
+      "600",
+      "150"
+    ],
+    "answer": "150",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 700 είναι:",
+    "options": [
+      "350",
+      "700",
+      "140",
+      "175"
+    ],
+    "answer": "175",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 800 είναι:",
+    "options": [
+      "400",
+      "160",
+      "800",
+      "200"
+    ],
+    "answer": "200",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 900 είναι:",
+    "options": [
+      "225",
+      "180",
+      "900",
+      "450"
+    ],
+    "answer": "225",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  },
+  {
+    "tag": "🧠 Διάνοια",
+    "question": "Το 25% των 1000 είναι:",
+    "options": [
+      "200",
+      "500",
+      "250",
+      "1000"
+    ],
+    "answer": "250",
+    "explanation": "Μετατρέπουμε σωστά το ποσοστό και κάνουμε προσεκτικά τις πράξεις."
+  }
+]
+
 function Sidebar({ activeLesson, setActiveLesson, goHome }) {
   return (
     <aside className="sidebar desktopSidebar">
@@ -11448,6 +12122,110 @@ function Lesson4General() {
 }
 
 
+
+function Lesson51() {
+  const [xp, setXp] = useState(5000)
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 50% είναι το μισό.', ok: true },
+    { q: 'Το 0,25 είναι 250%.', ok: false },
+    { q: 'Αν το 100 αυξηθεί κατά 20%, γίνεται 120.', ok: true },
+    { q: 'Το 25% των 80 είναι 40.', ok: false },
+  ]
+
+  function bossAnswer(choice) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const correct = choice === current.ok
+    const nextRound = boss.round + 1
+    const nextScore = boss.score + (correct ? 1 : 0)
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+    if (correct) addXp(30)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.score}/${bossQuestions.length}` : bossQuestions[boss.round].q
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Brain size={16}/> Ενότητα 5.1</div>
+          <h1>Ποσοστά</h1>
+          <p>Μαθαίνουμε ποσοστά, αυξήσεις, μειώσεις και προβλήματα καθημερινής ζωής.</p>
+        </div>
+        <ProfileCard xp={xp} />
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <ShieldCheck/>
+          <div>
+            <h2>Θεωρία Ποσοστών</h2>
+            <p>Τα ποσοστά δείχνουν μέρη στα 100.</p>
+          </div>
+        </div>
+
+        <div className="theoryGrid">
+          <article><b>Κλάσμα → Ποσοστό</b><p>Πολλαπλασιάζουμε επί 100.</p></article>
+          <article><b>Δεκαδικός → Ποσοστό</b><p>Μετακινούμε το κόμμα δύο θέσεις.</p></article>
+          <article><b>Αύξηση</b><p>Προσθέτουμε το ποσοστό στην αρχική τιμή.</p></article>
+          <article><b>Μείωση</b><p>Αφαιρούμε το ποσοστό από την αρχική τιμή.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div>
+          <div className="example"><b>1/2 = 50%</b><p>1÷2=0,5 → 50%</p></div>
+          <div className="example"><b>20% των 80</b><p>0,20×80=16</p></div>
+          <div className="example"><b>Αύξηση 10%</b><p>100→110</p></div>
+        </div>
+
+        <div className="practiceBox">
+          <h3>Μικρή Προπόνηση</h3>
+          <p>Σκέψου πρώτα τι σημαίνει το ποσοστό πριν κάνεις πράξεις.</p>
+          <div className="numberChips">
+            <span>50% = μισό</span>
+            <span>25% = τέταρτο</span>
+            <span>75% = 3/4</span>
+          </div>
+        </div>
+      </section>
+
+      <StandardΚουίζ title="Κουίζ Αστραπή — 5.1" subtitle="Βασικές έννοιες ποσοστών." items={quiz51} addXp={addXp} />
+
+      <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — 5.1" items={teacherΚουίζ51} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
+          <h2>Ο Άρχοντας των Ποσοστών 📊</h2>
+          <p>Απάντησε σωστά στις τελικές κρίσεις.</p>
+        </div>
+
+        <div className="bossGame">
+          <div className="dragon">📊</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, bossQuestions.length)} / {bossQuestions.length}</p>
+          <h3>{bossText}</h3>
+
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="σήμαWin">
+              <Medal/>
+              Κέρδισες: Δάσκαλος Ποσοστών 5.1
+            </div>
+          )}
+        </div>
+      </section>
+    </main>
+  )
+}
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -11457,7 +12235,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
