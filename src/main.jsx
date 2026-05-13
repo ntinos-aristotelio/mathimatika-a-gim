@@ -1344,6 +1344,87 @@ function StandardQuiz({ title, subtitle, items, addXp }) {
   )
 }
 
+
+function formatGreekNumber(value) {
+  const rounded = Number.isInteger(value) ? String(value) : String(Math.round(value * 1000) / 1000)
+  return rounded.replace('.', ',')
+}
+
+function teacherOptionSet(answer, distractors) {
+  const seen = []
+  ;[answer, ...distractors].forEach((x) => {
+    const v = String(x)
+    if (!seen.includes(v)) seen.push(v)
+  })
+  while (seen.length < 4) seen.push(String(Number(answer) + seen.length + 1))
+  const order = [1, 3, 0, 2]
+  return order.map((i) => seen[i]).filter(Boolean).slice(0, 4)
+}
+
+function tq(tag, question, answer, distractors, explanation) {
+  return { tag, question, options: teacherOptionSet(String(answer), distractors.map(String)), answer: String(answer), explanation }
+}
+
+function generatedTeacherQuestions(title) {
+  const out = []
+  const add = (item) => out.push(item)
+
+  if (title.includes('1.1')) {
+    const nums = [345, 761, 659, 2567, 9532, 123564, 34564, 31549, 8765, 9573842]
+    nums.forEach((n, i) => {
+      const ans = Math.round(n / 100) * 100
+      add(tq('Εύκολη • Στρογγυλοποίηση', `Στρογγυλοποίησε τον αριθμό ${n.toLocaleString('el-GR')} στην πλησιέστερη εκατοντάδα.`, ans.toLocaleString('el-GR'), [(ans-100).toLocaleString('el-GR'), (ans+100).toLocaleString('el-GR'), n.toLocaleString('el-GR')], `Κοιτάμε το ψηφίο των δεκάδων και αποφασίζουμε αν η εκατοντάδα μένει ίδια ή αυξάνεται.`))
+    })
+    ;[[763,836],[6542,6452],[4801,4800],[9050,9500],[120003,120030],[9999,10000],[3508,3515],[87000,86999]].forEach(([a,b])=>add(tq('Εύκολη • Σύγκριση', `Συμπλήρωσε σωστά: ${a.toLocaleString('el-GR')} ___ ${b.toLocaleString('el-GR')}`, a>b?'>':a<b?'<':'=', ['>','<','='].filter(x=>x!==(a>b?'>':a<b?'<':'=')), 'Συγκρίνουμε τα ψηφία από αριστερά προς τα δεξιά.')))
+    ;[[3515,4800,3620,3508,4801],[423,243,324,234,342,432],[1002,1200,1020,1120,1102]].forEach(arr=>{const ans=[...arr].sort((a,b)=>a-b).map(x=>x.toLocaleString('el-GR')).join(', '); add(tq('Μέτρια • Διάταξη', `Βάλε σε αύξουσα σειρά: ${arr.map(x=>x.toLocaleString('el-GR')).join(', ')}`, ans, [[...arr].sort((a,b)=>b-a).map(x=>x.toLocaleString('el-GR')).join(', '), arr.join(', '), [...arr].sort().map(x=>x.toLocaleString('el-GR')).join(', ')], 'Αύξουσα σειρά σημαίνει από τον μικρότερο προς τον μεγαλύτερο.'))})
+  } else if (title.includes('1.2')) {
+    for (let i=1;i<=50;i++){ const a=20+i*3,b=7+i,c=2+(i%8); const val=a*b+a*c; add(tq(i<18?'Εύκολη • Πράξεις':i<36?'Μέτρια • Επιμεριστική':'Δύσκολη • Παράσταση', `Υπολόγισε: ${a}·${b} + ${a}·${c}`, val, [a*(b+c+1), a*b+c, a*(b+c)-a], `${a}·${b}+${a}·${c}=${a}·(${b}+${c})=${val}.`)) }
+  } else if (title.includes('1.3')) {
+    for (let i=1;i<=50;i++){ const a=2+(i%7), b=2+(i%3), c=1+(i%5); const val=a**b + c**2; add(tq(i<18?'Εύκολη • Δυνάμεις':i<36?'Μέτρια • Προτεραιότητα':'Δύσκολη • Σύνθετη παράσταση', `Υπολόγισε: ${a}${['⁰','¹','²','³','⁴'][b]} + ${c}²`, val, [a*b+c*c, a**b+c, (a+c)**b], `Πρώτα υπολογίζουμε τις δυνάμεις και μετά την πρόσθεση.`)) }
+  } else if (title.includes('1.4')) {
+    for (let i=1;i<=50;i++){ const d=5+(i%12), p=10+i, y=i%d, D=d*p+y; add(tq(i<18?'Εύκολη • Ευκλείδεια διαίρεση':i<36?'Μέτρια • Υπόλοιπο':'Δύσκολη • Ταυτότητα διαίρεσης', `Στη διαίρεση ${D} : ${d}, ποιο είναι το υπόλοιπο;`, y, [(y+1)%d, d, p], `${D}=${d}·${p}+${y}, με ${y}<${d}.`)) }
+  } else if (title.includes('1.5')) {
+    for (let i=1;i<=50;i++){ const n=90+i*7; const div3=(String(n).split('').reduce((a,b)=>a+Number(b),0)%3===0); const div5=n%5===0; const ans=div3&&div5?'με το 3 και το 5':div3?'με το 3':div5?'με το 5':'με κανένα από τα 3 και 5'; add(tq(i<18?'Εύκολη • Κριτήρια διαιρετότητας':i<36?'Μέτρια • Πολλαπλάσια':'Δύσκολη • Συνδυασμός κριτηρίων', `Ο αριθμός ${n} διαιρείται:`, ans, ['με το 3','με το 5','με το 3 και το 5','με κανένα από τα 3 και 5'].filter(x=>x!==ans), 'Χρησιμοποιούμε το άθροισμα ψηφίων για το 3 και το τελευταίο ψηφίο για το 5.')) }
+  } else if (title.includes('2.1')) {
+    for (let i=1;i<=50;i++){ const den=3+(i%9), num=1+(i%den), whole=den*(4+(i%7)); const val=whole/den*num; add(tq(i<18?'Εύκολη • Μέρος του όλου':i<36?'Μέτρια • Αναγωγή στη μονάδα':'Δύσκολη • Πρόβλημα κλάσματος', `Πόσο είναι τα ${num}/${den} του ${whole};`, val, [val+num, whole/den, whole-val], `Το 1/${den} του ${whole} είναι ${whole/den}, άρα τα ${num}/${den} είναι ${val}.`)) }
+  } else if (title.includes('2.2')) {
+    for (let i=1;i<=50;i++){ const a=1+(i%8), b=a+2+(i%7), k=2+(i%6); add(tq(i<18?'Εύκολη • Ισοδύναμα':i<36?'Μέτρια • Απλοποίηση':'Δύσκολη • Χιαστί γινόμενα', `Ποιο κλάσμα είναι ισοδύναμο με το ${a}/${b};`, `${a*k}/${b*k}`, [`${a+k}/${b+k}`, `${a}/${b*k}`, `${b*k}/${a*k}`], `Πολλαπλασιάζουμε αριθμητή και παρονομαστή με τον ίδιο αριθμό, εδώ με ${k}.`)) }
+  } else if (title.includes('2.3')) {
+    for (let i=1;i<=50;i++){ const a=1+(i%7), b=a+3+(i%6), c=1+((i*2)%7), d=c+4+((i+1)%6); const ans=(a/b>c/d)?`${a}/${b}`:`${c}/${d}`; add(tq(i<18?'Εύκολη • Σύγκριση':i<36?'Μέτρια • Ομώνυμα':'Δύσκολη • Ετερώνυμα', `Ποιο κλάσμα είναι μεγαλύτερο; ${a}/${b} ή ${c}/${d};`, ans, [ans===`${a}/${b}`?`${c}/${d}`:`${a}/${b}`, 'είναι ίσα', 'δεν συγκρίνονται'], 'Μετατρέπουμε σε ομώνυμα ή συγκρίνουμε χιαστί γινόμενα.')) }
+  } else if (title.includes('2.4')) {
+    for (let i=1;i<=50;i++){ const den=4+(i%8), a=1+(i%den), b=1+((i+2)%den); const val=`${a+b}/${den}`; add(tq(i<18?'Εύκολη • Ομώνυμα κλάσματα':i<36?'Μέτρια • Πρόσθεση':'Δύσκολη • Αφαίρεση/άθροισμα', `Υπολόγισε: ${a}/${den} + ${b}/${den}`, val, [`${a+b}/${den*2}`, `${a*b}/${den}`, `${Math.abs(a-b)}/${den}`], `Σε ομώνυμα κλάσματα προσθέτουμε τους αριθμητές και κρατάμε τον παρονομαστή.`)) }
+  } else if (title.includes('2.5')) {
+    for (let i=1;i<=50;i++){ const a=1+(i%6), b=2+(i%7), c=1+((i+1)%5), d=2+((i+2)%7); add(tq(i<18?'Εύκολη • Πολλαπλασιασμός':i<36?'Μέτρια • Αντίστροφος':'Δύσκολη • Παράσταση', `Υπολόγισε: ${a}/${b} · ${c}/${d}`, `${a*c}/${b*d}`, [`${a+c}/${b+d}`, `${a*d}/${b*c}`, `${a*c}/${b+d}`], 'Πολλαπλασιάζουμε αριθμητή με αριθμητή και παρονομαστή με παρονομαστή.')) }
+  } else if (title.includes('2.6')) {
+    for (let i=1;i<=50;i++){ const a=1+(i%6), b=2+(i%7), c=1+((i+2)%5), d=2+((i+3)%7); add(tq(i<18?'Εύκολη • Διαίρεση κλασμάτων':i<36?'Μέτρια • Αντίστροφο κλάσμα':'Δύσκολη • Σύνθετη διαίρεση', `Υπολόγισε: ${a}/${b} : ${c}/${d}`, `${a*d}/${b*c}`, [`${a*c}/${b*d}`, `${a+c}/${b+d}`, `${a*d}/${b+d}`], 'Για να διαιρέσουμε με κλάσμα, πολλαπλασιάζουμε με το αντίστροφό του.')) }
+  } else if (title.includes('3.1')) {
+    for (let i=1;i<=50;i++){ const n=(10+i) + (i%10)/10 + (i%7)/100; const ans=formatGreekNumber(Math.round(n*10)/10); add(tq(i<18?'Εύκολη • Δεκαδικοί':i<36?'Μέτρια • Στρογγυλοποίηση':'Δύσκολη • Διάταξη', `Στρογγυλοποίησε τον δεκαδικό ${formatGreekNumber(n)} στα δέκατα.`, ans, [formatGreekNumber(Math.floor(n)), formatGreekNumber(Math.ceil(n)), formatGreekNumber(n)], 'Κοιτάμε το ψηφίο των εκατοστών.')) }
+  } else if (title.includes('3.2') || title.includes('3.3')) {
+    for (let i=1;i<=50;i++){ const a=(12+i)/10, b=(3+(i%8))/10; const val=formatGreekNumber(a+b); add(tq(i<18?'Εύκολη • Πράξεις δεκαδικών':i<36?'Μέτρια • Δυνάμεις δεκαδικών':'Δύσκολη • Μικτή πράξη', `Υπολόγισε: ${formatGreekNumber(a)} + ${formatGreekNumber(b)}`, val, [formatGreekNumber(a-b), formatGreekNumber(a*b), formatGreekNumber(a+b+0.1)], 'Προσθέτουμε μονάδες με μονάδες, δέκατα με δέκατα κ.ο.κ.')) }
+  } else if (title.includes('3.4')) {
+    for (let i=1;i<=50;i++){ const a=2+(i%8), exp=3+(i%4); const n=a*10**exp; add(tq(i<18?'Εύκολη • Τυποποιημένη μορφή':i<36?'Μέτρια • Δυνάμεις του 10':'Δύσκολη • Μεγάλοι αριθμοί', `Ποια είναι η τυποποιημένη μορφή του ${n.toLocaleString('el-GR')};`, `${a}·10${['⁰','¹','²','³','⁴','⁵','⁶','⁷'][exp]}`, [`${a*10}·10${['⁰','¹','²','³','⁴','⁵','⁶','⁷'][exp-1]}`, `${a}·10${['⁰','¹','²','³','⁴','⁵','⁶','⁷'][exp-1]}`, `${n}·10⁰`], 'Στην τυποποιημένη μορφή γράφουμε έναν αριθμό από 1 έως 10 επί δύναμη του 10.')) }
+  } else if (title.includes('3.5')) {
+    const units=[['m','cm',100],['km','m',1000],['kg','g',1000],['h','min',60]]
+    for (let i=1;i<=50;i++){ const [u,v,k]=units[i%units.length]; const a=1+(i%9); const ans=(a*k).toLocaleString('el-GR')+' '+v; add(tq(i<18?'Εύκολη • Μονάδες μέτρησης':i<36?'Μέτρια • Μετατροπές':'Δύσκολη • Σύνθετες μονάδες', `Μετέτρεψε: ${a} ${u} = ;`, ans, [`${a} ${v}`, `${a*k/10} ${v}`, `${a*k*10} ${v}`], `Πολλαπλασιάζουμε με ${k}.`)) }
+  } else {
+    for (let i=1;i<=50;i++){ const a=2+i, b=3+(i%9); const val=a*b; add(tq(i<18?'Εύκολη • Επανάληψη':i<36?'Μέτρια • Επανάληψη':'Δύσκολη • Επανάληψη', `Υπολόγισε: ${a}·${b}`, val, [val+a, val-b, a+b], 'Κάνουμε τον πολλαπλασιασμό προσεκτικά.')) }
+  }
+  return out
+}
+
+function prepareTeacherQuiz(title, items) {
+  const generated = generatedTeacherQuestions(title)
+  const combined = [...items]
+  for (const q of generated) {
+    if (combined.length >= 50) break
+    if (!combined.some((x) => x.question === q.question)) combined.push(q)
+  }
+  return combined.slice(0, 50).map((q, i) => {
+    const level = i < 17 ? 'Εύκολη' : i < 34 ? 'Μέτρια' : 'Δύσκολη'
+    return { ...q, tag: q.tag?.includes('•') ? q.tag : `${level} • ${q.tag || 'Άσκηση'}` }
+  })
+}
+
 function ExtraTeacherQuiz({ addXp, title, items }) {
   const [index, setIndex] = useState(0)
   const [picked, setPicked] = useState('')
@@ -1351,9 +1432,10 @@ function ExtraTeacherQuiz({ addXp, title, items }) {
   const [score, setScore] = useState(0)
   const [finished, setFinished] = useState(false)
 
-  const item = items[index]
+  const quizItems = useMemo(() => prepareTeacherQuiz(title, items), [title, items])
+  const item = quizItems[index]
   const correct = picked === item.answer
-  const progress = Math.round(((index + (answered ? 1 : 0)) / items.length) * 100)
+  const progress = Math.round(((index + (answered ? 1 : 0)) / quizItems.length) * 100)
 
   function choose(option) {
     if (answered) return
@@ -1366,7 +1448,7 @@ function ExtraTeacherQuiz({ addXp, title, items }) {
   }
 
   function next() {
-    if (index + 1 >= items.length) {
+    if (index + 1 >= quizItems.length) {
       setFinished(true)
       return
     }
@@ -1394,7 +1476,7 @@ function ExtraTeacherQuiz({ addXp, title, items }) {
           </div>
         </div>
         <div className="quizScore">
-          <b>{score}/{items.length}</b>
+          <b>{score}/{quizItems.length}</b>
           <span>score</span>
         </div>
       </div>
@@ -1405,7 +1487,7 @@ function ExtraTeacherQuiz({ addXp, title, items }) {
         <div className="compactQuizCard">
           <div className="questionMeta">
             <span>{item.tag}</span>
-            <b>Ερώτηση {index + 1} από {items.length}</b>
+            <b>Ερώτηση {index + 1} από {quizItems.length}</b>
           </div>
           <h3>{item.question}</h3>
 
@@ -1435,7 +1517,7 @@ function ExtraTeacherQuiz({ addXp, title, items }) {
 
           <div className="compactActions">
             <button className="primaryBtn compact" onClick={next} disabled={!answered}>
-              {index + 1 >= items.length ? 'Ολοκλήρωση' : 'Επόμενη'}
+              {index + 1 >= quizItems.length ? 'Ολοκλήρωση' : 'Επόμενη'}
             </button>
           </div>
         </div>
@@ -1443,7 +1525,7 @@ function ExtraTeacherQuiz({ addXp, title, items }) {
         <div className="quizFinished">
           <div className="bigMedal">🏅</div>
           <h3>Ολοκλήρωσες το Extra Quiz!</h3>
-          <p>Σκορ: {score}/{items.length}</p>
+          <p>Σκορ: {score}/{quizItems.length}</p>
           <button className="primaryBtn compact" onClick={restart}><RotateCcw size={16}/> Ξανά προσπάθεια</button>
         </div>
       )}
