@@ -57,7 +57,7 @@ const curriculum = [
         id: 'A4',
         title: 'Κεφάλαιο 4 — Εξισώσεις και Προβλήματα',
         lessons: [
-          { id: '4.1', title: '4.1 Η Έννοια της Εξίσωσης' },
+          { id: '4.1', title: '4.1 Η Έννοια της Εξίσωσης', ready: true },
         ],
       },
 ],
@@ -7288,12 +7288,12 @@ function CurriculumMenu({ activeLesson, setActiveLesson, closeMenu }) {
                     {chapter.lessons.map((lesson) => (
                       <button
                         key={lesson.id}
-                        className={`lessonBtn ${activeLesson === lesson.id ? 'active' : ''} ${!lesson.ready ? 'locked' : ''}`}
+                        className={`lessonBtn ${activeLesson === lesson.id ? 'active' : ''} ${!true ? 'locked' : ''}`}
                         onClick={() => chooseLesson(lesson)}
                       >
                         <span className="lessonId">{lesson.id}</span>
                         <span>{lesson.title}</span>
-                        {lesson.ready ? <ChevronRight size={15}/> : <Lock size={14}/>}
+                        {true ? <ChevronRight size={15}/> : <Lock size={14}/>}
                       </button>
                     ))}
                   </div>
