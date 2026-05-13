@@ -1412,6 +1412,20 @@ function generatedTeacherQuestions(title) {
   return out
 }
 
+function teacherDifficultyLevel(index) {
+  if (index < 10) return 'Εύκολη'
+  if (index < 20) return 'Μέτρια'
+  if (index < 30) return 'Δύσκολη'
+  if (index < 40) return 'Πολύ δύσκολη'
+  return 'Διάνοια'
+}
+
+function teacherTopicFromTag(tag) {
+  if (!tag) return 'Άσκηση'
+  const parts = String(tag).split('•')
+  return (parts.length > 1 ? parts.slice(1).join('•') : parts[0]).trim() || 'Άσκηση'
+}
+
 function prepareTeacherQuiz(title, items) {
   const generated = generatedTeacherQuestions(title)
   const combined = [...items]
@@ -1420,8 +1434,9 @@ function prepareTeacherQuiz(title, items) {
     if (!combined.some((x) => x.question === q.question)) combined.push(q)
   }
   return combined.slice(0, 50).map((q, i) => {
-    const level = i < 17 ? 'Εύκολη' : i < 34 ? 'Μέτρια' : 'Δύσκολη'
-    return { ...q, tag: q.tag?.includes('•') ? q.tag : `${level} • ${q.tag || 'Άσκηση'}` }
+    const level = teacherDifficultyLevel(i)
+    const topic = teacherTopicFromTag(q.tag)
+    return { ...q, tag: `${level} • ${topic}` }
   })
 }
 
