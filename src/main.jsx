@@ -11253,9 +11253,31 @@ function ComingSoon({ id }) {
 }
 
 
+
 function Lesson41() {
   const [xp, setXp] = useState(3200)
+  const [boss, setBoss] = useState({ round: 0, σκορ: 0, done: false })
   const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Το 2χ σημαίνει το διπλάσιο ενός αριθμού.', ok: true },
+    { q: 'Η εξίσωση χ + 7 = 12 έχει λύση χ = 19.', ok: false },
+    { q: 'Αν 3χ = 24, τότε χ = 8.', ok: true },
+    { q: 'Το χ − 5 = 10 έχει λύση χ = 5.', ok: false },
+  ]
+
+  function bossAnswer(choice) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const correct = choice === current.ok
+    const nextRound = boss.round + 1
+    const nextΣκορ = boss.σκορ + (correct ? 1 : 0)
+    setBoss({ round: nextRound, σκορ: nextΣκορ, done: nextRound >= bossQuestions.length })
+    if (correct) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.σκορ}/${bossQuestions.length}` : bossQuestions[boss.round].q
+
   return (
     <main className="appGrid">
       <section className="lessonHero">
@@ -11269,14 +11291,52 @@ function Lesson41() {
       <section className="contentPanel twoCol"><div><div className="sectionHeader small"><Wand2/><h2>Εργαστήριο Εξισώσεων</h2></div><div className="example"><b>χ + 8 = 20</b><p>Άρα χ = 12.</p></div><div className="example"><b>3χ = 27</b><p>Άρα χ = 9.</p></div></div><div className="practiceBox"><h3>Μικρή αποστολή</h3><p>Μετάτρεψε τις φράσεις σε μαθηματικές παραστάσεις.</p><div className="numberChips"><span>διπλάσιο → 2χ</span><span>αυξημένος κατά 7 → χ+7</span><span>μισό → χ:2</span></div></div></section>
       <StandardΚουίζ title="Κουίζ Αστραπή — 4.1" subtitle="Μεταβλητές, παραστάσεις και απλές εξισώσεις." items={quiz41} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — 4.1" items={teacherΚουίζ41} addXp={addXp} />
-      <section className="bossPanel"><div><div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div><h2>Ο Φύλακας των Εξισώσεων ⚖️</h2><p>Η ενότητα 4.1 είναι έτοιμη.</p></div><div className="σήμαWin"><Medal/> Λύτης Εξισώσεων 4.1</div></section>
+      <section className="bossPanel">
+        <div><div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div><h2>Ο Φύλακας των Εξισώσεων ⚖️</h2><p>Απάντησε σωστά σε 4 γρήγορες κρίσεις.</p></div>
+        <div className="bossGame">
+          <div className="dragon">⚖️</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, bossQuestions.length)} / {bossQuestions.length}</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="σήμαWin"><Medal/> Κέρδισες: Λύτης Εξισώσεων 4.1</div>
+          )}
+        </div>
+      </section>
     </main>
   )
 }
 
+
+
 function Lesson42() {
   const [xp, setXp] = useState(3350)
+  const [boss, setBoss] = useState({ round: 0, σκορ: 0, done: false })
   const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Αν μετά από 5 χρόνια κάποιος θα είναι 16, σήμερα είναι 11.', ok: true },
+    { q: 'Αν 6χ = 72, τότε χ = 13.', ok: false },
+    { q: 'Η περίμετρος τετραγώνου 140 μ. δίνει πλευρά 35 μ.', ok: true },
+    { q: 'Αν ένα παλτό μετά από έκπτωση 35€ κοστίζει 127€, πριν κόστιζε 162€.', ok: true },
+  ]
+
+  function bossAnswer(choice) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const correct = choice === current.ok
+    const nextRound = boss.round + 1
+    const nextΣκορ = boss.σκορ + (correct ? 1 : 0)
+    setBoss({ round: nextRound, σκορ: nextΣκορ, done: nextRound >= bossQuestions.length })
+    if (correct) addXp(25)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.σκορ}/${bossQuestions.length}` : bossQuestions[boss.round].q
+
   return (
     <main className="appGrid">
       <section className="lessonHero">
@@ -11290,15 +11350,53 @@ function Lesson42() {
       <section className="contentPanel twoCol"><div><div className="sectionHeader small"><Wand2/><h2>Παραδείγματα</h2></div><div className="example"><b>Ηλικία</b><p>χ+5=16, άρα χ=11.</p></div><div className="example"><b>Έκπτωση</b><p>χ−35=127, άρα χ=162.</p></div><div className="example"><b>Περίμετρος</b><p>4χ=140, άρα χ=35.</p></div></div><div className="practiceBox"><h3>Μικρή αποστολή</h3><p>Βρες πρώτα ποιος είναι ο άγνωστος και μετά γράψε την εξίσωση.</p><div className="numberChips"><span>ηλικία → χ+5=16</span><span>έκπτωση → χ−35=127</span><span>μοίρασμα → 5χ=60</span></div></div></section>
       <StandardΚουίζ title="Κουίζ Αστραπή — 4.2" subtitle="Προβλήματα με εξισώσεις." items={quiz42} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — 4.2" items={teacherΚουίζ42} addXp={addXp} />
-      <section className="bossPanel"><div><div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div><h2>Ο Ανακριτής των Προβλημάτων 🧩</h2><p>Η ενότητα 4.2 είναι έτοιμη.</p></div><div className="σήμαWin"><Medal/> Λύτης Προβλημάτων 4.2</div></section>
+      <section className="bossPanel">
+        <div><div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div><h2>Ο Ανακριτής των Προβλημάτων 🧩</h2><p>Απάντησε σωστά σε 4 γρήγορες κρίσεις.</p></div>
+        <div className="bossGame">
+          <div className="dragon">🧩</div>
+          <p>Πρόκληση {Math.min(boss.round + 1, bossQuestions.length)} / {bossQuestions.length}</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="σήμαWin"><Medal/> Κέρδισες: Λύτης Προβλημάτων 4.2</div>
+          )}
+        </div>
+      </section>
     </main>
   )
 }
 
 
+
+
 function Lesson4General() {
   const [xp, setXp] = useState(4200)
+  const [boss, setBoss] = useState({ round: 0, σκορ: 0, done: false })
   const addXp = (amount) => setXp((v) => v + amount)
+
+  const bossQuestions = [
+    { q: 'Στα προβλήματα πρώτα ορίζουμε τον άγνωστο και μετά γράφουμε εξίσωση.', ok: true },
+    { q: 'Αν 2χ + 5 = 19, τότε χ = 12.', ok: false },
+    { q: 'Αν η πλευρά τετραγώνου είναι 16 μ., η περίμετρος είναι 64 μ.', ok: true },
+    { q: 'Αν χ + 4 = 15, τότε χ = 19.', ok: false },
+    { q: 'Ο έλεγχος της λύσης βοηθά να βρούμε λάθη.', ok: true },
+  ]
+
+  function bossAnswer(choice) {
+    if (boss.done) return
+    const current = bossQuestions[boss.round]
+    const correct = choice === current.ok
+    const nextRound = boss.round + 1
+    const nextΣκορ = boss.σκορ + (correct ? 1 : 0)
+    setBoss({ round: nextRound, σκορ: nextΣκορ, done: nextRound >= bossQuestions.length })
+    if (correct) addXp(30)
+  }
+
+  const bossText = boss.done ? `Τελικό σκορ: ${boss.σκορ}/${bossQuestions.length}` : bossQuestions[boss.round].q
 
   return (
     <main className="appGrid">
@@ -11312,14 +11410,7 @@ function Lesson4General() {
       </section>
 
       <section className="contentPanel">
-        <div className="sectionHeader">
-          <ShieldCheck/>
-          <div>
-            <h2>Τι επαναλαμβάνουμε</h2>
-            <p>Όλες οι βασικές ιδέες του Κεφαλαίου 4.</p>
-          </div>
-        </div>
-
+        <div className="sectionHeader"><ShieldCheck/><div><h2>Τι επαναλαμβάνουμε</h2><p>Όλες οι βασικές ιδέες του Κεφαλαίου 4.</p></div></div>
         <div className="theoryGrid">
           <article><b>Μεταβλητές</b><p>Γράφουμε μαθηματικές παραστάσεις με άγνωστο.</p></article>
           <article><b>Εξισώσεις</b><p>Βρίσκουμε την τιμή του χ με σωστά βήματα.</p></article>
@@ -11329,52 +11420,33 @@ function Lesson4General() {
       </section>
 
       <section className="contentPanel twoCol">
-        <div>
-          <div className="sectionHeader small"><Wand2/><h2>Συμβουλές Επιτυχίας</h2></div>
-          <div className="example"><b>1.</b><p>Διάβαζε αργά το πρόβλημα.</p></div>
-          <div className="example"><b>2.</b><p>Βρες ποιος είναι ο άγνωστος.</p></div>
-          <div className="example"><b>3.</b><p>Γράψε εξίσωση πριν κάνεις πράξεις.</p></div>
-        </div>
-
-        <div className="practiceBox">
-          <h3>Τελική Προπόνηση</h3>
-          <p>Οι επόμενες ασκήσεις συνδυάζουν όλα όσα έμαθες στο Κεφάλαιο 4.</p>
-          <div className="numberChips">
-            <span>Εξισώσεις</span>
-            <span>Προβλήματα</span>
-            <span>Λογική</span>
-          </div>
-        </div>
+        <div><div className="sectionHeader small"><Wand2/><h2>Συμβουλές Επιτυχίας</h2></div><div className="example"><b>1.</b><p>Διάβαζε αργά το πρόβλημα.</p></div><div className="example"><b>2.</b><p>Βρες ποιος είναι ο άγνωστος.</p></div><div className="example"><b>3.</b><p>Γράψε εξίσωση πριν κάνεις πράξεις.</p></div></div>
+        <div className="practiceBox"><h3>Τελική Προπόνηση</h3><p>Οι επόμενες ασκήσεις συνδυάζουν όλα όσα έμαθες στο Κεφάλαιο 4.</p><div className="numberChips"><span>Εξισώσεις</span><span>Προβλήματα</span><span>Λογική</span></div></div>
       </section>
 
-      <StandardΚουίζ
-        title="Κουίζ Επανάληψης — Κεφάλαιο 4"
-        subtitle="Μικτή επανάληψη από όλες τις ενότητες."
-        items={quiz4gen}
-        addXp={addXp}
-      />
-
-      <ExtraTeacherΚουίζ
-        title="Extra Κουίζ Καθηγητή — Γενικές Ασκήσεις Κεφαλαίου 4"
-        items={teacherΚουίζ4gen}
-        addXp={addXp}
-      />
+      <StandardΚουίζ title="Κουίζ Επανάληψης — Κεφάλαιο 4" subtitle="Μικτή επανάληψη από όλες τις ενότητες." items={quiz4gen} addXp={addXp} />
+      <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γενικές Ασκήσεις Κεφαλαίου 4" items={teacherΚουίζ4gen} addXp={addXp} />
 
       <section className="bossPanel">
-        <div>
-          <div className="pill danger"><Sword size={16}/> Τελική Αποστολή</div>
-          <h2>Ο Μέγας Μαθηματικός του Κεφαλαίου 4 👑</h2>
-          <p>Αν μπορείς να λύσεις αυτά τα προβλήματα, είσαι έτοιμος για το επόμενο κεφάλαιο.</p>
-        </div>
-
-        <div className="σήμαWin">
-          <Medal/>
-          Πρωταθλητής Κεφαλαίου 4
+        <div><div className="pill danger"><Sword size={16}/> Τελική Αποστολή</div><h2>Ο Μέγας Μαθηματικός του Κεφαλαίου 4 👑</h2><p>Απάντησε σωστά σε 5 τελικές κρίσεις.</p></div>
+        <div className="bossGame">
+          <div className="dragon">👑</div>
+          <p>Αποστολή {Math.min(boss.round + 1, bossQuestions.length)} / {bossQuestions.length}</p>
+          <h3>{bossText}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="σήμαWin"><Medal/> Κέρδισες: Πρωταθλητής Κεφαλαίου 4</div>
+          )}
         </div>
       </section>
     </main>
   )
 }
+
 
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
