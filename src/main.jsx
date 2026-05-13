@@ -58,6 +58,14 @@ const curriculum = [
     part: "ΜΕΡΟΣ Β'",
     title: 'Γεωμετρία',
     chapters: [
+
+      {
+        id: 'A4',
+        title: 'Κεφάλαιο 4 — Εξισώσεις και Προβλήματα',
+        lessons: [
+          { id: '4.1', title: '4.1 Η Έννοια της Εξίσωσης' },
+        ],
+      },
       {
         id: 'B1',
         title: 'Κεφάλαιο 1 — Βασικές γεωμετρικές έννοιες',
@@ -9202,6 +9210,78 @@ function ComingSoon({ id }) {
   )
 }
 
+
+function Lesson41() {
+  const bossQuestions = [
+    { q: 'Το χ+5 σημαίνει αριθμός αυξημένος κατά 5.', ok: true },
+    { q: 'Η εξίσωση χ+7=12 έχει λύση χ=5.', ok: true },
+    { q: 'Η εξίσωση 3χ=18 έχει λύση χ=9.', ok: false },
+  ]
+  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
+  const bossAnswer = (choice) => {
+    if (boss.done) return
+    const correct = bossQuestions[boss.round].ok === choice
+    const nextScore = boss.score + (correct ? 1 : 0)
+    const nextRound = boss.round + 1
+    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
+  }
+
+  return (
+    <LessonShell lessonId="4.1">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue"><Calculator size={16}/> Κεφάλαιο 4.1</div>
+          <h1>Η Έννοια της Εξίσωσης</h1>
+          <p>Μαθαίνουμε να μετατρέπουμε φράσεις σε μαθηματικές παραστάσεις και να λύνουμε απλές εξισώσεις.</p>
+        </div>
+        <div className="heroCard">
+          <b>Κεντρική ιδέα</b>
+          <span>Εξίσωση είναι μια μαθηματική ισότητα που περιέχει άγνωστο αριθμό.</span>
+        </div>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader small"><BookOpen/><h2>Θεωρία</h2></div>
+        <div className="theoryGrid">
+          <article><b>1. Μεταβλητή</b><p>Η μεταβλητή, όπως το χ, παριστάνει έναν άγνωστο αριθμό.</p></article>
+          <article><b>2. Παράσταση</b><p>Το διπλάσιο ενός αριθμού γράφεται 2χ, ενώ ο αριθμός αυξημένος κατά 5 γράφεται χ+5.</p></article>
+          <article><b>3. Εξίσωση</b><p>Για να λύσουμε μια εξίσωση, βρίσκουμε την τιμή του χ που κάνει την ισότητα σωστή.</p></article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div className="example"><b>Παράδειγμα 1</b><p>χ + 8 = 20, άρα χ = 12.</p></div>
+        <div className="example"><b>Παράδειγμα 2</b><p>3χ = 27, άρα χ = 9.</p></div>
+      </section>
+
+      <Quiz title="Κουίζ 4.1" subtitle="Βασικός έλεγχος εξισώσεων" questions={quiz41} />
+
+      <ExtraTeacherΚουίζ title="Επιπλέον Κουίζ Καθηγητή — 4.1" items={teacherΚουίζ41} addXp={addXp} />
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
+          <h2>Ο Φύλακας των Εξισώσεων ⚖️</h2>
+          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις.</p>
+        </div>
+        <div className="bossGame">
+          <p>Πρόκληση {Math.min(boss.round + 1, bossQuestions.length)} / {bossQuestions.length}</p>
+          <h3>{boss.done ? `Τελικό σκορ: ${boss.score}/${bossQuestions.length}` : bossQuestions[boss.round].q}</h3>
+          {!boss.done ? (
+            <div className="bossBtns">
+              <button onClick={() => bossAnswer(true)}>Σωστό</button>
+              <button onClick={() => bossAnswer(false)}>Λάθος</button>
+            </div>
+          ) : (
+            <div className="badgeWin"><Medal/> Κέρδισες: Λύτης Εξισώσεων 4.1</div>
+          )}
+        </div>
+      </section>
+    </LessonShell>
+  )
+}
+
+
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -9211,7 +9291,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
@@ -9225,6 +9305,75 @@ function App() {
 
 createRoot(document.getElementById('root')).render(<App />)
 
+
+const quiz41 = [
+  {
+    "question": "Ποια παράσταση δείχνει το διπλάσιο ενός αριθμού;",
+    "options": [
+      "χ+2",
+      "2χ",
+      "χ−2",
+      "χ:2"
+    ],
+    "answer": "2χ",
+    "tip": "Το διπλάσιο σημαίνει 2 φορές ο αριθμός."
+  },
+  {
+    "question": "Ποια παράσταση δείχνει έναν αριθμό αυξημένο κατά 5;",
+    "options": [
+      "χ−5",
+      "5χ",
+      "χ+5",
+      "5−χ"
+    ],
+    "answer": "χ+5",
+    "tip": "Αυξημένος κατά 5 σημαίνει προσθέτω 5."
+  },
+  {
+    "question": "Λύσε την εξίσωση: χ + 7 = 15",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "8",
+    "tip": "Αφαιρούμε 7 και από τα δύο μέλη."
+  },
+  {
+    "question": "Λύσε την εξίσωση: 3χ = 21",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "7",
+    "tip": "Διαιρούμε με το 3."
+  },
+  {
+    "question": "Είναι το 4 λύση της εξίσωσης 2χ+1=9;",
+    "options": [
+      "Ναι",
+      "Όχι",
+      "Μόνο αν χ=9",
+      "Δεν γίνεται έλεγχος"
+    ],
+    "answer": "Ναι",
+    "tip": "Αν χ=4, τότε 2·4+1=9."
+  },
+  {
+    "question": "Λύσε: χ − 6 = 13",
+    "options": [
+      "7",
+      "13",
+      "19",
+      "20"
+    ],
+    "answer": "19",
+    "tip": "Προσθέτουμε 6 και στα δύο μέλη."
+  }
+]
 
 const teacherΚουίζ41 = [
   {
