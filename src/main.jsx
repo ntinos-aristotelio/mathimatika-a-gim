@@ -9211,32 +9211,19 @@ function ComingSoon({ id }) {
 }
 
 
-function Lesson41() {
-  const bossQuestions = [
-    { q: 'Το χ+5 σημαίνει αριθμός αυξημένος κατά 5.', ok: true },
-    { q: 'Η εξίσωση χ+7=12 έχει λύση χ=5.', ok: true },
-    { q: 'Η εξίσωση 3χ=18 έχει λύση χ=9.', ok: false },
-  ]
-  const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
-  const bossAnswer = (choice) => {
-    if (boss.done) return
-    const correct = bossQuestions[boss.round].ok === choice
-    const nextScore = boss.score + (correct ? 1 : 0)
-    const nextRound = boss.round + 1
-    setBoss({ round: nextRound, score: nextScore, done: nextRound >= bossQuestions.length })
-  }
 
+function Lesson41() {
   return (
     <LessonShell lessonId="4.1">
       <section className="lessonHero">
         <div>
           <div className="pill blue"><Calculator size={16}/> Κεφάλαιο 4.1</div>
           <h1>Η Έννοια της Εξίσωσης</h1>
-          <p>Μαθαίνουμε να μετατρέπουμε φράσεις σε μαθηματικές παραστάσεις και να λύνουμε απλές εξισώσεις.</p>
+          <p>Μαθαίνουμε τι είναι εξίσωση, τι είναι μεταβλητή και πώς βρίσκουμε την τιμή του αγνώστου.</p>
         </div>
         <div className="heroCard">
           <b>Κεντρική ιδέα</b>
-          <span>Εξίσωση είναι μια μαθηματική ισότητα που περιέχει άγνωστο αριθμό.</span>
+          <span>Εξίσωση είναι μια ισότητα που περιέχει έναν άγνωστο αριθμό.</span>
         </div>
       </section>
 
@@ -9244,8 +9231,8 @@ function Lesson41() {
         <div className="sectionHeader small"><BookOpen/><h2>Θεωρία</h2></div>
         <div className="theoryGrid">
           <article><b>1. Μεταβλητή</b><p>Η μεταβλητή, όπως το χ, παριστάνει έναν άγνωστο αριθμό.</p></article>
-          <article><b>2. Παράσταση</b><p>Το διπλάσιο ενός αριθμού γράφεται 2χ, ενώ ο αριθμός αυξημένος κατά 5 γράφεται χ+5.</p></article>
-          <article><b>3. Εξίσωση</b><p>Για να λύσουμε μια εξίσωση, βρίσκουμε την τιμή του χ που κάνει την ισότητα σωστή.</p></article>
+          <article><b>2. Αλγεβρική παράσταση</b><p>Το διπλάσιο ενός αριθμού γράφεται 2χ. Ο αριθμός αυξημένος κατά 5 γράφεται χ+5.</p></article>
+          <article><b>3. Λύση εξίσωσης</b><p>Λύση είναι η τιμή του χ που κάνει την ισότητα σωστή.</p></article>
         </div>
       </section>
 
@@ -9262,24 +9249,14 @@ function Lesson41() {
         <div>
           <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
           <h2>Ο Φύλακας των Εξισώσεων ⚖️</h2>
-          <p>Απάντησε σωστά σε 3 γρήγορες κρίσεις.</p>
+          <p>Η ενότητα 4.1 είναι έτοιμη για δοκιμή.</p>
         </div>
-        <div className="bossGame">
-          <p>Πρόκληση {Math.min(boss.round + 1, bossQuestions.length)} / {bossQuestions.length}</p>
-          <h3>{boss.done ? `Τελικό σκορ: ${boss.score}/${bossQuestions.length}` : bossQuestions[boss.round].q}</h3>
-          {!boss.done ? (
-            <div className="bossBtns">
-              <button onClick={() => bossAnswer(true)}>Σωστό</button>
-              <button onClick={() => bossAnswer(false)}>Λάθος</button>
-            </div>
-          ) : (
-            <div className="badgeWin"><Medal/> Κέρδισες: Λύτης Εξισώσεων 4.1</div>
-          )}
-        </div>
+        <div className="badgeWin"><Medal/> Λύτης Εξισώσεων 4.1</div>
       </section>
     </LessonShell>
   )
 }
+
 
 
 function Platform({ goHome }) {
@@ -9291,7 +9268,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '1.1' ? <Lesson11 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '4.1' ? <Lesson41 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
