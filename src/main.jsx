@@ -60,6 +60,13 @@ const curriculum = [
           { id: '4.1', title: '4.1 Η Έννοια της Εξίσωσης', ready: true },
           { id: '4.2', title: '4.2 Επίλυση Προβλημάτων', ready: true },
           { id: '4.gen', title: 'Γενικές Ασκήσεις Κεφαλαίου 4', ready: true },
+        ],
+      },
+      {
+        id: 'A5',
+        title: 'Κεφάλαιο 5 — Ποσοστά',
+        progress: 0,
+        lessons: [
           { id: '5.1', title: '5.1 Ποσοστά', ready: true },
         ],
       },
