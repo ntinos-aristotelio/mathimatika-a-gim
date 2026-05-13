@@ -1426,6 +1426,43 @@ function teacherTopicFromTag(tag) {
   return (parts.length > 1 ? parts.slice(1).join('•') : parts[0]).trim() || 'Άσκηση'
 }
 
+function fallbackTeacherQuestion(title, i) {
+  const n = i + 1
+  if (title.includes('1.1')) {
+    const a = 1000 + n * 137
+    const b = 1000 + n * 139
+    const answer = a < b ? '<' : a > b ? '>' : '='
+    return tq('Επανάληψη • Φυσικοί αριθμοί', `Συμπλήρωσε σωστά: ${a.toLocaleString('el-GR')} ___ ${b.toLocaleString('el-GR')}`, answer, ['>', '<', '='].filter((x) => x !== answer), 'Συγκρίνουμε τα ψηφία από αριστερά προς τα δεξιά.')
+  }
+  if (title.includes('3.4')) {
+    const base = 1 + (n % 9)
+    const exp = 2 + (Math.floor(n / 9) % 6)
+    const powers = ['⁰','¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹']
+    const num = base * 10 ** exp
+    return tq('Επανάληψη • Τυποποιημένη μορφή', `Ποια είναι η τυποποιημένη μορφή του ${num.toLocaleString('el-GR')};`, `${base}·10${powers[exp]}`, [`${base}·10${powers[exp-1]}`, `${base*10}·10${powers[exp-1]}`, `${num}·10⁰`], 'Γράφουμε έναν αριθμό από 1 έως 10 επί κατάλληλη δύναμη του 10.')
+  }
+  const a = 5 + n
+  const b = 2 + (n % 9)
+  const answer = a * b
+  return tq('Επανάληψη • Μικτή άσκηση', `Υπολόγισε: ${a}·${b}`, answer, [answer + a, answer - b, a + b], 'Υπολογίζουμε προσεκτικά την πράξη.')
+}
+
+function mixTeacherOptions(q, index) {
+  const answer = String(q.answer)
+  const unique = []
+  ;[...(q.options || []), answer].forEach((option) => {
+    const value = String(option)
+    if (!unique.includes(value)) unique.push(value)
+  })
+  while (unique.length < 4) unique.push(String(Number.isFinite(Number(answer)) ? Number(answer) + unique.length + index + 1 : `${answer} (${unique.length})`))
+  const withoutAnswer = unique.filter((option) => option !== answer)
+  const optionCount = Math.min(4, withoutAnswer.length + 1)
+  const desiredPosition = (index * 3 + 1) % optionCount
+  const mixed = withoutAnswer.slice(0, optionCount - 1)
+  mixed.splice(desiredPosition, 0, answer)
+  return { ...q, options: mixed }
+}
+
 function prepareTeacherQuiz(title, items) {
   const generated = generatedTeacherQuestions(title)
   const combined = [...items]
@@ -1433,10 +1470,16 @@ function prepareTeacherQuiz(title, items) {
     if (combined.length >= 50) break
     if (!combined.some((x) => x.question === q.question)) combined.push(q)
   }
+  let guard = 0
+  while (combined.length < 50 && guard < 80) {
+    const q = fallbackTeacherQuestion(title, combined.length + guard)
+    if (!combined.some((x) => x.question === q.question)) combined.push(q)
+    guard += 1
+  }
   return combined.slice(0, 50).map((q, i) => {
     const level = teacherDifficultyLevel(i)
     const topic = teacherTopicFromTag(q.tag)
-    return { ...q, tag: `${level} • ${topic}` }
+    return mixTeacherOptions({ ...q, tag: `${level} • ${topic}` }, i)
   })
 }
 
