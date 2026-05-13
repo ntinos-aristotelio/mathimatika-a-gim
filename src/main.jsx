@@ -9256,7 +9256,7 @@ function Lesson41() {
 
       <Quiz title="Κουίζ 4.1" subtitle="Βασικός έλεγχος εξισώσεων" questions={quiz41} />
 
-      <ExtraTeacherΚουίζ title="Επιπλέον Κουίζ Καθηγητή — 4.1" items={teacherΚουίζ41} addXp={addXp} />
+      <ExtraTeacherΚουίζ title="Επιπλέον Κουίζ Καθηγητή — 4.1" items={teacherΚουίζ41} />
 
       <section className="bossPanel">
         <div>
@@ -9291,7 +9291,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '1.1' ? <Lesson11 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
