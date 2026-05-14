@@ -13058,39 +13058,46 @@ function Lesson52() {
 
 
 
-function Lesson5Gen() {
-  const challenges = [
-    'Εκπτώσεις και αυξήσεις',
-    'Φ.Π.Α.',
-    'Τόκοι και καταθέσεις',
-    'Σύνθετα προβλήματα ποσοστών',
-  ]
 
+function Lesson5Gen() {
   return (
     <main className="appGrid">
       <section className="lessonHero">
         <div>
-          <div className="pill blue">Γενικές Ασκήσεις</div>
-          <h1>Γενικές Ασκήσεις — Κεφάλαιο 5</h1>
-          <p>Επαναληπτικές ασκήσεις ποσοστών, Φ.Π.Α., τόκων και εκπτώσεων.</p>
+          <div className="pill blue">Κεφάλαιο 5</div>
+          <h1>Γενικές Ασκήσεις Κεφαλαίου 5</h1>
+          <p>Σύνθετες ασκήσεις με ποσοστά, εκπτώσεις, Φ.Π.Α., τόκους και πραγματικά προβλήματα.</p>
         </div>
       </section>
 
       <section className="contentPanel">
         <div className="sectionHeader">
           <div>
-            <h2>Premium Επανάληψη</h2>
-            <p>Συνδυάζουμε όλα όσα μάθαμε στο Κεφάλαιο 5.</p>
+            <h2>Τι επαναλαμβάνουμε</h2>
+            <p>Όλο το Κεφάλαιο 5 σε μία premium επανάληψη.</p>
           </div>
         </div>
 
         <div className="theoryGrid">
-          {challenges.map((item) => (
-            <article key={item}>
-              <b>{item}</b>
-              <p>Εξάσκηση υψηλού επιπέδου.</p>
-            </article>
-          ))}
+          <article>
+            <b>Ποσοστά</b>
+            <p>Μετατροπές και υπολογισμοί.</p>
+          </article>
+
+          <article>
+            <b>Εκπτώσεις</b>
+            <p>Υπολογισμός τελικής τιμής και ποσοστών.</p>
+          </article>
+
+          <article>
+            <b>Φ.Π.Α.</b>
+            <p>Πραγματικά προβλήματα αγοράς προϊόντων.</p>
+          </article>
+
+          <article>
+            <b>Τόκοι</b>
+            <p>Καταθέσεις, επιτόκια και αυξήσεις κεφαλαίου.</p>
+          </article>
         </div>
       </section>
 
@@ -13098,12 +13105,13 @@ function Lesson5Gen() {
         <div>
           <div className="pill danger">Τελική Αποστολή</div>
           <h2>Master Ποσοστών 👑</h2>
-          <p>Το Κεφάλαιο 5 ολοκληρώθηκε.</p>
+          <p>Ολοκλήρωσες το Κεφάλαιο 5.</p>
         </div>
       </section>
     </main>
   )
 }
+
 
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
