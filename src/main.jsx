@@ -69,6 +69,7 @@ const curriculum = [
         lessons: [
           { id: '5.1', title: '5.1 Ποσοστά', ready: true },
           { id: '5.2', title: '5.2 Προβλήματα με Ποσοστά', ready: true },
+          { id: '5.gen', title: 'Γενικές Ασκήσεις Κεφαλαίου 5', ready: true },
         ],
       },
     ],
@@ -13056,6 +13057,54 @@ function Lesson52() {
 }
 
 
+
+function Lesson5Gen() {
+  const challenges = [
+    'Εκπτώσεις και αυξήσεις',
+    'Φ.Π.Α.',
+    'Τόκοι και καταθέσεις',
+    'Σύνθετα προβλήματα ποσοστών',
+  ]
+
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue">Γενικές Ασκήσεις</div>
+          <h1>Γενικές Ασκήσεις — Κεφάλαιο 5</h1>
+          <p>Επαναληπτικές ασκήσεις ποσοστών, Φ.Π.Α., τόκων και εκπτώσεων.</p>
+        </div>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <div>
+            <h2>Premium Επανάληψη</h2>
+            <p>Συνδυάζουμε όλα όσα μάθαμε στο Κεφάλαιο 5.</p>
+          </div>
+        </div>
+
+        <div className="theoryGrid">
+          {challenges.map((item) => (
+            <article key={item}>
+              <b>{item}</b>
+              <p>Εξάσκηση υψηλού επιπέδου.</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger">Τελική Αποστολή</div>
+          <h2>Master Ποσοστών 👑</h2>
+          <p>Το Κεφάλαιο 5 ολοκληρώθηκε.</p>
+        </div>
+      </section>
+    </main>
+  )
+}
+
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -13065,7 +13114,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : activeLesson === '5.2' ? <Lesson52 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : activeLesson === '5.2' ? <Lesson52 /> : activeLesson === '5.gen' ? <Lesson5Gen /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
