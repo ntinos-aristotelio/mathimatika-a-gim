@@ -82,6 +82,7 @@ const curriculum = [
           { id: '7.3', title: '7.3 Πρόσθεση Ρητών Αριθμών', ready: true },
           { id: '7.4', title: '7.4 Αφαίρεση Ρητών Αριθμών', ready: true },
           { id: '7.5', title: '7.5 Πολλαπλασιασμός Ρητών Αριθμών', ready: true },
+          { id: '7.6', title: '7.6 Διαίρεση Ρητών Αριθμών', ready: true },
         ],
       },
     ],
@@ -17811,6 +17812,56 @@ function Lesson75() {
 }
 
 
+
+
+function Lesson76() {
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue">Ενότητα 7.6</div>
+          <h1>Διαίρεση Ρητών Αριθμών</h1>
+          <p>Μαθαίνουμε διαίρεση ρητών αριθμών με ακέραιους, δεκαδικούς και κλάσματα, χρησιμοποιώντας σωστά τους κανόνες προσήμων.</p>
+        </div>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <div>
+            <h2>Βασικός Κανόνας</h2>
+            <p>Στη διαίρεση ισχύουν οι ίδιοι κανόνες προσήμων όπως και στον πολλαπλασιασμό.</p>
+          </div>
+        </div>
+
+        <div className="theoryGrid">
+          <article><b>+ : + = +</b></article>
+          <article><b>- : - = +</b></article>
+          <article><b>+ : - = -</b></article>
+          <article><b>- : + = -</b></article>
+        </div>
+      </section>
+
+      <section className="contentPanel">
+        <h2>Παραδείγματα</h2>
+        <div className="example"><b>(+24):(+3)=8</b></div>
+        <div className="example"><b>(-36):(-6)=6</b></div>
+        <div className="example"><b>(+48):(-6)=-8</b></div>
+        <div className="example"><b>(-100):(+10)=-10</b></div>
+        <div className="example"><b>(-12):(-3)=4</b></div>
+      </section>
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger">Τελική Πρόκληση</div>
+          <h2>Ο Άρχοντας της Διαίρεσης ➗</h2>
+          <p>Χρησιμοποίησε σωστά τους κανόνες προσήμων και γίνε Κυρίαρχος της Διαίρεσης.</p>
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -17820,7 +17871,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : activeLesson === '5.2' ? <Lesson52 /> : activeLesson === '5.gen' ? <Lesson5General /> : activeLesson === '7.1' ? <Lesson71 /> : activeLesson === '7.2' ? <Lesson72 /> : activeLesson === '7.3' ? <Lesson73 /> : activeLesson === '7.4' ? <Lesson74 /> : activeLesson === '7.5' ? <Lesson75 /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : activeLesson === '5.2' ? <Lesson52 /> : activeLesson === '5.gen' ? <Lesson5General /> : activeLesson === '7.1' ? <Lesson71 /> : activeLesson === '7.2' ? <Lesson72 /> : activeLesson === '7.3' ? <Lesson73 /> : activeLesson === '7.4' ? <Lesson74 /> : activeLesson === '7.5' ? <Lesson75 /> : activeLesson === '7.6' ? <Lesson76 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
