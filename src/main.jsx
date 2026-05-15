@@ -18164,6 +18164,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleAG",
     "tag": "🟠 Δύσκολη",
     "question": "Πλευρές προσκείμενες στη γωνία Α είναι:",
     "options": [
@@ -18200,6 +18201,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleAG",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Η πλευρά που δεν ακουμπά την κορυφή Α είναι:",
     "options": [
@@ -18236,6 +18238,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleAG",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Πλήρης αντιστοιχία σε τρίγωνο ΑΒΓ:",
     "options": [
@@ -18248,6 +18251,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Στην ονομασία χΟψ, κορυφή είναι:",
     "options": [
@@ -18272,6 +18276,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Για να ονομάσουμε γωνία με τρία γράμματα, στη μέση βάζουμε:",
     "options": [
@@ -18284,6 +18289,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "equalShapes",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Δύο ίσα τρίγωνα έχουν αντίστοιχες πλευρές:",
     "options": [
@@ -18647,162 +18653,96 @@ function prepareTeacherΚουίζ(title, items) {
 }
 
 
+
+
+
 function GeometryQuestionDiagram({ type }) {
   if (!type) return null
 
-  if (type === 'point') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 170" className="geoSvg">
-          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <circle cx="260" cy="82" r="12" fill="#f97316" />
-          <text x="276" y="88" fill="#111827" fontSize="28" fontWeight="800">Α</text>
-        </svg>
-      </div>
-    )
-  }
+  const box = (children) => (
+    <div className="quizDiagram">
+      <svg viewBox="0 0 560 230" className="geoSvg" role="img">
+        <rect x="14" y="16" width="532" height="180" rx="22" fill="rgba(59,130,246,0.07)" stroke="rgba(148,163,184,0.40)" />
+        {children}
+      </svg>
+    </div>
+  )
 
-  if (type === 'segment') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 170" className="geoSvg">
-          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <line x1="120" y1="86" x2="400" y2="86" stroke="#2563eb" strokeWidth="8" strokeLinecap="round" />
-          <circle cx="120" cy="86" r="10" fill="#f97316" />
-          <circle cx="400" cy="86" r="10" fill="#f97316" />
-          <text x="106" y="62" fill="#111827" fontSize="24" fontWeight="800">Α</text>
-          <text x="390" y="62" fill="#111827" fontSize="24" fontWeight="800">Β</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'point') return box(<>
+    <circle cx="280" cy="105" r="13" fill="#f97316" />
+    <text x="302" y="113" fill="#111827" fontSize="30" fontWeight="800">Α</text>
+  </>)
 
-  if (type === 'line') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 170" className="geoSvg">
-          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <line x1="75" y1="86" x2="445" y2="86" stroke="#0f172a" strokeWidth="6" strokeLinecap="round" />
-          <polygon points="75,86 95,75 95,97" fill="#0f172a" />
-          <polygon points="445,86 425,75 425,97" fill="#0f172a" />
-          <text x="460" y="92" fill="#111827" fontSize="24" fontWeight="800">ε</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'segment') return box(<>
+    <line x1="135" y1="108" x2="425" y2="108" stroke="#2563eb" strokeWidth="9" strokeLinecap="round" />
+    <circle cx="135" cy="108" r="12" fill="#f97316" />
+    <circle cx="425" cy="108" r="12" fill="#f97316" />
+    <text x="121" y="80" fill="#111827" fontSize="26" fontWeight="800">Α</text>
+    <text x="415" y="80" fill="#111827" fontSize="26" fontWeight="800">Β</text>
+    <text x="230" y="150" fill="#1e3a8a" fontSize="22" fontWeight="800">τμήμα ΑΒ</text>
+  </>)
 
-  if (type === 'ray') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 170" className="geoSvg">
-          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <line x1="140" y1="86" x2="420" y2="86" stroke="#16a34a" strokeWidth="8" strokeLinecap="round" />
-          <polygon points="420,86 398,74 398,98" fill="#16a34a" />
-          <circle cx="140" cy="86" r="11" fill="#f97316" />
-          <text x="126" y="62" fill="#111827" fontSize="24" fontWeight="800">Ο</text>
-          <text x="440" y="92" fill="#111827" fontSize="24" fontWeight="800">x</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'line') return box(<>
+    <line x1="85" y1="108" x2="475" y2="108" stroke="#111827" strokeWidth="7" strokeLinecap="round" />
+    <polygon points="85,108 108,95 108,121" fill="#111827" />
+    <polygon points="475,108 452,95 452,121" fill="#111827" />
+    <text x="492" y="116" fill="#111827" fontSize="26" fontWeight="800">ε</text>
+  </>)
 
-  if (type === 'oppositeRays') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 190" className="geoSvg">
-          <rect x="14" y="16" width="492" height="150" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <line x1="90" y1="95" x2="430" y2="95" stroke="#7c3aed" strokeWidth="8" strokeLinecap="round" />
-          <polygon points="90,95 112,83 112,107" fill="#7c3aed" />
-          <polygon points="430,95 408,83 408,107" fill="#7c3aed" />
-          <circle cx="260" cy="95" r="13" fill="#f97316" />
-          <text x="248" y="75" fill="#111827" fontSize="24" fontWeight="800">Ο</text>
-          <text x="65" y="102" fill="#111827" fontSize="24" fontWeight="800">x΄</text>
-          <text x="448" y="102" fill="#111827" fontSize="24" fontWeight="800">x</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'ray') return box(<>
+    <line x1="145" y1="108" x2="435" y2="108" stroke="#16a34a" strokeWidth="9" strokeLinecap="round" />
+    <polygon points="435,108 410,94 410,122" fill="#16a34a" />
+    <circle cx="145" cy="108" r="12" fill="#f97316" />
+    <text x="130" y="80" fill="#111827" fontSize="26" fontWeight="800">Ο</text>
+    <text x="454" y="116" fill="#111827" fontSize="26" fontWeight="800">x</text>
+  </>)
 
-  if (type === 'plane') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 190" className="geoSvg">
-          <rect x="55" y="35" width="410" height="120" rx="14" fill="rgba(14,165,233,0.10)" stroke="#38bdf8" strokeWidth="4" />
-          <line x1="260" y1="35" x2="260" y2="155" stroke="#f97316" strokeWidth="5" strokeDasharray="8 8" />
-          <text x="108" y="105" fill="#111827" fontSize="22" fontWeight="800">ημιεπίπεδο</text>
-          <text x="285" y="105" fill="#111827" fontSize="22" fontWeight="800">ημιεπίπεδο</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'oppositeRays') return box(<>
+    <line x1="90" y1="108" x2="470" y2="108" stroke="#7c3aed" strokeWidth="9" strokeLinecap="round" />
+    <polygon points="90,108 115,94 115,122" fill="#7c3aed" />
+    <polygon points="470,108 445,94 445,122" fill="#7c3aed" />
+    <circle cx="280" cy="108" r="13" fill="#f97316" />
+    <text x="268" y="82" fill="#111827" fontSize="26" fontWeight="800">Ο</text>
+    <text x="55" y="116" fill="#111827" fontSize="24" fontWeight="800">x΄</text>
+    <text x="492" y="116" fill="#111827" fontSize="24" fontWeight="800">x</text>
+  </>)
 
-  if (type === 'angle') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 520 220" className="geoSvg">
-          <rect x="14" y="16" width="492" height="170" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <path d="M250 135 L150 55" stroke="#0f172a" strokeWidth="7" strokeLinecap="round" />
-          <path d="M250 135 L385 65" stroke="#0f172a" strokeWidth="7" strokeLinecap="round" />
-          <path d="M215 105 Q250 80 292 108" fill="none" stroke="#f97316" strokeWidth="5" />
-          <circle cx="250" cy="135" r="13" fill="#2563eb" />
-          <text x="132" y="48" fill="#111827" fontSize="24" fontWeight="800">Α</text>
-          <text x="238" y="166" fill="#111827" fontSize="24" fontWeight="800">Ο</text>
-          <text x="402" y="64" fill="#111827" fontSize="24" fontWeight="800">Β</text>
-          <text x="215" y="45" fill="#111827" fontSize="28" fontWeight="800">∠ΑΟΒ</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'plane') return box(<>
+    <rect x="85" y="55" width="390" height="110" rx="14" fill="rgba(14,165,233,0.13)" stroke="#38bdf8" strokeWidth="4" />
+    <line x1="280" y1="55" x2="280" y2="165" stroke="#f97316" strokeWidth="5" strokeDasharray="8 8" />
+    <text x="120" y="116" fill="#111827" fontSize="21" fontWeight="800">ημιεπίπεδο</text>
+    <text x="305" y="116" fill="#111827" fontSize="21" fontWeight="800">ημιεπίπεδο</text>
+  </>)
 
-  if (type === 'triangleOppositeAG') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 540 250" className="geoSvg">
-          <rect x="14" y="16" width="512" height="200" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <polygon points="270,48 110,190 430,190" fill="rgba(56,189,248,0.08)" stroke="#94a3b8" strokeWidth="4" />
-          <line x1="110" y1="190" x2="430" y2="190" stroke="#facc15" strokeWidth="10" strokeLinecap="round" />
-          <circle cx="270" cy="48" r="13" fill="#f97316" />
-          <circle cx="110" cy="190" r="10" fill="#2563eb" />
-          <circle cx="430" cy="190" r="10" fill="#2563eb" />
-          <text x="258" y="34" fill="#111827" fontSize="24" fontWeight="800">Β</text>
-          <text x="84" y="218" fill="#111827" fontSize="24" fontWeight="800">Α</text>
-          <text x="444" y="218" fill="#111827" fontSize="24" fontWeight="800">Γ</text>
-          <text x="235" y="178" fill="#92400e" fontSize="22" fontWeight="800">ΑΓ</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'angle') return box(<>
+    <path d="M280 145 L165 62" stroke="#111827" strokeWidth="8" strokeLinecap="round" />
+    <path d="M280 145 L430 72" stroke="#111827" strokeWidth="8" strokeLinecap="round" />
+    <path d="M242 115 Q282 85 330 118" fill="none" stroke="#f97316" strokeWidth="6" />
+    <circle cx="280" cy="145" r="14" fill="#2563eb" />
+    <text x="148" y="55" fill="#111827" fontSize="26" fontWeight="800">Α</text>
+    <text x="268" y="178" fill="#111827" fontSize="26" fontWeight="800">Ο</text>
+    <text x="447" y="73" fill="#111827" fontSize="26" fontWeight="800">Β</text>
+    <text x="242" y="45" fill="#111827" fontSize="30" fontWeight="800">∠ΑΟΒ</text>
+  </>)
 
-  if (type === 'triangleOppositeB') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 540 250" className="geoSvg">
-          <rect x="14" y="16" width="512" height="200" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <polygon points="270,48 110,190 430,190" fill="rgba(56,189,248,0.08)" stroke="#94a3b8" strokeWidth="4" />
-          <line x1="110" y1="190" x2="430" y2="190" stroke="#facc15" strokeWidth="10" strokeLinecap="round" />
-          <circle cx="270" cy="48" r="16" fill="#f97316" />
-          <path d="M245 72 Q270 92 298 72" fill="none" stroke="#f97316" strokeWidth="5" />
-          <text x="258" y="34" fill="#111827" fontSize="24" fontWeight="800">Β</text>
-          <text x="84" y="218" fill="#111827" fontSize="24" fontWeight="800">Α</text>
-          <text x="444" y="218" fill="#111827" fontSize="24" fontWeight="800">Γ</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'triangleAG') return box(<>
+    <polygon points="280,45 105,170 455,170" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
+    <line x1="105" y1="170" x2="455" y2="170" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <circle cx="280" cy="45" r="14" fill="#f97316" />
+    <circle cx="105" cy="170" r="11" fill="#2563eb" />
+    <circle cx="455" cy="170" r="11" fill="#2563eb" />
+    <text x="268" y="31" fill="#111827" fontSize="25" fontWeight="800">Β</text>
+    <text x="78" y="198" fill="#111827" fontSize="25" fontWeight="800">Α</text>
+    <text x="471" y="198" fill="#111827" fontSize="25" fontWeight="800">Γ</text>
+    <text x="245" y="158" fill="#92400e" fontSize="23" fontWeight="800">ΑΓ</text>
+  </>)
 
-  if (type === 'equalShapes') {
-    return (
-      <div className="quizDiagram">
-        <svg viewBox="0 0 560 230" className="geoSvg">
-          <rect x="14" y="16" width="532" height="170" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
-          <polygon points="120,155 205,155 160,70" fill="rgba(37,99,235,0.18)" stroke="#2563eb" strokeWidth="5" />
-          <polygon points="345,155 430,155 385,70" fill="rgba(34,197,94,0.18)" stroke="#16a34a" strokeWidth="5" />
-          <text x="108" y="205" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 1</text>
-          <text x="333" y="205" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 2</text>
-        </svg>
-      </div>
-    )
-  }
+  if (type === 'equalShapes') return box(<>
+    <polygon points="135,165 225,165 178,68" fill="rgba(37,99,235,0.18)" stroke="#2563eb" strokeWidth="5" />
+    <polygon points="340,165 430,165 383,68" fill="rgba(34,197,94,0.18)" stroke="#16a34a" strokeWidth="5" />
+    <text x="112" y="202" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 1</text>
+    <text x="318" y="202" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 2</text>
+  </>)
 
   return null
 }
@@ -18873,6 +18813,7 @@ function ExtraTeacherΚουίζ({ addXp, title, items }) {
             <b>Ερώτηση {index + 1} από {quizItems.length}</b>
           </div>
           <h3>{item.question}</h3>
+          <GeometryQuestionDiagram type={item.diagram} />
 
           <div className="compactOptions">
             {item.options.map((option) => (
