@@ -7,4 +7,5 @@
 - Mega Quiz
 - Extra Quiz Καθηγητή με 55+ ερωτήσεις
 - Final Boss
-- prebuilt dist για GitHub Pagesαααα
+- prebuilt dist για GitHub Page sαααα
+
