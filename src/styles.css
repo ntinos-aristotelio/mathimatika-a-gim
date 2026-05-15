@@ -554,3 +554,15 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 
   .compactQuizCard h3 { font-size: 18px; }
 }
+
+.geoSvg {
+  width: 100%;
+  min-height: 240px;
+  display: block;
+  margin: 14px 0;
+}
+.geoSvg text {
+  font-family: inherit;
+  font-weight: 800;
+  pointer-events: none;
+}

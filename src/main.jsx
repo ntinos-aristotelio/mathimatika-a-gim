@@ -21558,6 +21558,163 @@ function Lesson7General() {
 
 
 
+
+
+
+
+
+
+function SegmentRayDemo() {
+  const [focus, setFocus] = useState('segment')
+
+  const info = {
+    point: 'Σημείο: δείχνει μία ακριβή θέση. Δεν έχει μήκος.',
+    segment: 'Ευθύγραμμο τμήμα ΑΒ: έχει δύο άκρα, το Α και το Β.',
+    line: 'Ευθεία ε: δεν έχει αρχή ούτε τέλος.',
+    ray: 'Ημιευθεία Οx: έχει αρχή το Ο και συνεχίζει προς μία κατεύθυνση.',
+    opposite: 'Αντικείμενες ημιευθείες: έχουν κοινή αρχή και σχηματίζουν ευθεία.',
+    plane: 'Επίπεδο και ημιεπίπεδα: μια ευθεία χωρίζει το επίπεδο σε δύο περιοχές.'
+  }
+
+  return (
+    <div className="practiceBox">
+      <h3>Διαδραστικό σχήμα 1.1</h3>
+      <p>{info[focus]}</p>
+      <svg viewBox="0 0 640 300" className="geoSvg" role="img" aria-label="Σημείο, τμήμα, ευθεία και ημιευθεία">
+        <rect x="18" y="20" width="604" height="250" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
+        <line x1="70" y1="92" x2="570" y2="92" stroke={focus === 'line' ? '#facc15' : '#9ca3af'} strokeWidth="5" strokeLinecap="round" />
+        <polygon points="70,92 88,82 88,102" fill={focus === 'line' ? '#facc15' : '#9ca3af'} />
+        <polygon points="570,92 552,82 552,102" fill={focus === 'line' ? '#facc15' : '#9ca3af'} />
+        <text x="590" y="98" fill="#e5e7eb" fontSize="22">ε</text>
+
+        <line x1="165" y1="155" x2="360" y2="155" stroke={focus === 'segment' ? '#38bdf8' : '#cbd5e1'} strokeWidth="7" strokeLinecap="round" />
+        <circle onClick={() => setFocus('point')} cx="165" cy="155" r="10" fill={focus === 'point' ? '#f97316' : '#38bdf8'} />
+        <circle cx="360" cy="155" r="10" fill="#38bdf8" />
+        <text x="154" y="136" fill="#fff" fontSize="22">Α</text>
+        <text x="350" y="136" fill="#fff" fontSize="22">Β</text>
+        <text x="220" y="183" fill="#e0f2fe" fontSize="18">τμήμα ΑΒ</text>
+
+        <line x1="165" y1="222" x2="500" y2="222" stroke={focus === 'ray' ? '#22c55e' : '#cbd5e1'} strokeWidth="7" strokeLinecap="round" />
+        <polygon points="500,222 478,210 478,234" fill={focus === 'ray' ? '#22c55e' : '#cbd5e1'} />
+        <circle cx="165" cy="222" r="10" fill="#22c55e" />
+        <text x="154" y="205" fill="#fff" fontSize="22">Ο</text>
+        <text x="515" y="228" fill="#fff" fontSize="22">x</text>
+
+        <line x1="300" y1="50" x2="300" y2="270" stroke={focus === 'plane' ? '#a78bfa' : 'rgba(255,255,255,0.20)'} strokeWidth="3" strokeDasharray="8 8" />
+        <rect x="28" y="30" width="270" height="230" rx="18" fill={focus === 'plane' ? 'rgba(167,139,250,0.13)' : 'transparent'} />
+        <rect x="302" y="30" width="310" height="230" rx="18" fill={focus === 'plane' ? 'rgba(56,189,248,0.10)' : 'transparent'} />
+      </svg>
+      <div className="bossBtns">
+        <button onClick={() => setFocus('point')}>Σημείο</button>
+        <button onClick={() => setFocus('segment')}>Τμήμα</button>
+        <button onClick={() => setFocus('line')}>Ευθεία</button>
+        <button onClick={() => setFocus('ray')}>Ημιευθεία</button>
+        <button onClick={() => setFocus('plane')}>Ημιεπίπεδα</button>
+      </div>
+    </div>
+  )
+}
+
+function AngleNameDemo() {
+  const [focus, setFocus] = useState('vertex')
+  const info = {
+    vertex: 'Κορυφή: στην γωνία ΑΟΒ η κορυφή είναι το Ο.',
+    sides: 'Πλευρές γωνίας: οι ημιευθείες ΟΑ και ΟΒ.',
+    name: 'Ονομασία: γράφουμε τρία γράμματα και στη μέση βάζουμε την κορυφή.',
+    line: 'Γραμμή: μπορεί να είναι ευθεία, καμπύλη, ανοιχτή, κλειστή ή τεθλασμένη.'
+  }
+
+  return (
+    <div className="practiceBox">
+      <h3>Διαδραστική γωνία</h3>
+      <p>{info[focus]}</p>
+      <svg viewBox="0 0 640 300" className="geoSvg" role="img" aria-label="Γωνία ΑΟΒ">
+        <rect x="18" y="20" width="604" height="250" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
+        <path d="M320 190 L190 85" stroke={focus === 'sides' ? '#facc15' : '#e5e7eb'} strokeWidth="8" strokeLinecap="round" />
+        <path d="M320 190 L505 105" stroke={focus === 'sides' ? '#facc15' : '#e5e7eb'} strokeWidth="8" strokeLinecap="round" />
+        <path d="M280 158 Q322 130 372 166" fill="none" stroke="#38bdf8" strokeWidth="5" />
+        <circle cx="320" cy="190" r="14" fill={focus === 'vertex' ? '#f97316' : '#38bdf8'} />
+        <circle cx="190" cy="85" r="9" fill="#e5e7eb" />
+        <circle cx="505" cy="105" r="9" fill="#e5e7eb" />
+        <text x="170" y="72" fill="#fff" fontSize="26">Α</text>
+        <text x="307" y="222" fill="#fff" fontSize="26">Ο</text>
+        <text x="520" y="103" fill="#fff" fontSize="26">Β</text>
+        <text x="278" y="82" fill={focus === 'name' ? '#facc15' : '#cbd5e1'} fontSize="34">∠ΑΟΒ</text>
+
+        <path d="M80 235 C135 175 190 255 245 205 S355 215 400 170" fill="none" stroke={focus === 'line' ? '#22c55e' : 'rgba(255,255,255,0.35)'} strokeWidth="5" strokeLinecap="round" />
+        <polyline points="445,240 480,195 520,230 560,180" fill="none" stroke={focus === 'line' ? '#22c55e' : 'rgba(255,255,255,0.35)'} strokeWidth="5" strokeLinecap="round" />
+      </svg>
+      <div className="bossBtns">
+        <button onClick={() => setFocus('vertex')}>Κορυφή</button>
+        <button onClick={() => setFocus('sides')}>Πλευρές</button>
+        <button onClick={() => setFocus('name')}>Όνομα</button>
+        <button onClick={() => setFocus('line')}>Γραμμές</button>
+      </div>
+    </div>
+  )
+}
+
+function TriangleOppositeDemo() {
+  const [focus, setFocus] = useState('A')
+  const data = {
+    A: { text: 'Η γωνία Α είναι απέναντι από την πλευρά ΒΓ.', side: 'ΒΓ' },
+    B: { text: 'Η γωνία Β είναι απέναντι από την πλευρά ΑΓ.', side: 'ΑΓ' },
+    G: { text: 'Η γωνία Γ είναι απέναντι από την πλευρά ΑΒ.', side: 'ΑΒ' },
+  }
+  const active = data[focus]
+
+  return (
+    <div className="practiceBox">
+      <h3>Απέναντι πλευρές σε τρίγωνο</h3>
+      <p>{active.text}</p>
+      <svg viewBox="0 0 640 320" className="geoSvg" role="img" aria-label="Τρίγωνο ΑΒΓ">
+        <rect x="18" y="20" width="604" height="260" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
+        <polygon points="320,55 135,245 525,245" fill="rgba(56,189,248,0.07)" stroke="#94a3b8" strokeWidth="4" />
+        <line x1="135" y1="245" x2="525" y2="245" stroke={focus === 'A' ? '#facc15' : '#94a3b8'} strokeWidth="8" strokeLinecap="round" />
+        <line x1="320" y1="55" x2="525" y2="245" stroke={focus === 'B' ? '#facc15' : '#94a3b8'} strokeWidth="8" strokeLinecap="round" />
+        <line x1="320" y1="55" x2="135" y2="245" stroke={focus === 'G' ? '#facc15' : '#94a3b8'} strokeWidth="8" strokeLinecap="round" />
+        <circle cx="320" cy="55" r="14" fill={focus === 'A' ? '#f97316' : '#38bdf8'} />
+        <circle cx="135" cy="245" r="14" fill={focus === 'B' ? '#f97316' : '#38bdf8'} />
+        <circle cx="525" cy="245" r="14" fill={focus === 'G' ? '#f97316' : '#38bdf8'} />
+        <text x="310" y="38" fill="#fff" fontSize="28">Α</text>
+        <text x="105" y="272" fill="#fff" fontSize="28">Β</text>
+        <text x="540" y="272" fill="#fff" fontSize="28">Γ</text>
+        <text x="278" y="292" fill="#facc15" fontSize="24">απέναντι πλευρά: {active.side}</text>
+      </svg>
+      <div className="bossBtns">
+        <button onClick={() => setFocus('A')}>Γωνία Α</button>
+        <button onClick={() => setFocus('B')}>Γωνία Β</button>
+        <button onClick={() => setFocus('G')}>Γωνία Γ</button>
+      </div>
+    </div>
+  )
+}
+
+function EqualShapesDemo() {
+  const [moved, setMoved] = useState(false)
+
+  return (
+    <div className="practiceBox">
+      <h3>Ίσα σχήματα</h3>
+      <p>{moved ? 'Τα δύο τρίγωνα συμπίπτουν: έχουν ίδιο σχήμα και ίδιο μέγεθος.' : 'Πάτησε το κουμπί για να μετακινηθεί το δεύτερο τρίγωνο πάνω στο πρώτο.'}</p>
+      <svg viewBox="0 0 640 260" className="geoSvg" role="img" aria-label="Ίσα τρίγωνα">
+        <rect x="18" y="20" width="604" height="210" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
+        <polygon points="135,180 235,180 180,80" fill="rgba(56,189,248,0.20)" stroke="#38bdf8" strokeWidth="5" />
+        <g transform={moved ? 'translate(-280,0)' : 'translate(0,0)'} style={{ transition: 'transform 600ms ease' }}>
+          <polygon points="415,180 515,180 460,80" fill="rgba(34,197,94,0.22)" stroke="#22c55e" strokeWidth="5" />
+        </g>
+        <text x="120" y="210" fill="#e0f2fe" fontSize="20">Σχήμα 1</text>
+        <text x={moved ? "145" : "400"} y="210" fill="#dcfce7" fontSize="20">Σχήμα 2</text>
+      </svg>
+      <div className="bossBtns">
+        <button onClick={() => setMoved(!moved)}>{moved ? 'Χώρισέ τα' : 'Σύμπτωση σχημάτων'}</button>
+      </div>
+    </div>
+  )
+}
+
+
+
 function LessonGeometry11() {
   const [xp, setXp] = useState(11000)
   const [boss, setBoss] = useState({ round: 0, score: 0, done: false })
@@ -21589,7 +21746,7 @@ function LessonGeometry11() {
         <div>
           <div className="pill blue"><Brain size={16}/> Γεωμετρία 1.1</div>
           <h1>Σημείο - Ευθύγραμμο Τμήμα - Ευθεία - Ημιευθεία - Επίπεδο</h1>
-          <p>Ξεκινάμε τη Γεωμετρία μαθαίνοντας τα βασικά δομικά στοιχεία των σχημάτων.</p>
+          <p>Ξεκινάμε τη Γεωμετρία με καθαρά σχήματα: σημεία, τμήματα, ευθείες, ημιευθείες και ημιεπίπεδα.</p>
         </div>
         <ProfileCard xp={xp} />
       </section>
@@ -21598,36 +21755,26 @@ function LessonGeometry11() {
         <div className="sectionHeader">
           <ShieldCheck/>
           <div>
-            <h2>Βασικές Έννοιες</h2>
+            <h2>Βασικές Έννοιες με εικόνα</h2>
             <p>Παρατηρούμε αν ένα γεωμετρικό αντικείμενο έχει άκρα, αρχή ή εκτείνεται απεριόριστα.</p>
           </div>
         </div>
-
         <div className="theoryGrid">
-          <article><b>Σημείο</b><p>Δείχνει μια ακριβή θέση και συμβολίζεται με κεφαλαίο γράμμα, όπως Α.</p></article>
+          <article><b>Σημείο</b><p>Δείχνει μια ακριβή θέση και συμβολίζεται με κεφαλαίο γράμμα.</p></article>
           <article><b>Ευθύγραμμο τμήμα</b><p>Έχει δύο άκρα, για παράδειγμα το τμήμα ΑΒ.</p></article>
           <article><b>Ευθεία</b><p>Δεν έχει αρχή ούτε τέλος και εκτείνεται απεριόριστα.</p></article>
-          <article><b>Ημιευθεία</b><p>Έχει αρχή και συνεχίζει απεριόριστα προς μία κατεύθυνση.</p></article>
+          <article><b>Ημιευθεία</b><p>Έχει αρχή και συνεχίζει προς μία κατεύθυνση.</p></article>
         </div>
       </section>
 
       <section className="contentPanel twoCol">
         <div>
-          <div className="sectionHeader small"><Wand2/><h2>Οπτικά Παραδείγματα</h2></div>
-          <div className="example"><b>Σημείο Α</b><p>Μια ακριβής θέση στο επίπεδο.</p></div>
+          <div className="sectionHeader small"><Wand2/><h2>Μάθηση με σχήμα</h2></div>
           <div className="example"><b>Τμήμα ΑΒ</b><p>Το μέρος της ευθείας από το Α μέχρι το Β.</p></div>
           <div className="example"><b>Ημιευθεία Οx</b><p>Ξεκινά από το Ο και συνεχίζει προς το x.</p></div>
+          <div className="example"><b>Ευθεία ε</b><p>Συνεχίζει απεριόριστα και προς τις δύο κατευθύνσεις.</p></div>
         </div>
-
-        <div className="practiceBox">
-          <h3>Γρήγορη Διάκριση</h3>
-          <p>Ποιο έχει δύο άκρα, ποιο μία αρχή και ποιο κανένα άκρο;</p>
-          <div className="numberChips">
-            <span>Τμήμα: δύο άκρα</span>
-            <span>Ημιευθεία: μία αρχή</span>
-            <span>Ευθεία: κανένα άκρο</span>
-          </div>
-        </div>
+        <SegmentRayDemo />
       </section>
 
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.1" subtitle="Βασικές γεωμετρικές έννοιες." items={quizGeo11} addXp={addXp} />
@@ -21690,7 +21837,7 @@ function LessonGeometry12() {
         <div>
           <div className="pill blue"><Brain size={16}/> Γεωμετρία 1.2</div>
           <h1>Γωνία / Γραμμή / Επίπεδα / Ευθύγραμμα και Ίσα Σχήματα</h1>
-          <p>Μαθαίνουμε να ονομάζουμε γωνίες, να αναγνωρίζουμε πλευρές και κορυφές και να ξεχωρίζουμε ίσα σχήματα.</p>
+          <p>Μαθαίνουμε με σχήματα να ονομάζουμε γωνίες, να εντοπίζουμε απέναντι πλευρές και να ξεχωρίζουμε ίσα σχήματα.</p>
         </div>
         <ProfileCard xp={xp} />
       </section>
@@ -21699,34 +21846,31 @@ function LessonGeometry12() {
         <div className="sectionHeader">
           <ShieldCheck/>
           <div>
-            <h2>Βασικές Ιδέες</h2>
-            <p>Η γωνία, η γραμμή και το σχήμα είναι από τα πιο σημαντικά εργαλεία της Γεωμετρίας.</p>
+            <h2>Γωνίες και σχήματα</h2>
+            <p>Στη Γεωμετρία βλέπουμε πρώτα το σχήμα και μετά δίνουμε το σωστό όνομα.</p>
           </div>
         </div>
         <div className="theoryGrid">
           <article><b>Γωνία</b><p>Σχηματίζεται από δύο ημιευθείες με κοινή αρχή. Η κοινή αρχή λέγεται κορυφή.</p></article>
           <article><b>Ονομασία γωνίας</b><p>Στην ονομασία ΑΟΒ, το μεσαίο γράμμα Ο είναι η κορυφή.</p></article>
-          <article><b>Γραμμή</b><p>Μπορεί να είναι ευθεία, καμπύλη, ανοιχτή, κλειστή ή τεθλασμένη.</p></article>
-          <article><b>Ίσα σχήματα</b><p>Δύο σχήματα είναι ίσα όταν συμπίπτουν αν τοποθετηθούν το ένα πάνω στο άλλο.</p></article>
+          <article><b>Απέναντι πλευρά</b><p>Σε τρίγωνο, είναι η πλευρά που δεν ακουμπά την κορυφή της γωνίας.</p></article>
+          <article><b>Ίσα σχήματα</b><p>Συμπίπτουν ακριβώς όταν το ένα τοποθετηθεί πάνω στο άλλο.</p></article>
         </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <AngleNameDemo />
+        <TriangleOppositeDemo />
       </section>
 
       <section className="contentPanel twoCol">
         <div>
           <div className="sectionHeader small"><Wand2/><h2>Παραδείγματα από τις σημειώσεις</h2></div>
           <div className="example"><b>Γωνία ΑΟΒ</b><p>Κορυφή είναι το Ο και πλευρές είναι οι ΟΑ και ΟΒ.</p></div>
-          <div className="example"><b>Τρίγωνο ΑΒΓ</b><p>Η πλευρά απέναντι από τη γωνία Β είναι η ΑΓ.</p></div>
-          <div className="example"><b>Ίσα σχήματα</b><p>Έχουν ίδιο σχήμα και ίδιο μέγεθος.</p></div>
+          <div className="example"><b>Τρίγωνο ΑΒΓ</b><p>Η γωνία Β είναι απέναντι από την πλευρά ΑΓ.</p></div>
+          <div className="example"><b>Πλευρά ΑΒ</b><p>Προσκείμενες γωνίες στην ΑΒ είναι οι γωνίες Α και Β.</p></div>
         </div>
-        <div className="practiceBox">
-          <h3>Γρήγορη Μέθοδος</h3>
-          <p>Για να βρεις την απέναντι πλευρά μιας γωνίας σε τρίγωνο, διάλεξε την πλευρά που δεν ακουμπά την κορυφή της.</p>
-          <div className="numberChips">
-            <span>Α απέναντι ΒΓ</span>
-            <span>Β απέναντι ΑΓ</span>
-            <span>Γ απέναντι ΑΒ</span>
-          </div>
-        </div>
+        <EqualShapesDemo />
       </section>
 
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.2" subtitle="Γωνίες, γραμμές και ίσα σχήματα." items={quizGeo12} addXp={addXp} />
