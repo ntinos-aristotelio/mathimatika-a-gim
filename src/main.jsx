@@ -17091,6 +17091,7 @@ const quizGeo11 = [
 
 const teacherΚουίζGeo11 = [
   {
+    "diagram": "point",
     "tag": "🟢 Εύκολη",
     "question": "Ένα σημείο συμβολίζεται συνήθως με:",
     "options": [
@@ -17103,6 +17104,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "point",
     "tag": "🟢 Εύκολη",
     "question": "Το σημείο δείχνει:",
     "options": [
@@ -17115,6 +17117,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "segment",
     "tag": "🟢 Εύκολη",
     "question": "Το ευθύγραμμο τμήμα έχει:",
     "options": [
@@ -17127,6 +17130,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "line",
     "tag": "🟢 Εύκολη",
     "question": "Η ευθεία έχει:",
     "options": [
@@ -17139,6 +17143,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "ray",
     "tag": "🟢 Εύκολη",
     "question": "Η ημιευθεία έχει:",
     "options": [
@@ -17151,6 +17156,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "segment",
     "tag": "🟢 Εύκολη",
     "question": "Το ΑΒ ως ευθύγραμμο τμήμα έχει άκρα:",
     "options": [
@@ -17163,6 +17169,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "line",
     "tag": "🟢 Εύκολη",
     "question": "Μια ευθεία συμβολίζεται συχνά με:",
     "options": [
@@ -17175,6 +17182,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "plane",
     "tag": "🟢 Εύκολη",
     "question": "Το επίπεδο είναι:",
     "options": [
@@ -17187,6 +17195,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "ray",
     "tag": "🟢 Εύκολη",
     "question": "Η ημιευθεία Οx ξεκινά από:",
     "options": [
@@ -17199,6 +17208,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "segment",
     "tag": "🟢 Εύκολη",
     "question": "Το τμήμα ΑΒ είναι ίδιο με:",
     "options": [
@@ -17211,6 +17221,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "segment",
     "tag": "🟡 Μέτρια",
     "question": "Δύο σημεία ορίζουν:",
     "options": [
@@ -17223,6 +17234,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "oppositeRays",
     "tag": "🟡 Μέτρια",
     "question": "Δύο αντικείμενες ημιευθείες έχουν:",
     "options": [
@@ -17235,6 +17247,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "oppositeRays",
     "tag": "🟡 Μέτρια",
     "question": "Αν οι ημιευθείες Οx και Οy είναι αντικείμενες, τότε σχηματίζουν:",
     "options": [
@@ -17247,6 +17260,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "segment",
     "tag": "🟡 Μέτρια",
     "question": "Το ευθύγραμμο τμήμα έχει μήκος:",
     "options": [
@@ -17259,6 +17273,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "line",
     "tag": "🟡 Μέτρια",
     "question": "Η ευθεία εκτείνεται:",
     "options": [
@@ -17271,6 +17286,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "ray",
     "tag": "🟡 Μέτρια",
     "question": "Η ημιευθεία εκτείνεται:",
     "options": [
@@ -17283,6 +17299,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "plane",
     "tag": "🟡 Μέτρια",
     "question": "Το ημιεπίπεδο προκύπτει όταν ένα επίπεδο χωριστεί από:",
     "options": [
@@ -17295,6 +17312,7 @@ const teacherΚουίζGeo11 = [
     "explanation": "Σκέψου αν το σχήμα έχει άκρα, αρχή, κατεύθυνση ή αν εκτείνεται απεριόριστα."
   },
   {
+    "diagram": "plane",
     "tag": "🟡 Μέτρια",
     "question": "Μια ευθεία χωρίζει το επίπεδο σε:",
     "options": [
@@ -17786,6 +17804,7 @@ const quizGeo12 = [
 
 const teacherΚουίζGeo12 = [
   {
+    "diagram": "angle",
     "tag": "🟢 Εύκολη",
     "question": "Η γωνία σχηματίζεται από:",
     "options": [
@@ -17798,6 +17817,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🟢 Εύκολη",
     "question": "Η κοινή αρχή των πλευρών γωνίας λέγεται:",
     "options": [
@@ -17810,6 +17830,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🟢 Εύκολη",
     "question": "Στη γωνία ΑΟΒ, κορυφή είναι:",
     "options": [
@@ -17822,6 +17843,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🟢 Εύκολη",
     "question": "Στη γωνία ΑΟΒ, πλευρές είναι:",
     "options": [
@@ -17834,6 +17856,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ υπάρχουν:",
     "options": [
@@ -17846,6 +17869,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeB",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ, απέναντι από τη γωνία Α είναι η πλευρά:",
     "options": [
@@ -17858,6 +17882,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ, απέναντι από τη γωνία Β είναι η πλευρά:",
     "options": [
@@ -17870,6 +17895,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeB",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ, απέναντι από τη γωνία Γ είναι η πλευρά:",
     "options": [
@@ -17882,6 +17908,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟢 Εύκολη",
     "question": "Η γωνία απέναντι από την πλευρά ΑΓ είναι:",
     "options": [
@@ -17894,6 +17921,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟢 Εύκολη",
     "question": "Η γωνία απέναντι από την πλευρά ΒΓ είναι:",
     "options": [
@@ -17906,6 +17934,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία απέναντι από την πλευρά ΑΒ είναι:",
     "options": [
@@ -17918,6 +17947,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Οι γωνίες προσκείμενες στην πλευρά ΑΒ είναι:",
     "options": [
@@ -17930,6 +17960,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Οι γωνίες προσκείμενες στην πλευρά ΑΓ είναι:",
     "options": [
@@ -17942,6 +17973,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Οι γωνίες προσκείμενες στην πλευρά ΒΓ είναι:",
     "options": [
@@ -17954,6 +17986,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία που περιέχεται στις πλευρές ΑΒ και ΑΓ είναι:",
     "options": [
@@ -17966,6 +17999,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία που περιέχεται στις πλευρές ΑΒ και ΒΓ είναι:",
     "options": [
@@ -17978,6 +18012,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία που περιέχεται στις πλευρές ΑΓ και ΓΒ είναι:",
     "options": [
@@ -17990,6 +18025,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleOppositeAG",
     "tag": "🟡 Μέτρια",
     "question": "Αν η μεγαλύτερη πλευρά είναι ΒΓ, η απέναντι γωνία είναι:",
     "options": [
@@ -18002,6 +18038,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "equalShapes",
     "tag": "🟡 Μέτρια",
     "question": "Αν η μικρότερη πλευρά είναι ΑΓ, η απέναντι γωνία είναι:",
     "options": [
@@ -18014,6 +18051,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "equalShapes",
     "tag": "🟡 Μέτρια",
     "question": "Δύο ίσα σχήματα:",
     "options": [
@@ -18026,6 +18064,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "equalShapes",
     "tag": "🟠 Δύσκολη",
     "question": "Ίσα σχήματα έχουν:",
     "options": [
@@ -18038,6 +18077,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🟠 Δύσκολη",
     "question": "Η γραμμή μπορεί να είναι:",
     "options": [
@@ -18050,6 +18090,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🟠 Δύσκολη",
     "question": "Η τεθλασμένη γραμμή αποτελείται από:",
     "options": [
@@ -18062,6 +18103,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angle",
     "tag": "🟠 Δύσκολη",
     "question": "Μια κλειστή γραμμή:",
     "options": [
@@ -18438,6 +18480,7 @@ function StandardΚουίζ({ title, subtitle, items, addXp }) {
     <section className="contentPanel quizPanel">
       <div className="sectionHeader"><Gamepad2/><div><h2>{title}</h2><p>{subtitle}</p></div></div>
       <div className="question">{current.question}</div>
+        <GeometryQuestionDiagram type={current.diagram} />
       <div className="optionsGrid">
         {current.options.map((option) => (
           <button key={option} className={`option ${picked === option ? (correct ? 'good' : 'bad') : ''}`} onClick={() => choose(option)}>
@@ -18602,6 +18645,168 @@ function prepareTeacherΚουίζ(title, items) {
     return mixTeacherOptions({ ...q, tag: `${level} • ${topic}` }, i)
   })
 }
+
+
+function GeometryQuestionDiagram({ type }) {
+  if (!type) return null
+
+  if (type === 'point') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 170" className="geoSvg">
+          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <circle cx="260" cy="82" r="12" fill="#f97316" />
+          <text x="276" y="88" fill="#111827" fontSize="28" fontWeight="800">Α</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'segment') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 170" className="geoSvg">
+          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <line x1="120" y1="86" x2="400" y2="86" stroke="#2563eb" strokeWidth="8" strokeLinecap="round" />
+          <circle cx="120" cy="86" r="10" fill="#f97316" />
+          <circle cx="400" cy="86" r="10" fill="#f97316" />
+          <text x="106" y="62" fill="#111827" fontSize="24" fontWeight="800">Α</text>
+          <text x="390" y="62" fill="#111827" fontSize="24" fontWeight="800">Β</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'line') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 170" className="geoSvg">
+          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <line x1="75" y1="86" x2="445" y2="86" stroke="#0f172a" strokeWidth="6" strokeLinecap="round" />
+          <polygon points="75,86 95,75 95,97" fill="#0f172a" />
+          <polygon points="445,86 425,75 425,97" fill="#0f172a" />
+          <text x="460" y="92" fill="#111827" fontSize="24" fontWeight="800">ε</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'ray') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 170" className="geoSvg">
+          <rect x="14" y="16" width="492" height="130" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <line x1="140" y1="86" x2="420" y2="86" stroke="#16a34a" strokeWidth="8" strokeLinecap="round" />
+          <polygon points="420,86 398,74 398,98" fill="#16a34a" />
+          <circle cx="140" cy="86" r="11" fill="#f97316" />
+          <text x="126" y="62" fill="#111827" fontSize="24" fontWeight="800">Ο</text>
+          <text x="440" y="92" fill="#111827" fontSize="24" fontWeight="800">x</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'oppositeRays') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 190" className="geoSvg">
+          <rect x="14" y="16" width="492" height="150" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <line x1="90" y1="95" x2="430" y2="95" stroke="#7c3aed" strokeWidth="8" strokeLinecap="round" />
+          <polygon points="90,95 112,83 112,107" fill="#7c3aed" />
+          <polygon points="430,95 408,83 408,107" fill="#7c3aed" />
+          <circle cx="260" cy="95" r="13" fill="#f97316" />
+          <text x="248" y="75" fill="#111827" fontSize="24" fontWeight="800">Ο</text>
+          <text x="65" y="102" fill="#111827" fontSize="24" fontWeight="800">x΄</text>
+          <text x="448" y="102" fill="#111827" fontSize="24" fontWeight="800">x</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'plane') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 190" className="geoSvg">
+          <rect x="55" y="35" width="410" height="120" rx="14" fill="rgba(14,165,233,0.10)" stroke="#38bdf8" strokeWidth="4" />
+          <line x1="260" y1="35" x2="260" y2="155" stroke="#f97316" strokeWidth="5" strokeDasharray="8 8" />
+          <text x="108" y="105" fill="#111827" fontSize="22" fontWeight="800">ημιεπίπεδο</text>
+          <text x="285" y="105" fill="#111827" fontSize="22" fontWeight="800">ημιεπίπεδο</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'angle') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 520 220" className="geoSvg">
+          <rect x="14" y="16" width="492" height="170" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <path d="M250 135 L150 55" stroke="#0f172a" strokeWidth="7" strokeLinecap="round" />
+          <path d="M250 135 L385 65" stroke="#0f172a" strokeWidth="7" strokeLinecap="round" />
+          <path d="M215 105 Q250 80 292 108" fill="none" stroke="#f97316" strokeWidth="5" />
+          <circle cx="250" cy="135" r="13" fill="#2563eb" />
+          <text x="132" y="48" fill="#111827" fontSize="24" fontWeight="800">Α</text>
+          <text x="238" y="166" fill="#111827" fontSize="24" fontWeight="800">Ο</text>
+          <text x="402" y="64" fill="#111827" fontSize="24" fontWeight="800">Β</text>
+          <text x="215" y="45" fill="#111827" fontSize="28" fontWeight="800">∠ΑΟΒ</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'triangleOppositeAG') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 540 250" className="geoSvg">
+          <rect x="14" y="16" width="512" height="200" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <polygon points="270,48 110,190 430,190" fill="rgba(56,189,248,0.08)" stroke="#94a3b8" strokeWidth="4" />
+          <line x1="110" y1="190" x2="430" y2="190" stroke="#facc15" strokeWidth="10" strokeLinecap="round" />
+          <circle cx="270" cy="48" r="13" fill="#f97316" />
+          <circle cx="110" cy="190" r="10" fill="#2563eb" />
+          <circle cx="430" cy="190" r="10" fill="#2563eb" />
+          <text x="258" y="34" fill="#111827" fontSize="24" fontWeight="800">Β</text>
+          <text x="84" y="218" fill="#111827" fontSize="24" fontWeight="800">Α</text>
+          <text x="444" y="218" fill="#111827" fontSize="24" fontWeight="800">Γ</text>
+          <text x="235" y="178" fill="#92400e" fontSize="22" fontWeight="800">ΑΓ</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'triangleOppositeB') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 540 250" className="geoSvg">
+          <rect x="14" y="16" width="512" height="200" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <polygon points="270,48 110,190 430,190" fill="rgba(56,189,248,0.08)" stroke="#94a3b8" strokeWidth="4" />
+          <line x1="110" y1="190" x2="430" y2="190" stroke="#facc15" strokeWidth="10" strokeLinecap="round" />
+          <circle cx="270" cy="48" r="16" fill="#f97316" />
+          <path d="M245 72 Q270 92 298 72" fill="none" stroke="#f97316" strokeWidth="5" />
+          <text x="258" y="34" fill="#111827" fontSize="24" fontWeight="800">Β</text>
+          <text x="84" y="218" fill="#111827" fontSize="24" fontWeight="800">Α</text>
+          <text x="444" y="218" fill="#111827" fontSize="24" fontWeight="800">Γ</text>
+        </svg>
+      </div>
+    )
+  }
+
+  if (type === 'equalShapes') {
+    return (
+      <div className="quizDiagram">
+        <svg viewBox="0 0 560 230" className="geoSvg">
+          <rect x="14" y="16" width="532" height="170" rx="20" fill="rgba(59,130,246,0.06)" stroke="rgba(148,163,184,0.28)" />
+          <polygon points="120,155 205,155 160,70" fill="rgba(37,99,235,0.18)" stroke="#2563eb" strokeWidth="5" />
+          <polygon points="345,155 430,155 385,70" fill="rgba(34,197,94,0.18)" stroke="#16a34a" strokeWidth="5" />
+          <text x="108" y="205" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 1</text>
+          <text x="333" y="205" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 2</text>
+        </svg>
+      </div>
+    )
+  }
+
+  return null
+}
+
 
 function ExtraTeacherΚουίζ({ addXp, title, items }) {
   const [index, setIndex] = useState(0)
@@ -21780,8 +21985,6 @@ function LessonGeometry11() {
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.1" subtitle="Βασικές γεωμετρικές έννοιες." items={quizGeo11} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γεωμετρία 1.1" items={teacherΚουίζGeo11} addXp={addXp} />
 
-      <GeometryImageTeacherQuiz11 />
-
       <section className="bossPanel">
         <div>
           <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
@@ -21878,8 +22081,6 @@ function LessonGeometry12() {
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.2" subtitle="Γωνίες, γραμμές και ίσα σχήματα." items={quizGeo12} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γεωμετρία 1.2" items={teacherΚουίζGeo12} addXp={addXp} />
 
-      <GeometryImageTeacherQuiz12 />
-
       <section className="bossPanel">
         <div>
           <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
@@ -21906,96 +22107,7 @@ function LessonGeometry12() {
 
 
 
-function GeometryImageTeacherQuiz11() {
-  const [answer, setAnswer] = useState('')
-  const correct = answer === 'segment'
 
-  return (
-    <section className="contentPanel">
-      <div className="sectionHeader">
-        <ShieldCheck/>
-        <div>
-          <h2>Οπτικό Extra Κουίζ — Γεωμετρία 1.1</h2>
-          <p>Παρατήρησε το σχήμα και απάντησε με βάση αυτό που βλέπεις.</p>
-        </div>
-      </div>
-
-      <div className="practiceBox">
-        <svg viewBox="0 0 640 250" className="geoSvg" role="img" aria-label="Ευθύγραμμο τμήμα ΑΒ">
-          <rect x="22" y="25" width="596" height="190" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
-          <line x1="145" y1="125" x2="495" y2="125" stroke="#38bdf8" strokeWidth="10" strokeLinecap="round"/>
-          <circle cx="145" cy="125" r="14" fill="#f97316"/>
-          <circle cx="495" cy="125" r="14" fill="#f97316"/>
-          <text x="132" y="98" fill="#fff" fontSize="28">Α</text>
-          <text x="486" y="98" fill="#fff" fontSize="28">Β</text>
-          <text x="255" y="165" fill="#e0f2fe" fontSize="24">φωτισμένο σχήμα</text>
-        </svg>
-
-        <h3>Τι δείχνει το φωτισμένο σχήμα;</h3>
-        <div className="bossBtns">
-          <button onClick={() => setAnswer('line')}>Ευθεία</button>
-          <button onClick={() => setAnswer('segment')}>Ευθύγραμμο τμήμα ΑΒ</button>
-          <button onClick={() => setAnswer('ray')}>Ημιευθεία</button>
-          <button onClick={() => setAnswer('point')}>Σημείο</button>
-        </div>
-
-        {answer && (
-          <div className="σήμαWin">
-            {correct ? '✅ Σωστά! Έχει δύο άκρα, άρα είναι ευθύγραμμο τμήμα ΑΒ.' : '❌ Πρόσεξε: το σχήμα έχει δύο άκρα, το Α και το Β.'}
-          </div>
-        )}
-      </div>
-    </section>
-  )
-}
-
-function GeometryImageTeacherQuiz12() {
-  const [answer, setAnswer] = useState('')
-  const correct = answer === 'B'
-
-  return (
-    <section className="contentPanel">
-      <div className="sectionHeader">
-        <ShieldCheck/>
-        <div>
-          <h2>Οπτικό Extra Κουίζ — Γεωμετρία 1.2</h2>
-          <p>Δες το τρίγωνο και εντόπισε την απέναντι γωνία.</p>
-        </div>
-      </div>
-
-      <div className="practiceBox">
-        <svg viewBox="0 0 640 300" className="geoSvg" role="img" aria-label="Τρίγωνο ΑΒΓ με φωτισμένη πλευρά ΑΓ">
-          <rect x="22" y="24" width="596" height="240" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
-          <polygon points="320,65 135,235 515,235" fill="rgba(56,189,248,0.07)" stroke="#94a3b8" strokeWidth="4"/>
-          <line x1="135" y1="235" x2="515" y2="235" stroke="#facc15" strokeWidth="12" strokeLinecap="round"/>
-          <line x1="320" y1="65" x2="135" y2="235" stroke="#94a3b8" strokeWidth="5"/>
-          <line x1="320" y1="65" x2="515" y2="235" stroke="#94a3b8" strokeWidth="5"/>
-          <circle cx="320" cy="65" r="15" fill="#f97316"/>
-          <circle cx="135" cy="235" r="12" fill="#38bdf8"/>
-          <circle cx="515" cy="235" r="12" fill="#38bdf8"/>
-          <text x="305" y="45" fill="#fff" fontSize="28">Β</text>
-          <text x="105" y="265" fill="#fff" fontSize="28">Α</text>
-          <text x="530" y="265" fill="#fff" fontSize="28">Γ</text>
-          <text x="260" y="218" fill="#facc15" fontSize="24">πλευρά ΑΓ</text>
-        </svg>
-
-        <h3>Ποια γωνία είναι απέναντι από τη φωτισμένη πλευρά ΑΓ;</h3>
-        <div className="bossBtns">
-          <button onClick={() => setAnswer('A')}>Γωνία Α</button>
-          <button onClick={() => setAnswer('B')}>Γωνία Β</button>
-          <button onClick={() => setAnswer('G')}>Γωνία Γ</button>
-          <button onClick={() => setAnswer('AG')}>Πλευρά ΑΓ</button>
-        </div>
-
-        {answer && (
-          <div className="σήμαWin">
-            {correct ? '✅ Σωστά! Η κορυφή Β δεν ακουμπά την πλευρά ΑΓ, άρα η γωνία Β είναι απέναντι.' : '❌ Η απέναντι γωνία είναι στην κορυφή που δεν ακουμπά τη φωτισμένη πλευρά.'}
-          </div>
-        )}
-      </div>
-    </section>
-  )
-}
 
 
 function Platform({ goHome }) {

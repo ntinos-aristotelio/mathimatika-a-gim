@@ -566,3 +566,15 @@ button:disabled { opacity: .45; cursor: not-allowed; }
   font-weight: 800;
   pointer-events: none;
 }
+
+.quizDiagram {
+  width: 100%;
+  margin: 14px 0 18px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.quizDiagram .geoSvg {
+  width: 100%;
+  min-height: 180px;
+  display: block;
+}
