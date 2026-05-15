@@ -8,7 +8,3 @@
 - Extra Quiz Καθηγητή με 55+ ερωτήσεις
 - Final Boss
 - prebuilt dist για GitHub Pages
-
-
-## Geometry Update
-Added Geometry 1.1 preparation build.

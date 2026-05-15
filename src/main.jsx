@@ -85,6 +85,7 @@ const curriculum = [
           { id: '7.6', title: '7.6 Διαίρεση Ρητών Αριθμών', ready: true },
           { id: '7.8', title: '7.8 Δυνάμεις Ρητών Αριθμών με Εκθέτη Φυσικό', ready: true },
           { id: '7.gen', title: 'Γενικές Ασκήσεις Κεφαλαίου 7', ready: true },
+          { id: 'geo1.1', title: 'Γεωμετρία 1.1 - Βασικές Έννοιες', ready: true },
         ],
       },
     ],
@@ -20167,6 +20168,103 @@ function Lesson7General() {
 }
 
 
+
+function LessonGeometry11() {
+  return (
+    <main className="appGrid">
+      <section className="lessonHero">
+        <div>
+          <div className="pill blue">Γεωμετρία 1.1</div>
+          <h1>Σημείο - Ευθεία - Ημιευθεία</h1>
+          <p>Μαθαίνουμε τις βασικές έννοιες της Γεωμετρίας με απλά σχήματα και παραδείγματα.</p>
+        </div>
+      </section>
+
+      <section className="contentPanel">
+        <div className="sectionHeader">
+          <div>
+            <h2>Βασικές Έννοιες</h2>
+            <p>Το σημείο, η ευθεία και το επίπεδο είναι τα πρώτα δομικά στοιχεία της Γεωμετρίας.</p>
+          </div>
+        </div>
+
+        <div className="theoryGrid">
+          <article>
+            <b>Σημείο</b>
+            <p>Το σημείο δείχνει μια ακριβή θέση και συμβολίζεται με κεφαλαίο γράμμα.</p>
+          </article>
+
+          <article>
+            <b>Ευθύγραμμο Τμήμα</b>
+            <p>Το κομμάτι της ευθείας που βρίσκεται ανάμεσα σε δύο σημεία.</p>
+          </article>
+
+          <article>
+            <b>Ημιευθεία</b>
+            <p>Ξεκινά από ένα σημείο και συνεχίζει προς μία κατεύθυνση.</p>
+          </article>
+
+          <article>
+            <b>Επίπεδο</b>
+            <p>Μια επίπεδη επιφάνεια που εκτείνεται προς όλες τις κατευθύνσεις.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="contentPanel twoCol">
+        <div>
+          <h2>Παραδείγματα</h2>
+
+          <div className="example">
+            <b>Σημείο Α</b>
+            <p>Το σημείο συμβολίζεται με ένα κεφαλαίο γράμμα.</p>
+          </div>
+
+          <div className="example">
+            <b>Τμήμα ΑΒ</b>
+            <p>Έχει αρχή το Α και τέλος το Β.</p>
+          </div>
+
+          <div className="example">
+            <b>Ημιευθεία Αx</b>
+            <p>Ξεκινά από το Α και συνεχίζει προς μία κατεύθυνση.</p>
+          </div>
+        </div>
+
+        <div className="practiceBox">
+          <h3>Μικρό Challenge</h3>
+          <p>Ποιο σχήμα έχει αρχή αλλά δεν έχει τέλος;</p>
+
+          <div className="numberChips">
+            <span>Σημείο</span>
+            <span>Τμήμα</span>
+            <span>Ημιευθεία ✅</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="bossPanel">
+        <div>
+          <div className="pill danger">Τελική Πρόκληση</div>
+          <h2>Ο Μικρός Γεωμέτρης 📐</h2>
+          <p>Θυμήσου τις βασικές έννοιες της Γεωμετρίας.</p>
+        </div>
+
+        <div className="bossGame">
+          <div className="dragon">📐</div>
+          <h3>Η ημιευθεία έχει αρχή αλλά όχι τέλος.</h3>
+
+          <div className="bossBtns">
+            <button>Σωστό</button>
+            <button>Λάθος</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}
+
+
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -20176,7 +20274,7 @@ function Platform({ goHome }) {
       <Sidebar activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
       <div className="platformContent">
         <MobileHeader openMenu={() => setDrawerOpen(true)} goHome={goHome} />
-        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : activeLesson === '5.2' ? <Lesson52 /> : activeLesson === '5.gen' ? <Lesson5General /> : activeLesson === '7.1' ? <Lesson71 /> : activeLesson === '7.2' ? <Lesson72 /> : activeLesson === '7.3' ? <Lesson73 /> : activeLesson === '7.4' ? <Lesson74 /> : activeLesson === '7.5' ? <Lesson75 /> : activeLesson === '7.6' ? <Lesson76 /> : activeLesson === '7.8' ? <Lesson78 /> : activeLesson === '7.gen' ? <Lesson7General /> : <ComingSoon id={activeLesson} />}
+        {activeLesson === '1.1' ? <Lesson11 /> : activeLesson === '1.2' ? <Lesson12 /> : activeLesson === '1.3' ? <Lesson13 /> : activeLesson === '1.4' ? <Lesson14 /> : activeLesson === '1.5' ? <Lesson15 /> : activeLesson === 'A1G' ? <LessonA1G /> : activeLesson === '2.1' ? <Lesson21 /> : activeLesson === '2.2' ? <Lesson22 /> : activeLesson === '2.3' ? <Lesson23 /> : activeLesson === '2.4' ? <Lesson24 /> : activeLesson === '2.5' ? <Lesson25 /> : activeLesson === '2.6' ? <Lesson26 /> : activeLesson === '2.gen' ? <LessonGeneral2 /> : activeLesson === '3.1' ? <Lesson31 /> : activeLesson === '3.2' ? <Lesson3233 mode="3.2" /> : activeLesson === '3.3' ? <Lesson3233 mode="3.3" /> : activeLesson === '3.4' ? <Lesson34 /> : activeLesson === '3.5' ? <Lesson35 /> : activeLesson === '3.gen' ? <LessonGeneral3 /> : activeLesson === '4.1' ? <Lesson41 /> : activeLesson === '4.2' ? <Lesson42 /> : activeLesson === '4.gen' ? <Lesson4General /> : activeLesson === '5.1' ? <Lesson51 /> : activeLesson === '5.2' ? <Lesson52 /> : activeLesson === '5.gen' ? <Lesson5General /> : activeLesson === '7.1' ? <Lesson71 /> : activeLesson === '7.2' ? <Lesson72 /> : activeLesson === '7.3' ? <Lesson73 /> : activeLesson === '7.4' ? <Lesson74 /> : activeLesson === '7.5' ? <Lesson75 /> : activeLesson === '7.6' ? <Lesson76 /> : activeLesson === '7.8' ? <Lesson78 /> : activeLesson === '7.gen' ? <Lesson7General /> : activeLesson === 'geo1.1' ? <LessonGeometry11 /> : <ComingSoon id={activeLesson} />}
       </div>
       <MobileDrawer open={drawerOpen} close={() => setDrawerOpen(false)} activeLesson={activeLesson} setActiveLesson={setActiveLesson} goHome={goHome} />
     </div>
