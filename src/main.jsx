@@ -21780,6 +21780,8 @@ function LessonGeometry11() {
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.1" subtitle="Βασικές γεωμετρικές έννοιες." items={quizGeo11} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γεωμετρία 1.1" items={teacherΚουίζGeo11} addXp={addXp} />
 
+      <ImageTeacherQuiz11 />
+
       <section className="bossPanel">
         <div>
           <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
@@ -21876,6 +21878,8 @@ function LessonGeometry12() {
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.2" subtitle="Γωνίες, γραμμές και ίσα σχήματα." items={quizGeo12} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γεωμετρία 1.2" items={teacherΚουίζGeo12} addXp={addXp} />
 
+      <ImageTeacherQuiz12 />
+
       <section className="bossPanel">
         <div>
           <div className="pill danger"><Sword size={16}/> Τελική Πρόκληση</div>
@@ -21900,6 +21904,95 @@ function LessonGeometry12() {
   )
 }
 
+
+
+function ImageTeacherQuiz11() {
+  const [answer, setAnswer] = useState('')
+  const correct = answer === 'segment'
+
+  return (
+    <section className="contentPanel">
+      <div className="sectionHeader">
+        <ShieldCheck/>
+        <div>
+          <h2>Extra Κουίζ με Εικόνα — Γεωμετρία 1.1</h2>
+          <p>Παρατήρησε το σχήμα και βρες τι δείχνει το highlight.</p>
+        </div>
+      </div>
+
+      <div className="practiceBox">
+        <svg viewBox="0 0 620 220" className="geoSvg">
+          <line x1="130" y1="120" x2="470" y2="120" stroke="#38bdf8" strokeWidth="8" strokeLinecap="round"/>
+          <circle cx="130" cy="120" r="10" fill="#f97316"/>
+          <circle cx="470" cy="120" r="10" fill="#f97316"/>
+          <text x="115" y="98" fill="#fff" fontSize="24">Α</text>
+          <text x="462" y="98" fill="#fff" fontSize="24">Β</text>
+        </svg>
+
+        <h3>Τι βλέπεις στο σχήμα;</h3>
+
+        <div className="bossBtns">
+          <button onClick={() => setAnswer('line')}>Ευθεία</button>
+          <button onClick={() => setAnswer('segment')}>Ευθύγραμμο Τμήμα</button>
+          <button onClick={() => setAnswer('ray')}>Ημιευθεία</button>
+        </div>
+
+        {answer && (
+          <div className="σήμαWin">
+            {correct ? '✅ Σωστά! Το σχήμα δείχνει ευθύγραμμο τμήμα ΑΒ.' : '❌ Δοκίμασε ξανά προσεκτικά.'}
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
+
+function ImageTeacherQuiz12() {
+  const [answer, setAnswer] = useState('')
+  const correct = answer === 'AG'
+
+  return (
+    <section className="contentPanel">
+      <div className="sectionHeader">
+        <ShieldCheck/>
+        <div>
+          <h2>Extra Κουίζ με Εικόνα — Γεωμετρία 1.2</h2>
+          <p>Δες το τρίγωνο και βρες την απέναντι πλευρά.</p>
+        </div>
+      </div>
+
+      <div className="practiceBox">
+        <svg viewBox="0 0 620 280" className="geoSvg">
+          <polygon points="310,55 120,230 500,230" fill="rgba(56,189,248,0.08)" stroke="#94a3b8" strokeWidth="5"/>
+          <circle cx="310" cy="55" r="12" fill="#f97316"/>
+          <circle cx="120" cy="230" r="10" fill="#38bdf8"/>
+          <circle cx="500" cy="230" r="10" fill="#38bdf8"/>
+          <text x="298" y="35" fill="#fff" fontSize="26">Β</text>
+          <text x="92" y="258" fill="#fff" fontSize="26">Α</text>
+          <text x="512" y="258" fill="#fff" fontSize="26">Γ</text>
+
+          <line x1="310" y1="55" x2="120" y2="230" stroke="#94a3b8" strokeWidth="7"/>
+          <line x1="310" y1="55" x2="500" y2="230" stroke="#94a3b8" strokeWidth="7"/>
+          <line x1="120" y1="230" x2="500" y2="230" stroke="#facc15" strokeWidth="10"/>
+        </svg>
+
+        <h3>Ποια γωνία βρίσκεται απέναντι από την φωτισμένη πλευρά ΑΓ;</h3>
+
+        <div className="bossBtns">
+          <button onClick={() => setAnswer('A')}>Γωνία Α</button>
+          <button onClick={() => setAnswer('B')}>Γωνία Β</button>
+          <button onClick={() => setAnswer('AG')}>Γωνία Β</button>
+        </div>
+
+        {answer && (
+          <div className="σήμαWin">
+            {correct ? '✅ Σωστά! Η γωνία Β είναι απέναντι από την πλευρά ΑΓ.' : '❌ Ξανακοίτα ποια κορυφή δεν ακουμπά την πλευρά ΑΓ.'}
+          </div>
+        )}
+      </div>
+    </section>
+  )
+}
 
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
