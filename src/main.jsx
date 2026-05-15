@@ -17830,7 +17830,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angle",
+    "diagram": "angleVertexO",
     "tag": "🟢 Εύκολη",
     "question": "Στη γωνία ΑΟΒ, κορυφή είναι:",
     "options": [
@@ -17843,7 +17843,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angle",
+    "diagram": "angleSides",
     "tag": "🟢 Εύκολη",
     "question": "Στη γωνία ΑΟΒ, πλευρές είναι:",
     "options": [
@@ -17869,7 +17869,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeA",
+    "diagram": "triangleAngleA",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ, απέναντι από τη γωνία Α είναι η πλευρά:",
     "options": [
@@ -17882,7 +17882,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeB",
+    "diagram": "triangleAngleB",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ, απέναντι από τη γωνία Β είναι η πλευρά:",
     "options": [
@@ -17895,7 +17895,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeG",
+    "diagram": "triangleAngleG",
     "tag": "🟢 Εύκολη",
     "question": "Σε τρίγωνο ΑΒΓ, απέναντι από τη γωνία Γ είναι η πλευρά:",
     "options": [
@@ -17908,7 +17908,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleAG",
+    "diagram": "triangleSideAG",
     "tag": "🟢 Εύκολη",
     "question": "Η γωνία απέναντι από την πλευρά ΑΓ είναι:",
     "options": [
@@ -17921,7 +17921,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeA",
+    "diagram": "triangleSideBG",
     "tag": "🟢 Εύκολη",
     "question": "Η γωνία απέναντι από την πλευρά ΒΓ είναι:",
     "options": [
@@ -17934,7 +17934,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeG",
+    "diagram": "triangleSideAB",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία απέναντι από την πλευρά ΑΒ είναι:",
     "options": [
@@ -17960,7 +17960,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeA",
+    "diagram": "adjacentAG",
     "tag": "🟡 Μέτρια",
     "question": "Οι γωνίες προσκείμενες στην πλευρά ΑΓ είναι:",
     "options": [
@@ -17973,7 +17973,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeG",
+    "diagram": "adjacentBG",
     "tag": "🟡 Μέτρια",
     "question": "Οι γωνίες προσκείμενες στην πλευρά ΒΓ είναι:",
     "options": [
@@ -17986,7 +17986,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeAG",
+    "diagram": "triangleAngleA",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία που περιέχεται στις πλευρές ΑΒ και ΑΓ είναι:",
     "options": [
@@ -17999,7 +17999,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeAG",
+    "diagram": "triangleAngleB",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία που περιέχεται στις πλευρές ΑΒ και ΒΓ είναι:",
     "options": [
@@ -18012,7 +18012,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeAG",
+    "diagram": "triangleAngleG",
     "tag": "🟡 Μέτρια",
     "question": "Η γωνία που περιέχεται στις πλευρές ΑΓ και ΓΒ είναι:",
     "options": [
@@ -18025,7 +18025,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeAG",
+    "diagram": "triangleSideBG",
     "tag": "🟡 Μέτρια",
     "question": "Αν η μεγαλύτερη πλευρά είναι ΒΓ, η απέναντι γωνία είναι:",
     "options": [
@@ -18038,7 +18038,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "equalShapes",
+    "diagram": "triangleSideAG",
     "tag": "🟡 Μέτρια",
     "question": "Αν η μικρότερη πλευρά είναι ΑΓ, η απέναντι γωνία είναι:",
     "options": [
@@ -18077,7 +18077,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angle",
+    "diagram": "openClosedLine",
     "tag": "🟠 Δύσκολη",
     "question": "Η γραμμή μπορεί να είναι:",
     "options": [
@@ -18090,7 +18090,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angle",
+    "diagram": "brokenLine",
     "tag": "🟠 Δύσκολη",
     "question": "Η τεθλασμένη γραμμή αποτελείται από:",
     "options": [
@@ -18103,7 +18103,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angle",
+    "diagram": "openClosedLine",
     "tag": "🟠 Δύσκολη",
     "question": "Μια κλειστή γραμμή:",
     "options": [
@@ -18116,6 +18116,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "openClosedLine",
     "tag": "🟠 Δύσκολη",
     "question": "Μια ανοιχτή γραμμή:",
     "options": [
@@ -18128,6 +18129,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angleVertexO",
     "tag": "🟠 Δύσκολη",
     "question": "Αν η γωνία λέγεται ΒΑΓ, κορυφή είναι:",
     "options": [
@@ -18140,6 +18142,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angleVertexO",
     "tag": "🟠 Δύσκολη",
     "question": "Αν η γωνία λέγεται ΑΓΒ, κορυφή είναι:",
     "options": [
@@ -18152,6 +18155,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "angleVertexO",
     "tag": "🟠 Δύσκολη",
     "question": "Αν η γωνία λέγεται ΓΒΑ, κορυφή είναι:",
     "options": [
@@ -18164,7 +18168,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeA",
+    "diagram": "triangleAngleA",
     "tag": "🟠 Δύσκολη",
     "question": "Πλευρές προσκείμενες στη γωνία Α είναι:",
     "options": [
@@ -18177,7 +18181,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeB",
+    "diagram": "triangleAngleB",
     "tag": "🟠 Δύσκολη",
     "question": "Πλευρές προσκείμενες στη γωνία Β είναι:",
     "options": [
@@ -18190,7 +18194,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleOppositeG",
+    "diagram": "triangleAngleG",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Πλευρές προσκείμενες στη γωνία Γ είναι:",
     "options": [
@@ -18203,7 +18207,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleAG",
+    "diagram": "triangleAngleA",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Η πλευρά που δεν ακουμπά την κορυφή Α είναι:",
     "options": [
@@ -18216,7 +18220,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleAG",
+    "diagram": "triangleAngleB",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Η πλευρά που δεν ακουμπά την κορυφή Β είναι:",
     "options": [
@@ -18229,7 +18233,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "triangleAG",
+    "diagram": "triangleAngleG",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Η πλευρά που δεν ακουμπά την κορυφή Γ είναι:",
     "options": [
@@ -18268,7 +18272,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angleVertexO",
+    "diagram": "angleSides",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Στην ονομασία χΟψ, πλευρές είναι:",
     "options": [
@@ -18281,7 +18285,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
-    "diagram": "angle",
+    "diagram": "angleVertexO",
     "tag": "🔴 Πολύ δύσκολη",
     "question": "Για να ονομάσουμε γωνία με τρία γράμματα, στη μέση βάζουμε:",
     "options": [
@@ -18320,6 +18324,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "shapeTriangle",
     "tag": "🧠 Διάνοια",
     "question": "Ποιο είναι γεωμετρικό σχήμα;",
     "options": [
@@ -18332,6 +18337,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "curvedLine",
     "tag": "🧠 Διάνοια",
     "question": "Ποιο δεν είναι απαραίτητα ευθεία;",
     "options": [
@@ -18344,6 +18350,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "curvedLine",
     "tag": "🧠 Διάνοια",
     "question": "Μια καμπύλη γραμμή:",
     "options": [
@@ -18392,6 +18399,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleAngleA",
     "tag": "🧠 Διάνοια",
     "question": "Αν η γωνία Α είναι απέναντι από τη μεγαλύτερη πλευρά, τότε μεγαλύτερη πλευρά είναι:",
     "options": [
@@ -18404,6 +18412,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleAngleG",
     "tag": "🧠 Διάνοια",
     "question": "Αν η γωνία Γ είναι απέναντι από τη μικρότερη πλευρά, τότε μικρότερη πλευρά είναι:",
     "options": [
@@ -18428,6 +18437,7 @@ const teacherΚουίζGeo12 = [
     "explanation": "Στην ονομασία γωνίας με τρία γράμματα, το μεσαίο είναι η κορυφή. Σε τρίγωνο, η απέναντι πλευρά δεν ακουμπά την κορυφή."
   },
   {
+    "diagram": "triangleAG",
     "tag": "🧠 Διάνοια",
     "question": "Σωστή μέθοδος για απέναντι πλευρά:",
     "options": [
@@ -18663,161 +18673,211 @@ function prepareTeacherΚουίζ(title, items) {
 
 
 
+
 function GeometryQuestionDiagram({ type }) {
   if (!type) return null
 
+  const labelStyle = { fill: '#111827', fontSize: 25, fontWeight: 900 }
+  const smallLabel = { fill: '#111827', fontSize: 20, fontWeight: 800 }
+
   const box = (children) => (
     <div className="quizDiagram">
-      <svg viewBox="0 0 560 240" className="geoSvg" role="img">
-        <rect x="14" y="16" width="532" height="190" rx="22" fill="rgba(59,130,246,0.07)" stroke="rgba(148,163,184,0.40)" />
+      <svg viewBox="0 0 560 250" className="geoSvg" role="img">
+        <rect x="14" y="16" width="532" height="200" rx="22" fill="rgba(59,130,246,0.07)" stroke="rgba(148,163,184,0.40)" />
         {children}
       </svg>
     </div>
   )
 
-  if (type === 'point') return box(<>
-    <circle cx="280" cy="110" r="13" fill="#f97316" />
-    <text x="302" y="118" fill="#111827" fontSize="30" fontWeight="800">Α</text>
+  const point = () => box(<>
+    <circle cx="280" cy="112" r="14" fill="#f97316" />
+    <text x="303" y="120" style={labelStyle}>Α</text>
+    <text x="190" y="185" style={smallLabel}>Σημείο: ακριβής θέση</text>
   </>)
 
-  if (type === 'segment') return box(<>
-    <line x1="135" y1="112" x2="425" y2="112" stroke="#2563eb" strokeWidth="9" strokeLinecap="round" />
-    <circle cx="135" cy="112" r="12" fill="#f97316" />
-    <circle cx="425" cy="112" r="12" fill="#f97316" />
-    <text x="121" y="84" fill="#111827" fontSize="26" fontWeight="800">Α</text>
-    <text x="415" y="84" fill="#111827" fontSize="26" fontWeight="800">Β</text>
-    <text x="230" y="154" fill="#1e3a8a" fontSize="22" fontWeight="800">τμήμα ΑΒ</text>
+  const segment = () => box(<>
+    <line x1="135" y1="116" x2="425" y2="116" stroke="#2563eb" strokeWidth="9" strokeLinecap="round" />
+    <circle cx="135" cy="116" r="12" fill="#f97316" />
+    <circle cx="425" cy="116" r="12" fill="#f97316" />
+    <text x="121" y="88" style={labelStyle}>Α</text>
+    <text x="415" y="88" style={labelStyle}>Β</text>
+    <text x="225" y="160" style={smallLabel}>δύο άκρα: Α και Β</text>
   </>)
 
-  if (type === 'line') return box(<>
-    <line x1="85" y1="112" x2="475" y2="112" stroke="#111827" strokeWidth="7" strokeLinecap="round" />
-    <polygon points="85,112 108,99 108,125" fill="#111827" />
-    <polygon points="475,112 452,99 452,125" fill="#111827" />
-    <text x="492" y="120" fill="#111827" fontSize="26" fontWeight="800">ε</text>
+  const line = () => box(<>
+    <line x1="85" y1="116" x2="475" y2="116" stroke="#111827" strokeWidth="7" strokeLinecap="round" />
+    <polygon points="85,116 108,103 108,129" fill="#111827" />
+    <polygon points="475,116 452,103 452,129" fill="#111827" />
+    <text x="492" y="124" style={labelStyle}>ε</text>
+    <text x="170" y="170" style={smallLabel}>χωρίς αρχή και τέλος</text>
   </>)
 
-  if (type === 'ray') return box(<>
-    <line x1="145" y1="112" x2="435" y2="112" stroke="#16a34a" strokeWidth="9" strokeLinecap="round" />
-    <polygon points="435,112 410,98 410,126" fill="#16a34a" />
-    <circle cx="145" cy="112" r="12" fill="#f97316" />
-    <text x="130" y="84" fill="#111827" fontSize="26" fontWeight="800">Ο</text>
-    <text x="454" y="120" fill="#111827" fontSize="26" fontWeight="800">x</text>
+  const ray = () => box(<>
+    <line x1="145" y1="116" x2="435" y2="116" stroke="#16a34a" strokeWidth="9" strokeLinecap="round" />
+    <polygon points="435,116 410,102 410,130" fill="#16a34a" />
+    <circle cx="145" cy="116" r="13" fill="#f97316" />
+    <text x="130" y="88" style={labelStyle}>Ο</text>
+    <text x="454" y="124" style={labelStyle}>x</text>
+    <text x="205" y="170" style={smallLabel}>μία αρχή, μία κατεύθυνση</text>
   </>)
 
-  if (type === 'oppositeRays') return box(<>
-    <line x1="90" y1="112" x2="470" y2="112" stroke="#7c3aed" strokeWidth="9" strokeLinecap="round" />
-    <polygon points="90,112 115,98 115,126" fill="#7c3aed" />
-    <polygon points="470,112 445,98 445,126" fill="#7c3aed" />
-    <circle cx="280" cy="112" r="13" fill="#f97316" />
-    <text x="268" y="86" fill="#111827" fontSize="26" fontWeight="800">Ο</text>
-    <text x="55" y="120" fill="#111827" fontSize="24" fontWeight="800">x΄</text>
-    <text x="492" y="120" fill="#111827" fontSize="24" fontWeight="800">x</text>
+  const oppositeRays = () => box(<>
+    <line x1="90" y1="116" x2="470" y2="116" stroke="#7c3aed" strokeWidth="9" strokeLinecap="round" />
+    <polygon points="90,116 115,102 115,130" fill="#7c3aed" />
+    <polygon points="470,116 445,102 445,130" fill="#7c3aed" />
+    <circle cx="280" cy="116" r="14" fill="#f97316" />
+    <text x="268" y="88" style={labelStyle}>Ο</text>
+    <text x="55" y="124" style={labelStyle}>x΄</text>
+    <text x="492" y="124" style={labelStyle}>x</text>
+    <text x="165" y="176" style={smallLabel}>κοινή αρχή Ο, αντίθετες κατευθύνσεις</text>
   </>)
 
-  if (type === 'plane') return box(<>
-    <rect x="85" y="58" width="390" height="112" rx="14" fill="rgba(14,165,233,0.13)" stroke="#38bdf8" strokeWidth="4" />
-    <line x1="280" y1="58" x2="280" y2="170" stroke="#f97316" strokeWidth="5" strokeDasharray="8 8" />
-    <text x="120" y="120" fill="#111827" fontSize="21" fontWeight="800">ημιεπίπεδο</text>
-    <text x="305" y="120" fill="#111827" fontSize="21" fontWeight="800">ημιεπίπεδο</text>
+  const plane = () => box(<>
+    <rect x="80" y="58" width="400" height="118" rx="14" fill="rgba(14,165,233,0.13)" stroke="#38bdf8" strokeWidth="4" />
+    <line x1="280" y1="58" x2="280" y2="176" stroke="#f97316" strokeWidth="5" strokeDasharray="8 8" />
+    <text x="117" y="125" style={smallLabel}>ημιεπίπεδο</text>
+    <text x="307" y="125" style={smallLabel}>ημιεπίπεδο</text>
   </>)
 
-  if (type === 'angle') return box(<>
-    <path d="M280 150 L165 64" stroke="#111827" strokeWidth="8" strokeLinecap="round" />
-    <path d="M280 150 L430 76" stroke="#111827" strokeWidth="8" strokeLinecap="round" />
-    <path d="M242 119 Q282 88 330 122" fill="none" stroke="#f97316" strokeWidth="6" />
-    <circle cx="280" cy="150" r="14" fill="#2563eb" />
-    <text x="148" y="57" fill="#111827" fontSize="26" fontWeight="800">Α</text>
-    <text x="268" y="183" fill="#111827" fontSize="26" fontWeight="800">Ο</text>
-    <text x="447" y="77" fill="#111827" fontSize="26" fontWeight="800">Β</text>
-    <text x="242" y="45" fill="#111827" fontSize="30" fontWeight="800">∠ΑΟΒ</text>
+  const angleAOB = () => box(<>
+    <path d="M280 155 L160 66" stroke="#111827" strokeWidth="8" strokeLinecap="round" />
+    <path d="M280 155 L430 76" stroke="#111827" strokeWidth="8" strokeLinecap="round" />
+    <path d="M242 124 Q282 90 333 124" fill="none" stroke="#f97316" strokeWidth="6" />
+    <circle cx="280" cy="155" r="14" fill="#2563eb" />
+    <text x="143" y="58" style={labelStyle}>Α</text>
+    <text x="268" y="190" style={labelStyle}>Ο</text>
+    <text x="447" y="78" style={labelStyle}>Β</text>
+    <text x="235" y="44" style={{...labelStyle, fontSize: 30}}>∠ΑΟΒ</text>
   </>)
 
-  if (type === 'angleVertexO') return box(<>
-    <path d="M280 150 L158 70" stroke="#64748b" strokeWidth="7" strokeLinecap="round" />
-    <path d="M280 150 L430 75" stroke="#64748b" strokeWidth="7" strokeLinecap="round" />
-    <circle cx="280" cy="150" r="18" fill="#f97316" />
-    <text x="148" y="62" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="268" y="190" fill="#111827" fontSize="28" fontWeight="900">Ο</text>
-    <text x="445" y="77" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="226" y="42" fill="#111827" fontSize="28" fontWeight="800">Ποια είναι η κορυφή;</text>
+  const angleVertexO = () => box(<>
+    <path d="M280 155 L160 68" stroke="#64748b" strokeWidth="7" strokeLinecap="round" />
+    <path d="M280 155 L430 76" stroke="#64748b" strokeWidth="7" strokeLinecap="round" />
+    <circle cx="280" cy="155" r="19" fill="#f97316" />
+    <text x="143" y="60" style={labelStyle}>Α</text>
+    <text x="267" y="193" style={{...labelStyle, fontSize: 30}}>Ο</text>
+    <text x="447" y="78" style={labelStyle}>Β</text>
+    <text x="205" y="44" style={smallLabel}>το μεσαίο γράμμα είναι η κορυφή</text>
   </>)
 
-  if (type === 'angleSides') return box(<>
-    <path d="M280 150 L160 62" stroke="#22c55e" strokeWidth="9" strokeLinecap="round" />
-    <path d="M280 150 L430 75" stroke="#22c55e" strokeWidth="9" strokeLinecap="round" />
-    <path d="M243 120 Q281 91 330 122" fill="none" stroke="#f97316" strokeWidth="5" />
-    <circle cx="280" cy="150" r="13" fill="#2563eb" />
-    <text x="145" y="55" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="268" y="184" fill="#111827" fontSize="25" fontWeight="800">Ο</text>
-    <text x="445" y="77" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="205" y="45" fill="#166534" fontSize="24" fontWeight="900">πλευρές ΟΑ και ΟΒ</text>
+  const angleSides = () => box(<>
+    <path d="M280 155 L160 68" stroke="#22c55e" strokeWidth="10" strokeLinecap="round" />
+    <path d="M280 155 L430 76" stroke="#22c55e" strokeWidth="10" strokeLinecap="round" />
+    <path d="M243 124 Q281 92 330 125" fill="none" stroke="#f97316" strokeWidth="5" />
+    <circle cx="280" cy="155" r="13" fill="#2563eb" />
+    <text x="143" y="60" style={labelStyle}>Α</text>
+    <text x="268" y="190" style={labelStyle}>Ο</text>
+    <text x="447" y="78" style={labelStyle}>Β</text>
+    <text x="192" y="42" style={{...smallLabel, fill: '#166534'}}>πλευρές: ΟΑ και ΟΒ</text>
   </>)
 
-  if (type === 'triangleAG') return box(<>
-    <polygon points="280,50 105,178 455,178" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
-    <line x1="105" y1="178" x2="455" y2="178" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
-    <circle cx="280" cy="50" r="14" fill="#f97316" />
-    <circle cx="105" cy="178" r="11" fill="#2563eb" />
-    <circle cx="455" cy="178" r="11" fill="#2563eb" />
-    <text x="268" y="36" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="78" y="207" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="471" y="207" fill="#111827" fontSize="25" fontWeight="800">Γ</text>
-    <text x="245" y="164" fill="#92400e" fontSize="23" fontWeight="800">ΑΓ</text>
+  const triangleBase = (children) => box(<>
+    <polygon points="280,50 105,180 455,180" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
+    {children}
+    <text x="268" y="36" style={labelStyle}>Α</text>
+    <text x="78" y="210" style={labelStyle}>Β</text>
+    <text x="471" y="210" style={labelStyle}>Γ</text>
   </>)
 
-  if (type === 'triangleOppositeA') return box(<>
-    <polygon points="280,50 105,178 455,178" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
-    <line x1="105" y1="178" x2="455" y2="178" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
-    <circle cx="280" cy="50" r="17" fill="#f97316" />
-    <path d="M250 73 Q280 98 310 73" fill="none" stroke="#f97316" strokeWidth="6" />
-    <text x="268" y="36" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="78" y="207" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="471" y="207" fill="#111827" fontSize="25" fontWeight="800">Γ</text>
-    <text x="245" y="164" fill="#92400e" fontSize="23" fontWeight="800">ΒΓ</text>
+  if (type === 'triangleSideBG') return triangleBase(<>
+    <line x1="105" y1="180" x2="455" y2="180" stroke="#facc15" strokeWidth="12" strokeLinecap="round" />
+    <circle cx="280" cy="50" r="18" fill="#f97316" />
+    <path d="M250 74 Q280 102 312 74" fill="none" stroke="#f97316" strokeWidth="6" />
+    <text x="240" y="166" style={{...smallLabel, fill: '#92400e'}}>πλευρά ΒΓ</text>
   </>)
 
-  if (type === 'triangleOppositeB') return box(<>
-    <polygon points="280,50 105,178 455,178" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
-    <line x1="280" y1="50" x2="455" y2="178" stroke="#facc15" strokeWidth="10" strokeLinecap="round" />
-    <circle cx="105" cy="178" r="17" fill="#f97316" />
-    <path d="M137 160 Q160 178 137 197" fill="none" stroke="#f97316" strokeWidth="6" />
-    <text x="268" y="36" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="78" y="207" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="471" y="207" fill="#111827" fontSize="25" fontWeight="800">Γ</text>
-    <text x="370" y="105" fill="#92400e" fontSize="23" fontWeight="800">ΑΓ</text>
+  if (type === 'triangleSideAG') return triangleBase(<>
+    <line x1="280" y1="50" x2="455" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <circle cx="105" cy="180" r="18" fill="#f97316" />
+    <path d="M137 161 Q160 180 137 199" fill="none" stroke="#f97316" strokeWidth="6" />
+    <text x="365" y="108" style={{...smallLabel, fill: '#92400e'}}>ΑΓ</text>
   </>)
 
-  if (type === 'triangleOppositeG') return box(<>
-    <polygon points="280,50 105,178 455,178" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
-    <line x1="280" y1="50" x2="105" y2="178" stroke="#facc15" strokeWidth="10" strokeLinecap="round" />
-    <circle cx="455" cy="178" r="17" fill="#f97316" />
-    <path d="M423 160 Q400 178 423 197" fill="none" stroke="#f97316" strokeWidth="6" />
-    <text x="268" y="36" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="78" y="207" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="471" y="207" fill="#111827" fontSize="25" fontWeight="800">Γ</text>
-    <text x="155" y="105" fill="#92400e" fontSize="23" fontWeight="800">ΑΒ</text>
+  if (type === 'triangleSideAB') return triangleBase(<>
+    <line x1="280" y1="50" x2="105" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <circle cx="455" cy="180" r="18" fill="#f97316" />
+    <path d="M423 161 Q400 180 423 199" fill="none" stroke="#f97316" strokeWidth="6" />
+    <text x="155" y="108" style={{...smallLabel, fill: '#92400e'}}>ΑΒ</text>
   </>)
 
-  if (type === 'adjacentAB') return box(<>
-    <polygon points="280,50 105,178 455,178" fill="rgba(56,189,248,0.10)" stroke="#94a3b8" strokeWidth="4" />
-    <line x1="280" y1="50" x2="105" y2="178" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
-    <circle cx="280" cy="50" r="15" fill="#f97316" />
-    <circle cx="105" cy="178" r="15" fill="#f97316" />
-    <text x="268" y="36" fill="#111827" fontSize="25" fontWeight="800">Α</text>
-    <text x="78" y="207" fill="#111827" fontSize="25" fontWeight="800">Β</text>
-    <text x="471" y="207" fill="#111827" fontSize="25" fontWeight="800">Γ</text>
-    <text x="165" y="110" fill="#92400e" fontSize="23" fontWeight="800">πλευρά ΑΒ</text>
+  if (type === 'triangleAngleA') return triangleBase(<>
+    <circle cx="280" cy="50" r="18" fill="#f97316" />
+    <path d="M250 74 Q280 102 312 74" fill="none" stroke="#f97316" strokeWidth="6" />
+    <line x1="105" y1="180" x2="455" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <text x="238" y="166" style={{...smallLabel, fill: '#92400e'}}>απέναντι: ΒΓ</text>
+  </>)
+
+  if (type === 'triangleAngleB') return triangleBase(<>
+    <circle cx="105" cy="180" r="18" fill="#f97316" />
+    <path d="M137 161 Q160 180 137 199" fill="none" stroke="#f97316" strokeWidth="6" />
+    <line x1="280" y1="50" x2="455" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <text x="356" y="108" style={{...smallLabel, fill: '#92400e'}}>απέναντι: ΑΓ</text>
+  </>)
+
+  if (type === 'triangleAngleG') return triangleBase(<>
+    <circle cx="455" cy="180" r="18" fill="#f97316" />
+    <path d="M423 161 Q400 180 423 199" fill="none" stroke="#f97316" strokeWidth="6" />
+    <line x1="280" y1="50" x2="105" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <text x="145" y="108" style={{...smallLabel, fill: '#92400e'}}>απέναντι: ΑΒ</text>
+  </>)
+
+  if (type === 'adjacentAB') return triangleBase(<>
+    <line x1="280" y1="50" x2="105" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <circle cx="280" cy="50" r="16" fill="#f97316" />
+    <circle cx="105" cy="180" r="16" fill="#f97316" />
+    <text x="142" y="112" style={{...smallLabel, fill: '#92400e'}}>πλευρά ΑΒ</text>
+    <text x="170" y="215" style={smallLabel}>προσκείμενες: Α και Β</text>
+  </>)
+
+  if (type === 'adjacentAG') return triangleBase(<>
+    <line x1="280" y1="50" x2="455" y2="180" stroke="#facc15" strokeWidth="11" strokeLinecap="round" />
+    <circle cx="280" cy="50" r="16" fill="#f97316" />
+    <circle cx="455" cy="180" r="16" fill="#f97316" />
+    <text x="355" y="112" style={{...smallLabel, fill: '#92400e'}}>πλευρά ΑΓ</text>
+    <text x="170" y="215" style={smallLabel}>προσκείμενες: Α και Γ</text>
+  </>)
+
+  if (type === 'adjacentBG') return triangleBase(<>
+    <line x1="105" y1="180" x2="455" y2="180" stroke="#facc15" strokeWidth="12" strokeLinecap="round" />
+    <circle cx="105" cy="180" r="16" fill="#f97316" />
+    <circle cx="455" cy="180" r="16" fill="#f97316" />
+    <text x="238" y="166" style={{...smallLabel, fill: '#92400e'}}>πλευρά ΒΓ</text>
+    <text x="170" y="215" style={smallLabel}>προσκείμενες: Β και Γ</text>
   </>)
 
   if (type === 'equalShapes') return box(<>
     <polygon points="135,168 225,168 178,70" fill="rgba(37,99,235,0.18)" stroke="#2563eb" strokeWidth="5" />
     <polygon points="340,168 430,168 383,70" fill="rgba(34,197,94,0.18)" stroke="#16a34a" strokeWidth="5" />
-    <text x="112" y="207" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 1</text>
-    <text x="318" y="207" fill="#111827" fontSize="20" fontWeight="800">Σχήμα 2</text>
+    <text x="112" y="207" style={smallLabel}>Σχήμα 1</text>
+    <text x="318" y="207" style={smallLabel}>Σχήμα 2</text>
+    <text x="180" y="42" style={smallLabel}>ίδιο σχήμα + ίδιο μέγεθος</text>
+  </>)
+
+  if (type === 'openClosedLine') return box(<>
+    <path d="M80 82 C130 35 195 122 250 78 S365 92 415 50" fill="none" stroke="#2563eb" strokeWidth="6" strokeLinecap="round" />
+    <text x="125" y="140" style={smallLabel}>ανοιχτή γραμμή</text>
+    <path d="M365 150 C390 105 470 105 495 150 C465 195 395 195 365 150" fill="none" stroke="#f97316" strokeWidth="6" />
+    <text x="372" y="216" style={smallLabel}>κλειστή γραμμή</text>
+  </>)
+
+  if (type === 'brokenLine') return box(<>
+    <polyline points="90,150 160,75 230,135 305,70 380,145 460,85" fill="none" stroke="#7c3aed" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+    <text x="182" y="190" style={smallLabel}>τεθλασμένη γραμμή</text>
+  </>)
+
+  if (type === 'curvedLine') return box(<>
+    <path d="M80 140 C140 55 210 205 280 118 S430 70 490 150" fill="none" stroke="#16a34a" strokeWidth="7" strokeLinecap="round" />
+    <text x="190" y="190" style={smallLabel}>καμπύλη γραμμή</text>
+  </>)
+
+  if (type === 'shapeTriangle') return box(<>
+    <polygon points="280,55 160,175 400,175" fill="rgba(56,189,248,0.16)" stroke="#2563eb" strokeWidth="6" />
+    <text x="212" y="210" style={smallLabel}>τρίγωνο = γεωμετρικό σχήμα</text>
   </>)
 
   return null
 }
+
 
 
 
