@@ -21780,7 +21780,7 @@ function LessonGeometry11() {
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.1" subtitle="Βασικές γεωμετρικές έννοιες." items={quizGeo11} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γεωμετρία 1.1" items={teacherΚουίζGeo11} addXp={addXp} />
 
-      <ImageTeacherQuiz11 />
+      <GeometryImageTeacherQuiz11 />
 
       <section className="bossPanel">
         <div>
@@ -21878,7 +21878,7 @@ function LessonGeometry12() {
       <StandardΚουίζ title="Κουίζ Αστραπή — Γεωμετρία 1.2" subtitle="Γωνίες, γραμμές και ίσα σχήματα." items={quizGeo12} addXp={addXp} />
       <ExtraTeacherΚουίζ title="Extra Κουίζ Καθηγητή — Γεωμετρία 1.2" items={teacherΚουίζGeo12} addXp={addXp} />
 
-      <ImageTeacherQuiz12 />
+      <GeometryImageTeacherQuiz12 />
 
       <section className="bossPanel">
         <div>
@@ -21906,7 +21906,7 @@ function LessonGeometry12() {
 
 
 
-function ImageTeacherQuiz11() {
+function GeometryImageTeacherQuiz11() {
   const [answer, setAnswer] = useState('')
   const correct = answer === 'segment'
 
@@ -21915,31 +21915,33 @@ function ImageTeacherQuiz11() {
       <div className="sectionHeader">
         <ShieldCheck/>
         <div>
-          <h2>Extra Κουίζ με Εικόνα — Γεωμετρία 1.1</h2>
-          <p>Παρατήρησε το σχήμα και βρες τι δείχνει το highlight.</p>
+          <h2>Οπτικό Extra Κουίζ — Γεωμετρία 1.1</h2>
+          <p>Παρατήρησε το σχήμα και απάντησε με βάση αυτό που βλέπεις.</p>
         </div>
       </div>
 
       <div className="practiceBox">
-        <svg viewBox="0 0 620 220" className="geoSvg">
-          <line x1="130" y1="120" x2="470" y2="120" stroke="#38bdf8" strokeWidth="8" strokeLinecap="round"/>
-          <circle cx="130" cy="120" r="10" fill="#f97316"/>
-          <circle cx="470" cy="120" r="10" fill="#f97316"/>
-          <text x="115" y="98" fill="#fff" fontSize="24">Α</text>
-          <text x="462" y="98" fill="#fff" fontSize="24">Β</text>
+        <svg viewBox="0 0 640 250" className="geoSvg" role="img" aria-label="Ευθύγραμμο τμήμα ΑΒ">
+          <rect x="22" y="25" width="596" height="190" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
+          <line x1="145" y1="125" x2="495" y2="125" stroke="#38bdf8" strokeWidth="10" strokeLinecap="round"/>
+          <circle cx="145" cy="125" r="14" fill="#f97316"/>
+          <circle cx="495" cy="125" r="14" fill="#f97316"/>
+          <text x="132" y="98" fill="#fff" fontSize="28">Α</text>
+          <text x="486" y="98" fill="#fff" fontSize="28">Β</text>
+          <text x="255" y="165" fill="#e0f2fe" fontSize="24">φωτισμένο σχήμα</text>
         </svg>
 
-        <h3>Τι βλέπεις στο σχήμα;</h3>
-
+        <h3>Τι δείχνει το φωτισμένο σχήμα;</h3>
         <div className="bossBtns">
           <button onClick={() => setAnswer('line')}>Ευθεία</button>
-          <button onClick={() => setAnswer('segment')}>Ευθύγραμμο Τμήμα</button>
+          <button onClick={() => setAnswer('segment')}>Ευθύγραμμο τμήμα ΑΒ</button>
           <button onClick={() => setAnswer('ray')}>Ημιευθεία</button>
+          <button onClick={() => setAnswer('point')}>Σημείο</button>
         </div>
 
         {answer && (
           <div className="σήμαWin">
-            {correct ? '✅ Σωστά! Το σχήμα δείχνει ευθύγραμμο τμήμα ΑΒ.' : '❌ Δοκίμασε ξανά προσεκτικά.'}
+            {correct ? '✅ Σωστά! Έχει δύο άκρα, άρα είναι ευθύγραμμο τμήμα ΑΒ.' : '❌ Πρόσεξε: το σχήμα έχει δύο άκρα, το Α και το Β.'}
           </div>
         )}
       </div>
@@ -21947,52 +21949,54 @@ function ImageTeacherQuiz11() {
   )
 }
 
-function ImageTeacherQuiz12() {
+function GeometryImageTeacherQuiz12() {
   const [answer, setAnswer] = useState('')
-  const correct = answer === 'AG'
+  const correct = answer === 'B'
 
   return (
     <section className="contentPanel">
       <div className="sectionHeader">
         <ShieldCheck/>
         <div>
-          <h2>Extra Κουίζ με Εικόνα — Γεωμετρία 1.2</h2>
-          <p>Δες το τρίγωνο και βρες την απέναντι πλευρά.</p>
+          <h2>Οπτικό Extra Κουίζ — Γεωμετρία 1.2</h2>
+          <p>Δες το τρίγωνο και εντόπισε την απέναντι γωνία.</p>
         </div>
       </div>
 
       <div className="practiceBox">
-        <svg viewBox="0 0 620 280" className="geoSvg">
-          <polygon points="310,55 120,230 500,230" fill="rgba(56,189,248,0.08)" stroke="#94a3b8" strokeWidth="5"/>
-          <circle cx="310" cy="55" r="12" fill="#f97316"/>
-          <circle cx="120" cy="230" r="10" fill="#38bdf8"/>
-          <circle cx="500" cy="230" r="10" fill="#38bdf8"/>
-          <text x="298" y="35" fill="#fff" fontSize="26">Β</text>
-          <text x="92" y="258" fill="#fff" fontSize="26">Α</text>
-          <text x="512" y="258" fill="#fff" fontSize="26">Γ</text>
-
-          <line x1="310" y1="55" x2="120" y2="230" stroke="#94a3b8" strokeWidth="7"/>
-          <line x1="310" y1="55" x2="500" y2="230" stroke="#94a3b8" strokeWidth="7"/>
-          <line x1="120" y1="230" x2="500" y2="230" stroke="#facc15" strokeWidth="10"/>
+        <svg viewBox="0 0 640 300" className="geoSvg" role="img" aria-label="Τρίγωνο ΑΒΓ με φωτισμένη πλευρά ΑΓ">
+          <rect x="22" y="24" width="596" height="240" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" />
+          <polygon points="320,65 135,235 515,235" fill="rgba(56,189,248,0.07)" stroke="#94a3b8" strokeWidth="4"/>
+          <line x1="135" y1="235" x2="515" y2="235" stroke="#facc15" strokeWidth="12" strokeLinecap="round"/>
+          <line x1="320" y1="65" x2="135" y2="235" stroke="#94a3b8" strokeWidth="5"/>
+          <line x1="320" y1="65" x2="515" y2="235" stroke="#94a3b8" strokeWidth="5"/>
+          <circle cx="320" cy="65" r="15" fill="#f97316"/>
+          <circle cx="135" cy="235" r="12" fill="#38bdf8"/>
+          <circle cx="515" cy="235" r="12" fill="#38bdf8"/>
+          <text x="305" y="45" fill="#fff" fontSize="28">Β</text>
+          <text x="105" y="265" fill="#fff" fontSize="28">Α</text>
+          <text x="530" y="265" fill="#fff" fontSize="28">Γ</text>
+          <text x="260" y="218" fill="#facc15" fontSize="24">πλευρά ΑΓ</text>
         </svg>
 
-        <h3>Ποια γωνία βρίσκεται απέναντι από την φωτισμένη πλευρά ΑΓ;</h3>
-
+        <h3>Ποια γωνία είναι απέναντι από τη φωτισμένη πλευρά ΑΓ;</h3>
         <div className="bossBtns">
           <button onClick={() => setAnswer('A')}>Γωνία Α</button>
           <button onClick={() => setAnswer('B')}>Γωνία Β</button>
-          <button onClick={() => setAnswer('AG')}>Γωνία Β</button>
+          <button onClick={() => setAnswer('G')}>Γωνία Γ</button>
+          <button onClick={() => setAnswer('AG')}>Πλευρά ΑΓ</button>
         </div>
 
         {answer && (
           <div className="σήμαWin">
-            {correct ? '✅ Σωστά! Η γωνία Β είναι απέναντι από την πλευρά ΑΓ.' : '❌ Ξανακοίτα ποια κορυφή δεν ακουμπά την πλευρά ΑΓ.'}
+            {correct ? '✅ Σωστά! Η κορυφή Β δεν ακουμπά την πλευρά ΑΓ, άρα η γωνία Β είναι απέναντι.' : '❌ Η απέναντι γωνία είναι στην κορυφή που δεν ακουμπά τη φωτισμένη πλευρά.'}
           </div>
         )}
       </div>
     </section>
   )
 }
+
 
 function Platform({ goHome }) {
   const [activeLesson, setActiveLesson] = useState('3.gen')
